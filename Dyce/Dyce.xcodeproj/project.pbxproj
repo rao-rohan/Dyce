@@ -22,6 +22,7 @@
 		4EA7C52E206B6CA80002D08E /* VCWithKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7C52A206B6CA70002D08E /* VCWithKeyBoard.swift */; };
 		4EA7C52F206B6CA80002D08E /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7C52B206B6CA70002D08E /* AlertController.swift */; };
 		4EA7C530206B6CA80002D08E /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7C52C206B6CA80002D08E /* PhotoHelper.swift */; };
+		4EA7C534206C9C940002D08E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA7C533206C9C940002D08E /* GoogleService-Info.plist */; };
 		D9D5DF1B9BFD72E942EEEC9C /* Pods_Dyce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6867C850E65CABB0A630F3C0 /* Pods_Dyce.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		4EA7C52A206B6CA70002D08E /* VCWithKeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCWithKeyBoard.swift; sourceTree = "<group>"; };
 		4EA7C52B206B6CA70002D08E /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		4EA7C52C206B6CA80002D08E /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
+		4EA7C533206C9C940002D08E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6867C850E65CABB0A630F3C0 /* Pods_Dyce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dyce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04D1389DA537A0755F29995 /* Pods-Dyce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyce.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dyce/Pods-Dyce.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 				4E756694206B61CD00D623DB /* LaunchScreen.storyboard */,
 				4E756697206B61CD00D623DB /* Info.plist */,
 				4E75668F206B61CD00D623DB /* Dyce.xcdatamodeld */,
+				4EA7C533206C9C940002D08E /* GoogleService-Info.plist */,
 			);
 			path = Dyce;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				4EA7C521206B68090002D08E /* Login.storyboard in Resources */,
 				4E756696206B61CD00D623DB /* LaunchScreen.storyboard in Resources */,
+				4EA7C534206C9C940002D08E /* GoogleService-Info.plist in Resources */,
 				4E756693206B61CD00D623DB /* Assets.xcassets in Resources */,
 				4E75668E206B61CD00D623DB /* Main.storyboard in Resources */,
 			);
@@ -598,7 +602,7 @@
 				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = Dyce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.Dyce;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,7 +618,7 @@
 				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = Dyce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.Dyce;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

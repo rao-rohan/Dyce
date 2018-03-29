@@ -26,7 +26,7 @@
         <!--Login View Controller-->
         <scene sceneID="lZA-km-XSe">
             <objects>
-                <viewController storyboardIdentifier="Login" id="VMD-Dx-41S" customClass="LoginViewController" customModule="Questions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="VMD-Dx-41S" customClass="LoginViewController" customModule="Dyce" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LuP-XB-dyr"/>
                         <viewControllerLayoutGuide type="bottom" id="8TT-Ng-0PL"/>
@@ -38,7 +38,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpB-9f-CRl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7n-Q6-JMf" customClass="borderlessTextField" customModule="Questions" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n7n-Q6-JMf" customClass="borderlessTextField" customModule="Dyce" customModuleProvider="target">
                                         <rect key="frame" x="20" y="265" width="335" height="43"/>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="7F36388A-5E9D-43C5-A69F-B4F41D139E31"/>
@@ -49,7 +49,7 @@
                                         <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="242" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq2-Jo-tOl" customClass="borderlessTextField" customModule="Questions" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="242" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq2-Jo-tOl" customClass="borderlessTextField" customModule="Dyce" customModuleProvider="target">
                                         <rect key="frame" x="20" y="337" width="335" height="43"/>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="EE6A3EE5-EC5C-41C8-897E-8F9872F8A638"/>
@@ -106,6 +106,9 @@
                                                 <exclude reference="sKw-4t-VuZ"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="OuD-2Z-83j" kind="show" id="dy7-jp-CPF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -156,7 +159,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="RK6-6P-Kqd">
             <objects>
-                <viewController id="OuD-2Z-83j" customClass="SignUpViewController" customModule="Questions" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OuD-2Z-83j" customClass="SignUpViewController" customModule="Dyce" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yVb-nw-bTy"/>
                         <viewControllerLayoutGuide type="bottom" id="Lmb-qn-9Ft"/>
@@ -175,7 +178,7 @@
                                         <color key="textColor" red="0.75294117650000003" green="0.75294117650000003" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f53-lm-ECo" customClass="borderlessTextField" customModule="Questions" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f53-lm-ECo" customClass="borderlessTextField" customModule="Dyce" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="323" width="0.0" height="50"/>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="96048C45-EA04-48B7-BA22-6184E4224731"/>
@@ -193,7 +196,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ps-pj-6wJ" customClass="borderlessTextField" customModule="Questions" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ps-pj-6wJ" customClass="borderlessTextField" customModule="Dyce" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="403" width="0.0" height="50"/>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="296C5FC0-9900-4D34-A216-421381EAEF3B"/>
@@ -210,7 +213,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5h-BT-yKS" customClass="borderlessTextField" customModule="Questions" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5h-BT-yKS" customClass="borderlessTextField" customModule="Dyce" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="483" width="0.0" height="50"/>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="76D39D99-3334-4EAB-A9E4-8EE1978A202C"/>
@@ -311,4 +314,7 @@
         <image name="back" width="25" height="25"/>
         <image name="dyceApp" width="76" height="76"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jma-sH-YBa"/>
+    </inferredMetricsTieBreakers>
 </document>

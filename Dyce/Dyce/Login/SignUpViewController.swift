@@ -44,6 +44,7 @@ class SignUpViewController: VCWithKeyboard , UITextFieldDelegate {
         return true
     }
     @IBAction func signUpPressed(_ sender: AnyObject) {
+        print("signupPRessed")
         let username = fullNameField.text
         let password = self.passwordField.text
         let email = self.emailField.text
@@ -122,10 +123,13 @@ class SignUpViewController: VCWithKeyboard , UITextFieldDelegate {
         }
         
         if(hasError == false) {
-    
+            print(username! + email! + password!)
             SVProgressHUD.show()
             Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
+                print("its okay it workeD")
+                print(error)
                 if (error == nil) {
+                     print("its okay it workeD twice")
                     SVProgressHUD.dismiss()
                     let user = Auth.auth().currentUser
                     if let user = user{
@@ -136,15 +140,15 @@ class SignUpViewController: VCWithKeyboard , UITextFieldDelegate {
                             if let error = error {
                                 print("error")
                             }else{
-                                print("its okay it workeD")
+                                print("done")
                             }
                         })
                     }
                     SVProgressHUD.showSuccess(withStatus: "Welcome to Dyce!")
-                    DispatchQueue.main.async(execute: { () -> Void in
-                        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
-                        self.present(viewController, animated: true, completion: nil)
-                    })
+//                    DispatchQueue.main.async(execute: { () -> Void in
+//                        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarController")
+//                        self.present(viewController, animated: true, completion: nil)
+//                    })
                 }
                 else {
                     SVProgressHUD.dismiss()

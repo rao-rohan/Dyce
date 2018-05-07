@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //auto login
         var storyboard: UIStoryboard!
         if let _ = Auth.auth().currentUser {
+            AppStorage.PersonalInfo.uid = (Auth.auth().currentUser?.uid)!
+            AppStorage.PersonalInfo.username = (Auth.auth().currentUser?.displayName)!
             storyboard = UIStoryboard(name: "App", bundle: nil)
         } else {
             storyboard = UIStoryboard(name: "Intro", bundle: nil)

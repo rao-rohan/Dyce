@@ -48,7 +48,7 @@
             <objects>
                 <tableViewController title="QuestionsViewController" hidesBottomBarWhenPushed="YES" id="Tq7-z1-6XU" customClass="QuestionsViewController" customModule="DyceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="400" sectionHeaderHeight="28" sectionFooterHeight="28" id="B2F-Qb-QTj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.81960784313725488" green="0.84705882352941175" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,7 +403,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xiv-cn-ARc" customClass="DetailViewController" customModule="DyceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="MrD-Fp-2O2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="643"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -496,11 +496,11 @@
                         <viewControllerLayoutGuide type="bottom" id="WHb-I8-taT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w5l-YH-RdI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1B-eh-qip">
-                                <rect key="frame" x="321" y="651" width="42" height="31"/>
+                                <rect key="frame" x="321" y="739" width="42" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="NhZ-gb-Z7E"/>
                                 </constraints>
@@ -513,13 +513,13 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEr-hf-zmV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="643"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="687"/>
                                 <connections>
                                     <segue destination="xiv-cn-ARc" kind="embed" identifier="repliesTableView" id="dRH-C2-NUS"/>
                                 </connections>
                             </containerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a reply..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sH-iw-wy3">
-                                <rect key="frame" x="8" y="651" width="301" height="31"/>
+                                <rect key="frame" x="8" y="739" width="301" height="31"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -637,7 +637,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="bah-B7-LRF">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="bah-B7-LRF">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -954,17 +954,17 @@
                         <viewControllerLayoutGuide type="bottom" id="duH-Gt-LNl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sST-v8-Hqk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CRS-Xm-sXs">
-                                <rect key="frame" x="21" y="25" width="45" height="24.666666666666671"/>
+                                <rect key="frame" x="21" y="69" width="45" height="24.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iu-2t-3wA">
-                                <rect key="frame" x="214" y="30" width="140" height="30"/>
+                                <rect key="frame" x="214" y="74" width="140" height="30"/>
                                 <color key="backgroundColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="7aF-DW-T8a"/>
@@ -990,13 +990,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type your Post!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZe-fA-cQw">
-                                <rect key="frame" x="20.999999999999993" y="72.666666666666657" width="116.33333333333331" height="23.333333333333329"/>
+                                <rect key="frame" x="20.999999999999993" y="72.666666666666671" width="116.33333333333331" height="23.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-LJ-sTD">
-                                <rect key="frame" x="50" y="184" width="275" height="316"/>
+                                <rect key="frame" x="50" y="184" width="275" height="453"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="568" id="1JW-Bm-OFI"/>
                                     <constraint firstAttribute="width" constant="275" id="Ykf-ea-41i"/>
@@ -1051,6 +1051,7 @@
                         <outlet property="nameLabel" destination="CRS-Xm-sXs" id="niF-M3-vcn"/>
                         <outlet property="placeHolderText" destination="fZe-fA-cQw" id="X3S-kB-lpJ"/>
                         <outlet property="postTextView" destination="kax-XE-flO" id="Z3M-ZO-ufi"/>
+                        <segue destination="eOv-1g-ALE" kind="show" identifier="backtoFeed" id="h6M-JW-RCZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUg-CF-8cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1068,6 +1069,8 @@
         <image name="user_male_circle" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="D2t-R7-LPn"/>
+        <segue reference="h6M-JW-RCZ"/>
         <segue reference="S2n-xJ-rqB"/>
     </inferredMetricsTieBreakers>
 </document>

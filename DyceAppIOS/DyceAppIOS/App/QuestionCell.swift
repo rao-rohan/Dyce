@@ -15,22 +15,40 @@ class QuestionCell: UITableViewCell {
 
     private func reloadData(){
         questionLabel.text = question.question
-        
         //converts TimeStamp to String
+        var timeWord = "second"
         let secondsSinceEpoch = TimeInterval(question.time.seconds)
-        let secondsAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
-        let minutesAgo = (Int) (secondsAgo / 60)
+        var timeAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
+       // print("\(timeAgo)" + timeWord)
+        if(timeAgo > 60 && timeWord == "second"){ // more than 60 seconds
+            timeAgo /= 60 // now in minutes
+            timeWord = "minute"
+          //  print("\(timeAgo)" + timeWord)
+        }
+        if(timeAgo > 60 && timeWord == "minute") {//if more than 60 minutes
+            timeAgo /= 60 //now in hours
+            timeWord = "hour"
+          //  print("\(timeAgo)" + timeWord)
+        }
+        if(timeAgo > 24 && timeWord == "hour" ){ //if more than 24 hours ago
+            timeAgo /= 24 //now in days
+            timeWord = "day"
+          //  print("\(timeAgo)" + timeWord)
+        }
         
-        timeLabel.text = "\(minutesAgo) min ago"
+        if(timeAgo > 1){ //making the time word gramatically correct
+            timeWord += "s"
+          //  print("\(timeAgo)" + timeWord)
+        }
         
-        let date = NSDate(timeIntervalSince1970: secondsSinceEpoch)
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = TimeZone.current //Set timezone that you want
-        dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = "HH:mm" //Specify your format that you want
-        
-        repliesLabel.text = "\(question.numReplies)"
+        let timeSince = (Int) (timeAgo) //casts to an integer
+        timeLabel.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
+      //  print("\(timeAgo)" + timeWord)
+        var replies = " reply"
+        if(question.numReplies != 1){
+            replies = " replies"
+        }
+        repliesLabel.text = "\(question.numReplies)" + replies
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
         categoryLabel.text = question.category
     }

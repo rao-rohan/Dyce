@@ -14,7 +14,10 @@ class QuestionsViewController: UITableViewController, CLLocationManagerDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let db = Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
         self.tableView.backgroundColor = UIColor(hexString: "f2f2f2")
         tableView.estimatedRowHeight = 200
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -87,18 +90,18 @@ class QuestionsViewController: UITableViewController, CLLocationManagerDelegate,
     
     @objc private func fetchQuestions(){
         questions.removeAll()
-
+        print("called")
         let postsCollection = Firestore.firestore().collection(NameFile.Firestore.posts)
         postsCollection.getDocuments { (snapshot, error) in
             if let documents = snapshot?.documents{
                 for document in documents{
-
+                    
                     let creatorUID = document[NameFile.Firestore.creatorUID] as! String
                     let creatorUsername = document[NameFile.Firestore.creatorUsername] as! String
                     let postID = document.documentID
                     let location = document[NameFile.Firestore.postLocation] as! GeoPoint
                     let category = document[NameFile.Firestore.postCategory] as! String
-                    let time = Timestamp(date: document[NameFile.Firestore.postTime])
+                    let time = document[NameFile.Firestore.postTime] as! Timestamp
                     let question = document[NameFile.Firestore.postQuestion] as! String
                     let imageURL = document[NameFile.Firestore.postImageURL] as? String
                     
@@ -119,10 +122,21 @@ class QuestionsViewController: UITableViewController, CLLocationManagerDelegate,
                                 self.questions.append(Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count))
                             }
                         }
+//                        for question in self.questions{
+//                            print(question.time)
+//                        }
                     })
+                    
                 }
             }
+            
         }
+        print("here11111")
+        self.questions.sort(by: { $0.time.seconds > $1.time.seconds})
+        for question in self.questions{
+            print(question.time)
+        }
+        
     }
     
 }

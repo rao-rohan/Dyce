@@ -79,9 +79,8 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         let question = Question()
         var hasError = false
         let alert = SCLAlertView()
-        
-        time = Timestamp()
-        
+        time = Timestamp.init()
+        print(time)
         if selectedCategory != nil {
             question.category = selectedCategory!
         } else {
@@ -109,10 +108,14 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         question.time = time
         question.creatorUID = AppStorage.PersonalInfo.uid
         question.creatorUsername = AppStorage.PersonalInfo.username
+        print(question.creatorUID)
+        print(question.creatorUsername)
         
         if(hasError == false) {
             SVProgressHUD.show()
+            print(hasError)
             question.pushToFirestore()
+            performSegue(withIdentifier: "backtoFeed", sender: nil)
         }
     }
     

@@ -11,12 +11,12 @@ class Question {
     var postID: String
     var location: GeoPoint
     var category: String
-    var time: String
+    var time: Timestamp
     var question: String
     var numReplies: Int
     var image: UIImage?
     
-    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location: GeoPoint, _category: String, _time: String, _question: String, _numReplies: Int, _image: UIImage? = nil) {
+    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location: GeoPoint, _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
         creatorUID = _creatorUID
         creatorUsername = _creatorUsername
         postID = _postID
@@ -34,7 +34,7 @@ class Question {
         postID = ""
         location = GeoPoint(latitude: 0.0, longitude: 0.0)
         category = ""
-        time = ""
+        time = Timestamp(date: Date(timeIntervalSinceNow: 0))
         question = ""
         numReplies = 0
         image = nil

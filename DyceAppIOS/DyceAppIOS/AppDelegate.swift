@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  DyceAppIOS
-//
-//  Created by Nikhil Sridhar on 5/6/18.
-//  Copyright © 2018 NikhilandRohan. All rights reserved.
-//
-
 import UIKit
 import Firebase
 
@@ -26,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storyboard = UIStoryboard(name: "Intro", bundle: nil)
         }
         
-        //storyboard = UIStoryboard(name: "Intro", bundle: nil)
         window?.rootViewController = storyboard.instantiateInitialViewController()
         
         return true

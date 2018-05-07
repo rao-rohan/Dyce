@@ -9,6 +9,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - !private "CollectionReference"
+- !private "Date"
 - "Dictionary"
 - !private "Firestore"
 - "GeoPoint"
@@ -20,6 +21,7 @@ depends-top-level:
 - !private "StorageReference"
 - "String"
 - !private "StringLiteralType"
+- "Timestamp"
 - "UIImage"
 - !private "UIImagePNGRepresentation"
 depends-member:
@@ -72,6 +74,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "reference"]
 - !private ["s23CustomStringConvertibleP", "setData"]
 - !private ["s23CustomStringConvertibleP", "storage"]
+- !private ["10Foundation4DateV", "init"]
 - !private ["s9DecodableP", "absoluteString"]
 - !private ["s9DecodableP", "init"]
 - !private ["So17DocumentReferenceC", "setData"]
@@ -156,6 +159,7 @@ depends-member:
 - !private ["10DyceAppIOS8NameFileV", "Firestore"]
 - !private ["So5QueryC", "document"]
 - !private ["10DyceAppIOS8QuestionC", "CollectionReference"]
+- !private ["10DyceAppIOS8QuestionC", "Date"]
 - !private ["10DyceAppIOS8QuestionC", "Firestore"]
 - ["10DyceAppIOS8QuestionC", "GeoPoint"]
 - ["10DyceAppIOS8QuestionC", "Int"]
@@ -164,6 +168,7 @@ depends-member:
 - !private ["10DyceAppIOS8QuestionC", "Storage"]
 - !private ["10DyceAppIOS8QuestionC", "StorageReference"]
 - ["10DyceAppIOS8QuestionC", "String"]
+- ["10DyceAppIOS8QuestionC", "Timestamp"]
 - ["10DyceAppIOS8QuestionC", "UIImage"]
 - !private ["10DyceAppIOS8QuestionC", "UIImagePNGRepresentation"]
 - ["10DyceAppIOS8QuestionC", "category"]
@@ -181,6 +186,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "success"]
 - !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["So13SVProgressHUDC", "dismiss"]
 - !private ["s8SequenceP", "init"]
 - !private ["So7StorageC", "reference"]
@@ -198,6 +204,7 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So9TimestampC", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "dismiss"]
 - !private ["So12UIAppearanceP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
@@ -245,6 +252,7 @@ depends-nominal:
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
 - !private "s9DecodableP"
 - !private "So17DocumentReferenceC"
 - !private "s9EncodableP"
@@ -283,6 +291,7 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So9TimestampC"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -548,4 +557,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "930e35ed897c605375f3a19606787de9"
+interface-hash: "e8068ef3846ead2af479c9f90180b672"

@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "9b2c324264f781bb2c26496084c6f1ed"
-build_time: [1525708521, 192733000]
+build_time: [1525711642, 543563000]
 inputs:
   "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/Sources/Bindable.swift": [1525669170, 0]
   "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/Sources/Connectable.swift": [1525669170, 0]

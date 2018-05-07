@@ -1,11 +1,3 @@
-//
-//  NewPostViewController.swift
-//  Questions
-//
-//  Created by Rohan Rao on 10/02/17.
-//  Copyright © 2017 Rohan Rao. All rights reserved.
-//
-
 import Foundation
 import ChameleonFramework
 import SVProgressHUD
@@ -29,6 +21,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     let locationManager = CLLocationManager()
     var imagePickerController: UIImagePickerController?
     var toolbar: UIToolbar!
+    var time : Timestamp!
     
     override var prefersStatusBarHidden : Bool {
         return true
@@ -36,15 +29,20 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         postTextView.sizeToFit()
         postTextView.layoutIfNeeded()
         postTextView.delegate = self
-        nameLabel.text = Auth.auth().currentUser?.displayName
+        
+        nameLabel.text = AppStorage.PersonalInfo.username
+        
         categoryButton.titleLabel?.textAlignment = NSTextAlignment.center
+        
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
         if(locationManager.location != nil) {
             locationExists = true
         }
@@ -71,7 +69,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         cameraButton.tintColor = UIColor.flatGray
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let postButton = UIBarButtonItem(title: "POST", style: .plain, target: self, action: #selector(NewPostViewController.uploadPost))
-        postButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "ProximaNova-Bold", size: 16.0)!, NSAttributedStringKey.foregroundColor: UIColor.flatGray], for: UIControlState())
+        postButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Avenir", size: 16.0)!, NSAttributedStringKey.foregroundColor: UIColor.flatGray], for: .normal)
         toolbar.items = [cameraButton, space, postButton]
         toolbar.sizeToFit()
         return toolbar
@@ -81,8 +79,10 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         let question = Question()
         var hasError = false
         let alert = SCLAlertView()
-    
-        if(selectedCategory != nil) {
+        
+        time = Timestamp()
+        
+        if selectedCategory != nil {
             question.category = selectedCategory!
         } else {
             alert.showError("Error", subTitle: "Please select a category")
@@ -101,9 +101,14 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         } else {
             alert.showError("Error", subTitle: "Couldn't get location!")
         }
+        
         if let image = image {
             question.image = image
         }
+        
+        question.time = time
+        question.creatorUID = AppStorage.PersonalInfo.uid
+        question.creatorUsername = AppStorage.PersonalInfo.username
         
         if(hasError == false) {
             SVProgressHUD.show()

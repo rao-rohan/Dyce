@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "eb33a344e82dc41f405bafd853e99e23"
-build_time: [1525708534, 745088000]
+build_time: [1525711660, 113416000]
 inputs:
   "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/Bond/BNDInvocation.swift": [1525669157, 0]
   "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/Bond/Bond.swift": [1525669157, 0]

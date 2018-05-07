@@ -14,10 +14,15 @@ provides-dynamic-lookup:
 - "timeLabel"
 - "usernameLabel"
 depends-top-level:
+- !private "-"
+- !private "/"
 - "AssignmentPrecedence"
+- !private "Int"
+- !private "NSDate"
 - "Question"
 - "QuestionImageCell"
 - !private "StringLiteralType"
+- !private "TimeInterval"
 - "UIButton"
 - "UIImageView"
 - "UILabel"
@@ -25,7 +30,12 @@ depends-top-level:
 - "UIView"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["So15CALayerDelegateP", "Int"]
+- !private ["So15CALayerDelegateP", "NSDate"]
 - ["So15CALayerDelegateP", "Question"]
+- !private ["So15CALayerDelegateP", "TimeInterval"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "categoryLabel"]
 - !private ["So15CALayerDelegateP", "image"]
@@ -39,7 +49,10 @@ depends-member:
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "timeLabel"]
 - !private ["So15CALayerDelegateP", "usernameLabel"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "NSDate"]
 - ["s7CVarArgP", "Question"]
+- !private ["s7CVarArgP", "TimeInterval"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "categoryLabel"]
 - !private ["s7CVarArgP", "image"]
@@ -49,13 +62,18 @@ depends-member:
 - !private ["s7CVarArgP", "questionLabel"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "repliesLabel"]
+- !private ["s7CVarArgP", "seconds"]
 - !private ["s7CVarArgP", "setTitle"]
 - !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "timeIntervalSince1970"]
 - !private ["s7CVarArgP", "timeLabel"]
 - !private ["s7CVarArgP", "usernameLabel"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "NSDate"]
 - ["s28CustomDebugStringConvertibleP", "Question"]
+- !private ["s28CustomDebugStringConvertibleP", "TimeInterval"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "categoryLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
@@ -65,13 +83,19 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "questionLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "repliesLabel"]
+- !private ["s28CustomDebugStringConvertibleP", "seconds"]
 - !private ["s28CustomDebugStringConvertibleP", "setTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince1970"]
 - !private ["s28CustomDebugStringConvertibleP", "timeLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "usernameLabel"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "timeIntervalSince1970"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "NSDate"]
 - ["s23CustomStringConvertibleP", "Question"]
+- !private ["s23CustomStringConvertibleP", "TimeInterval"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "categoryLabel"]
 - !private ["s23CustomStringConvertibleP", "image"]
@@ -81,13 +105,19 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "questionLabel"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "repliesLabel"]
+- !private ["s23CustomStringConvertibleP", "seconds"]
 - !private ["s23CustomStringConvertibleP", "setTitle"]
 - !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "timeIntervalSince1970"]
 - !private ["s23CustomStringConvertibleP", "timeLabel"]
 - !private ["s23CustomStringConvertibleP", "usernameLabel"]
 - !private ["s9DecodableP", "init"]
+- !private ["Sd", "init"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "NSDate"]
 - ["s9EquatableP", "Question"]
+- !private ["s9EquatableP", "TimeInterval"]
 - ["s9EquatableP", ""]
 - !private ["s9EquatableP", "categoryLabel"]
 - !private ["s9EquatableP", "image"]
@@ -98,15 +128,24 @@ depends-member:
 - !private ["s9EquatableP", "questionLabel"]
 - !private ["s9EquatableP", "reloadData"]
 - !private ["s9EquatableP", "repliesLabel"]
+- !private ["s9EquatableP", "seconds"]
 - !private ["s9EquatableP", "setTitle"]
 - !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "timeIntervalSince1970"]
 - !private ["s9EquatableP", "timeLabel"]
 - !private ["s9EquatableP", "usernameLabel"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "NSDate"]
 - ["s8HashableP", "Question"]
+- !private ["s8HashableP", "TimeInterval"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "categoryLabel"]
 - !private ["s8HashableP", "image"]
@@ -116,13 +155,19 @@ depends-member:
 - !private ["s8HashableP", "questionLabel"]
 - !private ["s8HashableP", "reloadData"]
 - !private ["s8HashableP", "repliesLabel"]
+- !private ["s8HashableP", "seconds"]
 - !private ["s8HashableP", "setTitle"]
 - !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "timeIntervalSince1970"]
 - !private ["s8HashableP", "timeLabel"]
 - !private ["s8HashableP", "usernameLabel"]
+- !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "NSDate"]
 - ["So8NSCodingP", "Question"]
+- !private ["So8NSCodingP", "TimeInterval"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "categoryLabel"]
 - !private ["So8NSCodingP", "image"]
@@ -134,9 +179,18 @@ depends-member:
 - !private ["So8NSCodingP", "repliesLabel"]
 - !private ["So8NSCodingP", "setTitle"]
 - !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "timeIntervalSince1970"]
 - !private ["So8NSCodingP", "timeLabel"]
 - !private ["So8NSCodingP", "usernameLabel"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "seconds"]
+- !private ["So9NSCopyingP", "timeIntervalSince1970"]
+- !private ["So6NSDateC", "init"]
+- !private ["So6NSDateC", "timeIntervalSince1970"]
+- !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "NSDate"]
 - ["So8NSObjectC", "Question"]
+- !private ["So8NSObjectC", "TimeInterval"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
@@ -150,11 +204,16 @@ depends-member:
 - ["So8NSObjectC", "questionLabel"]
 - ["So8NSObjectC", "reloadData"]
 - ["So8NSObjectC", "repliesLabel"]
+- !private ["So8NSObjectC", "seconds"]
 - !private ["So8NSObjectC", "setTitle"]
 - !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "timeIntervalSince1970"]
 - ["So8NSObjectC", "timeLabel"]
 - ["So8NSObjectC", "usernameLabel"]
+- !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "NSDate"]
 - ["So16NSObjectProtocolP", "Question"]
+- !private ["So16NSObjectProtocolP", "TimeInterval"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So16NSObjectProtocolP", "categoryLabel"]
 - !private ["So16NSObjectProtocolP", "image"]
@@ -164,10 +223,15 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "questionLabel"]
 - !private ["So16NSObjectProtocolP", "reloadData"]
 - !private ["So16NSObjectProtocolP", "repliesLabel"]
+- !private ["So16NSObjectProtocolP", "seconds"]
 - !private ["So16NSObjectProtocolP", "setTitle"]
 - !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "timeIntervalSince1970"]
 - !private ["So16NSObjectProtocolP", "timeLabel"]
 - !private ["So16NSObjectProtocolP", "usernameLabel"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "timeIntervalSince1970"]
+- !private ["s7NumericP", "init"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["10DyceAppIOS8QuestionC", "category"]
 - !private ["10DyceAppIOS8QuestionC", "creatorUsername"]
@@ -176,7 +240,10 @@ depends-member:
 - !private ["10DyceAppIOS8QuestionC", "numReplies"]
 - !private ["10DyceAppIOS8QuestionC", "question"]
 - !private ["10DyceAppIOS8QuestionC", "time"]
+- !private ["10DyceAppIOS17QuestionImageCellC", "Int"]
+- !private ["10DyceAppIOS17QuestionImageCellC", "NSDate"]
 - ["10DyceAppIOS17QuestionImageCellC", "Question"]
+- !private ["10DyceAppIOS17QuestionImageCellC", "TimeInterval"]
 - ["10DyceAppIOS17QuestionImageCellC", "UIButton"]
 - ["10DyceAppIOS17QuestionImageCellC", "UIImageView"]
 - ["10DyceAppIOS17QuestionImageCellC", "UILabel"]
@@ -196,13 +263,20 @@ depends-member:
 - !private ["s16RawRepresentableP", "normal"]
 - !private ["s8SequenceP", "init"]
 - !private ["s10SetAlgebraP", "normal"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "init"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So9TimestampC", "seconds"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "Int"]
+- !private ["So29UIAccessibilityIdentificationP", "NSDate"]
 - ["So29UIAccessibilityIdentificationP", "Question"]
+- !private ["So29UIAccessibilityIdentificationP", "TimeInterval"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "categoryLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
@@ -216,7 +290,10 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "timeLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "usernameLabel"]
+- !private ["So12UIAppearanceP", "Int"]
+- !private ["So12UIAppearanceP", "NSDate"]
 - ["So12UIAppearanceP", "Question"]
+- !private ["So12UIAppearanceP", "TimeInterval"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "categoryLabel"]
 - !private ["So12UIAppearanceP", "image"]
@@ -230,7 +307,10 @@ depends-member:
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "timeLabel"]
 - !private ["So12UIAppearanceP", "usernameLabel"]
+- !private ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "NSDate"]
 - ["So21UIAppearanceContainerP", "Question"]
+- !private ["So21UIAppearanceContainerP", "TimeInterval"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "categoryLabel"]
 - !private ["So21UIAppearanceContainerP", "image"]
@@ -248,7 +328,10 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "setTitle"]
 - !private ["SC14UIControlStateV", "normal"]
+- !private ["So17UICoordinateSpaceP", "Int"]
+- !private ["So17UICoordinateSpaceP", "NSDate"]
 - ["So17UICoordinateSpaceP", "Question"]
+- !private ["So17UICoordinateSpaceP", "TimeInterval"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "categoryLabel"]
 - !private ["So17UICoordinateSpaceP", "image"]
@@ -262,7 +345,10 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "timeLabel"]
 - !private ["So17UICoordinateSpaceP", "usernameLabel"]
+- !private ["So13UIDynamicItemP", "Int"]
+- !private ["So13UIDynamicItemP", "NSDate"]
 - ["So13UIDynamicItemP", "Question"]
+- !private ["So13UIDynamicItemP", "TimeInterval"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "categoryLabel"]
 - !private ["So13UIDynamicItemP", "image"]
@@ -276,7 +362,10 @@ depends-member:
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "timeLabel"]
 - !private ["So13UIDynamicItemP", "usernameLabel"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "NSDate"]
 - ["So18UIFocusEnvironmentP", "Question"]
+- !private ["So18UIFocusEnvironmentP", "TimeInterval"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "categoryLabel"]
 - !private ["So18UIFocusEnvironmentP", "image"]
@@ -290,7 +379,10 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "timeLabel"]
 - !private ["So18UIFocusEnvironmentP", "usernameLabel"]
+- !private ["So11UIFocusItemP", "Int"]
+- !private ["So11UIFocusItemP", "NSDate"]
 - ["So11UIFocusItemP", "Question"]
+- !private ["So11UIFocusItemP", "TimeInterval"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "categoryLabel"]
 - !private ["So11UIFocusItemP", "image"]
@@ -304,7 +396,10 @@ depends-member:
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "timeLabel"]
 - !private ["So11UIFocusItemP", "usernameLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "Int"]
+- !private ["So27UIGestureRecognizerDelegateP", "NSDate"]
 - ["So27UIGestureRecognizerDelegateP", "Question"]
+- !private ["So27UIGestureRecognizerDelegateP", "TimeInterval"]
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "categoryLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
@@ -317,7 +412,10 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "usernameLabel"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSDate"]
 - ["So30UIPasteConfigurationSupportingP", "Question"]
+- !private ["So30UIPasteConfigurationSupportingP", "TimeInterval"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "categoryLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
@@ -331,7 +429,10 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "timeLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "usernameLabel"]
+- !private ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "NSDate"]
 - ["So11UIResponderC", "Question"]
+- !private ["So11UIResponderC", "TimeInterval"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
@@ -349,7 +450,10 @@ depends-member:
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "timeLabel"]
 - ["So11UIResponderC", "usernameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "NSDate"]
 - ["So30UIResponderStandardEditActionsP", "Question"]
+- !private ["So30UIResponderStandardEditActionsP", "TimeInterval"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "categoryLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
@@ -364,7 +468,10 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "timeLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "usernameLabel"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setTitle"]
+- !private ["So15UITableViewCellC", "Int"]
+- !private ["So15UITableViewCellC", "NSDate"]
 - ["So15UITableViewCellC", "Question"]
+- !private ["So15UITableViewCellC", "TimeInterval"]
 - ["So15UITableViewCellC", "UIButton"]
 - ["So15UITableViewCellC", "UIImageView"]
 - ["So15UITableViewCellC", "UILabel"]
@@ -380,7 +487,10 @@ depends-member:
 - ["So15UITableViewCellC", "repliesLabel"]
 - ["So15UITableViewCellC", "timeLabel"]
 - ["So15UITableViewCellC", "usernameLabel"]
+- !private ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "NSDate"]
 - ["So18UITraitEnvironmentP", "Question"]
+- !private ["So18UITraitEnvironmentP", "TimeInterval"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "categoryLabel"]
 - !private ["So18UITraitEnvironmentP", "image"]
@@ -394,7 +504,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "timeLabel"]
 - !private ["So18UITraitEnvironmentP", "usernameLabel"]
+- !private ["So6UIViewC", "Int"]
+- !private ["So6UIViewC", "NSDate"]
 - ["So6UIViewC", "Question"]
+- !private ["So6UIViewC", "TimeInterval"]
 - ["So6UIViewC", "UIButton"]
 - ["So6UIViewC", "UIImageView"]
 - ["So6UIViewC", "UILabel"]
@@ -412,7 +525,13 @@ depends-member:
 - !private ["So6UIViewC", "text"]
 - ["So6UIViewC", "timeLabel"]
 - ["So6UIViewC", "usernameLabel"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Int"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "NSDate"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "Question"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "TimeInterval"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "categoryLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "image"]
@@ -427,11 +546,18 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "timeLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "usernameLabel"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "timeIntervalSince1970"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSDate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Question"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeInterval"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "categoryLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
@@ -441,14 +567,18 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "questionLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "repliesLabel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "seconds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeIntervalSince1970"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameLabel"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "s10CollectionP"
@@ -458,18 +588,28 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
+- !private "Sd"
 - !private "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s13FloatingPointP"
 - "s8HashableP"
+- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So6NSDateC"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s7NumericP"
 - !private "s9OptionSetP"
 - "10DyceAppIOS8QuestionC"
 - "10DyceAppIOS17QuestionImageCellC"
@@ -477,10 +617,14 @@ depends-nominal:
 - !private "s16RawRepresentableP"
 - !private "s8SequenceP"
 - !private "s10SetAlgebraP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So9TimestampC"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -503,12 +647,18 @@ depends-nominal:
 - "So15UITableViewCellC"
 - "So18UITraitEnvironmentP"
 - "So6UIViewC"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"

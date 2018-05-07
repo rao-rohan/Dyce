@@ -15,10 +15,15 @@ class QuestionImageCell: UITableViewCell {
     
     private func reloadData(){
         questionLabel.text = question.question
-        timeLabel.text = question.time
         repliesLabel.text = "\(question.numReplies)"
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
         postImage.image = question.image
         categoryLabel.text = question.category
+        
+        let secondsSinceEpoch = TimeInterval(question.time.seconds)
+        let secondsAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
+        let minutesAgo = (Int) (secondsAgo / 60)
+        
+        timeLabel.text = "\(minutesAgo) min ago"
     }
 }

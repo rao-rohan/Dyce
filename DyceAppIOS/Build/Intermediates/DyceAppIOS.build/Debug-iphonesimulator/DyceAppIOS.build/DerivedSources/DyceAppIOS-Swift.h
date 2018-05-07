@@ -309,9 +309,8 @@ SWIFT_CLASS("_TtC10DyceAppIOS17QuestionImageCell")
 
 SWIFT_CLASS("_TtC10DyceAppIOS23QuestionsViewController")
 @interface QuestionsViewController : UITableViewController <CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 - (void)viewDidLoad;
-@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)unwindToQuestionsViewController:(UIStoryboardSegue * _Nonnull)segue;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

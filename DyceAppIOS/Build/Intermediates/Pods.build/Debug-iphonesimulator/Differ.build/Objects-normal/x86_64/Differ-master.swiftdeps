@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "7bca3af141a8a82e9f74321e9160252c"
-build_time: [1525708521, 192621000]
+build_time: [1525711642, 270663000]
 inputs:
   "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Diff+UIKit.swift": [1525669163, 0]
   "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Diff.swift": [1525669163, 0]

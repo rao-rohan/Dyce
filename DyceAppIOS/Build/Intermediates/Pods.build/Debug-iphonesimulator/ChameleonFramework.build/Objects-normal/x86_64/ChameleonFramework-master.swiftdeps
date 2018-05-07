@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "4da605cb988425789373aeb487da24c9"
+build_time: [1525673312, 189227000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/ChameleonFramework/Pod/Classes/Swift/ChameleonShorthand.swift": [1525669150, 0]

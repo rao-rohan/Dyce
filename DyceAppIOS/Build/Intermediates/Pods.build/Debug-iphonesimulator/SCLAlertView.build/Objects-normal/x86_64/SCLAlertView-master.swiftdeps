@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "e32785c4060400fbf8b718427ef7709e"
+build_time: [1525673388, 246262000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/SCLAlertView/SCLAlertView/SCLAlertView.swift": [1525669172, 0]
+  "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/SCLAlertView/SCLAlertView/SCLExtensions.swift": [1525669172, 0]

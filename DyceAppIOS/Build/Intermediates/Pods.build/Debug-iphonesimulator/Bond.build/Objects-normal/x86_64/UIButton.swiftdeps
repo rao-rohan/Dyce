@@ -1,0 +1,286 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["11ReactiveKit0A10ExtensionsP", "title"]
+- ["11ReactiveKit0A10ExtensionsP", "tap"]
+- ["11ReactiveKit0A10ExtensionsP", "isSelected"]
+- ["11ReactiveKit0A10ExtensionsP", "isHighlighted"]
+- ["11ReactiveKit0A10ExtensionsP", "backgroungImage"]
+- ["11ReactiveKit0A10ExtensionsP", "backgroundImage"]
+- ["11ReactiveKit0A10ExtensionsP", "image"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AssignmentPrecedence"
+- "Bond"
+- "Bool"
+- "ReactiveExtensions"
+- "SafeSignal"
+- "String"
+- "UIButton"
+- "UIImage"
+- "Void"
+depends-member:
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "isHighlighted"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "isSelected"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "setBackgroundImage"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "setImage"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "setTitle"]
+- !private ["So15CALayerDelegateP", "isHighlighted"]
+- !private ["So15CALayerDelegateP", "isSelected"]
+- !private ["So15CALayerDelegateP", "setBackgroundImage"]
+- !private ["So15CALayerDelegateP", "setImage"]
+- !private ["So15CALayerDelegateP", "setTitle"]
+- !private ["s7CVarArgP", "isHighlighted"]
+- !private ["s7CVarArgP", "isSelected"]
+- !private ["s7CVarArgP", "setBackgroundImage"]
+- !private ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "setTitle"]
+- !private ["s28CustomDebugStringConvertibleP", "isHighlighted"]
+- !private ["s28CustomDebugStringConvertibleP", "isSelected"]
+- !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
+- !private ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "setTitle"]
+- !private ["s23CustomStringConvertibleP", "isHighlighted"]
+- !private ["s23CustomStringConvertibleP", "isSelected"]
+- !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
+- !private ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "setTitle"]
+- !private ["11ReactiveKit13DeallocatableP", "isHighlighted"]
+- !private ["11ReactiveKit13DeallocatableP", "isSelected"]
+- !private ["11ReactiveKit13DeallocatableP", "setBackgroundImage"]
+- !private ["11ReactiveKit13DeallocatableP", "setImage"]
+- !private ["11ReactiveKit13DeallocatableP", "setTitle"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "isHighlighted"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "isSelected"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "setBackgroundImage"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "setImage"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "setTitle"]
+- !private ["s9EquatableP", "isHighlighted"]
+- !private ["s9EquatableP", "isSelected"]
+- !private ["s9EquatableP", "normal"]
+- !private ["s9EquatableP", "setBackgroundImage"]
+- !private ["s9EquatableP", "setImage"]
+- !private ["s9EquatableP", "setTitle"]
+- !private ["s9EquatableP", "touchUpInside"]
+- !private ["s25ExpressibleByArrayLiteralP", "normal"]
+- !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
+- !private ["s8HashableP", "isHighlighted"]
+- !private ["s8HashableP", "isSelected"]
+- !private ["s8HashableP", "setBackgroundImage"]
+- !private ["s8HashableP", "setImage"]
+- !private ["s8HashableP", "setTitle"]
+- !private ["So8NSCodingP", "isHighlighted"]
+- !private ["So8NSCodingP", "isSelected"]
+- !private ["So8NSCodingP", "setBackgroundImage"]
+- !private ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "setTitle"]
+- !private ["So8NSObjectC", "isHighlighted"]
+- !private ["So8NSObjectC", "isSelected"]
+- !private ["So8NSObjectC", "setBackgroundImage"]
+- !private ["So8NSObjectC", "setImage"]
+- !private ["So8NSObjectC", "setTitle"]
+- !private ["So16NSObjectProtocolP", "isHighlighted"]
+- !private ["So16NSObjectProtocolP", "isSelected"]
+- !private ["So16NSObjectProtocolP", "setBackgroundImage"]
+- !private ["So16NSObjectProtocolP", "setImage"]
+- !private ["So16NSObjectProtocolP", "setTitle"]
+- !private ["s9OptionSetP", "normal"]
+- !private ["s9OptionSetP", "touchUpInside"]
+- !private ["s16RawRepresentableP", "normal"]
+- !private ["s16RawRepresentableP", "touchUpInside"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- ["11ReactiveKit0A10ExtensionsP", "Bond"]
+- ["11ReactiveKit0A10ExtensionsP", "Bool"]
+- ["11ReactiveKit0A10ExtensionsP", "SafeSignal"]
+- ["11ReactiveKit0A10ExtensionsP", "String"]
+- ["11ReactiveKit0A10ExtensionsP", "UIButton"]
+- ["11ReactiveKit0A10ExtensionsP", "UIImage"]
+- ["11ReactiveKit0A10ExtensionsP", "Void"]
+- ["11ReactiveKit0A10ExtensionsP", "backgroundImage"]
+- ["11ReactiveKit0A10ExtensionsP", "backgroungImage"]
+- !private ["11ReactiveKit0A10ExtensionsP", "bond"]
+- !private ["11ReactiveKit0A10ExtensionsP", "controlEvents"]
+- ["11ReactiveKit0A10ExtensionsP", "image"]
+- ["11ReactiveKit0A10ExtensionsP", "isHighlighted"]
+- ["11ReactiveKit0A10ExtensionsP", "isSelected"]
+- ["11ReactiveKit0A10ExtensionsP", "tap"]
+- ["11ReactiveKit0A10ExtensionsP", "title"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "isHighlighted"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "isSelected"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "setBackgroundImage"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "setImage"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "setTitle"]
+- !private ["s10SetAlgebraP", "normal"]
+- !private ["s10SetAlgebraP", "touchUpInside"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHighlighted"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isSelected"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setBackgroundImage"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setImage"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitle"]
+- !private ["So29UIAccessibilityIdentificationP", "isHighlighted"]
+- !private ["So29UIAccessibilityIdentificationP", "isSelected"]
+- !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
+- !private ["So29UIAccessibilityIdentificationP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "setTitle"]
+- !private ["So12UIAppearanceP", "isHighlighted"]
+- !private ["So12UIAppearanceP", "isSelected"]
+- !private ["So12UIAppearanceP", "setBackgroundImage"]
+- !private ["So12UIAppearanceP", "setImage"]
+- !private ["So12UIAppearanceP", "setTitle"]
+- !private ["So21UIAppearanceContainerP", "isHighlighted"]
+- !private ["So21UIAppearanceContainerP", "isSelected"]
+- !private ["So21UIAppearanceContainerP", "setBackgroundImage"]
+- !private ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "setTitle"]
+- !private ["So8UIButtonC", "isHighlighted"]
+- !private ["So8UIButtonC", "isSelected"]
+- !private ["So8UIButtonC", "setBackgroundImage"]
+- !private ["So8UIButtonC", "setImage"]
+- !private ["So8UIButtonC", "setTitle"]
+- !private ["So9UIControlC", "isHighlighted"]
+- !private ["So9UIControlC", "isSelected"]
+- !private ["So9UIControlC", "setBackgroundImage"]
+- !private ["So9UIControlC", "setImage"]
+- !private ["So9UIControlC", "setTitle"]
+- !private ["SC15UIControlEventsV", "touchUpInside"]
+- !private ["SC14UIControlStateV", "normal"]
+- !private ["So17UICoordinateSpaceP", "isHighlighted"]
+- !private ["So17UICoordinateSpaceP", "isSelected"]
+- !private ["So17UICoordinateSpaceP", "setBackgroundImage"]
+- !private ["So17UICoordinateSpaceP", "setImage"]
+- !private ["So17UICoordinateSpaceP", "setTitle"]
+- !private ["So13UIDynamicItemP", "isHighlighted"]
+- !private ["So13UIDynamicItemP", "isSelected"]
+- !private ["So13UIDynamicItemP", "setBackgroundImage"]
+- !private ["So13UIDynamicItemP", "setImage"]
+- !private ["So13UIDynamicItemP", "setTitle"]
+- !private ["So18UIFocusEnvironmentP", "isHighlighted"]
+- !private ["So18UIFocusEnvironmentP", "isSelected"]
+- !private ["So18UIFocusEnvironmentP", "setBackgroundImage"]
+- !private ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "setTitle"]
+- !private ["So11UIFocusItemP", "isHighlighted"]
+- !private ["So11UIFocusItemP", "isSelected"]
+- !private ["So11UIFocusItemP", "setBackgroundImage"]
+- !private ["So11UIFocusItemP", "setImage"]
+- !private ["So11UIFocusItemP", "setTitle"]
+- !private ["So30UIPasteConfigurationSupportingP", "isHighlighted"]
+- !private ["So30UIPasteConfigurationSupportingP", "isSelected"]
+- !private ["So30UIPasteConfigurationSupportingP", "setBackgroundImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "setTitle"]
+- !private ["So11UIResponderC", "isHighlighted"]
+- !private ["So11UIResponderC", "isSelected"]
+- !private ["So11UIResponderC", "setBackgroundImage"]
+- !private ["So11UIResponderC", "setImage"]
+- !private ["So11UIResponderC", "setTitle"]
+- !private ["So30UIResponderStandardEditActionsP", "isHighlighted"]
+- !private ["So30UIResponderStandardEditActionsP", "isSelected"]
+- !private ["So30UIResponderStandardEditActionsP", "setBackgroundImage"]
+- !private ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "setTitle"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isHighlighted"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isSelected"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setBackgroundImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "setTitle"]
+- !private ["So18UITraitEnvironmentP", "isHighlighted"]
+- !private ["So18UITraitEnvironmentP", "isSelected"]
+- !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
+- !private ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "setTitle"]
+- !private ["So6UIViewC", "isHighlighted"]
+- !private ["So6UIViewC", "isSelected"]
+- !private ["So6UIViewC", "setBackgroundImage"]
+- !private ["So6UIViewC", "setImage"]
+- !private ["So6UIViewC", "setTitle"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isHighlighted"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isSelected"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setBackgroundImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setImage"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "setTitle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isHighlighted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isSelected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setBackgroundImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
+depends-nominal:
+- !private "11ReactiveKit31BindingExecutionContextProviderP"
+- !private "So15CALayerDelegateP"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "11ReactiveKit13DeallocatableP"
+- !private "11ReactiveKit18DisposeBagProviderP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "s9OptionSetP"
+- !private "s16RawRepresentableP"
+- "11ReactiveKit0A10ExtensionsP"
+- !private "11ReactiveKit0A18ExtensionsProviderP"
+- !private "s10SetAlgebraP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
+- !private "So9UIControlC"
+- !private "SC15UIControlEventsV"
+- !private "SC14UIControlStateV"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "79a00ecbcb4c04b11e4941cf38789e74"

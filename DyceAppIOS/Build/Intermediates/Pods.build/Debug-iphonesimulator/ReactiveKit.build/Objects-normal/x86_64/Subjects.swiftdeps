@@ -1,0 +1,605 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SubjectProtocol"
+- "Subject"
+- "PublishSubject"
+- "ReplaySubject"
+- "ReplayOneSubject"
+- "ReplayLoadingValueSubject"
+- "AnySubject"
+provides-nominal:
+- "11ReactiveKit15SubjectProtocolP"
+- "11ReactiveKit7SubjectC"
+- "11ReactiveKit14PublishSubjectC"
+- "11ReactiveKit13ReplaySubjectC"
+- "11ReactiveKit16ReplayOneSubjectC"
+- "11ReactiveKit25ReplayLoadingValueSubjectC"
+- "11ReactiveKit10AnySubjectC"
+provides-member:
+- ["11ReactiveKit15SubjectProtocolP", ""]
+- ["11ReactiveKit7SubjectC", ""]
+- ["11ReactiveKit14PublishSubjectC", ""]
+- ["11ReactiveKit13ReplaySubjectC", ""]
+- ["11ReactiveKit16ReplayOneSubjectC", ""]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", ""]
+- ["11ReactiveKit10AnySubjectC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "+"
+- !private "<"
+- "=="
+- "AnySubject"
+- "Array"
+- "ArraySlice"
+- "AssignmentPrecedence"
+- "BindableProtocol"
+- !private "BlockDisposable"
+- "BooleanLiteralType"
+- "Disposable"
+- "DisposeBag"
+- "Event"
+- "Int"
+- "Int64"
+- "LoadingState"
+- "NSRecursiveLock"
+- "NoError"
+- "Observer"
+- "ObserverProtocol"
+- "PublishSubject"
+- "ReplayLoadingValueSubject"
+- "ReplayOneSubject"
+- "ReplaySubject"
+- "Signal"
+- "SignalProtocol"
+- "StringLiteralType"
+- "Subject"
+- "SubjectProtocol"
+- "Swift"
+- "Void"
+depends-member:
+- ["11ReactiveKit10AnySubjectC", "Disposable"]
+- ["11ReactiveKit10AnySubjectC", "DisposeBag"]
+- ["11ReactiveKit10AnySubjectC", "Element"]
+- ["11ReactiveKit10AnySubjectC", "Error"]
+- ["11ReactiveKit10AnySubjectC", "Event"]
+- ["11ReactiveKit10AnySubjectC", "Observer"]
+- ["11ReactiveKit10AnySubjectC", "SubjectProtocol"]
+- ["11ReactiveKit10AnySubjectC", "_Default_Element"]
+- ["11ReactiveKit10AnySubjectC", "_Default_Error"]
+- !private ["11ReactiveKit10AnySubjectC", "baseObserve"]
+- !private ["11ReactiveKit10AnySubjectC", "baseOn"]
+- ["11ReactiveKit10AnySubjectC", "deinit"]
+- ["11ReactiveKit10AnySubjectC", "disposeBag"]
+- ["11ReactiveKit10AnySubjectC", "init"]
+- ["11ReactiveKit10AnySubjectC", "observe"]
+- ["11ReactiveKit10AnySubjectC", "on"]
+- !private ["Sa", "append"]
+- !private ["Sa", "index"]
+- !private ["Sa", "remove"]
+- !private ["s10ArraySliceV", "append"]
+- !private ["s10ArraySliceV", "forEach"]
+- !private ["s10ArraySliceV", "suffix"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "forEach"]
+- !private ["s23BidirectionalCollectionP", "index"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "remove"]
+- !private ["s23BidirectionalCollectionP", "suffix"]
+- !private ["s13BinaryIntegerP", "max"]
+- !private ["11ReactiveKit16BindableProtocolP", "BlockDisposable"]
+- ["11ReactiveKit16BindableProtocolP", "DisposeBag"]
+- ["11ReactiveKit16BindableProtocolP", "Element"]
+- ["11ReactiveKit16BindableProtocolP", "Error"]
+- !private ["11ReactiveKit16BindableProtocolP", "Int"]
+- ["11ReactiveKit16BindableProtocolP", "NSRecursiveLock"]
+- ["11ReactiveKit16BindableProtocolP", ""]
+- ["11ReactiveKit16BindableProtocolP", "_Default_Element"]
+- ["11ReactiveKit16BindableProtocolP", "_Default_Error"]
+- !private ["11ReactiveKit16BindableProtocolP", "add"]
+- ["11ReactiveKit16BindableProtocolP", "bind"]
+- !private ["11ReactiveKit16BindableProtocolP", "buffer"]
+- !private ["11ReactiveKit16BindableProtocolP", "bufferSize"]
+- !private ["11ReactiveKit16BindableProtocolP", "disposeBag"]
+- !private ["11ReactiveKit16BindableProtocolP", "forEachObserver"]
+- !private ["11ReactiveKit16BindableProtocolP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "isTerminated"]
+- !private ["11ReactiveKit16BindableProtocolP", "lastEvent"]
+- !private ["11ReactiveKit16BindableProtocolP", "lock"]
+- !private ["11ReactiveKit16BindableProtocolP", "nextToken"]
+- ["11ReactiveKit16BindableProtocolP", "observe"]
+- !private ["11ReactiveKit16BindableProtocolP", "observers"]
+- ["11ReactiveKit16BindableProtocolP", "on"]
+- !private ["11ReactiveKit16BindableProtocolP", "send"]
+- !private ["11ReactiveKit16BindableProtocolP", "state"]
+- !private ["11ReactiveKit16BindableProtocolP", "terminalEvent"]
+- !private ["11ReactiveKit16BindableProtocolP", "willAdd"]
+- !private ["11ReactiveKit15BlockDisposableC", "deinit"]
+- !private ["11ReactiveKit15BlockDisposableC", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "index"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "lock"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "remove"]
+- !private ["s7CVarArgP", "unlock"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "forEach"]
+- !private ["s10CollectionP", "index"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "remove"]
+- !private ["s10CollectionP", "suffix"]
+- ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "max"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "lock"]
+- !private ["s28CustomDebugStringConvertibleP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "suffix"]
+- !private ["s28CustomDebugStringConvertibleP", "unlock"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "max"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "index"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "max"]
+- !private ["s17CustomReflectableP", "remove"]
+- !private ["s17CustomReflectableP", "suffix"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "lock"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "remove"]
+- !private ["s23CustomStringConvertibleP", "suffix"]
+- !private ["s23CustomStringConvertibleP", "unlock"]
+- ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "lock"]
+- !private ["11ReactiveKit13DeallocatableP", "unlock"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "index"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "max"]
+- !private ["s9DecodableP", "remove"]
+- !private ["11ReactiveKit10DisposableP", "deallocated"]
+- ["11ReactiveKit10DisposableP", "init"]
+- !private ["11ReactiveKit10DisposeBagC", "deallocated"]
+- ["11ReactiveKit10DisposeBagC", "init"]
+- !private ["11ReactiveKit18DisposeBagProtocolP", "deallocated"]
+- ["11ReactiveKit18DisposeBagProtocolP", "init"]
+- ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "lock"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "unlock"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "index"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "max"]
+- !private ["s9EncodableP", "remove"]
+- !private ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "forEach"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "index"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "loadedOrFailedAtLeastOnce"]
+- ["s9EquatableP", "loading"]
+- !private ["s9EquatableP", "lock"]
+- !private ["s9EquatableP", "max"]
+- ["s9EquatableP", "notStarted"]
+- !private ["s9EquatableP", "remove"]
+- !private ["s9EquatableP", "suffix"]
+- !private ["s9EquatableP", "unlock"]
+- ["11ReactiveKit5EventO", "completed"]
+- ["11ReactiveKit5EventO", "failed"]
+- !private ["11ReactiveKit5EventO", "isTerminal"]
+- ["11ReactiveKit5EventO", "next"]
+- !private ["11ReactiveKit16ExecutionContextV", "nonRecursive"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- !private ["s25ExpressibleByArrayLiteralP", "index"]
+- !private ["s25ExpressibleByArrayLiteralP", "remove"]
+- !private ["s25ExpressibleByArrayLiteralP", "suffix"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "max"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "max"]
+- !private ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "loadedOrFailedAtLeastOnce"]
+- ["s8HashableP", "loading"]
+- !private ["s8HashableP", "lock"]
+- !private ["s8HashableP", "max"]
+- ["s8HashableP", "notStarted"]
+- !private ["s8HashableP", "unlock"]
+- !private ["Si", "max"]
+- ["11ReactiveKit12LoadingStateO", "failed"]
+- ["11ReactiveKit12LoadingStateO", "loaded"]
+- ["11ReactiveKit12LoadingStateO", "loading"]
+- ["11ReactiveKit20LoadingStateProtocolP", "failed"]
+- ["11ReactiveKit20LoadingStateProtocolP", "loaded"]
+- ["11ReactiveKit20LoadingStateProtocolP", "loading"]
+- ["11ReactiveKit4LockP", "init"]
+- !private ["11ReactiveKit4LockP", "lock"]
+- !private ["11ReactiveKit4LockP", "unlock"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "max"]
+- ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "max"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "forEach"]
+- !private ["s17MutableCollectionP", "index"]
+- !private ["s17MutableCollectionP", "remove"]
+- !private ["s17MutableCollectionP", "suffix"]
+- ["So9NSLockingP", "init"]
+- !private ["So9NSLockingP", "lock"]
+- !private ["So9NSLockingP", "unlock"]
+- !private ["So8NSObjectC", "lock"]
+- !private ["So8NSObjectC", "unlock"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "lock"]
+- !private ["So16NSObjectProtocolP", "unlock"]
+- !private ["So15NSRecursiveLockC", "deinit"]
+- ["So15NSRecursiveLockC", "init"]
+- !private ["So15NSRecursiveLockC", "lock"]
+- !private ["So15NSRecursiveLockC", "unlock"]
+- ["11ReactiveKit7NoErrorO", "deinit"]
+- !private ["s7NumericP", "max"]
+- !private ["11ReactiveKit16ObserverProtocolP", "BlockDisposable"]
+- ["11ReactiveKit16ObserverProtocolP", "DisposeBag"]
+- ["11ReactiveKit16ObserverProtocolP", "Element"]
+- ["11ReactiveKit16ObserverProtocolP", "Error"]
+- !private ["11ReactiveKit16ObserverProtocolP", "Int"]
+- ["11ReactiveKit16ObserverProtocolP", "NSRecursiveLock"]
+- ["11ReactiveKit16ObserverProtocolP", ""]
+- ["11ReactiveKit16ObserverProtocolP", "_Default_Element"]
+- ["11ReactiveKit16ObserverProtocolP", "_Default_Error"]
+- !private ["11ReactiveKit16ObserverProtocolP", "add"]
+- !private ["11ReactiveKit16ObserverProtocolP", "baseObserve"]
+- !private ["11ReactiveKit16ObserverProtocolP", "baseOn"]
+- ["11ReactiveKit16ObserverProtocolP", "bind"]
+- !private ["11ReactiveKit16ObserverProtocolP", "buffer"]
+- !private ["11ReactiveKit16ObserverProtocolP", "bufferSize"]
+- !private ["11ReactiveKit16ObserverProtocolP", "disposeBag"]
+- !private ["11ReactiveKit16ObserverProtocolP", "forEachObserver"]
+- !private ["11ReactiveKit16ObserverProtocolP", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "isTerminated"]
+- !private ["11ReactiveKit16ObserverProtocolP", "lastEvent"]
+- !private ["11ReactiveKit16ObserverProtocolP", "lock"]
+- !private ["11ReactiveKit16ObserverProtocolP", "nextToken"]
+- ["11ReactiveKit16ObserverProtocolP", "observe"]
+- !private ["11ReactiveKit16ObserverProtocolP", "observers"]
+- ["11ReactiveKit16ObserverProtocolP", "on"]
+- !private ["11ReactiveKit16ObserverProtocolP", "send"]
+- !private ["11ReactiveKit16ObserverProtocolP", "state"]
+- !private ["11ReactiveKit16ObserverProtocolP", "terminalEvent"]
+- !private ["11ReactiveKit16ObserverProtocolP", "willAdd"]
+- ["11ReactiveKit14PublishSubjectC", "deinit"]
+- ["11ReactiveKit14PublishSubjectC", "init"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "forEach"]
+- !private ["s22RandomAccessCollectionP", "index"]
+- !private ["s22RandomAccessCollectionP", "remove"]
+- !private ["s22RandomAccessCollectionP", "suffix"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "forEach"]
+- !private ["s26RangeReplaceableCollectionP", "index"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "remove"]
+- !private ["s26RangeReplaceableCollectionP", "suffix"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "lock"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "unlock"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "ArraySlice"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "Error"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "Event"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "Int"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "LoadingError"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "LoadingState"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "Observer"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "State"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "Val"]
+- !private ["11ReactiveKit25ReplayLoadingValueSubjectC", "buffer"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "bufferSize"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "deinit"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "init"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "send"]
+- !private ["11ReactiveKit25ReplayLoadingValueSubjectC", "state"]
+- !private ["11ReactiveKit25ReplayLoadingValueSubjectC", "terminalEvent"]
+- ["11ReactiveKit25ReplayLoadingValueSubjectC", "willAdd"]
+- ["11ReactiveKit16ReplayOneSubjectC", "Element"]
+- ["11ReactiveKit16ReplayOneSubjectC", "Error"]
+- ["11ReactiveKit16ReplayOneSubjectC", "Event"]
+- ["11ReactiveKit16ReplayOneSubjectC", "Observer"]
+- ["11ReactiveKit16ReplayOneSubjectC", "deinit"]
+- ["11ReactiveKit16ReplayOneSubjectC", "init"]
+- !private ["11ReactiveKit16ReplayOneSubjectC", "lastEvent"]
+- ["11ReactiveKit16ReplayOneSubjectC", "send"]
+- !private ["11ReactiveKit16ReplayOneSubjectC", "terminalEvent"]
+- ["11ReactiveKit16ReplayOneSubjectC", "willAdd"]
+- ["11ReactiveKit13ReplaySubjectC", "ArraySlice"]
+- ["11ReactiveKit13ReplaySubjectC", "Element"]
+- ["11ReactiveKit13ReplaySubjectC", "Error"]
+- ["11ReactiveKit13ReplaySubjectC", "Event"]
+- ["11ReactiveKit13ReplaySubjectC", "Int"]
+- ["11ReactiveKit13ReplaySubjectC", "Observer"]
+- !private ["11ReactiveKit13ReplaySubjectC", "buffer"]
+- ["11ReactiveKit13ReplaySubjectC", "bufferSize"]
+- ["11ReactiveKit13ReplaySubjectC", "deinit"]
+- ["11ReactiveKit13ReplaySubjectC", "init"]
+- ["11ReactiveKit13ReplaySubjectC", "send"]
+- ["11ReactiveKit13ReplaySubjectC", "willAdd"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "forEach"]
+- !private ["s8SequenceP", "index"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "remove"]
+- !private ["s8SequenceP", "suffix"]
+- !private ["11ReactiveKit6SignalV", "deinit"]
+- !private ["11ReactiveKit6SignalV", "observeIn"]
+- !private ["11ReactiveKit6SignalV", "observeNext"]
+- !private ["11ReactiveKit6SignalV", "take"]
+- !private ["11ReactiveKit14SignalProtocolP", "BlockDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "DisposeBag"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- !private ["11ReactiveKit14SignalProtocolP", "Int"]
+- ["11ReactiveKit14SignalProtocolP", "NSRecursiveLock"]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Element"]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Error"]
+- !private ["11ReactiveKit14SignalProtocolP", "add"]
+- !private ["11ReactiveKit14SignalProtocolP", "baseObserve"]
+- !private ["11ReactiveKit14SignalProtocolP", "baseOn"]
+- ["11ReactiveKit14SignalProtocolP", "bind"]
+- !private ["11ReactiveKit14SignalProtocolP", "buffer"]
+- !private ["11ReactiveKit14SignalProtocolP", "bufferSize"]
+- !private ["11ReactiveKit14SignalProtocolP", "disposeBag"]
+- !private ["11ReactiveKit14SignalProtocolP", "forEachObserver"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "isTerminated"]
+- !private ["11ReactiveKit14SignalProtocolP", "lastEvent"]
+- !private ["11ReactiveKit14SignalProtocolP", "lock"]
+- !private ["11ReactiveKit14SignalProtocolP", "nextToken"]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- !private ["11ReactiveKit14SignalProtocolP", "observeIn"]
+- !private ["11ReactiveKit14SignalProtocolP", "observeNext"]
+- !private ["11ReactiveKit14SignalProtocolP", "observers"]
+- ["11ReactiveKit14SignalProtocolP", "on"]
+- !private ["11ReactiveKit14SignalProtocolP", "send"]
+- !private ["11ReactiveKit14SignalProtocolP", "state"]
+- !private ["11ReactiveKit14SignalProtocolP", "take"]
+- !private ["11ReactiveKit14SignalProtocolP", "terminalEvent"]
+- !private ["11ReactiveKit14SignalProtocolP", "willAdd"]
+- !private ["s13SignedIntegerP", "max"]
+- !private ["s13SignedNumericP", "max"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "max"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["11ReactiveKit7SubjectC", "ArraySlice"]
+- !private ["11ReactiveKit7SubjectC", "BlockDisposable"]
+- ["11ReactiveKit7SubjectC", "Disposable"]
+- ["11ReactiveKit7SubjectC", "DisposeBag"]
+- ["11ReactiveKit7SubjectC", "Element"]
+- ["11ReactiveKit7SubjectC", "Error"]
+- ["11ReactiveKit7SubjectC", "Event"]
+- ["11ReactiveKit7SubjectC", "Int"]
+- ["11ReactiveKit7SubjectC", "Int64"]
+- ["11ReactiveKit7SubjectC", "LoadingError"]
+- ["11ReactiveKit7SubjectC", "LoadingState"]
+- ["11ReactiveKit7SubjectC", "NSRecursiveLock"]
+- ["11ReactiveKit7SubjectC", "NoError"]
+- ["11ReactiveKit7SubjectC", "Observer"]
+- ["11ReactiveKit7SubjectC", "Signal"]
+- ["11ReactiveKit7SubjectC", "State"]
+- ["11ReactiveKit7SubjectC", "Token"]
+- ["11ReactiveKit7SubjectC", "Val"]
+- ["11ReactiveKit7SubjectC", "Void"]
+- ["11ReactiveKit7SubjectC", ""]
+- ["11ReactiveKit7SubjectC", "_Default_Element"]
+- ["11ReactiveKit7SubjectC", "_Default_Error"]
+- !private ["11ReactiveKit7SubjectC", "add"]
+- ["11ReactiveKit7SubjectC", "bind"]
+- ["11ReactiveKit7SubjectC", "buffer"]
+- ["11ReactiveKit7SubjectC", "bufferSize"]
+- ["11ReactiveKit7SubjectC", "deinit"]
+- ["11ReactiveKit7SubjectC", "disposeBag"]
+- !private ["11ReactiveKit7SubjectC", "forEachObserver"]
+- ["11ReactiveKit7SubjectC", "init"]
+- ["11ReactiveKit7SubjectC", "isTerminated"]
+- ["11ReactiveKit7SubjectC", "lastEvent"]
+- ["11ReactiveKit7SubjectC", "lock"]
+- !private ["11ReactiveKit7SubjectC", "nextToken"]
+- ["11ReactiveKit7SubjectC", "observe"]
+- !private ["11ReactiveKit7SubjectC", "observers"]
+- ["11ReactiveKit7SubjectC", "on"]
+- ["11ReactiveKit7SubjectC", "send"]
+- ["11ReactiveKit7SubjectC", "state"]
+- ["11ReactiveKit7SubjectC", "terminalEvent"]
+- ["11ReactiveKit7SubjectC", "willAdd"]
+- !private ["11ReactiveKit15SubjectProtocolP", "BlockDisposable"]
+- ["11ReactiveKit15SubjectProtocolP", "DisposeBag"]
+- ["11ReactiveKit15SubjectProtocolP", "Element"]
+- ["11ReactiveKit15SubjectProtocolP", "Error"]
+- !private ["11ReactiveKit15SubjectProtocolP", "Int"]
+- ["11ReactiveKit15SubjectProtocolP", "NSRecursiveLock"]
+- ["11ReactiveKit15SubjectProtocolP", ""]
+- ["11ReactiveKit15SubjectProtocolP", "_Default_Element"]
+- ["11ReactiveKit15SubjectProtocolP", "_Default_Error"]
+- !private ["11ReactiveKit15SubjectProtocolP", "add"]
+- !private ["11ReactiveKit15SubjectProtocolP", "baseObserve"]
+- !private ["11ReactiveKit15SubjectProtocolP", "baseOn"]
+- ["11ReactiveKit15SubjectProtocolP", "bind"]
+- !private ["11ReactiveKit15SubjectProtocolP", "buffer"]
+- !private ["11ReactiveKit15SubjectProtocolP", "bufferSize"]
+- !private ["11ReactiveKit15SubjectProtocolP", "disposeBag"]
+- !private ["11ReactiveKit15SubjectProtocolP", "forEachObserver"]
+- !private ["11ReactiveKit15SubjectProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "isTerminated"]
+- !private ["11ReactiveKit15SubjectProtocolP", "lastEvent"]
+- !private ["11ReactiveKit15SubjectProtocolP", "lock"]
+- !private ["11ReactiveKit15SubjectProtocolP", "nextToken"]
+- ["11ReactiveKit15SubjectProtocolP", "observe"]
+- !private ["11ReactiveKit15SubjectProtocolP", "observers"]
+- ["11ReactiveKit15SubjectProtocolP", "on"]
+- !private ["11ReactiveKit15SubjectProtocolP", "send"]
+- !private ["11ReactiveKit15SubjectProtocolP", "state"]
+- !private ["11ReactiveKit15SubjectProtocolP", "terminalEvent"]
+- !private ["11ReactiveKit15SubjectProtocolP", "willAdd"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s14_ArrayProtocolP", "index"]
+- !private ["s14_ArrayProtocolP", "remove"]
+- !private ["s14_ArrayProtocolP", "suffix"]
+- !private ["s18_BitwiseOperationsP", "max"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "index"]
+- !private ["s24_DestructorSafeContainerP", "remove"]
+- !private ["s24_DestructorSafeContainerP", "suffix"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "max"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "index"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "max"]
+- !private ["s21_ObjectiveCBridgeableP", "remove"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "11ReactiveKit10AnySubjectC"
+- !private "Sa"
+- !private "s10ArraySliceV"
+- "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- "11ReactiveKit16BindableProtocolP"
+- !private "11ReactiveKit15BlockDisposableC"
+- !private "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- "s9DecodableP"
+- "11ReactiveKit10DisposableP"
+- "11ReactiveKit10DisposeBagC"
+- "11ReactiveKit18DisposeBagProtocolP"
+- "11ReactiveKit18DisposeBagProviderP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "11ReactiveKit5EventO"
+- !private "11ReactiveKit16ExecutionContextV"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- "11ReactiveKit12LoadingStateO"
+- "11ReactiveKit20LoadingStateProtocolP"
+- "11ReactiveKit4LockP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So9NSLockingP"
+- !private "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So15NSRecursiveLockC"
+- "11ReactiveKit7NoErrorO"
+- !private "s7NumericP"
+- "11ReactiveKit16ObserverProtocolP"
+- "11ReactiveKit14PublishSubjectC"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- "11ReactiveKit25ReplayLoadingValueSubjectC"
+- "11ReactiveKit16ReplayOneSubjectC"
+- "11ReactiveKit13ReplaySubjectC"
+- "s8SequenceP"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "11ReactiveKit7SubjectC"
+- "11ReactiveKit15SubjectProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s18_BitwiseOperationsP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "7fde07c09c17a2ee9b204c415447f7d4"

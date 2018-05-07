@@ -1,0 +1,6 @@
+framework module Pods_DyceAppIOS {
+  umbrella header "Pods-DyceAppIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,270 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DynamicSubject"
+- "DynamicSubject2"
+provides-nominal:
+- "4Bond15DynamicSubject2V"
+provides-member:
+- ["4Bond15DynamicSubject2V", ""]
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["11ReactiveKit0A10ExtensionsP", "dynamicSubject"]
+- ["11ReactiveKit0A10ExtensionsP", "dynamicSubject"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- "AssignmentPrecedence"
+- "BindableProtocol"
+- "BindingExecutionContextProvider"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "Deallocatable"
+- "Disposable"
+- "DynamicSubject"
+- "DynamicSubject2"
+- "Event"
+- "ExecutionContext"
+- "NoError"
+- !private "NonDisposable"
+- "PublishSubject"
+- "ReactiveExtensions"
+- "Result"
+- "Signal"
+- "SubjectProtocol"
+- "Swift"
+- "Void"
+depends-member:
+- !private ["11ReactiveKit16BindableProtocolP", "DynamicSubject2"]
+- ["11ReactiveKit16BindableProtocolP", "Element"]
+- ["11ReactiveKit16BindableProtocolP", "Error"]
+- !private ["11ReactiveKit16BindableProtocolP", "NonDisposable"]
+- ["11ReactiveKit16BindableProtocolP", "PublishSubject"]
+- ["11ReactiveKit16BindableProtocolP", ""]
+- ["11ReactiveKit16BindableProtocolP", "_Default_Element"]
+- ["11ReactiveKit16BindableProtocolP", "_Default_Error"]
+- ["11ReactiveKit16BindableProtocolP", "bind"]
+- !private ["11ReactiveKit16BindableProtocolP", "context"]
+- !private ["11ReactiveKit16BindableProtocolP", "getter"]
+- ["11ReactiveKit16BindableProtocolP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "next"]
+- ["11ReactiveKit16BindableProtocolP", "observe"]
+- ["11ReactiveKit16BindableProtocolP", "on"]
+- !private ["11ReactiveKit16BindableProtocolP", "setter"]
+- !private ["11ReactiveKit16BindableProtocolP", "signal"]
+- !private ["11ReactiveKit16BindableProtocolP", "subject"]
+- !private ["11ReactiveKit16BindableProtocolP", "target"]
+- !private ["11ReactiveKit16BindableProtocolP", "triggerEventOnSetting"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "bindingExecutionContext"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "failure"]
+- ["s23CustomStringConvertibleP", "success"]
+- !private ["11ReactiveKit13DeallocatableP", "bindingExecutionContext"]
+- !private ["11ReactiveKit13DeallocatableP", "deallocated"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["11ReactiveKit10DisposableP", "instance"]
+- ["4Bond15DynamicSubject2V", "AnyObject"]
+- ["4Bond15DynamicSubject2V", "Bool"]
+- ["4Bond15DynamicSubject2V", "Deallocatable"]
+- ["4Bond15DynamicSubject2V", "Disposable"]
+- ["4Bond15DynamicSubject2V", "DynamicSubject2"]
+- ["4Bond15DynamicSubject2V", "Element"]
+- ["4Bond15DynamicSubject2V", "Error"]
+- ["4Bond15DynamicSubject2V", "Event"]
+- ["4Bond15DynamicSubject2V", "ExecutionContext"]
+- ["4Bond15DynamicSubject2V", "NoError"]
+- !private ["4Bond15DynamicSubject2V", "NonDisposable"]
+- ["4Bond15DynamicSubject2V", "PublishSubject"]
+- ["4Bond15DynamicSubject2V", "Result"]
+- ["4Bond15DynamicSubject2V", "Signal"]
+- ["4Bond15DynamicSubject2V", "Void"]
+- ["4Bond15DynamicSubject2V", "_Default_Element"]
+- ["4Bond15DynamicSubject2V", "_Default_Error"]
+- ["4Bond15DynamicSubject2V", "bidirectionalMap"]
+- ["4Bond15DynamicSubject2V", "bind"]
+- !private ["4Bond15DynamicSubject2V", "context"]
+- ["4Bond15DynamicSubject2V", "deinit"]
+- !private ["4Bond15DynamicSubject2V", "getter"]
+- ["4Bond15DynamicSubject2V", "init"]
+- ["4Bond15DynamicSubject2V", "observe"]
+- ["4Bond15DynamicSubject2V", "on"]
+- !private ["4Bond15DynamicSubject2V", "setter"]
+- !private ["4Bond15DynamicSubject2V", "signal"]
+- !private ["4Bond15DynamicSubject2V", "subject"]
+- !private ["4Bond15DynamicSubject2V", "target"]
+- !private ["4Bond15DynamicSubject2V", "triggerEventOnSetting"]
+- ["4Bond15DynamicSubject2V", "value"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["11ReactiveKit5EventO", "completed"]
+- ["11ReactiveKit5EventO", "next"]
+- !private ["11ReactiveKit16ExecutionContextV", "execute"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["11ReactiveKit13NonDisposableV", "instance"]
+- !private ["11ReactiveKit16ObserverProtocolP", "DynamicSubject2"]
+- ["11ReactiveKit16ObserverProtocolP", "Element"]
+- ["11ReactiveKit16ObserverProtocolP", "Error"]
+- !private ["11ReactiveKit16ObserverProtocolP", "NonDisposable"]
+- ["11ReactiveKit16ObserverProtocolP", "PublishSubject"]
+- ["11ReactiveKit16ObserverProtocolP", ""]
+- ["11ReactiveKit16ObserverProtocolP", "_Default_Element"]
+- ["11ReactiveKit16ObserverProtocolP", "_Default_Error"]
+- ["11ReactiveKit16ObserverProtocolP", "bind"]
+- !private ["11ReactiveKit16ObserverProtocolP", "context"]
+- !private ["11ReactiveKit16ObserverProtocolP", "getter"]
+- ["11ReactiveKit16ObserverProtocolP", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "next"]
+- ["11ReactiveKit16ObserverProtocolP", "observe"]
+- ["11ReactiveKit16ObserverProtocolP", "on"]
+- !private ["11ReactiveKit16ObserverProtocolP", "setter"]
+- !private ["11ReactiveKit16ObserverProtocolP", "signal"]
+- !private ["11ReactiveKit16ObserverProtocolP", "subject"]
+- !private ["11ReactiveKit16ObserverProtocolP", "target"]
+- !private ["11ReactiveKit16ObserverProtocolP", "triggerEventOnSetting"]
+- ["11ReactiveKit14PublishSubjectC", "init"]
+- !private ["11ReactiveKit14PublishSubjectC", "next"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- ["11ReactiveKit0A10ExtensionsP", "BindingExecutionContextProvider"]
+- ["11ReactiveKit0A10ExtensionsP", "Bool"]
+- ["11ReactiveKit0A10ExtensionsP", "Deallocatable"]
+- ["11ReactiveKit0A10ExtensionsP", "DynamicSubject"]
+- ["11ReactiveKit0A10ExtensionsP", "ExecutionContext"]
+- ["11ReactiveKit0A10ExtensionsP", "NoError"]
+- ["11ReactiveKit0A10ExtensionsP", "Signal"]
+- ["11ReactiveKit0A10ExtensionsP", "Void"]
+- !private ["11ReactiveKit0A10ExtensionsP", "base"]
+- ["11ReactiveKit0A10ExtensionsP", "dynamicSubject"]
+- ["11ReactiveKit6ResultO", "failure"]
+- ["11ReactiveKit6ResultO", "success"]
+- ["11ReactiveKit14ResultProtocolP", "failure"]
+- ["11ReactiveKit14ResultProtocolP", "success"]
+- !private ["11ReactiveKit6SignalV", "ignoreNil"]
+- !private ["11ReactiveKit6SignalV", "merge"]
+- !private ["11ReactiveKit6SignalV", "observe"]
+- !private ["11ReactiveKit6SignalV", "start"]
+- !private ["11ReactiveKit6SignalV", "take"]
+- !private ["11ReactiveKit6SignalV", "tryMap"]
+- !private ["11ReactiveKit14SignalProtocolP", "DynamicSubject2"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- !private ["11ReactiveKit14SignalProtocolP", "NonDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "PublishSubject"]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Element"]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Error"]
+- ["11ReactiveKit14SignalProtocolP", "bind"]
+- !private ["11ReactiveKit14SignalProtocolP", "context"]
+- !private ["11ReactiveKit14SignalProtocolP", "getter"]
+- !private ["11ReactiveKit14SignalProtocolP", "ignoreNil"]
+- ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "merge"]
+- !private ["11ReactiveKit14SignalProtocolP", "next"]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- ["11ReactiveKit14SignalProtocolP", "on"]
+- !private ["11ReactiveKit14SignalProtocolP", "setter"]
+- !private ["11ReactiveKit14SignalProtocolP", "signal"]
+- !private ["11ReactiveKit14SignalProtocolP", "start"]
+- !private ["11ReactiveKit14SignalProtocolP", "subject"]
+- !private ["11ReactiveKit14SignalProtocolP", "take"]
+- !private ["11ReactiveKit14SignalProtocolP", "target"]
+- !private ["11ReactiveKit14SignalProtocolP", "triggerEventOnSetting"]
+- !private ["11ReactiveKit14SignalProtocolP", "tryMap"]
+- ["11ReactiveKit7SubjectC", "init"]
+- !private ["11ReactiveKit7SubjectC", "next"]
+- !private ["11ReactiveKit15SubjectProtocolP", "DynamicSubject2"]
+- ["11ReactiveKit15SubjectProtocolP", "Element"]
+- ["11ReactiveKit15SubjectProtocolP", "Error"]
+- !private ["11ReactiveKit15SubjectProtocolP", "NonDisposable"]
+- ["11ReactiveKit15SubjectProtocolP", "PublishSubject"]
+- ["11ReactiveKit15SubjectProtocolP", ""]
+- ["11ReactiveKit15SubjectProtocolP", "_Default_Element"]
+- ["11ReactiveKit15SubjectProtocolP", "_Default_Error"]
+- ["11ReactiveKit15SubjectProtocolP", "bind"]
+- !private ["11ReactiveKit15SubjectProtocolP", "context"]
+- !private ["11ReactiveKit15SubjectProtocolP", "getter"]
+- ["11ReactiveKit15SubjectProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "next"]
+- ["11ReactiveKit15SubjectProtocolP", "observe"]
+- ["11ReactiveKit15SubjectProtocolP", "on"]
+- !private ["11ReactiveKit15SubjectProtocolP", "setter"]
+- !private ["11ReactiveKit15SubjectProtocolP", "signal"]
+- !private ["11ReactiveKit15SubjectProtocolP", "subject"]
+- !private ["11ReactiveKit15SubjectProtocolP", "target"]
+- !private ["11ReactiveKit15SubjectProtocolP", "triggerEventOnSetting"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+depends-nominal:
+- "11ReactiveKit16BindableProtocolP"
+- !private "11ReactiveKit31BindingExecutionContextProviderP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "11ReactiveKit13DeallocatableP"
+- !private "s9DecodableP"
+- !private "11ReactiveKit10DisposableP"
+- "4Bond15DynamicSubject2V"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- "11ReactiveKit5EventO"
+- !private "11ReactiveKit16ExecutionContextV"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "11ReactiveKit13NonDisposableV"
+- "11ReactiveKit16ObserverProtocolP"
+- "11ReactiveKit14PublishSubjectC"
+- "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit6ResultO"
+- "11ReactiveKit14ResultProtocolP"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- "11ReactiveKit7SubjectC"
+- "11ReactiveKit15SubjectProtocolP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "951ef5880546b607585929e1b7ba41a4"

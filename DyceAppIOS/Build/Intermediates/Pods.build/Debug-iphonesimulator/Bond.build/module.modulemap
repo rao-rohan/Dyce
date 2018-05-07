@@ -1,0 +1,11 @@
+framework module Bond {
+  umbrella header "Bond-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Bond.Swift {
+    header "Bond-Swift.h"
+    requires objc
+}

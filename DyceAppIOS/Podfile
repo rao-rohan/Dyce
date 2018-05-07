@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DyceAppIOS' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DyceAppIOS
+
+pod 'Firebase/Core'
+pod 'Firebase/AdMob'
+pod 'Firebase/Database'
+
+pod 'Firebase/Crash'
+pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'Firebase/Performance'
+pod 'Firebase/Firestore'
+pod 'SVProgressHUD'
+pod 'DZNEmptyDataSet'
+pod 'Bond’
+pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'master'
+pod 'AlertOnboarding'
+pod 'SCLAlertView'
+pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+pod 'KMPlaceholderTextView'
+
+end

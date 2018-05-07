@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "3016799f246f7809e44c411cc93e4502"
+build_time: [1525673361, 604895000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/KMPlaceholderTextView/KMPlaceholderTextView/KMPlaceholderTextView.swift": [1525669169, 0]

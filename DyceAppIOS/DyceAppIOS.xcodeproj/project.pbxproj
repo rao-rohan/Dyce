@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDE5209FF3F100093CD0 /* AppDelegate.swift */; };
+		5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDE9209FF3F100093CD0 /* Main.storyboard */; };
+		5822CDED209FF3F200093CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEC209FF3F200093CD0 /* Assets.xcassets */; };
+		5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */; };
+		5822CDFB209FF3F300093CD0 /* DyceAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDFA209FF3F300093CD0 /* DyceAppIOSTests.swift */; };
+		5822CE06209FF3F300093CD0 /* DyceAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE05209FF3F300093CD0 /* DyceAppIOSUITests.swift */; };
+		5822CE1C209FF41200093CD0 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE15209FF41200093CD0 /* IntroVC.swift */; };
+		5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE16209FF41200093CD0 /* LoginVC.swift */; };
+		5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE17209FF41200093CD0 /* Intro.storyboard */; };
+		5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE1A209FF41200093CD0 /* SignUpVC.swift */; };
+		5822CE23209FFDC300093CD0 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE22209FFDC300093CD0 /* AppStorage.swift */; };
+		5822CE2820A0021B00093CD0 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE2720A0021A00093CD0 /* App.storyboard */; };
+		5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2920A0093C00093CD0 /* NameFile.swift */; };
+		5822CE2C20A009AB00093CD0 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */; };
+		5822CE2E20A009B000093CD0 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2D20A009B000093CD0 /* QuestionCell.swift */; };
+		5822CE3020A009B500093CD0 /* QuestionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */; };
+		5822CE3220A009E400093CD0 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE3120A009E400093CD0 /* Reply.swift */; };
+		5822CE3520A00A3A00093CD0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE3420A00A3A00093CD0 /* Question.swift */; };
+		5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE3620A0145500093CD0 /* NewPostViewController.swift */; };
+		5822CE3920A025E600093CD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE3820A025E600093CD0 /* GoogleService-Info.plist */; };
+		FB76DA1BF6F275251936B2A1 /* Pods_DyceAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EBC21955755FD1B94F1227 /* Pods_DyceAppIOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5822CDF7209FF3F300093CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5822CDDA209FF3F100093CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5822CDE1209FF3F100093CD0;
+			remoteInfo = DyceAppIOS;
+		};
+		5822CE02209FF3F300093CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5822CDDA209FF3F100093CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5822CDE1209FF3F100093CD0;
+			remoteInfo = DyceAppIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyceAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5822CDE5209FF3F100093CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5822CDEA209FF3F100093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5822CDEC209FF3F200093CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5822CDEF209FF3F200093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5822CDF1209FF3F200093CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5822CDF6209FF3F300093CD0 /* DyceAppIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyceAppIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5822CDFA209FF3F300093CD0 /* DyceAppIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyceAppIOSTests.swift; sourceTree = "<group>"; };
+		5822CDFC209FF3F300093CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5822CE01209FF3F300093CD0 /* DyceAppIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyceAppIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5822CE05209FF3F300093CD0 /* DyceAppIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyceAppIOSUITests.swift; sourceTree = "<group>"; };
+		5822CE07209FF3F300093CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5822CE15209FF41200093CD0 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		5822CE16209FF41200093CD0 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5822CE17209FF41200093CD0 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		5822CE1A209FF41200093CD0 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		5822CE22209FFDC300093CD0 /* AppStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
+		5822CE2720A0021A00093CD0 /* App.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
+		5822CE2920A0093C00093CD0 /* NameFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameFile.swift; sourceTree = "<group>"; };
+		5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		5822CE2D20A009B000093CD0 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionImageCell.swift; sourceTree = "<group>"; };
+		5822CE3120A009E400093CD0 /* Reply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
+		5822CE3420A00A3A00093CD0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5822CE3620A0145500093CD0 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		5822CE3820A025E600093CD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		609D4DC68053E25ACF8C9DB9 /* Pods-DyceAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DyceAppIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DyceAppIOS/Pods-DyceAppIOS.release.xcconfig"; sourceTree = "<group>"; };
+		A6EBC21955755FD1B94F1227 /* Pods_DyceAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DyceAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC52C8F4D95252BCA6F99CAF /* Pods-DyceAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DyceAppIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DyceAppIOS/Pods-DyceAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5822CDDF209FF3F100093CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB76DA1BF6F275251936B2A1 /* Pods_DyceAppIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5822CDF3209FF3F300093CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5822CDFE209FF3F300093CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13AABC40EBB498FCEAE9BA7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC52C8F4D95252BCA6F99CAF /* Pods-DyceAppIOS.debug.xcconfig */,
+				609D4DC68053E25ACF8C9DB9 /* Pods-DyceAppIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5822CDD9209FF3F100093CD0 = {
+			isa = PBXGroup;
+			children = (
+				5822CDE4209FF3F100093CD0 /* DyceAppIOS */,
+				5822CDF9209FF3F300093CD0 /* DyceAppIOSTests */,
+				5822CE04209FF3F300093CD0 /* DyceAppIOSUITests */,
+				5822CDE3209FF3F100093CD0 /* Products */,
+				13AABC40EBB498FCEAE9BA7D /* Pods */,
+				9ED81B7EA8ACA50DE9EB97C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5822CDE3209FF3F100093CD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */,
+				5822CDF6209FF3F300093CD0 /* DyceAppIOSTests.xctest */,
+				5822CE01209FF3F300093CD0 /* DyceAppIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5822CDE4209FF3F100093CD0 /* DyceAppIOS */ = {
+			isa = PBXGroup;
+			children = (
+				5822CE2920A0093C00093CD0 /* NameFile.swift */,
+				5822CE22209FFDC300093CD0 /* AppStorage.swift */,
+				5822CDE5209FF3F100093CD0 /* AppDelegate.swift */,
+				5822CE13209FF41200093CD0 /* Intro */,
+				5822CE3320A009E700093CD0 /* Models */,
+				5822CE2420A0014500093CD0 /* App */,
+				5822CDE9209FF3F100093CD0 /* Main.storyboard */,
+				5822CDEC209FF3F200093CD0 /* Assets.xcassets */,
+				5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */,
+				5822CDF1209FF3F200093CD0 /* Info.plist */,
+			);
+			path = DyceAppIOS;
+			sourceTree = "<group>";
+		};
+		5822CDF9209FF3F300093CD0 /* DyceAppIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5822CDFA209FF3F300093CD0 /* DyceAppIOSTests.swift */,
+				5822CDFC209FF3F300093CD0 /* Info.plist */,
+			);
+			path = DyceAppIOSTests;
+			sourceTree = "<group>";
+		};
+		5822CE04209FF3F300093CD0 /* DyceAppIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5822CE05209FF3F300093CD0 /* DyceAppIOSUITests.swift */,
+				5822CE07209FF3F300093CD0 /* Info.plist */,
+			);
+			path = DyceAppIOSUITests;
+			sourceTree = "<group>";
+		};
+		5822CE13209FF41200093CD0 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				5822CE17209FF41200093CD0 /* Intro.storyboard */,
+				5822CE15209FF41200093CD0 /* IntroVC.swift */,
+				5822CE16209FF41200093CD0 /* LoginVC.swift */,
+				5822CE1A209FF41200093CD0 /* SignUpVC.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		5822CE2420A0014500093CD0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5822CE3820A025E600093CD0 /* GoogleService-Info.plist */,
+				5822CE2720A0021A00093CD0 /* App.storyboard */,
+				5822CE3620A0145500093CD0 /* NewPostViewController.swift */,
+				5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */,
+				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
+				5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5822CE3320A009E700093CD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5822CE3420A00A3A00093CD0 /* Question.swift */,
+				5822CE3120A009E400093CD0 /* Reply.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9ED81B7EA8ACA50DE9EB97C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6EBC21955755FD1B94F1227 /* Pods_DyceAppIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5822CDE1209FF3F100093CD0 /* DyceAppIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5822CE0A209FF3F300093CD0 /* Build configuration list for PBXNativeTarget "DyceAppIOS" */;
+			buildPhases = (
+				902086AB130C6FE0E17988AD /* [CP] Check Pods Manifest.lock */,
+				5822CDDE209FF3F100093CD0 /* Sources */,
+				5822CDDF209FF3F100093CD0 /* Frameworks */,
+				5822CDE0209FF3F100093CD0 /* Resources */,
+				82BA7A010F9F7E435DD43ACD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DyceAppIOS;
+			productName = DyceAppIOS;
+			productReference = 5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5822CDF5209FF3F300093CD0 /* DyceAppIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5822CE0D209FF3F300093CD0 /* Build configuration list for PBXNativeTarget "DyceAppIOSTests" */;
+			buildPhases = (
+				5822CDF2209FF3F300093CD0 /* Sources */,
+				5822CDF3209FF3F300093CD0 /* Frameworks */,
+				5822CDF4209FF3F300093CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5822CDF8209FF3F300093CD0 /* PBXTargetDependency */,
+			);
+			name = DyceAppIOSTests;
+			productName = DyceAppIOSTests;
+			productReference = 5822CDF6209FF3F300093CD0 /* DyceAppIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5822CE00209FF3F300093CD0 /* DyceAppIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5822CE10209FF3F300093CD0 /* Build configuration list for PBXNativeTarget "DyceAppIOSUITests" */;
+			buildPhases = (
+				5822CDFD209FF3F300093CD0 /* Sources */,
+				5822CDFE209FF3F300093CD0 /* Frameworks */,
+				5822CDFF209FF3F300093CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5822CE03209FF3F300093CD0 /* PBXTargetDependency */,
+			);
+			name = DyceAppIOSUITests;
+			productName = DyceAppIOSUITests;
+			productReference = 5822CE01209FF3F300093CD0 /* DyceAppIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5822CDDA209FF3F100093CD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = NikhilandRohan;
+				TargetAttributes = {
+					5822CDE1209FF3F100093CD0 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5822CDF5209FF3F300093CD0 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5822CDE1209FF3F100093CD0;
+					};
+					5822CE00209FF3F300093CD0 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5822CDE1209FF3F100093CD0;
+					};
+				};
+			};
+			buildConfigurationList = 5822CDDD209FF3F100093CD0 /* Build configuration list for PBXProject "DyceAppIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5822CDD9209FF3F100093CD0;
+			productRefGroup = 5822CDE3209FF3F100093CD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5822CDE1209FF3F100093CD0 /* DyceAppIOS */,
+				5822CDF5209FF3F300093CD0 /* DyceAppIOSTests */,
+				5822CE00209FF3F300093CD0 /* DyceAppIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5822CDE0209FF3F100093CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */,
+				5822CDED209FF3F200093CD0 /* Assets.xcassets in Resources */,
+				5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */,
+				5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */,
+				5822CE2820A0021B00093CD0 /* App.storyboard in Resources */,
+				5822CE3920A025E600093CD0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5822CDF4209FF3F300093CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5822CDFF209FF3F300093CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82BA7A010F9F7E435DD43ACD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DyceAppIOS/Pods-DyceAppIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AlertOnboarding/AlertOnboarding.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlertOnboarding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DyceAppIOS/Pods-DyceAppIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		902086AB130C6FE0E17988AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DyceAppIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5822CDDE209FF3F100093CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5822CE1C209FF41200093CD0 /* IntroVC.swift in Sources */,
+				5822CE2C20A009AB00093CD0 /* QuestionsViewController.swift in Sources */,
+				5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */,
+				5822CE3020A009B500093CD0 /* QuestionImageCell.swift in Sources */,
+				5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */,
+				5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */,
+				5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */,
+				5822CE3220A009E400093CD0 /* Reply.swift in Sources */,
+				5822CE2E20A009B000093CD0 /* QuestionCell.swift in Sources */,
+				5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */,
+				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
+				5822CE23209FFDC300093CD0 /* AppStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5822CDF2209FF3F300093CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5822CDFB209FF3F300093CD0 /* DyceAppIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5822CDFD209FF3F300093CD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5822CE06209FF3F300093CD0 /* DyceAppIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5822CDF8209FF3F300093CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5822CDE1209FF3F100093CD0 /* DyceAppIOS */;
+			targetProxy = 5822CDF7209FF3F300093CD0 /* PBXContainerItemProxy */;
+		};
+		5822CE03209FF3F300093CD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5822CDE1209FF3F100093CD0 /* DyceAppIOS */;
+			targetProxy = 5822CE02209FF3F300093CD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5822CDE9209FF3F100093CD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5822CDEA209FF3F100093CD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5822CDEF209FF3F200093CD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5822CE08209FF3F300093CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5822CE09209FF3F300093CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5822CE0B209FF3F300093CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC52C8F4D95252BCA6F99CAF /* Pods-DyceAppIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = DyceAppIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5822CE0C209FF3F300093CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609D4DC68053E25ACF8C9DB9 /* Pods-DyceAppIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = DyceAppIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5822CE0E209FF3F300093CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = DyceAppIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DyceAppIOS.app/DyceAppIOS";
+			};
+			name = Debug;
+		};
+		5822CE0F209FF3F300093CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = DyceAppIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DyceAppIOS.app/DyceAppIOS";
+			};
+			name = Release;
+		};
+		5822CE11209FF3F300093CD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = DyceAppIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DyceAppIOS;
+			};
+			name = Debug;
+		};
+		5822CE12209FF3F300093CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				INFOPLIST_FILE = DyceAppIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DyceAppIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5822CDDD209FF3F100093CD0 /* Build configuration list for PBXProject "DyceAppIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5822CE08209FF3F300093CD0 /* Debug */,
+				5822CE09209FF3F300093CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5822CE0A209FF3F300093CD0 /* Build configuration list for PBXNativeTarget "DyceAppIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5822CE0B209FF3F300093CD0 /* Debug */,
+				5822CE0C209FF3F300093CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5822CE0D209FF3F300093CD0 /* Build configuration list for PBXNativeTarget "DyceAppIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5822CE0E209FF3F300093CD0 /* Debug */,
+				5822CE0F209FF3F300093CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5822CE10209FF3F300093CD0 /* Build configuration list for PBXNativeTarget "DyceAppIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5822CE11209FF3F300093CD0 /* Debug */,
+				5822CE12209FF3F300093CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5822CDDA209FF3F100093CD0 /* Project object */;
+}

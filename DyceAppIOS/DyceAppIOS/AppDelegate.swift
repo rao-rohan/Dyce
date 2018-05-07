@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storyboard = UIStoryboard(name: "Intro", bundle: nil)
         }
         
-        storyboard = UIStoryboard(name: "App", bundle: nil)
+        //storyboard = UIStoryboard(name: "Intro", bundle: nil)
         window?.rootViewController = storyboard.instantiateInitialViewController()
         
         return true

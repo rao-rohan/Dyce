@@ -84,7 +84,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DyceLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ta5-qa-YDx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dyceApp" translatesAutoresizingMaskIntoConstraints="NO" id="ta5-qa-YDx">
                                 <rect key="frame" x="112" y="250" width="150" height="150"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -208,7 +208,7 @@
                                     <constraint firstAttribute="width" constant="36" id="DLd-qv-BfS"/>
                                     <constraint firstAttribute="height" constant="36" id="pOe-pd-FYK"/>
                                 </constraints>
-                                <state key="normal" image="BackButton"/>
+                                <state key="normal" image="back"/>
                                 <connections>
                                     <segue destination="qMl-CC-C2S" kind="unwind" unwindAction="unwindToIntroWithSegue:" id="zDX-Dd-6cJ"/>
                                 </connections>
@@ -258,7 +258,7 @@
         <!--SignUpP1-->
         <scene sceneID="qiZ-GW-BPy">
             <objects>
-                <viewController title="SignUpP1" id="tKk-lm-54V" customClass="SignUpVC1" customModule="DyceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignUpP1" id="tKk-lm-54V" customClass="SignUpVC" customModule="DyceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fqz-yM-JKf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,7 +374,7 @@
                                     <constraint firstAttribute="height" constant="36" id="8Xw-Zr-9Ih"/>
                                     <constraint firstAttribute="width" constant="36" id="cfd-uX-iaa"/>
                                 </constraints>
-                                <state key="normal" image="BackButton"/>
+                                <state key="normal" image="back"/>
                                 <connections>
                                     <segue destination="O7h-V2-AZs" kind="unwind" unwindAction="unwindToIntroWithSegue:" id="yUp-B3-3Vk"/>
                                 </connections>
@@ -432,7 +432,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackButton" width="25" height="25"/>
-        <image name="DyceLogo" width="76" height="76"/>
+        <image name="back" width="25" height="25"/>
+        <image name="dyceApp" width="76" height="76"/>
     </resources>
 </document>

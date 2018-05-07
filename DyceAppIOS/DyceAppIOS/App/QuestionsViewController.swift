@@ -20,7 +20,6 @@ class QuestionsViewController: UITableViewController, CLLocationManagerDelegate,
         super.viewDidLoad()
         
         UIApplication.shared.statusBarStyle = .lightContent
-        self.navigationController?.navigationBar.titleTextAttributes = [kCTFontAttributeName: UIFont(name: "ProximaNova-Bold", size: 20.0)!, kCTForegroundColorAttributeName: UIColor.white] as [NSAttributedStringKey : Any]
         
         _ = Timer.scheduledTimer(timeInterval: 120.0, target: self, selector: #selector(QuestionsViewController.fetchPosts), userInfo: nil, repeats: true)
         

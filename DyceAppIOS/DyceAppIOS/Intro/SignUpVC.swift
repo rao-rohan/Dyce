@@ -155,7 +155,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                             AppStorage.PersonalInfo.username = username
                             
                             //segue to app
-                            
+                            let storyboard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
+                            if let ivc = storyboard.instantiateInitialViewController(){
+                                self.show(ivc, sender: self)
+                            }
                         }
                     })
                 }

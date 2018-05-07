@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDE5209FF3F100093CD0 /* AppDelegate.swift */; };
 		5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDE9209FF3F100093CD0 /* Main.storyboard */; };
-		5822CDED209FF3F200093CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEC209FF3F200093CD0 /* Assets.xcassets */; };
 		5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */; };
 		5822CDFB209FF3F300093CD0 /* DyceAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDFA209FF3F300093CD0 /* DyceAppIOSTests.swift */; };
 		5822CE06209FF3F300093CD0 /* DyceAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE05209FF3F300093CD0 /* DyceAppIOSUITests.swift */; };
@@ -18,7 +17,6 @@
 		5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE17209FF41200093CD0 /* Intro.storyboard */; };
 		5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE1A209FF41200093CD0 /* SignUpVC.swift */; };
 		5822CE23209FFDC300093CD0 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE22209FFDC300093CD0 /* AppStorage.swift */; };
-		5822CE2820A0021B00093CD0 /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE2720A0021A00093CD0 /* App.storyboard */; };
 		5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2920A0093C00093CD0 /* NameFile.swift */; };
 		5822CE2C20A009AB00093CD0 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */; };
 		5822CE2E20A009B000093CD0 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2D20A009B000093CD0 /* QuestionCell.swift */; };
@@ -27,6 +25,19 @@
 		5822CE3520A00A3A00093CD0 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE3420A00A3A00093CD0 /* Question.swift */; };
 		5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE3620A0145500093CD0 /* NewPostViewController.swift */; };
 		5822CE3920A025E600093CD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE3820A025E600093CD0 /* GoogleService-Info.plist */; };
+		58C32FA720A0AC14005B7C7A /* App.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FA620A0AC13005B7C7A /* App.storyboard */; };
+		58C32FA920A0ACF1005B7C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FA820A0ACF0005B7C7A /* Assets.xcassets */; };
+		58C32FB620A0AD48005B7C7A /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FAB20A0AD47005B7C7A /* ProximaNova-Light.otf */; };
+		58C32FB720A0AD48005B7C7A /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FAC20A0AD47005B7C7A /* ProximaNova-Semibold.otf */; };
+		58C32FB820A0AD48005B7C7A /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FAD20A0AD47005B7C7A /* ProximaNova-Bold.otf */; };
+		58C32FB920A0AD48005B7C7A /* ProximaNova-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FAE20A0AD47005B7C7A /* ProximaNova-Extrabold.otf */; };
+		58C32FBA20A0AD48005B7C7A /* ProximaNova-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FAF20A0AD47005B7C7A /* ProximaNova-BoldIt.otf */; };
+		58C32FBB20A0AD48005B7C7A /* ProximaNova-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FB020A0AD47005B7C7A /* ProximaNova-RegularItalic.otf */; };
+		58C32FBC20A0AD48005B7C7A /* ProximaNova-RegItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FB120A0AD47005B7C7A /* ProximaNova-RegItalic.otf */; };
+		58C32FBD20A0AD48005B7C7A /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FB220A0AD47005B7C7A /* ProximaNova-Black.otf */; };
+		58C32FBE20A0AD48005B7C7A /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FB320A0AD47005B7C7A /* ProximaNova-Regular.otf */; };
+		58C32FBF20A0AD48005B7C7A /* ProximaNova-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FB420A0AD47005B7C7A /* ProximaNova-SemiboldItalic.otf */; };
+		58C32FC020A0AD48005B7C7A /* ProximaNova-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58C32FB520A0AD47005B7C7A /* ProximaNova-LightItalic.otf */; };
 		FB76DA1BF6F275251936B2A1 /* Pods_DyceAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EBC21955755FD1B94F1227 /* Pods_DyceAppIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +62,6 @@
 		5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyceAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5822CDE5209FF3F100093CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5822CDEA209FF3F100093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5822CDEC209FF3F200093CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5822CDEF209FF3F200093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5822CDF1209FF3F200093CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5822CDF6209FF3F300093CD0 /* DyceAppIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyceAppIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +75,6 @@
 		5822CE17209FF41200093CD0 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		5822CE1A209FF41200093CD0 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5822CE22209FFDC300093CD0 /* AppStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
-		5822CE2720A0021A00093CD0 /* App.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
 		5822CE2920A0093C00093CD0 /* NameFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameFile.swift; sourceTree = "<group>"; };
 		5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		5822CE2D20A009B000093CD0 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
@@ -74,6 +83,19 @@
 		5822CE3420A00A3A00093CD0 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		5822CE3620A0145500093CD0 /* NewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		5822CE3820A025E600093CD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58C32FA620A0AC13005B7C7A /* App.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = App.storyboard; sourceTree = "<group>"; };
+		58C32FA820A0ACF0005B7C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58C32FAB20A0AD47005B7C7A /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		58C32FAC20A0AD47005B7C7A /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		58C32FAD20A0AD47005B7C7A /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		58C32FAE20A0AD47005B7C7A /* ProximaNova-Extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Extrabold.otf"; sourceTree = "<group>"; };
+		58C32FAF20A0AD47005B7C7A /* ProximaNova-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-BoldIt.otf"; sourceTree = "<group>"; };
+		58C32FB020A0AD47005B7C7A /* ProximaNova-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-RegularItalic.otf"; sourceTree = "<group>"; };
+		58C32FB120A0AD47005B7C7A /* ProximaNova-RegItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-RegItalic.otf"; sourceTree = "<group>"; };
+		58C32FB220A0AD47005B7C7A /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		58C32FB320A0AD47005B7C7A /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		58C32FB420A0AD47005B7C7A /* ProximaNova-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		58C32FB520A0AD47005B7C7A /* ProximaNova-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-LightItalic.otf"; sourceTree = "<group>"; };
 		609D4DC68053E25ACF8C9DB9 /* Pods-DyceAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DyceAppIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DyceAppIOS/Pods-DyceAppIOS.release.xcconfig"; sourceTree = "<group>"; };
 		A6EBC21955755FD1B94F1227 /* Pods_DyceAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DyceAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52C8F4D95252BCA6F99CAF /* Pods-DyceAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DyceAppIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DyceAppIOS/Pods-DyceAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,9 +168,11 @@
 				5822CE3320A009E700093CD0 /* Models */,
 				5822CE2420A0014500093CD0 /* App */,
 				5822CDE9209FF3F100093CD0 /* Main.storyboard */,
-				5822CDEC209FF3F200093CD0 /* Assets.xcassets */,
 				5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */,
+				58C32FA820A0ACF0005B7C7A /* Assets.xcassets */,
+				58C32FAA20A0AD47005B7C7A /* Fonts */,
 				5822CDF1209FF3F200093CD0 /* Info.plist */,
+				5822CE3820A025E600093CD0 /* GoogleService-Info.plist */,
 			);
 			path = DyceAppIOS;
 			sourceTree = "<group>";
@@ -185,8 +209,7 @@
 		5822CE2420A0014500093CD0 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				5822CE3820A025E600093CD0 /* GoogleService-Info.plist */,
-				5822CE2720A0021A00093CD0 /* App.storyboard */,
+				58C32FA620A0AC13005B7C7A /* App.storyboard */,
 				5822CE3620A0145500093CD0 /* NewPostViewController.swift */,
 				5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */,
 				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
@@ -202,6 +225,24 @@
 				5822CE3120A009E400093CD0 /* Reply.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		58C32FAA20A0AD47005B7C7A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				58C32FAB20A0AD47005B7C7A /* ProximaNova-Light.otf */,
+				58C32FAC20A0AD47005B7C7A /* ProximaNova-Semibold.otf */,
+				58C32FAD20A0AD47005B7C7A /* ProximaNova-Bold.otf */,
+				58C32FAE20A0AD47005B7C7A /* ProximaNova-Extrabold.otf */,
+				58C32FAF20A0AD47005B7C7A /* ProximaNova-BoldIt.otf */,
+				58C32FB020A0AD47005B7C7A /* ProximaNova-RegularItalic.otf */,
+				58C32FB120A0AD47005B7C7A /* ProximaNova-RegItalic.otf */,
+				58C32FB220A0AD47005B7C7A /* ProximaNova-Black.otf */,
+				58C32FB320A0AD47005B7C7A /* ProximaNova-Regular.otf */,
+				58C32FB420A0AD47005B7C7A /* ProximaNova-SemiboldItalic.otf */,
+				58C32FB520A0AD47005B7C7A /* ProximaNova-LightItalic.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		9ED81B7EA8ACA50DE9EB97C4 /* Frameworks */ = {
@@ -318,12 +359,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C32FB820A0AD48005B7C7A /* ProximaNova-Bold.otf in Resources */,
 				5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */,
-				5822CDED209FF3F200093CD0 /* Assets.xcassets in Resources */,
+				58C32FA720A0AC14005B7C7A /* App.storyboard in Resources */,
 				5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */,
+				58C32FB620A0AD48005B7C7A /* ProximaNova-Light.otf in Resources */,
 				5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */,
-				5822CE2820A0021B00093CD0 /* App.storyboard in Resources */,
+				58C32FB920A0AD48005B7C7A /* ProximaNova-Extrabold.otf in Resources */,
+				58C32FA920A0ACF1005B7C7A /* Assets.xcassets in Resources */,
+				58C32FBC20A0AD48005B7C7A /* ProximaNova-RegItalic.otf in Resources */,
+				58C32FBA20A0AD48005B7C7A /* ProximaNova-BoldIt.otf in Resources */,
+				58C32FC020A0AD48005B7C7A /* ProximaNova-LightItalic.otf in Resources */,
+				58C32FBB20A0AD48005B7C7A /* ProximaNova-RegularItalic.otf in Resources */,
+				58C32FBF20A0AD48005B7C7A /* ProximaNova-SemiboldItalic.otf in Resources */,
+				58C32FBE20A0AD48005B7C7A /* ProximaNova-Regular.otf in Resources */,
 				5822CE3920A025E600093CD0 /* GoogleService-Info.plist in Resources */,
+				58C32FBD20A0AD48005B7C7A /* ProximaNova-Black.otf in Resources */,
+				58C32FB720A0AD48005B7C7A /* ProximaNova-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,13 +663,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = DyceAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,13 +682,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z52CK3HLVV;
+				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = DyceAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

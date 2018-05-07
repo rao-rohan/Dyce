@@ -26,13 +26,11 @@ depends-top-level:
 - "CLLocationManager"
 - "CLLocationManagerDelegate"
 - "CastingPrecedence"
-- !private "Dictionary"
 - "Error"
 - !private "Firestore"
 - !private "GeoPoint"
 - "IndexPath"
 - "Int"
-- !private "NSAttributedStringKey"
 - !private "NameFile"
 - "Question"
 - !private "QuestionCell"
@@ -45,7 +43,6 @@ depends-top-level:
 - !private "Timer"
 - !private "UIApplication"
 - !private "UIColor"
-- !private "UIFont"
 - !private "UIImage"
 - "UIImagePickerControllerDelegate"
 - "UINavigationControllerDelegate"
@@ -58,8 +55,6 @@ depends-top-level:
 - "UITableViewController"
 - !private "UIView"
 - !private "kCLLocationAccuracyNearestTenMeters"
-- !private "kCTFontAttributeName"
-- !private "kCTForegroundColorAttributeName"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -82,7 +77,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "rowHeight"]
 - !private ["So15CALayerDelegateP", "separatorStyle"]
 - !private ["So15CALayerDelegateP", "tableFooterView"]
-- !private ["So15CALayerDelegateP", "titleTextAttributes"]
 - !private ["So10CLLocationC", "coordinate"]
 - !private ["So17CLLocationManagerC", "delegate"]
 - !private ["So17CLLocationManagerC", "desiredAccuracy"]
@@ -102,7 +96,6 @@ depends-member:
 - !private ["So25CLLocationManagerDelegateP", "Timer"]
 - !private ["So25CLLocationManagerDelegateP", "UIApplication"]
 - !private ["So25CLLocationManagerDelegateP", "UIColor"]
-- !private ["So25CLLocationManagerDelegateP", "UIFont"]
 - !private ["So25CLLocationManagerDelegateP", "UIImage"]
 - !private ["So25CLLocationManagerDelegateP", "UIStatusBarStyle"]
 - !private ["So25CLLocationManagerDelegateP", "UITableViewAutomaticDimension"]
@@ -115,8 +108,6 @@ depends-member:
 - ["So25CLLocationManagerDelegateP", "imagePickerController"]
 - ["So25CLLocationManagerDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So25CLLocationManagerDelegateP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So25CLLocationManagerDelegateP", "kCTFontAttributeName"]
-- !private ["So25CLLocationManagerDelegateP", "kCTForegroundColorAttributeName"]
 - ["So25CLLocationManagerDelegateP", "locationManager"]
 - ["So25CLLocationManagerDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So25CLLocationManagerDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -136,7 +127,6 @@ depends-member:
 - !private ["s7CVarArgP", "Timer"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIColor"]
-- !private ["s7CVarArgP", "UIFont"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIStatusBarStyle"]
 - !private ["s7CVarArgP", "UITableViewAutomaticDimension"]
@@ -166,14 +156,11 @@ depends-member:
 - ["s7CVarArgP", "imagePickerControllerDidCancel"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["s7CVarArgP", "kCTFontAttributeName"]
-- !private ["s7CVarArgP", "kCTForegroundColorAttributeName"]
 - ["s7CVarArgP", "locationManager"]
 - ["s7CVarArgP", "locationManagerDidPauseLocationUpdates"]
 - ["s7CVarArgP", "locationManagerDidResumeLocationUpdates"]
 - ["s7CVarArgP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["s7CVarArgP", "locationServicesEnabled"]
-- !private ["s7CVarArgP", "navigationBar"]
 - ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
@@ -196,9 +183,7 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "tableFooterView"]
 - !private ["s7CVarArgP", "tableView"]
-- !private ["s7CVarArgP", "titleTextAttributes"]
 - !private ["s7CVarArgP", "viewDidLoad"]
-- !private ["s7CVarArgP", "white"]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
@@ -219,7 +204,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Timer"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
-- !private ["s28CustomDebugStringConvertibleP", "UIFont"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStatusBarStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewAutomaticDimension"]
@@ -248,14 +232,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "imagePickerControllerDidCancel"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["s28CustomDebugStringConvertibleP", "kCTFontAttributeName"]
-- !private ["s28CustomDebugStringConvertibleP", "kCTForegroundColorAttributeName"]
 - ["s28CustomDebugStringConvertibleP", "locationManager"]
 - ["s28CustomDebugStringConvertibleP", "locationManagerDidPauseLocationUpdates"]
 - ["s28CustomDebugStringConvertibleP", "locationManagerDidResumeLocationUpdates"]
 - ["s28CustomDebugStringConvertibleP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["s28CustomDebugStringConvertibleP", "locationServicesEnabled"]
-- !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
@@ -279,9 +260,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "tableFooterView"]
 - !private ["s28CustomDebugStringConvertibleP", "tableView"]
-- !private ["s28CustomDebugStringConvertibleP", "titleTextAttributes"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
-- !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -301,7 +280,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Timer"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
-- !private ["s23CustomStringConvertibleP", "UIFont"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIStatusBarStyle"]
 - !private ["s23CustomStringConvertibleP", "UITableViewAutomaticDimension"]
@@ -331,14 +309,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "imagePickerControllerDidCancel"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["s23CustomStringConvertibleP", "kCTFontAttributeName"]
-- !private ["s23CustomStringConvertibleP", "kCTForegroundColorAttributeName"]
 - ["s23CustomStringConvertibleP", "locationManager"]
 - ["s23CustomStringConvertibleP", "locationManagerDidPauseLocationUpdates"]
 - ["s23CustomStringConvertibleP", "locationManagerDidResumeLocationUpdates"]
 - ["s23CustomStringConvertibleP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["s23CustomStringConvertibleP", "locationServicesEnabled"]
-- !private ["s23CustomStringConvertibleP", "navigationBar"]
 - ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
@@ -362,9 +337,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "tableFooterView"]
 - !private ["s23CustomStringConvertibleP", "tableView"]
-- !private ["s23CustomStringConvertibleP", "titleTextAttributes"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
-- !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
@@ -392,7 +365,6 @@ depends-member:
 - !private ["s9EquatableP", "Timer"]
 - !private ["s9EquatableP", "UIApplication"]
 - !private ["s9EquatableP", "UIColor"]
-- !private ["s9EquatableP", "UIFont"]
 - !private ["s9EquatableP", "UIImage"]
 - !private ["s9EquatableP", "UIStatusBarStyle"]
 - !private ["s9EquatableP", "UITableViewAutomaticDimension"]
@@ -422,15 +394,12 @@ depends-member:
 - ["s9EquatableP", "imagePickerControllerDidCancel"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["s9EquatableP", "kCTFontAttributeName"]
-- !private ["s9EquatableP", "kCTForegroundColorAttributeName"]
 - !private ["s9EquatableP", "lightContent"]
 - ["s9EquatableP", "locationManager"]
 - ["s9EquatableP", "locationManagerDidPauseLocationUpdates"]
 - ["s9EquatableP", "locationManagerDidResumeLocationUpdates"]
 - ["s9EquatableP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["s9EquatableP", "locationServicesEnabled"]
-- !private ["s9EquatableP", "navigationBar"]
 - ["s9EquatableP", "navigationController"]
 - ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s9EquatableP", "navigationControllerSupportedInterfaceOrientations"]
@@ -455,9 +424,7 @@ depends-member:
 - !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "tableFooterView"]
 - !private ["s9EquatableP", "tableView"]
-- !private ["s9EquatableP", "titleTextAttributes"]
 - !private ["s9EquatableP", "viewDidLoad"]
-- !private ["s9EquatableP", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
@@ -489,7 +456,6 @@ depends-member:
 - !private ["s8HashableP", "Timer"]
 - !private ["s8HashableP", "UIApplication"]
 - !private ["s8HashableP", "UIColor"]
-- !private ["s8HashableP", "UIFont"]
 - !private ["s8HashableP", "UIImage"]
 - !private ["s8HashableP", "UIStatusBarStyle"]
 - !private ["s8HashableP", "UITableViewAutomaticDimension"]
@@ -517,15 +483,12 @@ depends-member:
 - ["s8HashableP", "imagePickerControllerDidCancel"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["s8HashableP", "kCTFontAttributeName"]
-- !private ["s8HashableP", "kCTForegroundColorAttributeName"]
 - !private ["s8HashableP", "lightContent"]
 - ["s8HashableP", "locationManager"]
 - ["s8HashableP", "locationManagerDidPauseLocationUpdates"]
 - ["s8HashableP", "locationManagerDidResumeLocationUpdates"]
 - ["s8HashableP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["s8HashableP", "locationServicesEnabled"]
-- !private ["s8HashableP", "navigationBar"]
 - ["s8HashableP", "navigationController"]
 - ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s8HashableP", "navigationControllerSupportedInterfaceOrientations"]
@@ -549,9 +512,7 @@ depends-member:
 - !private ["s8HashableP", "subscript"]
 - !private ["s8HashableP", "tableFooterView"]
 - !private ["s8HashableP", "tableView"]
-- !private ["s8HashableP", "titleTextAttributes"]
 - !private ["s8HashableP", "viewDidLoad"]
-- !private ["s8HashableP", "white"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -572,7 +533,6 @@ depends-member:
 - !private ["So8NSCodingP", "Timer"]
 - !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIColor"]
-- !private ["So8NSCodingP", "UIFont"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIStatusBarStyle"]
 - !private ["So8NSCodingP", "UITableViewAutomaticDimension"]
@@ -590,13 +550,10 @@ depends-member:
 - ["So8NSCodingP", "imagePickerControllerDidCancel"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So8NSCodingP", "kCTFontAttributeName"]
-- !private ["So8NSCodingP", "kCTForegroundColorAttributeName"]
 - ["So8NSCodingP", "locationManager"]
 - ["So8NSCodingP", "locationManagerDidPauseLocationUpdates"]
 - ["So8NSCodingP", "locationManagerDidResumeLocationUpdates"]
 - ["So8NSCodingP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So8NSCodingP", "navigationBar"]
 - ["So8NSCodingP", "navigationController"]
 - ["So8NSCodingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSCodingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -608,12 +565,9 @@ depends-member:
 - !private ["So8NSCodingP", "showError"]
 - !private ["So8NSCodingP", "tableFooterView"]
 - !private ["So8NSCodingP", "tableView"]
-- !private ["So8NSCodingP", "titleTextAttributes"]
 - !private ["So8NSCodingP", "viewDidLoad"]
-- !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "coordinate"]
 - !private ["So9NSCopyingP", "init"]
-- !private ["So9NSCopyingP", "white"]
 - ["So26NSExtensionRequestHandlingP", "CLLocationManager"]
 - !private ["So26NSExtensionRequestHandlingP", "Firestore"]
 - !private ["So26NSExtensionRequestHandlingP", "NameFile"]
@@ -624,7 +578,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Timer"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
-- !private ["So26NSExtensionRequestHandlingP", "UIFont"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIStatusBarStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewAutomaticDimension"]
@@ -638,13 +591,10 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "imagePickerControllerDidCancel"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So26NSExtensionRequestHandlingP", "kCTFontAttributeName"]
-- !private ["So26NSExtensionRequestHandlingP", "kCTForegroundColorAttributeName"]
 - ["So26NSExtensionRequestHandlingP", "locationManager"]
 - ["So26NSExtensionRequestHandlingP", "locationManagerDidPauseLocationUpdates"]
 - ["So26NSExtensionRequestHandlingP", "locationManagerDidResumeLocationUpdates"]
 - ["So26NSExtensionRequestHandlingP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So26NSExtensionRequestHandlingP", "navigationBar"]
 - ["So26NSExtensionRequestHandlingP", "navigationController"]
 - ["So26NSExtensionRequestHandlingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So26NSExtensionRequestHandlingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -653,9 +603,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So21NSItemProviderWritingP", "white"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CLLocation"]
 - ["So8NSObjectC", "CLLocationCoordinate2D"]
@@ -665,7 +613,6 @@ depends-member:
 - !private ["So8NSObjectC", "GeoPoint"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
-- !private ["So8NSObjectC", "NSAttributedStringKey"]
 - !private ["So8NSObjectC", "NameFile"]
 - ["So8NSObjectC", "Question"]
 - !private ["So8NSObjectC", "QuestionCell"]
@@ -677,7 +624,6 @@ depends-member:
 - !private ["So8NSObjectC", "Timer"]
 - !private ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIColor"]
-- !private ["So8NSObjectC", "UIFont"]
 - !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIStatusBarStyle"]
 - ["So8NSObjectC", "UIStoryboardSegue"]
@@ -705,14 +651,11 @@ depends-member:
 - ["So8NSObjectC", "imagePickerControllerDidCancel"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So8NSObjectC", "kCTFontAttributeName"]
-- !private ["So8NSObjectC", "kCTForegroundColorAttributeName"]
 - ["So8NSObjectC", "locationManager"]
 - ["So8NSObjectC", "locationManagerDidPauseLocationUpdates"]
 - ["So8NSObjectC", "locationManagerDidResumeLocationUpdates"]
 - ["So8NSObjectC", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So8NSObjectC", "locationServicesEnabled"]
-- !private ["So8NSObjectC", "navigationBar"]
 - ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
@@ -737,10 +680,8 @@ depends-member:
 - !private ["So8NSObjectC", "subscript"]
 - !private ["So8NSObjectC", "tableFooterView"]
 - ["So8NSObjectC", "tableView"]
-- !private ["So8NSObjectC", "titleTextAttributes"]
 - ["So8NSObjectC", "unwindToQuestionsViewController"]
 - ["So8NSObjectC", "viewDidLoad"]
-- !private ["So8NSObjectC", "white"]
 - ["So16NSObjectProtocolP", "CLLocationManager"]
 - !private ["So16NSObjectProtocolP", "Firestore"]
 - !private ["So16NSObjectProtocolP", "NameFile"]
@@ -751,7 +692,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "Timer"]
 - !private ["So16NSObjectProtocolP", "UIApplication"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
-- !private ["So16NSObjectProtocolP", "UIFont"]
 - !private ["So16NSObjectProtocolP", "UIImage"]
 - !private ["So16NSObjectProtocolP", "UIStatusBarStyle"]
 - !private ["So16NSObjectProtocolP", "UITableViewAutomaticDimension"]
@@ -778,14 +718,11 @@ depends-member:
 - ["So16NSObjectProtocolP", "imagePickerControllerDidCancel"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So16NSObjectProtocolP", "kCTFontAttributeName"]
-- !private ["So16NSObjectProtocolP", "kCTForegroundColorAttributeName"]
 - ["So16NSObjectProtocolP", "locationManager"]
 - ["So16NSObjectProtocolP", "locationManagerDidPauseLocationUpdates"]
 - ["So16NSObjectProtocolP", "locationManagerDidResumeLocationUpdates"]
 - ["So16NSObjectProtocolP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So16NSObjectProtocolP", "locationServicesEnabled"]
-- !private ["So16NSObjectProtocolP", "navigationBar"]
 - ["So16NSObjectProtocolP", "navigationController"]
 - ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16NSObjectProtocolP", "navigationControllerSupportedInterfaceOrientations"]
@@ -807,12 +744,9 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "subscript"]
 - !private ["So16NSObjectProtocolP", "tableFooterView"]
 - !private ["So16NSObjectProtocolP", "tableView"]
-- !private ["So16NSObjectProtocolP", "titleTextAttributes"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
-- !private ["So16NSObjectProtocolP", "white"]
 - !private ["So14NSSecureCodingP", "coordinate"]
 - !private ["So14NSSecureCodingP", "init"]
-- !private ["So14NSSecureCodingP", "white"]
 - !private ["10DyceAppIOS8NameFileV", "Firestore"]
 - !private ["So5QueryC", "document"]
 - !private ["So5QueryC", "getDocuments"]
@@ -832,7 +766,6 @@ depends-member:
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "GeoPoint"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "IndexPath"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "Int"]
-- !private ["10DyceAppIOS23QuestionsViewControllerC", "NSAttributedStringKey"]
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "NameFile"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "Question"]
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "QuestionCell"]
@@ -844,7 +777,6 @@ depends-member:
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "Timer"]
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "UIApplication"]
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "UIColor"]
-- !private ["10DyceAppIOS23QuestionsViewControllerC", "UIFont"]
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "UIImage"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "UIStatusBarStyle"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "UIStoryboardSegue"]
@@ -860,8 +792,6 @@ depends-member:
 - ["10DyceAppIOS23QuestionsViewControllerC", "imagePickerControllerDidCancel"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "init"]
 - !private ["10DyceAppIOS23QuestionsViewControllerC", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["10DyceAppIOS23QuestionsViewControllerC", "kCTFontAttributeName"]
-- !private ["10DyceAppIOS23QuestionsViewControllerC", "kCTForegroundColorAttributeName"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "locationManager"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "locationManagerDidPauseLocationUpdates"]
 - ["10DyceAppIOS23QuestionsViewControllerC", "locationManagerDidResumeLocationUpdates"]
@@ -915,7 +845,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "rowHeight"]
 - !private ["So29UIAccessibilityIdentificationP", "separatorStyle"]
 - !private ["So29UIAccessibilityIdentificationP", "tableFooterView"]
-- !private ["So29UIAccessibilityIdentificationP", "titleTextAttributes"]
 - !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "estimatedRowHeight"]
@@ -925,7 +854,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "rowHeight"]
 - !private ["So12UIAppearanceP", "separatorStyle"]
 - !private ["So12UIAppearanceP", "tableFooterView"]
-- !private ["So12UIAppearanceP", "titleTextAttributes"]
 - ["So21UIAppearanceContainerP", "CLLocationManager"]
 - !private ["So21UIAppearanceContainerP", "Firestore"]
 - !private ["So21UIAppearanceContainerP", "NameFile"]
@@ -936,7 +864,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Timer"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
-- !private ["So21UIAppearanceContainerP", "UIFont"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIStatusBarStyle"]
 - !private ["So21UIAppearanceContainerP", "UITableViewAutomaticDimension"]
@@ -953,13 +880,10 @@ depends-member:
 - ["So21UIAppearanceContainerP", "imagePickerControllerDidCancel"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So21UIAppearanceContainerP", "kCTFontAttributeName"]
-- !private ["So21UIAppearanceContainerP", "kCTForegroundColorAttributeName"]
 - ["So21UIAppearanceContainerP", "locationManager"]
 - ["So21UIAppearanceContainerP", "locationManagerDidPauseLocationUpdates"]
 - ["So21UIAppearanceContainerP", "locationManagerDidResumeLocationUpdates"]
 - ["So21UIAppearanceContainerP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So21UIAppearanceContainerP", "navigationBar"]
 - ["So21UIAppearanceContainerP", "navigationController"]
 - ["So21UIAppearanceContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So21UIAppearanceContainerP", "navigationControllerSupportedInterfaceOrientations"]
@@ -971,13 +895,10 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "showError"]
 - !private ["So21UIAppearanceContainerP", "tableFooterView"]
 - !private ["So21UIAppearanceContainerP", "tableView"]
-- !private ["So21UIAppearanceContainerP", "titleTextAttributes"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So13UIApplicationC", "statusBarStyle"]
-- !private ["So16UIBarPositioningP", "titleTextAttributes"]
 - !private ["So7UIColorC", "init"]
-- !private ["So7UIColorC", "white"]
 - ["So18UIContentContainerP", "CLLocationManager"]
 - !private ["So18UIContentContainerP", "Firestore"]
 - !private ["So18UIContentContainerP", "NameFile"]
@@ -988,7 +909,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "Timer"]
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIColor"]
-- !private ["So18UIContentContainerP", "UIFont"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIStatusBarStyle"]
 - !private ["So18UIContentContainerP", "UITableViewAutomaticDimension"]
@@ -1002,13 +922,10 @@ depends-member:
 - ["So18UIContentContainerP", "imagePickerControllerDidCancel"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So18UIContentContainerP", "kCTFontAttributeName"]
-- !private ["So18UIContentContainerP", "kCTForegroundColorAttributeName"]
 - ["So18UIContentContainerP", "locationManager"]
 - ["So18UIContentContainerP", "locationManagerDidPauseLocationUpdates"]
 - ["So18UIContentContainerP", "locationManagerDidResumeLocationUpdates"]
 - ["So18UIContentContainerP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So18UIContentContainerP", "navigationBar"]
 - ["So18UIContentContainerP", "navigationController"]
 - ["So18UIContentContainerP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UIContentContainerP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1025,7 +942,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "rowHeight"]
 - !private ["So17UICoordinateSpaceP", "separatorStyle"]
 - !private ["So17UICoordinateSpaceP", "tableFooterView"]
-- !private ["So17UICoordinateSpaceP", "titleTextAttributes"]
 - !private ["So23UIDataSourceTranslatingP", "backgroundColor"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So23UIDataSourceTranslatingP", "estimatedRowHeight"]
@@ -1042,7 +958,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "rowHeight"]
 - !private ["So13UIDynamicItemP", "separatorStyle"]
 - !private ["So13UIDynamicItemP", "tableFooterView"]
-- !private ["So13UIDynamicItemP", "titleTextAttributes"]
 - ["So18UIFocusEnvironmentP", "CLLocationManager"]
 - !private ["So18UIFocusEnvironmentP", "Firestore"]
 - !private ["So18UIFocusEnvironmentP", "NameFile"]
@@ -1053,7 +968,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Timer"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
-- !private ["So18UIFocusEnvironmentP", "UIFont"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIStatusBarStyle"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewAutomaticDimension"]
@@ -1070,13 +984,10 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "imagePickerControllerDidCancel"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So18UIFocusEnvironmentP", "kCTFontAttributeName"]
-- !private ["So18UIFocusEnvironmentP", "kCTForegroundColorAttributeName"]
 - ["So18UIFocusEnvironmentP", "locationManager"]
 - ["So18UIFocusEnvironmentP", "locationManagerDidPauseLocationUpdates"]
 - ["So18UIFocusEnvironmentP", "locationManagerDidResumeLocationUpdates"]
 - ["So18UIFocusEnvironmentP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So18UIFocusEnvironmentP", "navigationBar"]
 - ["So18UIFocusEnvironmentP", "navigationController"]
 - ["So18UIFocusEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UIFocusEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1088,7 +999,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "showError"]
 - !private ["So18UIFocusEnvironmentP", "tableFooterView"]
 - !private ["So18UIFocusEnvironmentP", "tableView"]
-- !private ["So18UIFocusEnvironmentP", "titleTextAttributes"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
@@ -1099,8 +1009,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "rowHeight"]
 - !private ["So11UIFocusItemP", "separatorStyle"]
 - !private ["So11UIFocusItemP", "tableFooterView"]
-- !private ["So11UIFocusItemP", "titleTextAttributes"]
-- !private ["So6UIFontC", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "question"]
 - !private ["So7UIImageC", "init"]
@@ -1114,7 +1022,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "Timer"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIApplication"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIColor"]
-- !private ["So31UIImagePickerControllerDelegateP", "UIFont"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIImage"]
 - !private ["So31UIImagePickerControllerDelegateP", "UIStatusBarStyle"]
 - !private ["So31UIImagePickerControllerDelegateP", "UITableViewAutomaticDimension"]
@@ -1127,8 +1034,6 @@ depends-member:
 - ["So31UIImagePickerControllerDelegateP", "imagePickerController"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So31UIImagePickerControllerDelegateP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So31UIImagePickerControllerDelegateP", "kCTFontAttributeName"]
-- !private ["So31UIImagePickerControllerDelegateP", "kCTForegroundColorAttributeName"]
 - ["So31UIImagePickerControllerDelegateP", "locationManager"]
 - ["So31UIImagePickerControllerDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So31UIImagePickerControllerDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -1139,8 +1044,6 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "questions"]
 - !private ["So31UIImagePickerControllerDelegateP", "tableView"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So15UINavigationBarC", "titleTextAttributes"]
-- !private ["So22UINavigationControllerC", "navigationBar"]
 - ["So30UINavigationControllerDelegateP", "CLLocationManager"]
 - !private ["So30UINavigationControllerDelegateP", "Firestore"]
 - !private ["So30UINavigationControllerDelegateP", "NameFile"]
@@ -1151,7 +1054,6 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "Timer"]
 - !private ["So30UINavigationControllerDelegateP", "UIApplication"]
 - !private ["So30UINavigationControllerDelegateP", "UIColor"]
-- !private ["So30UINavigationControllerDelegateP", "UIFont"]
 - !private ["So30UINavigationControllerDelegateP", "UIImage"]
 - !private ["So30UINavigationControllerDelegateP", "UIStatusBarStyle"]
 - !private ["So30UINavigationControllerDelegateP", "UITableViewAutomaticDimension"]
@@ -1164,8 +1066,6 @@ depends-member:
 - ["So30UINavigationControllerDelegateP", "imagePickerController"]
 - ["So30UINavigationControllerDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So30UINavigationControllerDelegateP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So30UINavigationControllerDelegateP", "kCTFontAttributeName"]
-- !private ["So30UINavigationControllerDelegateP", "kCTForegroundColorAttributeName"]
 - ["So30UINavigationControllerDelegateP", "locationManager"]
 - ["So30UINavigationControllerDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So30UINavigationControllerDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -1185,7 +1085,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Timer"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIFont"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStatusBarStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewAutomaticDimension"]
@@ -1202,13 +1101,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "imagePickerControllerDidCancel"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So30UIPasteConfigurationSupportingP", "kCTFontAttributeName"]
-- !private ["So30UIPasteConfigurationSupportingP", "kCTForegroundColorAttributeName"]
 - ["So30UIPasteConfigurationSupportingP", "locationManager"]
 - ["So30UIPasteConfigurationSupportingP", "locationManagerDidPauseLocationUpdates"]
 - ["So30UIPasteConfigurationSupportingP", "locationManagerDidResumeLocationUpdates"]
 - ["So30UIPasteConfigurationSupportingP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So30UIPasteConfigurationSupportingP", "navigationBar"]
 - ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1222,7 +1118,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "statusBarStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "tableFooterView"]
 - !private ["So30UIPasteConfigurationSupportingP", "tableView"]
-- !private ["So30UIPasteConfigurationSupportingP", "titleTextAttributes"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CLLocation"]
@@ -1233,7 +1128,6 @@ depends-member:
 - !private ["So11UIResponderC", "GeoPoint"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
-- !private ["So11UIResponderC", "NSAttributedStringKey"]
 - !private ["So11UIResponderC", "NameFile"]
 - ["So11UIResponderC", "Question"]
 - !private ["So11UIResponderC", "QuestionCell"]
@@ -1245,7 +1139,6 @@ depends-member:
 - !private ["So11UIResponderC", "Timer"]
 - !private ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIColor"]
-- !private ["So11UIResponderC", "UIFont"]
 - !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIStatusBarStyle"]
 - ["So11UIResponderC", "UIStoryboardSegue"]
@@ -1263,13 +1156,10 @@ depends-member:
 - ["So11UIResponderC", "imagePickerControllerDidCancel"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So11UIResponderC", "kCTFontAttributeName"]
-- !private ["So11UIResponderC", "kCTForegroundColorAttributeName"]
 - ["So11UIResponderC", "locationManager"]
 - ["So11UIResponderC", "locationManagerDidPauseLocationUpdates"]
 - ["So11UIResponderC", "locationManagerDidResumeLocationUpdates"]
 - ["So11UIResponderC", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So11UIResponderC", "navigationBar"]
 - ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
@@ -1286,7 +1176,6 @@ depends-member:
 - !private ["So11UIResponderC", "statusBarStyle"]
 - !private ["So11UIResponderC", "tableFooterView"]
 - ["So11UIResponderC", "tableView"]
-- !private ["So11UIResponderC", "titleTextAttributes"]
 - ["So11UIResponderC", "unwindToQuestionsViewController"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "CLLocationManager"]
@@ -1299,7 +1188,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Timer"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
-- !private ["So30UIResponderStandardEditActionsP", "UIFont"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStatusBarStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewAutomaticDimension"]
@@ -1316,13 +1204,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "imagePickerControllerDidCancel"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So30UIResponderStandardEditActionsP", "kCTFontAttributeName"]
-- !private ["So30UIResponderStandardEditActionsP", "kCTForegroundColorAttributeName"]
 - ["So30UIResponderStandardEditActionsP", "locationManager"]
 - ["So30UIResponderStandardEditActionsP", "locationManagerDidPauseLocationUpdates"]
 - ["So30UIResponderStandardEditActionsP", "locationManagerDidResumeLocationUpdates"]
 - ["So30UIResponderStandardEditActionsP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So30UIResponderStandardEditActionsP", "navigationBar"]
 - ["So30UIResponderStandardEditActionsP", "navigationController"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1336,7 +1221,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "statusBarStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "tableFooterView"]
 - !private ["So30UIResponderStandardEditActionsP", "tableView"]
-- !private ["So30UIResponderStandardEditActionsP", "titleTextAttributes"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So12UIScrollViewC", "backgroundColor"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
@@ -1355,7 +1239,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "Timer"]
 - !private ["So20UIScrollViewDelegateP", "UIApplication"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
-- !private ["So20UIScrollViewDelegateP", "UIFont"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UIStatusBarStyle"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewAutomaticDimension"]
@@ -1369,8 +1252,6 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So20UIScrollViewDelegateP", "init"]
 - !private ["So20UIScrollViewDelegateP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So20UIScrollViewDelegateP", "kCTFontAttributeName"]
-- !private ["So20UIScrollViewDelegateP", "kCTForegroundColorAttributeName"]
 - ["So20UIScrollViewDelegateP", "locationManager"]
 - ["So20UIScrollViewDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So20UIScrollViewDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -1398,7 +1279,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Timer"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIColor"]
-- !private ["So16UIStateRestoringP", "UIFont"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIStatusBarStyle"]
 - !private ["So16UIStateRestoringP", "UITableViewAutomaticDimension"]
@@ -1412,13 +1292,10 @@ depends-member:
 - ["So16UIStateRestoringP", "imagePickerControllerDidCancel"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So16UIStateRestoringP", "kCTFontAttributeName"]
-- !private ["So16UIStateRestoringP", "kCTForegroundColorAttributeName"]
 - ["So16UIStateRestoringP", "locationManager"]
 - ["So16UIStateRestoringP", "locationManagerDidPauseLocationUpdates"]
 - ["So16UIStateRestoringP", "locationManagerDidResumeLocationUpdates"]
 - ["So16UIStateRestoringP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So16UIStateRestoringP", "navigationBar"]
 - ["So16UIStateRestoringP", "navigationController"]
 - ["So16UIStateRestoringP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16UIStateRestoringP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1446,7 +1323,6 @@ depends-member:
 - !private ["So21UITableViewControllerC", "GeoPoint"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
-- !private ["So21UITableViewControllerC", "NSAttributedStringKey"]
 - !private ["So21UITableViewControllerC", "NameFile"]
 - ["So21UITableViewControllerC", "Question"]
 - !private ["So21UITableViewControllerC", "QuestionCell"]
@@ -1458,7 +1334,6 @@ depends-member:
 - !private ["So21UITableViewControllerC", "Timer"]
 - !private ["So21UITableViewControllerC", "UIApplication"]
 - !private ["So21UITableViewControllerC", "UIColor"]
-- !private ["So21UITableViewControllerC", "UIFont"]
 - !private ["So21UITableViewControllerC", "UIImage"]
 - ["So21UITableViewControllerC", "UIStatusBarStyle"]
 - ["So21UITableViewControllerC", "UIStoryboardSegue"]
@@ -1474,8 +1349,6 @@ depends-member:
 - ["So21UITableViewControllerC", "imagePickerControllerDidCancel"]
 - ["So21UITableViewControllerC", "init"]
 - !private ["So21UITableViewControllerC", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So21UITableViewControllerC", "kCTFontAttributeName"]
-- !private ["So21UITableViewControllerC", "kCTForegroundColorAttributeName"]
 - ["So21UITableViewControllerC", "locationManager"]
 - ["So21UITableViewControllerC", "locationManagerDidPauseLocationUpdates"]
 - ["So21UITableViewControllerC", "locationManagerDidResumeLocationUpdates"]
@@ -1500,7 +1373,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "Timer"]
 - !private ["So21UITableViewDataSourceP", "UIApplication"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
-- !private ["So21UITableViewDataSourceP", "UIFont"]
 - !private ["So21UITableViewDataSourceP", "UIImage"]
 - !private ["So21UITableViewDataSourceP", "UIStatusBarStyle"]
 - !private ["So21UITableViewDataSourceP", "UITableViewAutomaticDimension"]
@@ -1514,8 +1386,6 @@ depends-member:
 - ["So21UITableViewDataSourceP", "imagePickerControllerDidCancel"]
 - !private ["So21UITableViewDataSourceP", "init"]
 - !private ["So21UITableViewDataSourceP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So21UITableViewDataSourceP", "kCTFontAttributeName"]
-- !private ["So21UITableViewDataSourceP", "kCTForegroundColorAttributeName"]
 - ["So21UITableViewDataSourceP", "locationManager"]
 - ["So21UITableViewDataSourceP", "locationManagerDidPauseLocationUpdates"]
 - ["So21UITableViewDataSourceP", "locationManagerDidResumeLocationUpdates"]
@@ -1536,7 +1406,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "Timer"]
 - !private ["So19UITableViewDelegateP", "UIApplication"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
-- !private ["So19UITableViewDelegateP", "UIFont"]
 - !private ["So19UITableViewDelegateP", "UIImage"]
 - !private ["So19UITableViewDelegateP", "UIStatusBarStyle"]
 - !private ["So19UITableViewDelegateP", "UITableViewAutomaticDimension"]
@@ -1550,8 +1419,6 @@ depends-member:
 - ["So19UITableViewDelegateP", "imagePickerControllerDidCancel"]
 - !private ["So19UITableViewDelegateP", "init"]
 - !private ["So19UITableViewDelegateP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So19UITableViewDelegateP", "kCTFontAttributeName"]
-- !private ["So19UITableViewDelegateP", "kCTForegroundColorAttributeName"]
 - ["So19UITableViewDelegateP", "locationManager"]
 - ["So19UITableViewDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So19UITableViewDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -1572,7 +1439,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Timer"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
-- !private ["So18UITraitEnvironmentP", "UIFont"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIStatusBarStyle"]
 - !private ["So18UITraitEnvironmentP", "UITableViewAutomaticDimension"]
@@ -1589,13 +1455,10 @@ depends-member:
 - ["So18UITraitEnvironmentP", "imagePickerControllerDidCancel"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So18UITraitEnvironmentP", "kCTFontAttributeName"]
-- !private ["So18UITraitEnvironmentP", "kCTForegroundColorAttributeName"]
 - ["So18UITraitEnvironmentP", "locationManager"]
 - ["So18UITraitEnvironmentP", "locationManagerDidPauseLocationUpdates"]
 - ["So18UITraitEnvironmentP", "locationManagerDidResumeLocationUpdates"]
 - ["So18UITraitEnvironmentP", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So18UITraitEnvironmentP", "navigationBar"]
 - ["So18UITraitEnvironmentP", "navigationController"]
 - ["So18UITraitEnvironmentP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So18UITraitEnvironmentP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1607,7 +1470,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "showError"]
 - !private ["So18UITraitEnvironmentP", "tableFooterView"]
 - !private ["So18UITraitEnvironmentP", "tableView"]
-- !private ["So18UITraitEnvironmentP", "titleTextAttributes"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
@@ -1618,7 +1480,6 @@ depends-member:
 - !private ["So6UIViewC", "rowHeight"]
 - !private ["So6UIViewC", "separatorStyle"]
 - !private ["So6UIViewC", "tableFooterView"]
-- !private ["So6UIViewC", "titleTextAttributes"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CLLocation"]
 - ["So16UIViewControllerC", "CLLocationCoordinate2D"]
@@ -1628,7 +1489,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "GeoPoint"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
-- !private ["So16UIViewControllerC", "NSAttributedStringKey"]
 - !private ["So16UIViewControllerC", "NameFile"]
 - ["So16UIViewControllerC", "Question"]
 - !private ["So16UIViewControllerC", "QuestionCell"]
@@ -1640,7 +1500,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "Timer"]
 - !private ["So16UIViewControllerC", "UIApplication"]
 - !private ["So16UIViewControllerC", "UIColor"]
-- !private ["So16UIViewControllerC", "UIFont"]
 - !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UIStatusBarStyle"]
 - ["So16UIViewControllerC", "UIStoryboardSegue"]
@@ -1655,13 +1514,10 @@ depends-member:
 - ["So16UIViewControllerC", "imagePickerControllerDidCancel"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["So16UIViewControllerC", "kCTFontAttributeName"]
-- !private ["So16UIViewControllerC", "kCTForegroundColorAttributeName"]
 - ["So16UIViewControllerC", "locationManager"]
 - ["So16UIViewControllerC", "locationManagerDidPauseLocationUpdates"]
 - ["So16UIViewControllerC", "locationManagerDidResumeLocationUpdates"]
 - ["So16UIViewControllerC", "locationManagerShouldDisplayHeadingCalibration"]
-- !private ["So16UIViewControllerC", "navigationBar"]
 - ["So16UIViewControllerC", "navigationController"]
 - ["So16UIViewControllerC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16UIViewControllerC", "navigationControllerSupportedInterfaceOrientations"]
@@ -1687,7 +1543,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rowHeight"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "separatorStyle"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tableFooterView"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "titleTextAttributes"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - ["s24_DestructorSafeContainerP", "init"]
@@ -1699,7 +1554,6 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
-- !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CLLocationManager"]
@@ -1712,7 +1566,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Timer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStatusBarStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewAutomaticDimension"]
@@ -1739,14 +1592,11 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "imagePickerControllerDidCancel"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "kCLLocationAccuracyNearestTenMeters"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "kCTFontAttributeName"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "kCTForegroundColorAttributeName"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locationManager"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locationManagerDidPauseLocationUpdates"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locationManagerDidResumeLocationUpdates"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationServicesEnabled"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationBar"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
@@ -1768,9 +1618,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tableFooterView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -1845,7 +1693,6 @@ depends-nominal:
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - !private "So13UIApplicationC"
-- !private "So16UIBarPositioningP"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
@@ -1853,13 +1700,10 @@ depends-nominal:
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
-- !private "So6UIFontC"
 - !private "So27UIGestureRecognizerDelegateP"
 - !private "So7UIImageC"
 - "So31UIImagePickerControllerDelegateP"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
-- !private "So15UINavigationBarC"
-- !private "So22UINavigationControllerC"
 - "So30UINavigationControllerDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -1895,8 +1739,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/x86_64.swiftmodule"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -1910,218 +1754,218 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRHTTPMetric.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAppInstallAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeContentAd.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRTrace.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformance.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FirebasePerformance.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdNotificationSource.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformanceAttributable.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Firebase/Core/Sources/Firebase.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdUnconfirmedClickDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIImage+ChameleonPrivate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIColor+ChameleonPrivate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIView+ChameleonPrivate.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrashLog.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrash.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FirebaseCrash.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+ConfirmationClick.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UILabel+Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIButton+Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UINavigationController+Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIViewController+Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIColor+Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/NSArray+Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTimestamp.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonEnums.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonMacros.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdAssetIdentifiers.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Firebase/Core/Sources/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
-- "/Users/nikhilsridhar/Desktop/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRHTTPMetric.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAppInstallAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeContentAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRTrace.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformance.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FirebasePerformance.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdNotificationSource.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformanceAttributable.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdUnconfirmedClickDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIImage+ChameleonPrivate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIColor+ChameleonPrivate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIView+ChameleonPrivate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrashLog.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrash.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FirebaseCrash.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+ConfirmationClick.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UILabel+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIButton+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UINavigationController+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIViewController+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIColor+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/NSArray+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTimestamp.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonEnums.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonMacros.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdAssetIdentifiers.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"

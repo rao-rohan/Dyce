@@ -136,7 +136,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     AppStorage.PersonalInfo.username = user.displayName!
                     
                     //segue to app
-                    
+                    let storyboard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
+                    if let ivc = storyboard.instantiateInitialViewController(){
+                        self.show(ivc, sender: self)
+                    }
                 }
             }
         }

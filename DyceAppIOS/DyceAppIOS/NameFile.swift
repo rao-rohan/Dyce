@@ -7,7 +7,9 @@ struct NameFile{
             //post id (document)
                 static let creatorUID = "CreatorUID"
                 static let creatorUsername = "CreatorUsername"
-                static let postLocation = "PostLocation"
+                //static let postLocation = "PostLocation"
+                static let postLongitude = "PostLongitude"
+                static let postLatitude = "PostLatitude"
                 static let postCategory = "PostCategory"
                 static let postTime = "PostTime"
                 static let postQuestion = "PostQuestion"
@@ -17,6 +19,7 @@ struct NameFile{
                     static let replyUID = "ReplyUID"
                     static let replyUsername = "ReplyUsername"
                     static let reply = "Reply"
+                    static let replyTime = "ReplyTime"
                     
         
         static let images = "Images"

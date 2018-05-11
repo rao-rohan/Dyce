@@ -9,14 +9,15 @@ class Question {
     var creatorUID: String
     var creatorUsername: String
     var postID: String
-    var location: GeoPoint
+    //var location: GeoPoint
     var category: String
     var time: Timestamp
+    var location : GeoPoint
     var question: String
     var numReplies: Int
     var image: UIImage?
     
-    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location: GeoPoint, _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
+    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
         creatorUID = _creatorUID
         creatorUsername = _creatorUsername
         postID = _postID
@@ -32,7 +33,9 @@ class Question {
         creatorUID = ""
         creatorUsername = ""
         postID = ""
-        location = GeoPoint(latitude: 0.0, longitude: 0.0)
+      location = GeoPoint(latitude: 0.0, longitude: 0.0)
+       // longitude = 0
+      //  latitude = 0
         category = ""
         time = Timestamp(date: Date(timeIntervalSinceNow: 0))
         question = ""
@@ -51,7 +54,9 @@ class Question {
                     postCollection.document().setData([
                         NameFile.Firestore.creatorUID: self.creatorUID,
                         NameFile.Firestore.creatorUsername: self.creatorUsername,
-                        NameFile.Firestore.postLocation: self.location,
+                        //NameFile.Firestore.postLocation: self.location,
+                        NameFile.Firestore.postLongitude : self.location.longitude,
+                        NameFile.Firestore.postLatitude : self.location.latitude,
                         NameFile.Firestore.postCategory: self.category,
                         NameFile.Firestore.postTime: self.time,
                         NameFile.Firestore.postQuestion: self.question,
@@ -64,7 +69,9 @@ class Question {
             postCollection.document().setData([
                 NameFile.Firestore.creatorUID: self.creatorUID,
                 NameFile.Firestore.creatorUsername: self.creatorUsername,
-                NameFile.Firestore.postLocation: self.location,
+             //   NameFile.Firestore.postLocation: self.location,
+                NameFile.Firestore.postLongitude : self.location.longitude,
+                NameFile.Firestore.postLatitude : self.location.latitude,
                 NameFile.Firestore.postCategory: self.category,
                 NameFile.Firestore.postTime: self.time,
                 NameFile.Firestore.postQuestion: self.question

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="ProximaNova-Semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuestionImageHeaderView" customModule="Questions" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiQ-23-PVt" userLabel="bg">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Of-X0-3B7">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUq-QY-8FG">
+                                    <rect key="frame" x="20" y="288" width="27" height="25"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3D-Oi-e9e">
+                                    <rect key="frame" x="502" y="10" width="78" height="23"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55F-Iq-L6A">
+                                            <rect key="frame" x="7.9999999999999964" y="4" width="61.666666666666657" height="15"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                            <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="55F-Iq-L6A" firstAttribute="top" secondItem="V3D-Oi-e9e" secondAttribute="top" constant="4" id="P9S-k1-cQv"/>
+                                        <constraint firstAttribute="trailing" secondItem="55F-Iq-L6A" secondAttribute="trailing" constant="8" id="V8x-5j-L4e"/>
+                                        <constraint firstItem="55F-Iq-L6A" firstAttribute="leading" secondItem="V3D-Oi-e9e" secondAttribute="leading" constant="8" id="g9K-8B-2TV"/>
+                                        <constraint firstAttribute="bottom" secondItem="55F-Iq-L6A" secondAttribute="bottom" constant="4" id="w9M-Vw-ii4"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZu-0L-hud">
+                                    <rect key="frame" x="56" y="288" width="4" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="192" id="cf0-sF-FXS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                                    <color key="textColor" red="0.081937365230000003" green="0.65579152110000005" blue="0.90017879010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="cf0-sF-FXS"/>
+                                        </mask>
+                                    </variation>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION TEXT HERE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8U-vd-rjf">
+                                    <rect key="frame" x="20" y="52" width="560" height="18"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tF3-OJ-OI4">
+                                    <rect key="frame" x="20" y="78" width="560" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="3zH-6d-xCQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POSTER NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKl-vd-Jpz">
+                                    <rect key="frame" x="20.000000000000007" y="15" width="110.66666666666669" height="16"/>
+                                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="tF3-OJ-OI4" secondAttribute="trailing" constant="20" id="49N-l0-bpt"/>
+                                <constraint firstItem="tF3-OJ-OI4" firstAttribute="leading" secondItem="5Of-X0-3B7" secondAttribute="leading" constant="20" id="50O-Io-Ibh"/>
+                                <constraint firstItem="fUq-QY-8FG" firstAttribute="top" secondItem="tF3-OJ-OI4" secondAttribute="bottom" constant="10" id="E0x-l8-W3x"/>
+                                <constraint firstItem="LKl-vd-Jpz" firstAttribute="top" secondItem="5Of-X0-3B7" secondAttribute="top" constant="15" id="Gpq-8o-fsD"/>
+                                <constraint firstAttribute="trailing" secondItem="V3D-Oi-e9e" secondAttribute="trailing" constant="20" id="HAC-i5-FmR"/>
+                                <constraint firstItem="V3D-Oi-e9e" firstAttribute="top" secondItem="5Of-X0-3B7" secondAttribute="top" constant="10" id="KIM-fn-RFg"/>
+                                <constraint firstItem="tF3-OJ-OI4" firstAttribute="top" secondItem="o8U-vd-rjf" secondAttribute="bottom" constant="8" id="MDv-gB-0Us"/>
+                                <constraint firstAttribute="trailing" secondItem="o8U-vd-rjf" secondAttribute="trailing" constant="20" id="SeC-mB-seA"/>
+                                <constraint firstItem="o8U-vd-rjf" firstAttribute="top" secondItem="V3D-Oi-e9e" secondAttribute="bottom" constant="19" id="UYG-Yy-o3H"/>
+                                <constraint firstItem="kZu-0L-hud" firstAttribute="leading" secondItem="fUq-QY-8FG" secondAttribute="trailing" constant="9" id="Z4g-PV-aop"/>
+                                <constraint firstItem="kZu-0L-hud" firstAttribute="top" secondItem="tF3-OJ-OI4" secondAttribute="bottom" constant="10" id="ZzW-mj-GYE"/>
+                                <constraint firstItem="LKl-vd-Jpz" firstAttribute="leading" secondItem="5Of-X0-3B7" secondAttribute="leading" constant="20" id="jBS-kX-d18"/>
+                                <constraint firstItem="fUq-QY-8FG" firstAttribute="leading" secondItem="5Of-X0-3B7" secondAttribute="leading" constant="20" id="jMP-Rw-noD"/>
+                                <constraint firstItem="o8U-vd-rjf" firstAttribute="leading" secondItem="5Of-X0-3B7" secondAttribute="leading" constant="20" id="xOv-xw-bHR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5Of-X0-3B7" secondAttribute="trailing" id="2rH-4q-we1"/>
+                        <constraint firstItem="5Of-X0-3B7" firstAttribute="top" secondItem="jiQ-23-PVt" secondAttribute="top" id="IH6-gG-Zp2"/>
+                        <constraint firstAttribute="bottom" secondItem="5Of-X0-3B7" secondAttribute="bottom" id="Tpk-Kd-W7x"/>
+                        <constraint firstItem="5Of-X0-3B7" firstAttribute="leading" secondItem="jiQ-23-PVt" secondAttribute="leading" id="UEL-6Y-Hbq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jiQ-23-PVt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EsT-wB-Omq"/>
+                <constraint firstAttribute="bottom" secondItem="jiQ-23-PVt" secondAttribute="bottom" id="No3-zQ-BNS"/>
+                <constraint firstItem="jiQ-23-PVt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oDK-3c-PGY"/>
+                <constraint firstAttribute="trailing" secondItem="jiQ-23-PVt" secondAttribute="trailing" id="uGc-fo-gmL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="categoryLabel" destination="55F-Iq-L6A" id="FZK-D5-lXf"/>
+                <outlet property="categoryView" destination="V3D-Oi-e9e" id="a75-le-eqE"/>
+                <outlet property="imageView" destination="tF3-OJ-OI4" id="QG8-g9-ntu"/>
+                <outlet property="questionLabel" destination="o8U-vd-rjf" id="CUM-el-I1w"/>
+                <outlet property="repliesLabel" destination="kZu-0L-hud" id="QlI-Kp-xll"/>
+                <outlet property="timeLabel" destination="fUq-QY-8FG" id="OKB-Y8-cUE"/>
+                <outlet property="usernameLabel" destination="LKl-vd-Jpz" id="Hb2-Ad-Ekp"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="164"/>
+        </view>
+    </objects>
+</document>

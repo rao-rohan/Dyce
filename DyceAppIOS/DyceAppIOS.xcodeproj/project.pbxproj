@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */; };
+		4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */; };
+		4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */; };
+		4E2BFFAB20A40A9200AA0DF0 /* QuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAA20A40A9200AA0DF0 /* QuestionHeaderView.xib */; };
+		4E2BFFAD20A40A9B00AA0DF0 /* QuestionHeaderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAC20A40A9A00AA0DF0 /* QuestionHeaderImageView.xib */; };
+		4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */; };
+		4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */; };
+		4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */; };
 		5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDE5209FF3F100093CD0 /* AppDelegate.swift */; };
 		5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDE9209FF3F100093CD0 /* Main.storyboard */; };
 		5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */; };
@@ -48,6 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
+		4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyContainerViewController.swift; sourceTree = "<group>"; };
+		4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
+		4E2BFFAA20A40A9200AA0DF0 /* QuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderView.xib; sourceTree = "<group>"; };
+		4E2BFFAC20A40A9A00AA0DF0 /* QuestionHeaderImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderImageView.xib; sourceTree = "<group>"; };
+		4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHelper.swift; sourceTree = "<group>"; };
+		4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionImageHeaderView.swift; sourceTree = "<group>"; };
+		4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
 		5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyceAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5822CDE5209FF3F100093CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5822CDEA209FF3F100093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +130,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4E2BFFAE20A4A9E700AA0DF0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4E2BFFB120A4BECB00AA0DF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */,
+				4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5822CDD9209FF3F100093CD0 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +172,7 @@
 		5822CDE4209FF3F100093CD0 /* DyceAppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				4E2BFFAE20A4A9E700AA0DF0 /* Helpers */,
 				5822CE2920A0093C00093CD0 /* NameFile.swift */,
 				5822CE22209FFDC300093CD0 /* AppStorage.swift */,
 				5822CDE5209FF3F100093CD0 /* AppDelegate.swift */,
@@ -186,10 +220,16 @@
 		5822CE2420A0014500093CD0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4E2BFFB120A4BECB00AA0DF0 /* Views */,
 				58C32FA620A0AC13005B7C7A /* App.storyboard */,
+				4E2BFFAA20A40A9200AA0DF0 /* QuestionHeaderView.xib */,
+				4E2BFFAC20A40A9A00AA0DF0 /* QuestionHeaderImageView.xib */,
 				5822CE3620A0145500093CD0 /* NewPostViewController.swift */,
 				5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */,
+				4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */,
+				4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */,
 				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
+				4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */,
 				5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */,
 			);
 			path = App;
@@ -320,6 +360,8 @@
 			files = (
 				5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */,
 				58C32FA720A0AC14005B7C7A /* App.storyboard in Resources */,
+				4E2BFFAB20A40A9200AA0DF0 /* QuestionHeaderView.xib in Resources */,
+				4E2BFFAD20A40A9B00AA0DF0 /* QuestionHeaderImageView.xib in Resources */,
 				5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */,
 				5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */,
 				58C32FA920A0ACF1005B7C7A /* Assets.xcassets in Resources */,
@@ -430,12 +472,18 @@
 				5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */,
 				5822CE3020A009B500093CD0 /* QuestionImageCell.swift in Sources */,
 				5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */,
+				4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */,
 				5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */,
 				5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */,
 				5822CE3220A009E400093CD0 /* Reply.swift in Sources */,
 				5822CE2E20A009B000093CD0 /* QuestionCell.swift in Sources */,
 				5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */,
+				4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */,
 				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
+				4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */,
+				4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */,
+				4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */,
+				4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */,
 				5822CE23209FFDC300093CD0 /* AppStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

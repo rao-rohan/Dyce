@@ -3,9 +3,10 @@ import UIKit
 import Firebase
 import CoreLocation
 import SVProgressHUD
-
+import GeoFire
 class Question {
-    
+    var geofireRef : DatabaseReference!
+    var geoFire : GeoFire!
     var creatorUID: String
     var creatorUsername: String
     var postID: String
@@ -18,6 +19,8 @@ class Question {
     var image: UIImage?
     
     init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
+        geofireRef = Database.database().reference()
+        geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
         creatorUID = _creatorUID
         creatorUsername = _creatorUsername
         postID = _postID
@@ -30,6 +33,8 @@ class Question {
     }
     
     init() {
+        geofireRef = Database.database().reference()
+        geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
         creatorUID = ""
         creatorUsername = ""
         postID = ""
@@ -45,13 +50,15 @@ class Question {
     
     func pushToFirestore(){
         //firebase references
-        let postCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.posts)
+        let postCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts)
         let imageStorage: StorageReference = Storage.storage().reference(withPath: NameFile.Firestore.images)
         
+        let newDocument = postCollection.document()
+        geoFire.setLocation(CLLocation(latitude: location.latitude, longitude: location.longitude), forKey: newDocument.documentID)
         if let image = image{
             imageStorage.child(NameFile.Firestore.images).putData(UIImagePNGRepresentation(image)!).observe(.success, handler: { (snapshot) in
                 if let imageURL = snapshot.metadata?.downloadURL()?.absoluteString{
-                    postCollection.document().setData([
+                    newDocument.setData([
                         NameFile.Firestore.creatorUID: self.creatorUID,
                         NameFile.Firestore.creatorUsername: self.creatorUsername,
                         //NameFile.Firestore.postLocation: self.location,
@@ -66,7 +73,7 @@ class Question {
                 }
             })
         }else{
-            postCollection.document().setData([
+            newDocument.setData([
                 NameFile.Firestore.creatorUID: self.creatorUID,
                 NameFile.Firestore.creatorUsername: self.creatorUsername,
              //   NameFile.Firestore.postLocation: self.location,

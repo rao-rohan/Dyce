@@ -24,7 +24,7 @@ class Reply {
     }
     func pushToFirestore(){
         //firebase references
-        let replyCollectoin: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.posts).document(postID).collection(NameFile.Firestore.replies)
+        let replyCollectoin: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(postID).collection(NameFile.Firestore.replies)
         replyCollectoin.document().setData([
             NameFile.Firestore.replyUID : self.uid,
             NameFile.Firestore.replyUsername : self.username,

@@ -4,16 +4,19 @@ import CoreLocation
 import Firebase
 import SCLAlertView
 import DZNEmptyDataSet
-
+import GeoFire
 class QuestionsViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var currLocation: CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
-    
+    var geofireRef : DatabaseReference!
+    var geoFire : GeoFire!
     private var questions = [Question]() {didSet{tableView.reloadData()}}
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        geofireRef = Database.database().reference()
+        geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
         let db = Firestore.firestore()
         let settings = db.settings
         settings.areTimestampsInSnapshotsEnabled = true
@@ -23,23 +26,21 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
         tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        
         if (CLLocationManager.locationServicesEnabled()) {
-            locationManager.delegate = self as! CLLocationManagerDelegate
+            locationManager.delegate = self as CLLocationManagerDelegate
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+        
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestLocation()
-        
         tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.locationManager.requestLocation()
-        fetchQuestions()
     }
     
     @IBAction func unwindToQuestionsViewController(_ segue: UIStoryboardSegue) {
@@ -72,66 +73,51 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     
     @objc private func fetchQuestions(){
         questions.removeAll()
-        print("called")
-        if  (currLocation?.latitude) != nil {
-            let latitude = (currLocation?.latitude)!
-            let longitude = (currLocation?.longitude)!
-            let lat = 0.0144927536231884 * 5
-            let lon = 0.0181818181818182 * 5
-            let lowerLat = latitude - (lat)
-            let lowerLon = longitude - (lon)
-            
-            let greaterLat = latitude + (lat)
-            let greaterLon = longitude + (lon)
-        
-            
-            let docRef = Firestore.firestore().collection(NameFile.Firestore.posts)
-            let postsCollection = docRef
-                .whereField(NameFile.Firestore.postLongitude, isGreaterThanOrEqualTo: lowerLon)
-                .whereField(NameFile.Firestore.postLongitude, isLessThanOrEqualTo : greaterLon)
-                .whereField(NameFile.Firestore.postLatitude, isGreaterThanOrEqualTo: lowerLat)
-                .whereField(NameFile.Firestore.postLatitude, isLessThanOrEqualTo : greaterLat)
-            postsCollection.getDocuments { (snapshot, error) in
-                if let documents = snapshot?.documents{
-                    for document in documents{
-                        let creatorUID = document[NameFile.Firestore.creatorUID] as! String
-                        let creatorUsername = document[NameFile.Firestore.creatorUsername] as! String
-                        let postID = document.documentID
-                        //let location = document[NameFile.Firestore.postLocation] as! GeoPoint
-                        let pulledLat = document[NameFile.Firestore.postLatitude] as! Double
-                        let pulledLong = document[NameFile.Firestore.postLongitude] as! Double
-                        let category = document[NameFile.Firestore.postCategory] as! String
-                        let time = document[NameFile.Firestore.postTime] as! Timestamp
-                        let question = document[NameFile.Firestore.postQuestion] as! String
-                        let imageURL = document[NameFile.Firestore.postImageURL] as? String
-                        
-                        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.posts).document(postID).collection(NameFile.Firestore.replies)
-                        repliesCollection.getDocuments(completion: { (snapshot, error) in
-                            if let documents = snapshot?.documents{
-                                //get images
-                                if let url = imageURL{
-                                    let imageRef = Storage.storage().reference(forURL: url)
-                                    imageRef.getData(maxSize: 100*1024*1024, completion: { (data, error) in
-                                        if let data = data{
-                                            if let image = UIImage(data: data){
-                                                let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
-                                                self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count, _image: image))
-                                            }
+        let center = CLLocation(latitude: (currLocation?.latitude)!, longitude: (currLocation?.longitude)!)
+
+        let locQuery = geoFire.query(at: center, withRadius: 6)
+        locQuery.observe(.keyEntered, with: { (key, location) in
+            print(key)
+            let docRef = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts)
+            let postsCollection = docRef.document(key)
+            postsCollection.getDocument { (document, error) in
+                if let document = document, document.exists {
+                    let creatorUID = document[NameFile.Firestore.creatorUID] as! String
+                    let creatorUsername = document[NameFile.Firestore.creatorUsername] as! String
+                    let postID = document.documentID
+                    let pulledLat = document[NameFile.Firestore.postLatitude] as! Double
+                    let pulledLong = document[NameFile.Firestore.postLongitude] as! Double
+                    let category = document[NameFile.Firestore.postCategory] as! String
+                    let time = document[NameFile.Firestore.postTime] as! Timestamp
+                    let question = document[NameFile.Firestore.postQuestion] as! String
+                    let imageURL = document[NameFile.Firestore.postImageURL] as? String
+                    
+                    let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(postID).collection(NameFile.Firestore.replies)
+                    repliesCollection.getDocuments(completion: { (snapshot, error) in
+                        if let documents = snapshot?.documents{
+                            //get images
+                            if let url = imageURL{
+                                let imageRef = Storage.storage().reference(forURL: url)
+                                imageRef.getData(maxSize: 100*1024*1024, completion: { (data, error) in
+                                    if let data = data{
+                                        if let image = UIImage(data: data){
+                                            let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
+                                            self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count, _image: image))
                                         }
-                                    })
-                                }else{
-                                    let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
-                                    self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count))
-                                }
+                                    }
+                                })
+                            }else{
+                                let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
+                                self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count))
                             }
-                        })
-                        
-                    }
-                    //                }
+                        }
+                    })
                 }
-                //
+                else {
+                    print("Document does not exist")
+                }
             }
-        }
+        })
     }
     func appendInOrder(_question : Question){
         for (index, question)  in questions.enumerated(){
@@ -182,9 +168,10 @@ extension QuestionsViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
         if(locations.count > 0) {
-            let location = locations[locations.count - 1]
-            currLocation = location.coordinate
+            let location = locations.last
+            currLocation = location?.coordinate
             print(currLocation)
+            print("updating Loc")
             fetchQuestions()
         }
         else {

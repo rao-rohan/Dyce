@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1D3DCB20A64F6C000A56BA /* RTDBQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D3DCA20A64F6C000A56BA /* RTDBQuestion.swift */; };
 		4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */; };
 		4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */; };
 		4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E1D3DCA20A64F6C000A56BA /* RTDBQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTDBQuestion.swift; sourceTree = "<group>"; };
 		4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
 		4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyContainerViewController.swift; sourceTree = "<group>"; };
 		4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				5822CE3420A00A3A00093CD0 /* Question.swift */,
+				4E1D3DCA20A64F6C000A56BA /* RTDBQuestion.swift */,
 				5822CE3120A009E400093CD0 /* Reply.swift */,
 			);
 			path = Models;
@@ -401,6 +404,7 @@
 				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GeoFire/GeoFire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -424,6 +428,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoFire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -480,6 +485,7 @@
 				5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */,
 				4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */,
 				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
+				4E1D3DCB20A64F6C000A56BA /* RTDBQuestion.swift in Sources */,
 				4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */,
 				4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */,
 				4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */,
@@ -661,10 +667,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = DyceAppIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -680,10 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = DyceAppIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -699,11 +699,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -720,11 +716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -740,11 +732,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -760,11 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

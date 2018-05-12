@@ -3,7 +3,7 @@ import Foundation
 struct NameFile{
     
     struct Firestore{
-        static let posts = "PostCollection"
+        static let FirestorePosts = "PostCollection"
             //post id (document)
                 static let creatorUID = "CreatorUID"
                 static let creatorUsername = "CreatorUsername"
@@ -21,7 +21,11 @@ struct NameFile{
                     static let reply = "Reply"
                     static let replyTime = "ReplyTime"
                     
-        
         static let images = "Images"
+    }
+    struct RTDB{
+        static let RTDBPosts = "Posts"
+            static let firestorePostID = "FirestorePostID"
+        
     }
 }

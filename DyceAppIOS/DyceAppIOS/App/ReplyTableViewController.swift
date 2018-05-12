@@ -96,7 +96,7 @@ class ReplyTableViewController: UITableViewController {
         return "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
     }
     func fetchReplies(){
-        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.posts).document(question.postID).collection(NameFile.Firestore.replies)
+        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(question.postID).collection(NameFile.Firestore.replies)
         repliesCollection.getDocuments(completion: { (snapshot, error) in
             if let documents = snapshot?.documents{
                 for document in documents {

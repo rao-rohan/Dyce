@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E1D3DCB20A64F6C000A56BA /* RTDBQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D3DCA20A64F6C000A56BA /* RTDBQuestion.swift */; };
 		4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */; };
 		4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */; };
 		4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */; };
-		4E2BFFAB20A40A9200AA0DF0 /* QuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAA20A40A9200AA0DF0 /* QuestionHeaderView.xib */; };
-		4E2BFFAD20A40A9B00AA0DF0 /* QuestionHeaderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAC20A40A9A00AA0DF0 /* QuestionHeaderImageView.xib */; };
 		4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */; };
 		4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */; };
 		4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */; };
+		4EE8CFFA20A6C0980091253E /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8CFF920A6C0980091253E /* ReplyViewController.swift */; };
+		4EE8D00420A6CE450091253E /* QuestionHeaderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */; };
+		4EE8D00520A6CE450091253E /* QuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */; };
 		5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDE5209FF3F100093CD0 /* AppDelegate.swift */; };
 		5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDE9209FF3F100093CD0 /* Main.storyboard */; };
 		5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */; };
@@ -57,15 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E1D3DCA20A64F6C000A56BA /* RTDBQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTDBQuestion.swift; sourceTree = "<group>"; };
 		4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
 		4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyContainerViewController.swift; sourceTree = "<group>"; };
 		4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
-		4E2BFFAA20A40A9200AA0DF0 /* QuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderView.xib; sourceTree = "<group>"; };
-		4E2BFFAC20A40A9A00AA0DF0 /* QuestionHeaderImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderImageView.xib; sourceTree = "<group>"; };
 		4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHelper.swift; sourceTree = "<group>"; };
 		4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionImageHeaderView.swift; sourceTree = "<group>"; };
 		4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
+		4EE8CFF920A6C0980091253E /* ReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
+		4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderImageView.xib; sourceTree = "<group>"; };
+		4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderView.xib; sourceTree = "<group>"; };
 		5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyceAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5822CDE5209FF3F100093CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5822CDEA209FF3F100093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +149,35 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4EE8CFFB20A6CD410091253E /* OLD FILES */ = {
+			isa = PBXGroup;
+			children = (
+				4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */,
+				4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */,
+			);
+			path = "OLD FILES";
+			sourceTree = "<group>";
+		};
+		4EE8CFFC20A6CD590091253E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
+				4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */,
+				5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4EE8D00120A6CE0B0091253E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */,
+				4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */,
+				58C32FA620A0AC13005B7C7A /* App.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		5822CDD9209FF3F100093CD0 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +203,7 @@
 		5822CDE4209FF3F100093CD0 /* DyceAppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				4EE8CFFB20A6CD410091253E /* OLD FILES */,
 				4E2BFFAE20A4A9E700AA0DF0 /* Helpers */,
 				5822CE2920A0093C00093CD0 /* NameFile.swift */,
 				5822CE22209FFDC300093CD0 /* AppStorage.swift */,
@@ -222,17 +252,12 @@
 		5822CE2420A0014500093CD0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4EE8D00120A6CE0B0091253E /* UI */,
+				4EE8CFFC20A6CD590091253E /* Cells */,
 				4E2BFFB120A4BECB00AA0DF0 /* Views */,
-				58C32FA620A0AC13005B7C7A /* App.storyboard */,
-				4E2BFFAA20A40A9200AA0DF0 /* QuestionHeaderView.xib */,
-				4E2BFFAC20A40A9A00AA0DF0 /* QuestionHeaderImageView.xib */,
+				4EE8CFF920A6C0980091253E /* ReplyViewController.swift */,
 				5822CE3620A0145500093CD0 /* NewPostViewController.swift */,
 				5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */,
-				4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */,
-				4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */,
-				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
-				4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */,
-				5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -241,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				5822CE3420A00A3A00093CD0 /* Question.swift */,
-				4E1D3DCA20A64F6C000A56BA /* RTDBQuestion.swift */,
 				5822CE3120A009E400093CD0 /* Reply.swift */,
 			);
 			path = Models;
@@ -363,9 +387,9 @@
 			files = (
 				5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */,
 				58C32FA720A0AC14005B7C7A /* App.storyboard in Resources */,
-				4E2BFFAB20A40A9200AA0DF0 /* QuestionHeaderView.xib in Resources */,
-				4E2BFFAD20A40A9B00AA0DF0 /* QuestionHeaderImageView.xib in Resources */,
 				5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */,
+				4EE8D00520A6CE450091253E /* QuestionHeaderView.xib in Resources */,
+				4EE8D00420A6CE450091253E /* QuestionHeaderImageView.xib in Resources */,
 				5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */,
 				58C32FA920A0ACF1005B7C7A /* Assets.xcassets in Resources */,
 				5822CE3920A025E600093CD0 /* GoogleService-Info.plist in Resources */,
@@ -485,7 +509,7 @@
 				5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */,
 				4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */,
 				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
-				4E1D3DCB20A64F6C000A56BA /* RTDBQuestion.swift in Sources */,
+				4EE8CFFA20A6C0980091253E /* ReplyViewController.swift in Sources */,
 				4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */,
 				4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */,
 				4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */,
@@ -667,7 +691,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = DyceAppIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -683,7 +710,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9P3SHN267S;
 				INFOPLIST_FILE = DyceAppIOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nfinitylabs.DyceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -699,7 +729,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -716,7 +750,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -732,7 +770,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -748,7 +790,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z52CK3HLVV;
 				INFOPLIST_FILE = DyceAppIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = NikhilandRohan.DyceAppIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

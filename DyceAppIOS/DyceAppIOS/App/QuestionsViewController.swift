@@ -138,14 +138,14 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
             if identifier == "questionDetail" {
                 let indexPath = self.tableView.indexPathForSelectedRow
                 let question = self.questions[indexPath!.row] as? Question
-                let detail = segue.destination as! ReplyContainerViewController
+                let detail = segue.destination as! ReplyViewController
                 detail.question = question!
             }
             
             if identifier == "questionImageDetail" {
                 let indexPath = self.tableView.indexPathForSelectedRow
                 let question = self.questions[indexPath!.row] as? Question
-                let detail = segue.destination as! ReplyContainerViewController
+                let detail = segue.destination as! ReplyViewController
                 detail.question = question!
             }
         }

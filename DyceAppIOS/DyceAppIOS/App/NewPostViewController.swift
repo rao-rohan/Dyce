@@ -69,7 +69,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         cameraButton.tintColor = UIColor.flatGray
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let postButton = UIBarButtonItem(title: "POST", style: .plain, target: self, action: #selector(NewPostViewController.uploadPost))
-        postButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Avenir", size: 16.0)!, NSAttributedStringKey.foregroundColor: UIColor.flatGray], for: .normal)
+        postButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Avenir", size: 10.0)!, NSAttributedStringKey.foregroundColor: UIColor.flatGray], for: .normal)
         toolbar.items = [cameraButton, space, postButton]
         toolbar.sizeToFit()
         return toolbar
@@ -79,7 +79,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         let question = Question()
         var hasError = false
         let alert = SCLAlertView()
-        time = Timestamp.init()
+        time = Timestamp()
         print(time)
         if selectedCategory != nil {
             question.category = selectedCategory!
@@ -172,6 +172,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     //MARK: Image Picker Methods
     @objc func chooseImageSource() {
+        postTextView.resignFirstResponder()
         // Allow user to choose between photo library and camera
         let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .actionSheet)
         
@@ -193,6 +194,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             alertController.addAction(cameraAction)
         }
         present(alertController, animated: true, completion: nil)
+        toolbar.isHidden = false
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

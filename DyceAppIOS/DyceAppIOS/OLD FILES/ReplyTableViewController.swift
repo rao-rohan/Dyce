@@ -56,6 +56,7 @@ class ReplyTableViewController: UITableViewController {
             questionHeaderView?.categoryLabel.text = question.category
             questionHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
         }
+        fetchReplies()
     }
     
     func calcReplies(_reply : Int) -> String{
@@ -96,6 +97,7 @@ class ReplyTableViewController: UITableViewController {
         return "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
     }
     func fetchReplies(){
+        print("fetching replies")
         let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(question.postID).collection(NameFile.Firestore.replies)
         repliesCollection.getDocuments(completion: { (snapshot, error) in
             if let documents = snapshot?.documents{
@@ -142,7 +144,7 @@ class ReplyTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reply = replies[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ReplyCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "replyCell", for: indexPath)
             if let cell = cell as? ReplyCell{
                 cell.reply = reply
                 return cell

@@ -6,6 +6,10 @@
 	<string>Please allow this app to access your location on update</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Please allow this app to currently access your location</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow this app to access your camera</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Please allow this app you access your images</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

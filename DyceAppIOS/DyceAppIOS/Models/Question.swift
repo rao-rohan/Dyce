@@ -38,9 +38,9 @@ class Question {
         creatorUID = ""
         creatorUsername = ""
         postID = ""
-      location = GeoPoint(latitude: 0.0, longitude: 0.0)
-       // longitude = 0
-      //  latitude = 0
+        location = GeoPoint(latitude: 0.0, longitude: 0.0)
+        // longitude = 0
+        //  latitude = 0
         category = ""
         time = Timestamp(date: Date(timeIntervalSinceNow: 0))
         question = ""
@@ -48,35 +48,68 @@ class Question {
         image = nil
     }
     
-    func pushToFirestore(){
+    func pushToFirestore(finished: @escaping () -> Void){
         //firebase references
         let postCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts)
         let imageStorage: StorageReference = Storage.storage().reference(withPath: NameFile.Firestore.images)
         
         let newDocument = postCollection.document()
         geoFire.setLocation(CLLocation(latitude: location.latitude, longitude: location.longitude), forKey: newDocument.documentID)
-        if let image = image{
-            imageStorage.child(NameFile.Firestore.images).putData(UIImagePNGRepresentation(image)!).observe(.success, handler: { (snapshot) in
-                if let imageURL = snapshot.metadata?.downloadURL()?.absoluteString{
+        if let image = image {
+            _ = imageStorage.child(NameFile.Firestore.images).child(newDocument.documentID).putData(UIImagePNGRepresentation(image)!, metadata: nil) { metadata, error in
+                guard metadata != nil else {
+                    // Uh-oh, an error occurred!
+                    print(error!)
+                    return
+                }
+                // You can also access to download URL after upload.
+                imageStorage.child(NameFile.Firestore.images).downloadURL { (url, error) in
+                    guard let downloadURL = url else {
+                        // Uh-oh, an error occurred!
+                        print(error!)
+                        return
+                    }
                     newDocument.setData([
                         NameFile.Firestore.creatorUID: self.creatorUID,
                         NameFile.Firestore.creatorUsername: self.creatorUsername,
-                        //NameFile.Firestore.postLocation: self.location,
                         NameFile.Firestore.postLongitude : self.location.longitude,
                         NameFile.Firestore.postLatitude : self.location.latitude,
                         NameFile.Firestore.postCategory: self.category,
                         NameFile.Firestore.postTime: self.time,
                         NameFile.Firestore.postQuestion: self.question,
-                        NameFile.Firestore.postImageURL: imageURL
+                        NameFile.Firestore.postImageURL: downloadURL.absoluteString
                         ])
+                    
                     SVProgressHUD.dismiss()
+                    finished()
+                    
                 }
-            })
-        }else{
+            }
+        }
+            
+            
+            //        if let image = image{
+            //            imageStorage.putData(UIImagePNGRepresentation(image)!).observe(.success, handler: { (snapshot) in
+            //                if let imageURL = snapshot.metadata?.downloadURL()?.absoluteString{
+            //                    newDocument.setData([
+            //                        NameFile.Firestore.creatorUID: self.creatorUID,
+            //                        NameFile.Firestore.creatorUsername: self.creatorUsername,
+            //                        //NameFile.Firestore.postLocation: self.location,
+            //                        NameFile.Firestore.postLongitude : self.location.longitude,
+            //                        NameFile.Firestore.postLatitude : self.location.latitude,
+            //                        NameFile.Firestore.postCategory: self.category,
+            //                        NameFile.Firestore.postTime: self.time,
+            //                        NameFile.Firestore.postQuestion: self.question,
+            //                        NameFile.Firestore.postImageURL: imageURL
+            //                        ])
+            //                     print(imageURL)
+            //                    SVProgressHUD.dismiss()
+            //                }
+            //            })
+        else{
             newDocument.setData([
                 NameFile.Firestore.creatorUID: self.creatorUID,
                 NameFile.Firestore.creatorUsername: self.creatorUsername,
-             //   NameFile.Firestore.postLocation: self.location,
                 NameFile.Firestore.postLongitude : self.location.longitude,
                 NameFile.Firestore.postLatitude : self.location.latitude,
                 NameFile.Firestore.postCategory: self.category,
@@ -84,6 +117,8 @@ class Question {
                 NameFile.Firestore.postQuestion: self.question
                 ])
             SVProgressHUD.dismiss()
+            
+            finished()
         }
     }
     

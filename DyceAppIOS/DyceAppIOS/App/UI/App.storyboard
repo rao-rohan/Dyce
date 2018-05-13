@@ -48,7 +48,7 @@
             <objects>
                 <tableViewController title="QuestionsViewController" hidesBottomBarWhenPushed="YES" id="Tq7-z1-6XU" customClass="QuestionsViewController" customModule="DyceAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="400" sectionHeaderHeight="28" sectionFooterHeight="28" id="B2F-Qb-QTj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.81960784313725488" green="0.84705882352941175" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -194,13 +194,13 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="categoryFlag" destination="bFv-2e-dTU" id="bri-HE-qEa"/>
                                     <outlet property="categoryLabel" destination="BEv-dt-k9m" id="XPS-93-7YX"/>
+                                    <outlet property="categoryView" destination="bFv-2e-dTU" id="bri-HE-qEa"/>
                                     <outlet property="questionLabel" destination="6hz-zZ-TGJ" id="7dt-LM-axl"/>
                                     <outlet property="repliesLabel" destination="CtQ-2A-GAe" id="vj2-4N-gKn"/>
                                     <outlet property="timeLabel" destination="RK0-K2-ETi" id="2PK-f7-1h0"/>
                                     <outlet property="usernameLabel" destination="jw3-i2-M5c" id="UIc-Ct-emf"/>
-                                    <segue destination="M6y-Db-8Ck" kind="show" identifier="questionDetail" id="hOw-Pj-Mr4"/>
+                                    <segue destination="M6y-Db-8Ck" kind="show" identifier="toReply" id="hOw-Pj-Mr4"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="QuestionImageCell" rowHeight="400" id="z0O-sW-xBF" customClass="QuestionImageCell" customModule="DyceAppIOS" customModuleProvider="target">
@@ -369,14 +369,14 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="categoryFlag" destination="Bx6-ef-7TI" id="OJ8-yB-cKS"/>
                                     <outlet property="categoryLabel" destination="1Ld-J2-HWs" id="2se-21-cu1"/>
+                                    <outlet property="categoryView" destination="Bx6-ef-7TI" id="OJ8-yB-cKS"/>
                                     <outlet property="postImage" destination="uM7-ca-7iM" id="FQN-vc-vie"/>
                                     <outlet property="questionLabel" destination="EzM-pp-45V" id="e7e-xg-eJk"/>
                                     <outlet property="repliesLabel" destination="6vI-Bs-Ije" id="TS4-nb-ekN"/>
                                     <outlet property="timeLabel" destination="Dux-NW-V4q" id="R2G-nZ-tZK"/>
                                     <outlet property="usernameLabel" destination="khf-oo-XUG" id="QvJ-xy-pV3"/>
-                                    <segue destination="M6y-Db-8Ck" kind="show" id="Uba-2s-u9s"/>
+                                    <segue destination="M6y-Db-8Ck" kind="show" identifier="toReplyImage" id="Uba-2s-u9s"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -895,13 +895,13 @@
                         <viewControllerLayoutGuide type="bottom" id="ILV-ET-0cB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gvj-yh-7Ev">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLy-xO-SEu">
-                                <rect key="frame" x="16" y="603" width="343" height="38"/>
+                                <rect key="frame" x="16" y="652" width="343" height="38"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a reply..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sH-iw-wy3">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a reply..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sH-iw-wy3">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="38"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -931,7 +931,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hNv-RI-Cho">
-                                <rect key="frame" x="16" y="0.0" width="343" height="603"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="652"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="replyCell" rowHeight="100" id="dSt-yl-M6t" customClass="ReplyCell" customModule="DyceAppIOS" customModuleProvider="target">
@@ -1021,7 +1021,7 @@
                         <viewControllerLayoutGuide type="bottom" id="duH-Gt-LNl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sST-v8-Hqk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CRS-Xm-sXs">
@@ -1063,7 +1063,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-LJ-sTD">
-                                <rect key="frame" x="26" y="184" width="323" height="316"/>
+                                <rect key="frame" x="26" y="184" width="323" height="365"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="568" id="1JW-Bm-OFI"/>
                                     <constraint firstAttribute="height" constant="222" id="dAy-bP-7Pb"/>
@@ -1119,7 +1119,7 @@
                         <outlet property="nameLabel" destination="CRS-Xm-sXs" id="niF-M3-vcn"/>
                         <outlet property="placeHolderText" destination="fZe-fA-cQw" id="X3S-kB-lpJ"/>
                         <outlet property="postTextView" destination="kax-XE-flO" id="Z3M-ZO-ufi"/>
-                        <segue destination="eOv-1g-ALE" kind="show" identifier="backtoFeed" id="h6M-JW-RCZ"/>
+                        <segue destination="eOv-1g-ALE" kind="show" identifier="backToFeed" id="TmV-mQ-KQl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUg-CF-8cn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1136,6 +1136,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Uba-2s-u9s"/>
-        <segue reference="InU-R3-D6q"/>
+        <segue reference="TmV-mQ-KQl"/>
     </inferredMetricsTieBreakers>
 </document>

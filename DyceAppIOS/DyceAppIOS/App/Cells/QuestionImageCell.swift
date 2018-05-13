@@ -8,9 +8,9 @@ class QuestionImageCell: UITableViewCell {
     @IBOutlet weak var repliesLabel: UILabel!
     @IBOutlet weak var usernameLabel: UIButton!
     @IBOutlet weak var postImage: UIImageView!
-    @IBOutlet weak var categoryFlag: UIView!
+    @IBOutlet weak var categoryView: UIView!
     @IBOutlet weak var categoryLabel: UILabel!
-    
+    let colorPicker = CategoryHelper()
     var question: Question = Question() {didSet { reloadData() } }
     
     private func reloadData(){
@@ -52,6 +52,7 @@ class QuestionImageCell: UITableViewCell {
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
         postImage.image = question.image
         categoryLabel.text = question.category
+        categoryView.backgroundColor = colorPicker.colorChooser(question.category)
         
     }
 }

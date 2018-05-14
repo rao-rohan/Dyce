@@ -53,4 +53,5 @@ class QuestionCell: UITableViewCell {
         categoryLabel.text = question.category
         categoryView.backgroundColor = colorPicker.colorChooser(question.category)
     }
+    
 }

@@ -6,7 +6,7 @@ import Firebase
 import CoreLocation
 
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
-
+    
     @IBOutlet weak var ImagePlace: UIImageView!
     @IBOutlet weak var placeHolderText: UILabel!
     @IBOutlet weak var postTextView: UITextView!
@@ -14,7 +14,6 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var categoryButton: UIButton!
     
     var image: UIImage?
-    var locationExists: Bool = false
     var selectedCategory: String?
     var currLocation: CLLocationCoordinate2D?
     var reset: Bool = false
@@ -38,7 +37,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         categoryButton.titleLabel?.textAlignment = NSTextAlignment.center
         locationSetup()
-
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -80,16 +79,16 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             alert.showError("Error", subTitle: "Please select a category")
             hasError = true
         }
-
+        
         if(postTextView.text != "") {
             question.question = postTextView.text
         } else {
             alert.showError("Error", subTitle: "You haven't written a question!")
             hasError = true
         }
-
-        if(locationExists == true) {
-            question.location = GeoPoint(latitude: currLocation!.latitude, longitude: currLocation!.longitude)
+        
+        if let loc = currLocation {
+            question.location = GeoPoint(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
             print(question.location)
         } else {
             alert.showError("Error", subTitle: "Couldn't get location!")
@@ -104,10 +103,9 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         question.creatorUID = AppStorage.PersonalInfo.uid
         question.creatorUsername = AppStorage.PersonalInfo.username
         if(hasError == false) {
-            question.pushToFirestore(finished:{
-                self.performSegue(withIdentifier: "backToFeed", sender: nil)
-            })
- 
+            question.pushToFirestore()
+            self.performSegue(withIdentifier: "backToFeed", sender: nil)
+            
         }
     }
     
@@ -197,7 +195,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             image = pickedImage
             ImagePlace.image = pickedImage
-
+            
         }
         
         dismiss(animated: true, completion: nil)
@@ -220,6 +218,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.requestLocation()
+        currLocation = locationManager.location?.coordinate
         print(currLocation)
     }
 }

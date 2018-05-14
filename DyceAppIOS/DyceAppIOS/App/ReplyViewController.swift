@@ -38,6 +38,7 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
             questionImageHeaderView?.imageView.clipsToBounds = true
             questionImageHeaderView?.categoryView.backgroundColor = colorPicker.colorChooser(question.category)
             questionImageHeaderView?.imageView.image = question.image
+            questionImageHeaderView?.imageView.image = rotateImage(image: question.image!)
             questionImageHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
             
         }
@@ -211,6 +212,26 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    func rotateImage(image:UIImage) -> UIImage
+    {
+        var rotatedImage = UIImage()
+        switch image.imageOrientation
+        {
+        case .right:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .down)
+            
+        case .down:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .left)
+            
+        case .left:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .up)
+            
+        default:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .right)
+        }
+        
+        return rotatedImage
     }
     
 }

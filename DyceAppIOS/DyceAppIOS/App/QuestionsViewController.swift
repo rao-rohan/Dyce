@@ -5,6 +5,9 @@ import Firebase
 import SCLAlertView
 import DZNEmptyDataSet
 import GeoFire
+import AsyncImageView
+
+
 class QuestionsViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var currLocation: CLLocationCoordinate2D?
@@ -90,17 +93,19 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
                     repliesCollection.getDocuments(completion: { (snapshot, error) in
                         if let documents = snapshot?.documents{
                             //get images
+                            let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
+                            self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count, _imageURL: URL(string: imageURL!)))
                             if let url = imageURL{
                                 let imageRef = Storage.storage().reference(forURL: url)
                                 imageRef.getData(maxSize: 100*1024*1024, completion: { (data, error) in
                                     if let data = data{
                                         if let image = UIImage(data: data){
-                                            let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
-                                            self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count, _image: image))
+                                            
                                         }
                                     }
                                 })
-                            }else{
+                            }
+                            else{
                                 let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
                                 self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count))
                             }
@@ -186,6 +191,26 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     }
     func questionsSetup(){
         fetchQuestions()
+    }
+    func rotateImage(image:UIImage) -> UIImage
+    {
+        var rotatedImage = UIImage()
+        switch image.imageOrientation
+        {
+        case .right:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .down)
+            
+        case .down:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .left)
+            
+        case .left:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .up)
+            
+        default:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .right)
+        }
+        
+        return rotatedImage
     }
     
 }

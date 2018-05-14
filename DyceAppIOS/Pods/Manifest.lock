@@ -1,5 +1,6 @@
 PODS:
   - AlertOnboarding (2.0)
+  - AsyncImageView (1.6)
   - Bond (6.7.0):
     - Differ (~> 1.0)
     - ReactiveKit (~> 3.8)
@@ -133,6 +134,7 @@ PODS:
 
 DEPENDENCIES:
   - AlertOnboarding
+  - AsyncImageView
   - Bond
   - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - DZNEmptyDataSet
@@ -153,6 +155,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AlertOnboarding
+    - AsyncImageView
     - Bond
     - BoringSSL
     - Differ
@@ -205,6 +208,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AlertOnboarding: 2e6804e67894894807c5d24bcfcd7905897e6f08
+  AsyncImageView: 416e99402e5b1f20571de70ad619ced90f56a7d9
   Bond: 06ece4b283fb69047d9997e285147d0abcf52ce3
   BoringSSL: 60dd24df4af296bf41d78e5841dbb95d75f88c0d
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -238,6 +242,6 @@ SPEC CHECKSUMS:
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d71a8d0d44afb5eae908577f2173730520616bb6
+PODFILE CHECKSUM: ea2237d9f39d14e68ca3e730712941607ff00473
 
 COCOAPODS: 1.5.0

@@ -8,8 +8,9 @@ class Question {
     
     var creatorUID: String
     var creatorUsername: String
+    var creatorProfileImage: UIImage
+    
     var postID: String
-    //var location: GeoPoint
     var category: String
     var time: Timestamp
     var location : GeoPoint
@@ -17,9 +18,10 @@ class Question {
     var numReplies: Int
     var image: UIImage?
     
-    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
+    init(_creatorUID: String, _creatorUsername: String, _creatorProfileImage: UIImage = #imageLiteral(resourceName: "default"), _postID: String, _category: String, _time: Timestamp, _location: GeoPoint, _question: String, _numReplies: Int, _image: UIImage? = nil) {
         creatorUID = _creatorUID
         creatorUsername = _creatorUsername
+        creatorProfileImage = _creatorProfileImage
         postID = _postID
         location = _location
         category = _category
@@ -32,19 +34,17 @@ class Question {
     init() {
         creatorUID = ""
         creatorUsername = ""
+        creatorProfileImage = UIImage()
         postID = ""
-      location = GeoPoint(latitude: 0.0, longitude: 0.0)
-       // longitude = 0
-      //  latitude = 0
+        location = GeoPoint(latitude: 0, longitude: 0)
         category = ""
-        time = Timestamp(date: Date(timeIntervalSinceNow: 0))
+        time = Timestamp()
         question = ""
         numReplies = 0
-        image = nil
+        image = UIImage()
     }
     
     func pushToFirestore(){
-        //firebase references
         let postCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.posts)
         let imageStorage: StorageReference = Storage.storage().reference(withPath: NameFile.Firestore.images)
         
@@ -54,7 +54,6 @@ class Question {
                     postCollection.document().setData([
                         NameFile.Firestore.creatorUID: self.creatorUID,
                         NameFile.Firestore.creatorUsername: self.creatorUsername,
-                        //NameFile.Firestore.postLocation: self.location,
                         NameFile.Firestore.postLongitude : self.location.longitude,
                         NameFile.Firestore.postLatitude : self.location.latitude,
                         NameFile.Firestore.postCategory: self.category,
@@ -69,7 +68,6 @@ class Question {
             postCollection.document().setData([
                 NameFile.Firestore.creatorUID: self.creatorUID,
                 NameFile.Firestore.creatorUsername: self.creatorUsername,
-             //   NameFile.Firestore.postLocation: self.location,
                 NameFile.Firestore.postLongitude : self.location.longitude,
                 NameFile.Firestore.postLatitude : self.location.latitude,
                 NameFile.Firestore.postCategory: self.category,

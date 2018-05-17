@@ -7,7 +7,7 @@ import CoreLocation
 
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
 
-    @IBOutlet weak var ImagePlace: UIImageView!
+    @IBOutlet weak var imagePlace: UIImageView!
     @IBOutlet weak var placeHolderText: UILabel!
     @IBOutlet weak var postTextView: UITextView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -77,10 +77,11 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @objc func uploadPost(){
         let question = Question()
+        
         var hasError = false
         let alert = SCLAlertView()
-        time = Timestamp.init()
-        print(time)
+        time = Timestamp()
+
         if selectedCategory != nil {
             question.category = selectedCategory!
         } else {
@@ -108,8 +109,6 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         question.time = time
         question.creatorUID = AppStorage.PersonalInfo.uid
         question.creatorUsername = AppStorage.PersonalInfo.username
-        print(question.creatorUID)
-        print(question.creatorUsername)
         
         if(hasError == false) {
             SVProgressHUD.show()
@@ -198,7 +197,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             image = pickedImage
-            ImagePlace.image = pickedImage
+            imagePlace.image = pickedImage
 
         }
         

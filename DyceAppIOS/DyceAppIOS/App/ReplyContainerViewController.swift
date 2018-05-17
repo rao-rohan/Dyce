@@ -1,11 +1,3 @@
-//
-//  DetailContainerViewController.swift
-//  Questions
-//
-//  Created by Rohan Rao on 10/10/17.
-//  Copyright © 2017 Rohan Rao. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import SVProgressHUD
@@ -14,9 +6,11 @@ import SCLAlertView
 class ReplyContainerViewController: UIViewController, UITextFieldDelegate{
     
     var question = Question()
+    
     var tableView: ReplyTableViewController?
     var keyboardHeight : CGFloat = 0
     var height : CGFloat = 0
+    
     @IBOutlet weak var replyTextFieldConstraint: NSLayoutConstraint!
     @IBOutlet weak var flagButton: UIBarButtonItem!
     @IBOutlet weak var replyTextField: UITextField!
@@ -29,9 +23,8 @@ class ReplyContainerViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
         self.replyTextField.delegate = self
         height = (self.tabBarController?.tabBar.frame.size.height)!
-//        self.navigationController?.navigationBar.titleTextAttributes = [kCTFontAttributeName: UIFont(name: "ProximaNova-Bold", size: 20.0)!, kCTForegroundColorAttributeName: UIColor.white] as [NSAttributedStringKey : Any]
-    
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)),
                                                name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -73,7 +66,7 @@ class ReplyContainerViewController: UIViewController, UITextFieldDelegate{
         else{
             alert.showError("Error", subTitle: "Couldn't get location!")
         }
-        textFieldShouldReturn(replyTextField)
+        _ = textFieldShouldReturn(replyTextField)
     }
     
     

@@ -62,6 +62,7 @@ depends-top-level:
 - !private "print"
 depends-member:
 - !private ["10DyceAppIOS0B7StorageC", "PersonalInfo"]
+- !private ["10DyceAppIOS0B7StorageC", "save"]
 - !private ["So4AuthC", "auth"]
 - !private ["So4AuthC", "createUser"]
 - !private ["SC13AuthErrorCodeO", "emailAlreadyInUse"]

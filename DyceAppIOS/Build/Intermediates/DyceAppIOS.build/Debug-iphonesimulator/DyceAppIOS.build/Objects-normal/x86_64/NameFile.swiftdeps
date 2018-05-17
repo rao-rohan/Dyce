@@ -26,20 +26,29 @@ depends-member:
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "creatorImageURL"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "creatorUID"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "creatorUsername"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "firstName"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "images"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "init"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "lastName"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "postCategory"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "postImageURL"]
-- ["10DyceAppIOS8NameFileV9FirestoreV", "postLocation"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "postLatitude"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "postLongitude"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "postQuestion"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "postTime"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "posts"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "profileImageURL"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "replies"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "reply"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "replyImageURL"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "replyTime"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "replyUID"]
 - ["10DyceAppIOS8NameFileV9FirestoreV", "replyUsername"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "username"]
+- ["10DyceAppIOS8NameFileV9FirestoreV", "users"]
 - ["s8HashableP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
@@ -333,4 +342,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "13cf0906f59d869f93ecb3e9bec1f8ae"
+interface-hash: "415f5e6e82f96647d3adecd6812cc3d3"

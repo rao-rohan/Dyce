@@ -84,6 +84,8 @@ PODS:
   - FirebaseSwizzlingUtilities/ISASwizzling (1.0.1)
   - FirebaseSwizzlingUtilities/MethodSwizzling (1.0.1):
     - FirebaseCore (~> 4.0)
+  - GeoFire (2.0.1):
+    - Firebase/Database (~> 4.0)
   - Google-Mobile-Ads-SDK (7.30.0)
   - GoogleToolboxForMac/DebugUtils (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
@@ -143,6 +145,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Performance
   - Firebase/Storage
+  - GeoFire
   - KMPlaceholderTextView
   - SCLAlertView
   - SVProgressHUD
@@ -165,6 +168,7 @@ SPEC REPOS:
     - FirebasePerformance
     - FirebaseStorage
     - FirebaseSwizzlingUtilities
+    - GeoFire
     - Google-Mobile-Ads-SDK
     - GoogleToolboxForMac
     - gRPC
@@ -214,6 +218,7 @@ SPEC CHECKSUMS:
   FirebasePerformance: 85bdc3f3d630deb629e85695fcab23364d68f5db
   FirebaseStorage: 0c223481c8f89ed300cf1239ddd2d9833622c65f
   FirebaseSwizzlingUtilities: 6006111d30248d2321ffac0231e246663e704ea3
+  GeoFire: 3e70a24019dc16816190f533c9cac0d1321c4a71
   Google-Mobile-Ads-SDK: 7404f68120ae8682afeb5af001fbf4aad731c78e
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   gRPC: f54f0e6d603052b4562447da442ce2ff30bcdacc
@@ -229,6 +234,6 @@ SPEC CHECKSUMS:
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: c8b48121f49bfdc64349bf128505423c30203715
+PODFILE CHECKSUM: b708408b01de1fd9b0ab9b74ddf56a7bfb0e67ff
 
 COCOAPODS: 1.5.0

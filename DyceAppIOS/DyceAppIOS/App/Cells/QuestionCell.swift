@@ -7,10 +7,10 @@ class QuestionCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var repliesLabel: UILabel!
     @IBOutlet weak var usernameLabel: UIButton!
-    @IBOutlet weak var categoryFlag: UIView!
+    @IBOutlet weak var categoryView: UIView!
     @IBOutlet weak var categoryLabel: UILabel!
 
-    
+    let colorPicker = CategoryHelper()
     var question: Question = Question() {didSet { reloadData() } }
 
     private func reloadData(){
@@ -51,5 +51,7 @@ class QuestionCell: UITableViewCell {
         repliesLabel.text = "\(question.numReplies)" + replies
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
         categoryLabel.text = question.category
+        categoryView.backgroundColor = colorPicker.colorChooser(question.category)
     }
+    
 }

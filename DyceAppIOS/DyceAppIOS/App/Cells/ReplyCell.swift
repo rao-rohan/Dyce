@@ -1,23 +1,22 @@
 import Foundation
 import UIKit
 
-class QuestionImageCell: UITableViewCell {
+class ReplyCell: UITableViewCell {
     
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var repliesLabel: UILabel!
-    @IBOutlet weak var usernameLabel: UIButton!
-    @IBOutlet weak var postImage: UIImageView!
-    @IBOutlet weak var categoryFlag: UIView!
-    @IBOutlet weak var categoryLabel: UILabel!
-    
-    var question: Question = Question() {didSet { reloadData() } }
+    @IBOutlet weak var replyText: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var postTime: UILabel!
+<<<<<<< HEAD:DyceAppIOS/DyceAppIOS/App/ReplyCell.swift
+
+=======
+>>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988:DyceAppIOS/DyceAppIOS/App/Cells/ReplyCell.swift
+    var reply: Reply = Reply() {didSet { reloadData() } }
     
     private func reloadData(){
-        questionLabel.text = question.question
+        replyText.text = reply.reply
         //converts TimeStamp to String
         var timeWord = "second"
-        let secondsSinceEpoch = TimeInterval(question.time.seconds)
+        let secondsSinceEpoch = TimeInterval(reply.time.seconds)
         var timeAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
         // print("\(timeAgo)" + timeWord)
         if(timeAgo > 60 && timeWord == "second"){ // more than 60 seconds
@@ -42,16 +41,9 @@ class QuestionImageCell: UITableViewCell {
         }
         
         let timeSince = (Int) (timeAgo) //casts to an integer
-        timeLabel.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
+        postTime.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
         //  print("\(timeAgo)" + timeWord)
-        var replies = " reply"
-        if(question.numReplies != 1){
-            replies = " replies"
-        }
-        repliesLabel.text = "\(question.numReplies)" + replies
-        usernameLabel.setTitle(question.creatorUsername, for: .normal)
-        postImage.image = question.image
-        categoryLabel.text = question.category
-        
+        usernameLabel.text = reply.username
     }
 }
+

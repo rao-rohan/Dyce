@@ -6,7 +6,10 @@ class ReplyCell: UITableViewCell {
     @IBOutlet weak var replyText: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postTime: UILabel!
+<<<<<<< HEAD:DyceAppIOS/DyceAppIOS/App/ReplyCell.swift
 
+=======
+>>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988:DyceAppIOS/DyceAppIOS/App/Cells/ReplyCell.swift
     var reply: Reply = Reply() {didSet { reloadData() } }
     
     private func reloadData(){

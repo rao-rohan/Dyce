@@ -1,28 +1,34 @@
 import Foundation
 import UIKit
 import Firebase
+import SVProgressHUD
+import SCLAlertView
 
-class ReplyTableViewController: UITableViewController {
+class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource{
     
     var question = Question()
-    var numReplies: Int?
+    var keyboardHeight : CGFloat = 0
+    var height : CGFloat = 0
+    @IBOutlet weak var replyTextField: UITextField!
+    @IBOutlet weak var tableView : UITableView!
     private var replies = [Reply]() {didSet{tableView.reloadData()}}
     var questionHeaderView: QuestionHeaderView?
     var questionImageHeaderView: QuestionImageHeaderView?
     let colorPicker = CategoryHelper()
-    override var prefersStatusBarHidden : Bool {
-        return true
-    }
-    
+    var image = UIImage()
+    var hasImage = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(hasImage)
+        print("entered replies" )
+        self.replyTextField.delegate = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         self.tableView.separatorStyle = .none
-        tableView.estimatedRowHeight = 100.0
+        
+        tableView.estimatedRowHeight = 150.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        let image = question.image
-        if let _ = image {
-            
+        if hasImage{
             questionImageHeaderView = UINib(nibName: "QuestionHeaderImageView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionImageHeaderView
             questionImageHeaderView?.posterUID = question.creatorUID
             questionImageHeaderView?.usernameLabel.text = question.creatorUsername
@@ -31,8 +37,8 @@ class ReplyTableViewController: UITableViewController {
             questionImageHeaderView?.timeLabel.text = convertTime(_time: question.time)
             questionImageHeaderView?.imageView.clipsToBounds = true
             questionImageHeaderView?.categoryView.backgroundColor = colorPicker.colorChooser(question.category)
-            questionImageHeaderView?.categoryLabel.text = question.category
             questionImageHeaderView?.imageView.image = question.image
+            questionImageHeaderView?.imageView.image = rotateImage(image: question.image!)
             questionImageHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
             
         }
@@ -48,8 +54,16 @@ class ReplyTableViewController: UITableViewController {
             questionHeaderView?.categoryLabel.text = question.category
             questionHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
         }
+        fetchReplies()
+        
+        
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)),
+                                               name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)),
+                                               name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
     func calcReplies(_reply : Int) -> String{
         var replies = " reply"
         if(question.numReplies != 1){
@@ -57,7 +71,6 @@ class ReplyTableViewController: UITableViewController {
         }
         return "\(question.numReplies)" + replies
     }
-    
     func convertTime(_time : Timestamp) -> String {
         //converts TimeStamp to String
         var timeWord = "second"
@@ -88,9 +101,10 @@ class ReplyTableViewController: UITableViewController {
         let timeSince = (Int) (timeAgo) //casts to an integer
         return "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
     }
-    
     func fetchReplies(){
-        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.posts).document(question.postID).collection(NameFile.Firestore.replies)
+        replies.removeAll()
+        print("fetching replies")
+        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(question.postID).collection(NameFile.Firestore.replies)
         repliesCollection.getDocuments(completion: { (snapshot, error) in
             if let documents = snapshot?.documents{
                 for document in documents {
@@ -103,9 +117,6 @@ class ReplyTableViewController: UITableViewController {
             }
         })
     }
-    
-    
-    
     func appendInOrder(_reply : Reply){
         for (index, reply)  in replies.enumerated(){
             let secondsSinceEpochReply = TimeInterval(reply.time.seconds)
@@ -121,42 +132,107 @@ class ReplyTableViewController: UITableViewController {
         
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    @objc func keyboardWillShow(notification: Notification) {
+        let userInfo:NSDictionary = notification.userInfo! as NSDictionary
+        let keyboardFrame:NSValue = userInfo.value(forKey: UIKeyboardFrameEndUserInfoKey) as! NSValue
+        let keyboardRectangle = keyboardFrame.cgRectValue
+        keyboardHeight = keyboardRectangle.height - height
+        moveTextField(replyTextField, moveDistance: -keyboardHeight, up: true)
+        // do whatever you want with this keyboard height
+    }
+    
+    @objc func keyboardWillHide(notification: Notification) {
+        // keyboard is dismissed/hidden from the screen
+        moveTextField(replyTextField, moveDistance: -keyboardHeight, up: false)
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textField.text = ""
+        return true
+    }
+    
+    @IBAction func sendPressed(_ sender: AnyObject) {
+        let reply = Reply()
+        let alert = SCLAlertView()
+        if(replyTextField.text != "") {
+            reply.postID = question.postID
+            reply.reply = replyTextField.text!
+            reply.uid = AppStorage.PersonalInfo.uid
+            reply.username = AppStorage.PersonalInfo.username
+            reply.pushToFirestore()
+            fetchReplies()
+        }
+        else{
+            alert.showError("Error", subTitle: "Couldn't get location!")
+        }
+        textFieldShouldReturn(replyTextField)
+    }
+    
+    func moveTextField(_ textField: UITextField, moveDistance: CGFloat, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = (up ? moveDistance : -moveDistance)
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if(questionHeaderView != nil) {
             return questionHeaderView
         }
         return questionImageHeaderView
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if(questionHeaderView != nil) {
             return 224.0
         }
         return 360.0
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reply = replies[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ReplyCell", for: indexPath)
-            if let cell = cell as? ReplyCell{
-                cell.reply = reply
-                return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "replyCell", for: indexPath)
+        if let cell = cell as? ReplyCell{
+            cell.reply = reply
+            return cell
         }
         return UITableViewCell()
     }
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return replies.count
     }
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, object: PFObject?) -> UITableViewCell? {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "replyCell", for: indexPath) as! ReplyCell
-//        cell.replyProfilePic.layer.cornerRadius = cell.replyProfilePic.frame.height/2
-//        cell.replyProfilePic.clipsToBounds = true
-//        cell.postTime.text = (object!.createdAt as NSDate?)?.shortTimeAgo(since: Date())
-//        cell.replyText.text = object!.value(forKey: "reply") as? String
-//        let user = object!.value(forKey: "fromUser") as? PFUser
-//        cell.usernameLabel.text = user?.username
-//        return cell
-//    }
+    func rotateImage(image:UIImage) -> UIImage
+    {
+        var rotatedImage = UIImage()
+        switch image.imageOrientation
+        {
+        case .right:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .down)
+            
+        case .down:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .left)
+            
+        case .left:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .up)
+            
+        default:
+            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .right)
+        }
+        
+        return rotatedImage
+    }
+    
 }
+

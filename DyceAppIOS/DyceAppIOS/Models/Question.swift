@@ -9,9 +9,8 @@ class Question {
     var geoFire : GeoFire!
     var creatorUID: String
     var creatorUsername: String
-    var creatorProfileImage: UIImage
-    
     var postID: String
+    //var location: GeoPoint
     var category: String
     var time: Timestamp
     var location : GeoPoint
@@ -21,15 +20,18 @@ class Question {
     var questionImageURL: URL?
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     init(_creatorUID: String, _creatorUsername: String, _creatorProfileImage: UIImage = #imageLiteral(resourceName: "default"), _postID: String, _category: String, _time: Timestamp, _location: GeoPoint, _question: String, _numReplies: Int, _image: UIImage? = nil) {
 =======
     init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
         geofireRef = Database.database().reference()
         geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
+>>>>>>> parent of 5bb03c2... might uhuoh
         creatorUID = _creatorUID
         creatorUsername = _creatorUsername
-        creatorProfileImage = _creatorProfileImage
         postID = _postID
         location = _location
         category = _category
@@ -60,8 +62,8 @@ class Question {
         geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
         creatorUID = ""
         creatorUsername = ""
-        creatorProfileImage = UIImage()
         postID = ""
+<<<<<<< HEAD
 <<<<<<< HEAD
         location = GeoPoint(latitude: 0, longitude: 0)
 =======
@@ -69,15 +71,25 @@ class Question {
         // longitude = 0
         //  latitude = 0
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+      location = GeoPoint(latitude: 0.0, longitude: 0.0)
+       // longitude = 0
+      //  latitude = 0
+>>>>>>> parent of 5bb03c2... might uhuoh
         category = ""
-        time = Timestamp()
+        time = Timestamp(date: Date(timeIntervalSinceNow: 0))
         question = ""
         numReplies = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         image = UIImage()
+=======
+        image = nil
+>>>>>>> parent of 5bb03c2... might uhuoh
     }
     
     func pushToFirestore(){
+        //firebase references
         let postCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.posts)
 =======
         image = nil
@@ -132,6 +144,7 @@ class Question {
                     newDocument.setData([
                         NameFile.Firestore.creatorUID: self.creatorUID,
                         NameFile.Firestore.creatorUsername: self.creatorUsername,
+                        //NameFile.Firestore.postLocation: self.location,
                         NameFile.Firestore.postLongitude : self.location.longitude,
                         NameFile.Firestore.postLatitude : self.location.latitude,
                         NameFile.Firestore.postCategory: self.category,
@@ -148,6 +161,7 @@ class Question {
             newDocument.setData([
                 NameFile.Firestore.creatorUID: self.creatorUID,
                 NameFile.Firestore.creatorUsername: self.creatorUsername,
+             //   NameFile.Firestore.postLocation: self.location,
                 NameFile.Firestore.postLongitude : self.location.longitude,
                 NameFile.Firestore.postLatitude : self.location.latitude,
                 NameFile.Firestore.postCategory: self.category,

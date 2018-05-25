@@ -4,13 +4,12 @@ target 'DyceAppIOS' do
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 pod 'Firebase/Database'
+
 pod 'Firebase/Crash'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Performance'
 pod 'Firebase/Firestore'
-pod 'GeoFire'
-
 pod 'SVProgressHUD'
 pod 'DZNEmptyDataSet'
 pod 'Bond’

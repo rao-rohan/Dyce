@@ -1,0 +1,21 @@
+[debug] [2018-05-15T17:33:57.739Z] ----------------------------------------------------------------------
+[debug] [2018-05-15T17:33:57.741Z] Command:       /usr/local/Cellar/node/9.4.0/bin/node /usr/local/bin/firebase init
+[debug] [2018-05-15T17:33:57.741Z] CLI Version:   3.18.4
+[debug] [2018-05-15T17:33:57.741Z] Platform:      darwin
+[debug] [2018-05-15T17:33:57.741Z] Node Version:  v9.4.0
+[debug] [2018-05-15T17:33:57.741Z] Time:          Tue May 15 2018 10:33:57 GMT-0700 (PDT)
+[debug] [2018-05-15T17:33:57.741Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-15T17:33:57.748Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-15T17:33:57.748Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/rohanrao/GitHub/Dyce
+

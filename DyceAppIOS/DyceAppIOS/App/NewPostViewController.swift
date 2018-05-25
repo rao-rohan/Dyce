@@ -8,11 +8,15 @@ import CoreLocation
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
 <<<<<<< HEAD
 
+<<<<<<< HEAD
     @IBOutlet weak var imagePlace: UIImageView!
 =======
     
     @IBOutlet weak var ImagePlace: UIImageView!
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+    @IBOutlet weak var ImagePlace: UIImageView!
+>>>>>>> parent of 5bb03c2... might uhuoh
     @IBOutlet weak var placeHolderText: UILabel!
     @IBOutlet weak var postTextView: UITextView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -74,15 +78,19 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @objc func uploadPost(){
         let question = Question()
-        
         var hasError = false
         let alert = SCLAlertView()
+<<<<<<< HEAD
         time = Timestamp()
 <<<<<<< HEAD
 
 =======
         print(time)
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+        time = Timestamp.init()
+        print(time)
+>>>>>>> parent of 5bb03c2... might uhuoh
         if selectedCategory != nil {
             question.category = selectedCategory!
         } else {
@@ -113,6 +121,11 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         question.creatorUID = AppStorage.PersonalInfo.uid
         question.creatorUsername = AppStorage.PersonalInfo.username
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        print(question.creatorUID)
+        print(question.creatorUsername)
+>>>>>>> parent of 5bb03c2... might uhuoh
         
 =======
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
@@ -209,7 +222,11 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             image = pickedImage
 <<<<<<< HEAD
+<<<<<<< HEAD
             imagePlace.image = pickedImage
+=======
+            ImagePlace.image = pickedImage
+>>>>>>> parent of 5bb03c2... might uhuoh
 
 =======
             ImagePlace.image = pickedImage

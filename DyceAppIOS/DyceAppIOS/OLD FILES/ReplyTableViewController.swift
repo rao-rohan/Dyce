@@ -1,3 +1,11 @@
+//
+//  DetailViewController.swift
+//  Questions
+//
+//  Created by Rohan Rao on 10/08/17.
+//  Copyright © 2017 Rohan Rao. All rights reserved.
+//
+
 import Foundation
 import UIKit
 import Firebase
@@ -21,7 +29,7 @@ class ReplyTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
         let image = question.image
-        if let _ = image {
+        if let imageCheck = image {
             
             questionImageHeaderView = UINib(nibName: "QuestionHeaderImageView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionImageHeaderView
             questionImageHeaderView?.posterUID = question.creatorUID
@@ -58,7 +66,6 @@ class ReplyTableViewController: UITableViewController {
         }
         return "\(question.numReplies)" + replies
     }
-    
     func convertTime(_time : Timestamp) -> String {
         //converts TimeStamp to String
         var timeWord = "second"
@@ -89,7 +96,6 @@ class ReplyTableViewController: UITableViewController {
         let timeSince = (Int) (timeAgo) //casts to an integer
         return "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
     }
-    
     func fetchReplies(){
         print("fetching replies")
         let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(question.postID).collection(NameFile.Firestore.replies)

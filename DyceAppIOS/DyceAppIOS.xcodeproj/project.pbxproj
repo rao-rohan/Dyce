@@ -14,6 +14,7 @@
 		4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */; };
 		4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		5802CF5120A679690001DBF1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802CF4A20A679530001DBF1 /* LoginVC.swift */; };
 		5802CF5220A679690001DBF1 /* SignUpStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802CF4B20A679580001DBF1 /* SignUpStorage.swift */; };
 		5802CF5320A679690001DBF1 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5802CF4C20A6795B0001DBF1 /* IntroVC.swift */; };
@@ -26,11 +27,17 @@
 		4EE8D00420A6CE450091253E /* QuestionHeaderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */; };
 		4EE8D00520A6CE450091253E /* QuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */; };
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+>>>>>>> parent of 5bb03c2... might uhuoh
 		5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDE5209FF3F100093CD0 /* AppDelegate.swift */; };
 		5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDE9209FF3F100093CD0 /* Main.storyboard */; };
 		5822CDF0209FF3F200093CD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CDEE209FF3F200093CD0 /* LaunchScreen.storyboard */; };
 		5822CDFB209FF3F300093CD0 /* DyceAppIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CDFA209FF3F300093CD0 /* DyceAppIOSTests.swift */; };
 		5822CE06209FF3F300093CD0 /* DyceAppIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE05209FF3F300093CD0 /* DyceAppIOSUITests.swift */; };
+		5822CE1C209FF41200093CD0 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE15209FF41200093CD0 /* IntroVC.swift */; };
+		5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE16209FF41200093CD0 /* LoginVC.swift */; };
+		5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5822CE17209FF41200093CD0 /* Intro.storyboard */; };
+		5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE1A209FF41200093CD0 /* SignUpVC.swift */; };
 		5822CE23209FFDC300093CD0 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE22209FFDC300093CD0 /* AppStorage.swift */; };
 		5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2920A0093C00093CD0 /* NameFile.swift */; };
 		5822CE2C20A009AB00093CD0 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */; };
@@ -70,6 +77,7 @@
 		4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionImageHeaderView.swift; sourceTree = "<group>"; };
 		4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		5802CF4A20A679530001DBF1 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5802CF4B20A679580001DBF1 /* SignUpStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStorage.swift; sourceTree = "<group>"; };
 		5802CF4C20A6795B0001DBF1 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
@@ -82,6 +90,8 @@
 		4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderImageView.xib; sourceTree = "<group>"; };
 		4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderView.xib; sourceTree = "<group>"; };
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+>>>>>>> parent of 5bb03c2... might uhuoh
 		5822CDE2209FF3F100093CD0 /* DyceAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyceAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5822CDE5209FF3F100093CD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5822CDEA209FF3F100093CD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +103,10 @@
 		5822CE01209FF3F300093CD0 /* DyceAppIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyceAppIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5822CE05209FF3F300093CD0 /* DyceAppIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DyceAppIOSUITests.swift; sourceTree = "<group>"; };
 		5822CE07209FF3F300093CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5822CE15209FF41200093CD0 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		5822CE16209FF41200093CD0 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5822CE17209FF41200093CD0 /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		5822CE1A209FF41200093CD0 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5822CE22209FFDC300093CD0 /* AppStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		5822CE2920A0093C00093CD0 /* NameFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameFile.swift; sourceTree = "<group>"; };
 		5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -254,13 +268,10 @@
 		5822CE13209FF41200093CD0 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
-				5802CF4E20A679620001DBF1 /* Intro.storyboard */,
-				5802CF4C20A6795B0001DBF1 /* IntroVC.swift */,
-				5802CF4A20A679530001DBF1 /* LoginVC.swift */,
-				5802CF4F20A679660001DBF1 /* ProfileImageVC.swift */,
-				5802CF4B20A679580001DBF1 /* SignUpStorage.swift */,
-				5802CF5020A679690001DBF1 /* SignUpVC1.swift */,
-				5802CF4D20A6795F0001DBF1 /* SignUpVC2.swift */,
+				5822CE17209FF41200093CD0 /* Intro.storyboard */,
+				5822CE15209FF41200093CD0 /* IntroVC.swift */,
+				5822CE16209FF41200093CD0 /* LoginVC.swift */,
+				5822CE1A209FF41200093CD0 /* SignUpVC.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -275,13 +286,21 @@
 				5822CE3620A0145500093CD0 /* NewPostViewController.swift */,
 				5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
 				5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */,
+=======
+>>>>>>> parent of 5bb03c2... might uhuoh
 				4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */,
 				4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */,
+				5822CE2D20A009B000093CD0 /* QuestionCell.swift */,
 				4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */,
+<<<<<<< HEAD
 =======
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+				5822CE2F20A009B500093CD0 /* QuestionImageCell.swift */,
+>>>>>>> parent of 5bb03c2... might uhuoh
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -413,15 +432,18 @@
 				58C32FA720A0AC14005B7C7A /* App.storyboard in Resources */,
 <<<<<<< HEAD
 				4E2BFFAB20A40A9200AA0DF0 /* QuestionHeaderView.xib in Resources */,
-				5802CF5520A679690001DBF1 /* Intro.storyboard in Resources */,
 				4E2BFFAD20A40A9B00AA0DF0 /* QuestionHeaderImageView.xib in Resources */,
 				5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */,
+<<<<<<< HEAD
 =======
 				5822CDEB209FF3F100093CD0 /* Main.storyboard in Resources */,
 				4EE8D00520A6CE450091253E /* QuestionHeaderView.xib in Resources */,
 				4EE8D00420A6CE450091253E /* QuestionHeaderImageView.xib in Resources */,
 				5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */,
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+				5822CE1E209FF41200093CD0 /* Intro.storyboard in Resources */,
+>>>>>>> parent of 5bb03c2... might uhuoh
 				58C32FA920A0ACF1005B7C7A /* Assets.xcassets in Resources */,
 				5822CE3920A025E600093CD0 /* GoogleService-Info.plist in Resources */,
 			);
@@ -460,7 +482,6 @@
 				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GeoFire/GeoFire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KMPlaceholderTextView/KMPlaceholderTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -485,7 +506,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoFire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KMPlaceholderTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -529,18 +549,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5822CE1C209FF41200093CD0 /* IntroVC.swift in Sources */,
 				5822CE2C20A009AB00093CD0 /* QuestionsViewController.swift in Sources */,
+				5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */,
 				5822CE3020A009B500093CD0 /* QuestionImageCell.swift in Sources */,
 				5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */,
-				5802CF5220A679690001DBF1 /* SignUpStorage.swift in Sources */,
 				4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */,
 				5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */,
 				5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */,
 				5822CE3220A009E400093CD0 /* Reply.swift in Sources */,
 				5822CE2E20A009B000093CD0 /* QuestionCell.swift in Sources */,
-				5802CF5420A679690001DBF1 /* SignUpVC2.swift in Sources */,
+				5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */,
 				4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */,
 				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
+<<<<<<< HEAD
 <<<<<<< HEAD
 				5802CF5720A679690001DBF1 /* SignUpVC1.swift in Sources */,
 				5802CF5620A679690001DBF1 /* ProfileImageVC.swift in Sources */,
@@ -548,12 +570,13 @@
 =======
 				4EE8CFFA20A6C0980091253E /* ReplyViewController.swift in Sources */,
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988
+=======
+>>>>>>> parent of 5bb03c2... might uhuoh
 				4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */,
 				4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */,
 				4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */,
 				4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */,
 				5822CE23209FFDC300093CD0 /* AppStorage.swift in Sources */,
-				5802CF5320A679690001DBF1 /* IntroVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

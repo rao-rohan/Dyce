@@ -8,14 +8,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        
-        let db = Firestore.firestore()
-        let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
-        db.settings = settings
-        
+        //auto login
         var storyboard: UIStoryboard!
         if let _ = Auth.auth().currentUser {
+            AppStorage.PersonalInfo.uid = (Auth.auth().currentUser?.uid)!
+            AppStorage.PersonalInfo.username = (Auth.auth().currentUser?.displayName)!
             storyboard = UIStoryboard(name: "App", bundle: nil)
         } else {
             storyboard = UIStoryboard(name: "Intro", bundle: nil)

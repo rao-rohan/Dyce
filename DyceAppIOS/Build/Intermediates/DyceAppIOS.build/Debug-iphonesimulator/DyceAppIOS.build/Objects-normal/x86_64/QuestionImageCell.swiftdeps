@@ -14,14 +14,8 @@ provides-dynamic-lookup:
 - "timeLabel"
 - "usernameLabel"
 depends-top-level:
-- !private "!="
-- !private "&&"
-- !private "+"
-- !private "+="
 - !private "-"
-- !private "/="
-- !private "=="
-- !private ">"
+- !private "/"
 - "AssignmentPrecedence"
 - !private "Int"
 - !private "NSDate"
@@ -34,12 +28,10 @@ depends-top-level:
 - "UILabel"
 - "UITableViewCell"
 - "UIView"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s19BinaryFloatingPointP", "init"]
 - !private ["s13BinaryIntegerP", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "Int"]
 - !private ["So15CALayerDelegateP", "NSDate"]
 - ["So15CALayerDelegateP", "Question"]
@@ -62,7 +54,6 @@ depends-member:
 - ["s7CVarArgP", "Question"]
 - !private ["s7CVarArgP", "TimeInterval"]
 - ["s7CVarArgP", ""]
-- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "categoryLabel"]
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "init"]
@@ -98,17 +89,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince1970"]
 - !private ["s28CustomDebugStringConvertibleP", "timeLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "usernameLabel"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "timeIntervalSince1970"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "NSDate"]
 - ["s23CustomStringConvertibleP", "Question"]
 - !private ["s23CustomStringConvertibleP", "TimeInterval"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "categoryLabel"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -123,17 +111,14 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "timeIntervalSince1970"]
 - !private ["s23CustomStringConvertibleP", "timeLabel"]
 - !private ["s23CustomStringConvertibleP", "usernameLabel"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["Sd", "init"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "NSDate"]
 - ["s9EquatableP", "Question"]
 - !private ["s9EquatableP", "TimeInterval"]
 - ["s9EquatableP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "categoryLabel"]
 - !private ["s9EquatableP", "image"]
 - !private ["s9EquatableP", "init"]
@@ -150,7 +135,6 @@ depends-member:
 - !private ["s9EquatableP", "timeLabel"]
 - !private ["s9EquatableP", "usernameLabel"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
@@ -163,7 +147,6 @@ depends-member:
 - ["s8HashableP", "Question"]
 - !private ["s8HashableP", "TimeInterval"]
 - ["s8HashableP", ""]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "categoryLabel"]
 - !private ["s8HashableP", "image"]
 - !private ["s8HashableP", "init"]
@@ -179,7 +162,6 @@ depends-member:
 - !private ["s8HashableP", "timeLabel"]
 - !private ["s8HashableP", "usernameLabel"]
 - !private ["Si", "init"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "Int"]
@@ -563,7 +545,6 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "timeLabel"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "usernameLabel"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
@@ -592,14 +573,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeIntervalSince1970"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameLabel"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "s19BinaryFloatingPointP"
 - !private "s13BinaryIntegerP"
-- !private "Sb"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "s10CollectionP"
@@ -613,7 +592,6 @@ depends-nominal:
 - !private "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
@@ -673,7 +651,6 @@ depends-nominal:
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"

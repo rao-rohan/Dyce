@@ -4,6 +4,7 @@ struct NameFile{
     
     struct Firestore{
 <<<<<<< HEAD
+<<<<<<< HEAD
         static let emails = "EmailCollection"
             //username
                 static let email = "Email"
@@ -16,6 +17,8 @@ struct NameFile{
                 static let phoneNumber = "PhoneNumber"
                 static let profileImageURL = "ProfileImageURL"
         
+=======
+>>>>>>> parent of 5bb03c2... might uhuoh
         static let posts = "PostCollection"
 =======
         static let FirestorePosts = "PostCollection"
@@ -23,7 +26,7 @@ struct NameFile{
             //post id (document)
                 static let creatorUID = "CreatorUID"
                 static let creatorUsername = "CreatorUsername"
-                static let creatorProfileImageURL = "CreatorProfileImageURL"
+                //static let postLocation = "PostLocation"
                 static let postLongitude = "PostLongitude"
                 static let postLatitude = "PostLatitude"
                 static let postCategory = "PostCategory"
@@ -34,7 +37,6 @@ struct NameFile{
                 static let replies = "ReplyCollection"
                     static let replyUID = "ReplyUID"
                     static let replyUsername = "ReplyUsername"
-                    static let replyImageURL = "ReplyImageURL"
                     static let reply = "Reply"
                     static let replyTime = "ReplyTime"
                     

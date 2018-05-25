@@ -10,7 +10,6 @@ class Reply {
     var reply: String
     var postID: String = ""
     var time : Timestamp
-    
     init(_uid: String, _username: String, _reply: String , _time : Timestamp) {
         uid = _uid
         username = _username

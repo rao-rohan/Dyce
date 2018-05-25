@@ -164,9 +164,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
-@import CoreLocation;
 @import Foundation;
-@import CoreGraphics;
+@import CoreLocation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -199,20 +198,58 @@ SWIFT_CLASS("_TtC10DyceAppIOS11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
-@class UILabel;
-@class UITextView;
 @class UIButton;
-@class UITouch;
-@class UIEvent;
-@class UIView;
-@class UIImagePickerController;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10DyceAppIOS7IntroVC")
+@interface IntroVC : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified registerBtn;
+- (void)viewDidLoad;
+- (IBAction)unwindToIntroWithSegue:(UIStoryboardSegue * _Nonnull)segue;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSLayoutConstraint;
+@class UILabel;
+@class UIView;
+@class UITextField;
+
+SWIFT_CLASS("_TtC10DyceAppIOS7LoginVC")
+@interface LoginVC : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified toBottom;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headerLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified passwordLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified lineView1;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified lineView2;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginBtn;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTF;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTF;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewSafeAreaInsetsDidChange;
+- (void)didReceiveMemoryWarning;
+- (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
+- (void)loginWithSender:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+@class UITextView;
+@class UITouch;
+@class UIEvent;
+@class UIImagePickerController;
+
 SWIFT_CLASS("_TtC10DyceAppIOS21NewPostViewController")
 @interface NewPostViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate>
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imagePlace;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified ImagePlace;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified placeHolderText;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified postTextView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
@@ -255,20 +292,6 @@ SWIFT_CLASS("_TtC10DyceAppIOS12QuestionCell")
 @end
 
 
-SWIFT_CLASS("_TtC10DyceAppIOS18QuestionHeaderView")
-@interface QuestionHeaderView : UITableViewHeaderFooterView
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified categoryView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repliesLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profilePicView;
-- (nonnull instancetype)initWithReuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC10DyceAppIOS17QuestionImageCell")
 @interface QuestionImageCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
@@ -282,92 +305,53 @@ SWIFT_CLASS("_TtC10DyceAppIOS17QuestionImageCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC10DyceAppIOS23QuestionImageHeaderView")
-@interface QuestionImageHeaderView : UITableViewHeaderFooterView
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified questionLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified categoryView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified categoryLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified profPic;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified repliesLabel;
-- (nonnull instancetype)initWithReuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIStoryboardSegue;
 @class UITableView;
 
 SWIFT_CLASS("_TtC10DyceAppIOS23QuestionsViewController")
-@interface QuestionsViewController : UITableViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface QuestionsViewController : UITableViewController <CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (IBAction)unwindToQuestionsViewController:(UIStoryboardSegue * _Nonnull)segue;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface QuestionsViewController (SWIFT_EXTENSION(DyceAppIOS)) <CLLocationManagerDelegate>
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-@end
-
-
-SWIFT_CLASS("_TtC10DyceAppIOS9ReplyCell")
-@interface ReplyCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified replyText;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified postTime;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSLayoutConstraint;
-@class UIBarButtonItem;
-@class UITextField;
-
-SWIFT_CLASS("_TtC10DyceAppIOS28ReplyContainerViewController")
-@interface ReplyContainerViewController : UIViewController <UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified replyTextFieldConstraint;
-@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified flagButton;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified replyTextField;
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
-- (void)keyboardWillHideWithNotification:(NSNotification * _Nonnull)notification;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
-- (IBAction)sendPressed:(id _Nonnull)sender;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (void)viewWillDisappear:(BOOL)animated;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10DyceAppIOS24ReplyTableViewController")
-@interface ReplyTableViewController : UITableViewController
-@property (nonatomic, readonly) BOOL prefersStatusBarHidden;
-- (void)viewDidLoad;
-- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC10DyceAppIOS8SignUpVC")
+@interface SignUpVC : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified registerLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified emailLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified usernameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified passwordLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTF;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameTF;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordTF;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backBtn;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified registerBtn;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified lineView1;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified lineView2;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified lineView3;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified toBottom;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewSafeAreaInsetsDidChange;
+- (void)didReceiveMemoryWarning;
+- (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
+- (void)registerWithSender:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

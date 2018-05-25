@@ -1,3 +1,11 @@
+//
+//  ReplyCell.swift
+//  Questions
+//
+//  Created by Rohan Rao on 10/02/17.
+//  Copyright © 2017 Rohan Rao. All rights reserved.
+//
+
 import Foundation
 import UIKit
 
@@ -6,10 +14,14 @@ class ReplyCell: UITableViewCell {
     @IBOutlet weak var replyText: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postTime: UILabel!
+<<<<<<< HEAD:DyceAppIOS/DyceAppIOS/App/Cells/ReplyCell.swift
 <<<<<<< HEAD:DyceAppIOS/DyceAppIOS/App/ReplyCell.swift
 
 =======
 >>>>>>> 81e3ffada19361eaaec778ef2feb60eac936e988:DyceAppIOS/DyceAppIOS/App/Cells/ReplyCell.swift
+=======
+    @IBOutlet weak var timeLabel : UILabel!
+>>>>>>> parent of 5bb03c2... might uhuoh:DyceAppIOS/DyceAppIOS/App/ReplyCell.swift
     var reply: Reply = Reply() {didSet { reloadData() } }
     
     private func reloadData(){
@@ -41,7 +53,7 @@ class ReplyCell: UITableViewCell {
         }
         
         let timeSince = (Int) (timeAgo) //casts to an integer
-        postTime.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
+        timeLabel.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
         //  print("\(timeAgo)" + timeWord)
         usernameLabel.text = reply.username
     }

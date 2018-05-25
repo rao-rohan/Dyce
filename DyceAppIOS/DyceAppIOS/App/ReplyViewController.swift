@@ -15,20 +15,18 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
     var questionHeaderView: QuestionHeaderView?
     var questionImageHeaderView: QuestionImageHeaderView?
     let colorPicker = CategoryHelper()
-    var image = UIImage()
-    var hasImage = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(hasImage)
-        print("entered replies" )
         self.replyTextField.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.separatorStyle = .none
-        
-        tableView.estimatedRowHeight = 150.0
+        tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        if hasImage{
+        let image = question.image
+        if image != nil {
+            
             questionImageHeaderView = UINib(nibName: "QuestionHeaderImageView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionImageHeaderView
             questionImageHeaderView?.posterUID = question.creatorUID
             questionImageHeaderView?.usernameLabel.text = question.creatorUsername
@@ -37,8 +35,8 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
             questionImageHeaderView?.timeLabel.text = convertTime(_time: question.time)
             questionImageHeaderView?.imageView.clipsToBounds = true
             questionImageHeaderView?.categoryView.backgroundColor = colorPicker.colorChooser(question.category)
+            questionImageHeaderView?.categoryLabel.text = question.category
             questionImageHeaderView?.imageView.image = question.image
-            questionImageHeaderView?.imageView.image = rotateImage(image: question.image!)
             questionImageHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
             
         }
@@ -212,26 +210,6 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
-    }
-    func rotateImage(image:UIImage) -> UIImage
-    {
-        var rotatedImage = UIImage()
-        switch image.imageOrientation
-        {
-        case .right:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .down)
-            
-        case .down:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .left)
-            
-        case .left:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .up)
-            
-        default:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .right)
-        }
-        
-        return rotatedImage
     }
     
 }

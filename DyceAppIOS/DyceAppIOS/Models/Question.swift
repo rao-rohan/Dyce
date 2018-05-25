@@ -17,7 +17,6 @@ class Question {
     var question: String
     var numReplies: Int
     var image: UIImage?
-    var questionImageURL: URL?
     
     init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _image: UIImage? = nil) {
         geofireRef = Database.database().reference()
@@ -31,22 +30,6 @@ class Question {
         question = _question
         numReplies = _numReplies
         image = _image
-        questionImageURL = nil
-    }
-    
-    init(_creatorUID: String, _creatorUsername: String, _postID: String, _location : GeoPoint , _category: String, _time: Timestamp, _question: String, _numReplies: Int, _imageURL: URL?) {
-        geofireRef = Database.database().reference()
-        geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
-        creatorUID = _creatorUID
-        creatorUsername = _creatorUsername
-        postID = _postID
-        location = _location
-        category = _category
-        time = _time
-        question = _question
-        numReplies = _numReplies
-        questionImageURL = _imageURL
-        image = nil
     }
     
     init() {
@@ -55,15 +38,14 @@ class Question {
         creatorUID = ""
         creatorUsername = ""
         postID = ""
-        location = GeoPoint(latitude: 0.0, longitude: 0.0)
-        // longitude = 0
-        //  latitude = 0
+      location = GeoPoint(latitude: 0.0, longitude: 0.0)
+       // longitude = 0
+      //  latitude = 0
         category = ""
         time = Timestamp(date: Date(timeIntervalSinceNow: 0))
         question = ""
         numReplies = 0
         image = nil
-        questionImageURL = nil
     }
     
     func pushToFirestore(){
@@ -73,43 +55,9 @@ class Question {
         
         let newDocument = postCollection.document()
         geoFire.setLocation(CLLocation(latitude: location.latitude, longitude: location.longitude), forKey: newDocument.documentID)
-        //        if image != nil {
-        //            print("image exists")
-        //            imageStorage.child(NameFile.Firestore.images)/*.child(newDocument.documentID)*/.putData(UIImagePNGRepresentation(image!)!) { error in
-        //                print("metadata shat")
-        //                // You can also access to download URL after upload.
-        //                imageStorage.child(NameFile.Firestore.images).downloadURL { (url, error) in
-        //                    if url != nil {
-        //                        print("setting data")
-        //                        newDocument.setData([
-        //                            NameFile.Firestore.creatorUID: self.creatorUID,
-        //                            NameFile.Firestore.creatorUsername: self.creatorUsername,
-        //                            NameFile.Firestore.postLongitude : self.location.longitude,
-        //                            NameFile.Firestore.postLatitude : self.location.latitude,
-        //                            NameFile.Firestore.postCategory: self.category,
-        //                            NameFile.Firestore.postTime: self.time,
-        //                            NameFile.Firestore.postQuestion: self.question,
-        //                            NameFile.Firestore.postImageURL: url?.absoluteString
-        //                            ])
-        //
-        //                        SVProgressHUD.dismiss()
-        //                    }
-        //                    else {
-        //                        // Uh-oh, an error occurred!
-        //                        print("you played your self")
-        //                        print(error!)
-        //                        return
-        //                    }
-        //                }
-        //            }
-        //        }
-        //
-        
         if let image = image{
-            imageStorage.child(newDocument.documentID).putData(UIImagePNGRepresentation(image)!).observe(.success, handler: { (snapshot) in
-                print("step 1")
+            imageStorage.child(NameFile.Firestore.images).putData(UIImagePNGRepresentation(image)!).observe(.success, handler: { (snapshot) in
                 if let imageURL = snapshot.metadata?.downloadURL()?.absoluteString{
-                    print("writing image data")
                     newDocument.setData([
                         NameFile.Firestore.creatorUID: self.creatorUID,
                         NameFile.Firestore.creatorUsername: self.creatorUsername,
@@ -121,15 +69,14 @@ class Question {
                         NameFile.Firestore.postQuestion: self.question,
                         NameFile.Firestore.postImageURL: imageURL
                         ])
-                    self.questionImageURL = URL(string: imageURL)
                     SVProgressHUD.dismiss()
                 }
             })
-        }
-        else{
+        }else{
             newDocument.setData([
                 NameFile.Firestore.creatorUID: self.creatorUID,
                 NameFile.Firestore.creatorUsername: self.creatorUsername,
+             //   NameFile.Firestore.postLocation: self.location,
                 NameFile.Firestore.postLongitude : self.location.longitude,
                 NameFile.Firestore.postLatitude : self.location.latitude,
                 NameFile.Firestore.postCategory: self.category,
@@ -137,7 +84,6 @@ class Question {
                 NameFile.Firestore.postQuestion: self.question
                 ])
             SVProgressHUD.dismiss()
-            
         }
     }
     

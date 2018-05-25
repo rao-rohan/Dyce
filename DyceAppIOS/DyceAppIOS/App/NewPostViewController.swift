@@ -6,7 +6,7 @@ import Firebase
 import CoreLocation
 
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
-    
+
     @IBOutlet weak var ImagePlace: UIImageView!
     @IBOutlet weak var placeHolderText: UILabel!
     @IBOutlet weak var postTextView: UITextView!
@@ -14,6 +14,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var categoryButton: UIButton!
     
     var image: UIImage?
+    var locationExists: Bool = false
     var selectedCategory: String?
     var currLocation: CLLocationCoordinate2D?
     var reset: Bool = false
@@ -36,8 +37,15 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         nameLabel.text = AppStorage.PersonalInfo.username
         
         categoryButton.titleLabel?.textAlignment = NSTextAlignment.center
-        locationSetup()
         
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        if(locationManager.location != nil) {
+            locationExists = true
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -79,33 +87,35 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             alert.showError("Error", subTitle: "Please select a category")
             hasError = true
         }
-        
+
         if(postTextView.text != "") {
             question.question = postTextView.text
         } else {
             alert.showError("Error", subTitle: "You haven't written a question!")
             hasError = true
         }
-        
-        if let loc = currLocation {
-            question.location = GeoPoint(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
-            print(question.location)
+
+        if(locationExists == true) {
+            question.location = GeoPoint(latitude: currLocation!.latitude, longitude: currLocation!.longitude)
         } else {
             alert.showError("Error", subTitle: "Couldn't get location!")
         }
         
         if let image = image {
             question.image = image
-            print("image set")
         }
         
         question.time = time
         question.creatorUID = AppStorage.PersonalInfo.uid
         question.creatorUsername = AppStorage.PersonalInfo.username
+        print(question.creatorUID)
+        print(question.creatorUsername)
+        
         if(hasError == false) {
+            SVProgressHUD.show()
+            print(hasError)
             question.pushToFirestore()
-            self.performSegue(withIdentifier: "backToFeed", sender: nil)
-            
+            performSegue(withIdentifier: "backtoFeed", sender: nil)
         }
     }
     
@@ -162,11 +172,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     //MARK: Image Picker Methods
     @objc func chooseImageSource() {
-        if postTextView.isFirstResponder{
-            postTextView.resignFirstResponder()
-        }
-        self.categoryButton.backgroundColor = self.categoryButton.backgroundColor
-        self.categoryButton.titleLabel?.text = self.categoryButton.titleLabel?.text
+        postTextView.resignFirstResponder()
         // Allow user to choose between photo library and camera
         let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .actionSheet)
         
@@ -191,35 +197,22 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         toolbar.isHidden = false
     }
     
-    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             image = pickedImage
             ImagePlace.image = pickedImage
-            
+
         }
         
         dismiss(animated: true, completion: nil)
     }
     
-    @objc func showImagePickerController(_ sourceType: UIImagePickerControllerSourceType) {
+    func showImagePickerController(_ sourceType: UIImagePickerControllerSourceType) {
         imagePickerController = UIImagePickerController()
         imagePickerController!.sourceType = sourceType
         imagePickerController!.delegate = self
         
         present(imagePickerController!, animated: true, completion: nil)
-    }
-    func locationSetup(){
-        if (CLLocationManager.locationServicesEnabled()) {
-            locationManager.delegate = self as CLLocationManagerDelegate
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
-        
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.requestLocation()
-        currLocation = locationManager.location?.coordinate
-        print(currLocation)
     }
 }
 //MARK: TextView Methods
@@ -239,27 +232,17 @@ extension NewPostViewController {
 }
 
 extension NewPostViewController: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        let alert = SCLAlertView()
-        alert.showError("Error", subTitle: "Please enable location services in settings!")
-        locationManager.requestLocation()
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            locationManager.requestLocation()
-        }
-    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
-        if(locations.count > 0) {
-            let location = locations.last
-            currLocation = location?.coordinate
-            print(currLocation)
+        if(locations.count > 0){
+            let location = locations[0]
+            currLocation = location.coordinate
+        } else {
+            print("cant get location")
         }
-        else {
-            let alert = SCLAlertView()
-            alert.showError("Error", subTitle: "Please enable location services in settings!")
-        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
     }
 }

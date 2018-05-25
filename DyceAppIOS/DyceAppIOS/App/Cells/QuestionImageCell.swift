@@ -1,6 +1,5 @@
 import Foundation
 import UIKit
-import AsyncImageView
 
 class QuestionImageCell: UITableViewCell {
     
@@ -8,10 +7,10 @@ class QuestionImageCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var repliesLabel: UILabel!
     @IBOutlet weak var usernameLabel: UIButton!
-    @IBOutlet weak var postImage: AsyncImageView!
-    @IBOutlet weak var categoryView: UIView!
+    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var categoryFlag: UIView!
     @IBOutlet weak var categoryLabel: UILabel!
-    let colorPicker = CategoryHelper()
+    
     var question: Question = Question() {didSet { reloadData() } }
     
     private func reloadData(){
@@ -51,30 +50,8 @@ class QuestionImageCell: UITableViewCell {
         }
         repliesLabel.text = "\(question.numReplies)" + replies
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
-        
-        postImage.image = rotateImage(image: question.image!)
+        postImage.image = question.image
         categoryLabel.text = question.category
-        categoryView.backgroundColor = colorPicker.colorChooser(question.category)
         
-    }
-    func rotateImage(image:UIImage) -> UIImage
-    {
-        var rotatedImage = UIImage()
-        switch image.imageOrientation
-        {
-        case .right:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .down)
-            
-        case .down:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .left)
-            
-        case .left:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .up)
-            
-        default:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .right)
-        }
-        
-        return rotatedImage
     }
 }

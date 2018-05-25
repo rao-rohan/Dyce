@@ -5,37 +5,42 @@ import Firebase
 import SCLAlertView
 import DZNEmptyDataSet
 import GeoFire
-import AsyncImageView
-
-
 class QuestionsViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var currLocation: CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
     var geofireRef : DatabaseReference!
     var geoFire : GeoFire!
-    var refresh = UIRefreshControl()
     private var questions = [Question]() {didSet{tableView.reloadData()}}
-    var shouldPull = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewDidLoadSetup()
-        print("setup done")
+        geofireRef = Database.database().reference()
+        geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
+        let db = Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
+        self.tableView.backgroundColor = UIColor(hexString: "f2f2f2")
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.delegate = self as CLLocationManagerDelegate
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+        
+        self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.requestWhenInUseAuthorization()
+        self.locationManager.requestLocation()
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
-    func viewDidLoadSetup(){
-        locationSetup()
-        firebaseSetup()
-        refreshSetup()
-        geoFireSetup()
-        tableViewSetup()
-      //  questionsSetup()
-    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.locationManager.requestLocation()
-        locationSetup()
-        questions.removeAll()
-        
     }
     
     @IBAction func unwindToQuestionsViewController(_ segue: UIStoryboardSegue) {
@@ -67,11 +72,9 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     }
     
     @objc private func fetchQuestions(){
-        if(!questions.isEmpty){
-            questions.removeAll()
-        }
+        questions.removeAll()
         let center = CLLocation(latitude: (currLocation?.latitude)!, longitude: (currLocation?.longitude)!)
-        
+
         let locQuery = geoFire.query(at: center, withRadius: 6)
         locQuery.observe(.keyEntered, with: { (key, location) in
             print(key)
@@ -93,19 +96,17 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
                     repliesCollection.getDocuments(completion: { (snapshot, error) in
                         if let documents = snapshot?.documents{
                             //get images
-                            let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
-                            self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count, _imageURL: URL(string: imageURL!)))
                             if let url = imageURL{
                                 let imageRef = Storage.storage().reference(forURL: url)
                                 imageRef.getData(maxSize: 100*1024*1024, completion: { (data, error) in
                                     if let data = data{
                                         if let image = UIImage(data: data){
-                                            
+                                            let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
+                                            self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count, _image: image))
                                         }
                                     }
                                 })
-                            }
-                            else{
+                            }else{
                                 let location = GeoPoint(latitude: pulledLat, longitude: pulledLong)
                                 self.appendInOrder(_question: Question(_creatorUID: creatorUID, _creatorUsername: creatorUsername, _postID: postID, _location: location, _category: category, _time: time, _question: question, _numReplies: documents.count))
                             }
@@ -117,7 +118,6 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
                 }
             }
         })
-        refresh.endRefreshing()
     }
     func appendInOrder(_question : Question){
         for (index, question)  in questions.enumerated(){
@@ -135,82 +135,20 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
-            if identifier == "toReply" {
+            if identifier == "questionDetail" {
                 let indexPath = self.tableView.indexPathForSelectedRow
                 let question = self.questions[indexPath!.row] as? Question
                 let detail = segue.destination as! ReplyViewController
                 detail.question = question!
-                detail.hasImage = false
             }
             
-            if identifier == "toReplyImage" {
+            if identifier == "questionImageDetail" {
                 let indexPath = self.tableView.indexPathForSelectedRow
                 let question = self.questions[indexPath!.row] as? Question
-                let image = question?.image
                 let detail = segue.destination as! ReplyViewController
                 detail.question = question!
-                detail.hasImage = true
-                detail.image = image!
             }
         }
-    }
-    func tableViewSetup(){
-        self.tableView.backgroundColor = UIColor(hexString: "f2f2f2")
-        tableView.estimatedRowHeight = 200
-        tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
-        tableView.tableFooterView = UIView(frame: CGRect.zero)
-    }
-    func locationSetup(){
-        if (CLLocationManager.locationServicesEnabled()) {
-            locationManager.delegate = self as CLLocationManagerDelegate
-            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-            locationManager.startUpdatingLocation()
-        }
-        
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.requestLocation()
-    }
-    
-    func refreshSetup(){
-        refresh.attributedTitle = NSAttributedString(string: "Pull to refresh")
-        refresh.addTarget(self, action: #selector(QuestionsViewController.fetchQuestions), for: UIControlEvents.valueChanged)
-        self.tableView.addSubview(refresh)
-        
-    }
-    func geoFireSetup(){
-        geofireRef = Database.database().reference()
-        geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
-    }
-    func firebaseSetup(){
-        let db = Firestore.firestore()
-        let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
-        db.settings = settings
-    }
-    func questionsSetup(){
-        fetchQuestions()
-    }
-    func rotateImage(image:UIImage) -> UIImage
-    {
-        var rotatedImage = UIImage()
-        switch image.imageOrientation
-        {
-        case .right:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .down)
-            
-        case .down:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .left)
-            
-        case .left:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .up)
-            
-        default:
-            rotatedImage = UIImage(cgImage: image.cgImage!, scale: 1.0, orientation: .right)
-        }
-        
-        return rotatedImage
     }
     
 }

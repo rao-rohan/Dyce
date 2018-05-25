@@ -19,6 +19,5 @@ pod 'SCLAlertView'
 pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
 pod 'KMPlaceholderTextView'
 pod 'GeoFire', git: 'https://github.com/firebase/geofire-objc.git'
-pod 'AsyncImageView'
 
 end

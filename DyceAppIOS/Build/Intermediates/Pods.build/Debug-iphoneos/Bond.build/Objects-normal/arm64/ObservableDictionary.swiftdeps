@@ -1,0 +1,492 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ObservableDictionaryEventKind"
+- "ObservableDictionaryEvent"
+- "ObservableDictionary"
+- "MutableObservableDictionary"
+provides-nominal:
+- "4Bond29ObservableDictionaryEventKindO"
+- "4Bond25ObservableDictionaryEventV"
+- "4Bond20ObservableDictionaryC"
+- "4Bond27MutableObservableDictionaryC"
+provides-member:
+- ["4Bond29ObservableDictionaryEventKindO", ""]
+- ["4Bond25ObservableDictionaryEventV", ""]
+- ["4Bond20ObservableDictionaryC", ""]
+- ["4Bond27MutableObservableDictionaryC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- "BindableProtocol"
+- "Bool"
+- "Deallocatable"
+- "Dictionary"
+- "DictionaryIndex"
+- "Disposable"
+- "Event"
+- "Hashable"
+- "Int"
+- "MutableObservableDictionary"
+- "NSRecursiveLock"
+- "NoError"
+- "ObservableDictionary"
+- "ObservableDictionaryEvent"
+- "ObservableDictionaryEventKind"
+- "PublishSubject"
+- "Signal"
+- "SignalProtocol"
+- "StringLiteralType"
+- "Void"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- ["11ReactiveKit16BindableProtocolP", "Element"]
+- !private ["11ReactiveKit16BindableProtocolP", "ObservableDictionaryEvent"]
+- ["11ReactiveKit16BindableProtocolP", ""]
+- ["11ReactiveKit16BindableProtocolP", "bind"]
+- !private ["11ReactiveKit16BindableProtocolP", "deallocated"]
+- !private ["11ReactiveKit16BindableProtocolP", "dictionary"]
+- !private ["11ReactiveKit16BindableProtocolP", "disposeBag"]
+- ["11ReactiveKit16BindableProtocolP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "lock"]
+- !private ["11ReactiveKit16BindableProtocolP", "next"]
+- !private ["11ReactiveKit16BindableProtocolP", "observe"]
+- !private ["11ReactiveKit16BindableProtocolP", "removeValue"]
+- !private ["11ReactiveKit16BindableProtocolP", "subject"]
+- !private ["11ReactiveKit16BindableProtocolP", "updateValue"]
+- ["s7CVarArgP", "Iterator"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "endIndex"]
+- !private ["s7CVarArgP", "index"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "lock"]
+- !private ["s7CVarArgP", "makeIterator"]
+- !private ["s7CVarArgP", "remove"]
+- !private ["s7CVarArgP", "startIndex"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "underestimatedCount"]
+- !private ["s7CVarArgP", "unlock"]
+- !private ["s7CVarArgP", "updateValue"]
+- ["s10CollectionP", "Iterator"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "endIndex"]
+- !private ["s10CollectionP", "index"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "isEmpty"]
+- !private ["s10CollectionP", "makeIterator"]
+- !private ["s10CollectionP", "remove"]
+- !private ["s10CollectionP", "startIndex"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10CollectionP", "underestimatedCount"]
+- !private ["s10CollectionP", "updateValue"]
+- ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", "Iterator"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "endIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "lock"]
+- !private ["s28CustomDebugStringConvertibleP", "makeIterator"]
+- !private ["s28CustomDebugStringConvertibleP", "remove"]
+- !private ["s28CustomDebugStringConvertibleP", "startIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "underestimatedCount"]
+- !private ["s28CustomDebugStringConvertibleP", "unlock"]
+- !private ["s28CustomDebugStringConvertibleP", "updateValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "Element"]
+- ["s17CustomReflectableP", "Iterator"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "endIndex"]
+- !private ["s17CustomReflectableP", "index"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "makeIterator"]
+- !private ["s17CustomReflectableP", "remove"]
+- !private ["s17CustomReflectableP", "startIndex"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "underestimatedCount"]
+- !private ["s17CustomReflectableP", "updateValue"]
+- ["s23CustomStringConvertibleP", "Iterator"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "endIndex"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "lock"]
+- !private ["s23CustomStringConvertibleP", "makeIterator"]
+- !private ["s23CustomStringConvertibleP", "remove"]
+- !private ["s23CustomStringConvertibleP", "startIndex"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "underestimatedCount"]
+- !private ["s23CustomStringConvertibleP", "unlock"]
+- !private ["s23CustomStringConvertibleP", "updateValue"]
+- ["11ReactiveKit13DeallocatableP", "Element"]
+- ["11ReactiveKit13DeallocatableP", "Error"]
+- ["11ReactiveKit13DeallocatableP", "NSRecursiveLock"]
+- !private ["11ReactiveKit13DeallocatableP", "ObservableDictionaryEvent"]
+- ["11ReactiveKit13DeallocatableP", "PublishSubject"]
+- ["11ReactiveKit13DeallocatableP", ""]
+- ["11ReactiveKit13DeallocatableP", "_Default_Element"]
+- ["11ReactiveKit13DeallocatableP", "_Default_Error"]
+- ["11ReactiveKit13DeallocatableP", "bind"]
+- ["11ReactiveKit13DeallocatableP", "deallocated"]
+- !private ["11ReactiveKit13DeallocatableP", "dictionary"]
+- ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "lock"]
+- ["11ReactiveKit13DeallocatableP", "observe"]
+- !private ["11ReactiveKit13DeallocatableP", "removeValue"]
+- !private ["11ReactiveKit13DeallocatableP", "subject"]
+- !private ["11ReactiveKit13DeallocatableP", "unlock"]
+- !private ["11ReactiveKit13DeallocatableP", "updateValue"]
+- ["s9DecodableP", "Iterator"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "endIndex"]
+- !private ["s9DecodableP", "index"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "isEmpty"]
+- !private ["s9DecodableP", "makeIterator"]
+- !private ["s9DecodableP", "remove"]
+- !private ["s9DecodableP", "startIndex"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9DecodableP", "underestimatedCount"]
+- !private ["s9DecodableP", "updateValue"]
+- ["s10DictionaryV", "Iterator"]
+- !private ["s10DictionaryV", "count"]
+- !private ["s10DictionaryV", "endIndex"]
+- !private ["s10DictionaryV", "index"]
+- !private ["s10DictionaryV", "isEmpty"]
+- !private ["s10DictionaryV", "makeIterator"]
+- !private ["s10DictionaryV", "remove"]
+- !private ["s10DictionaryV", "startIndex"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s10DictionaryV", "underestimatedCount"]
+- !private ["s10DictionaryV", "updateValue"]
+- ["s18DictionaryIteratorV", "Element"]
+- !private ["11ReactiveKit10DisposableP", "deallocated"]
+- !private ["11ReactiveKit10DisposeBagC", "deallocated"]
+- !private ["11ReactiveKit18DisposeBagProtocolP", "deallocated"]
+- ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "lock"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "unlock"]
+- ["s9EncodableP", "Iterator"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "endIndex"]
+- !private ["s9EncodableP", "index"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "isEmpty"]
+- !private ["s9EncodableP", "makeIterator"]
+- !private ["s9EncodableP", "remove"]
+- !private ["s9EncodableP", "startIndex"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EncodableP", "underestimatedCount"]
+- !private ["s9EncodableP", "updateValue"]
+- ["s9EquatableP", "Iterator"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "endIndex"]
+- !private ["s9EquatableP", "index"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
+- !private ["s9EquatableP", "lock"]
+- !private ["s9EquatableP", "makeIterator"]
+- !private ["s9EquatableP", "remove"]
+- !private ["s9EquatableP", "startIndex"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "underestimatedCount"]
+- !private ["s9EquatableP", "unlock"]
+- !private ["s9EquatableP", "updateValue"]
+- !private ["11ReactiveKit5EventO", "next"]
+- ["s30ExpressibleByDictionaryLiteralP", "Iterator"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "count"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "endIndex"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "index"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isEmpty"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "makeIterator"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "remove"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "startIndex"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "underestimatedCount"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "updateValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "lock"]
+- !private ["s8HashableP", "unlock"]
+- ["s16IteratorProtocolP", "Element"]
+- ["11ReactiveKit4LockP", "init"]
+- !private ["11ReactiveKit4LockP", "lock"]
+- !private ["11ReactiveKit4LockP", "unlock"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["4Bond27MutableObservableDictionaryC", "Dictionary"]
+- ["4Bond27MutableObservableDictionaryC", "Disposable"]
+- ["4Bond27MutableObservableDictionaryC", "Element"]
+- ["4Bond27MutableObservableDictionaryC", "Key"]
+- ["4Bond27MutableObservableDictionaryC", "MutableObservableDictionary"]
+- ["4Bond27MutableObservableDictionaryC", "NoError"]
+- ["4Bond27MutableObservableDictionaryC", "ObservableDictionaryEvent"]
+- ["4Bond27MutableObservableDictionaryC", "Signal"]
+- ["4Bond27MutableObservableDictionaryC", "Value"]
+- ["4Bond27MutableObservableDictionaryC", "Void"]
+- ["4Bond27MutableObservableDictionaryC", "batchUpdate"]
+- ["4Bond27MutableObservableDictionaryC", "bind"]
+- !private ["4Bond27MutableObservableDictionaryC", "deallocated"]
+- ["4Bond27MutableObservableDictionaryC", "deinit"]
+- !private ["4Bond27MutableObservableDictionaryC", "dictionary"]
+- ["4Bond27MutableObservableDictionaryC", "init"]
+- !private ["4Bond27MutableObservableDictionaryC", "lock"]
+- ["4Bond27MutableObservableDictionaryC", "removeValue"]
+- ["4Bond27MutableObservableDictionaryC", "replace"]
+- ["4Bond27MutableObservableDictionaryC", "silentUpdate"]
+- !private ["4Bond27MutableObservableDictionaryC", "subject"]
+- ["4Bond27MutableObservableDictionaryC", "subscript"]
+- ["4Bond27MutableObservableDictionaryC", "updateValue"]
+- ["So9NSLockingP", "init"]
+- !private ["So9NSLockingP", "lock"]
+- !private ["So9NSLockingP", "unlock"]
+- !private ["So8NSObjectC", "lock"]
+- !private ["So8NSObjectC", "unlock"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "lock"]
+- !private ["So16NSObjectProtocolP", "unlock"]
+- ["So15NSRecursiveLockC", "init"]
+- !private ["So15NSRecursiveLockC", "lock"]
+- !private ["So15NSRecursiveLockC", "unlock"]
+- ["4Bond20ObservableDictionaryC", "Bool"]
+- ["4Bond20ObservableDictionaryC", "Dictionary"]
+- ["4Bond20ObservableDictionaryC", "DictionaryIndex"]
+- ["4Bond20ObservableDictionaryC", "Disposable"]
+- ["4Bond20ObservableDictionaryC", "Element"]
+- ["4Bond20ObservableDictionaryC", "Error"]
+- ["4Bond20ObservableDictionaryC", "Event"]
+- ["4Bond20ObservableDictionaryC", "Int"]
+- ["4Bond20ObservableDictionaryC", "Key"]
+- ["4Bond20ObservableDictionaryC", "MutableObservableDictionary"]
+- ["4Bond20ObservableDictionaryC", "NSRecursiveLock"]
+- ["4Bond20ObservableDictionaryC", "NoError"]
+- ["4Bond20ObservableDictionaryC", "ObservableDictionaryEvent"]
+- ["4Bond20ObservableDictionaryC", "PublishSubject"]
+- ["4Bond20ObservableDictionaryC", "Signal"]
+- ["4Bond20ObservableDictionaryC", "Value"]
+- ["4Bond20ObservableDictionaryC", "Void"]
+- ["4Bond20ObservableDictionaryC", ""]
+- ["4Bond20ObservableDictionaryC", "_Default_Element"]
+- ["4Bond20ObservableDictionaryC", "_Default_Error"]
+- ["4Bond20ObservableDictionaryC", "batchUpdate"]
+- ["4Bond20ObservableDictionaryC", "bind"]
+- ["4Bond20ObservableDictionaryC", "count"]
+- ["4Bond20ObservableDictionaryC", "deallocated"]
+- ["4Bond20ObservableDictionaryC", "deinit"]
+- ["4Bond20ObservableDictionaryC", "dictionary"]
+- ["4Bond20ObservableDictionaryC", "endIndex"]
+- ["4Bond20ObservableDictionaryC", "index"]
+- ["4Bond20ObservableDictionaryC", "init"]
+- ["4Bond20ObservableDictionaryC", "isEmpty"]
+- !private ["4Bond20ObservableDictionaryC", "lock"]
+- ["4Bond20ObservableDictionaryC", "makeIterator"]
+- ["4Bond20ObservableDictionaryC", "observe"]
+- ["4Bond20ObservableDictionaryC", "removeValue"]
+- ["4Bond20ObservableDictionaryC", "replace"]
+- ["4Bond20ObservableDictionaryC", "silentUpdate"]
+- ["4Bond20ObservableDictionaryC", "startIndex"]
+- !private ["4Bond20ObservableDictionaryC", "subject"]
+- ["4Bond20ObservableDictionaryC", "subscript"]
+- ["4Bond20ObservableDictionaryC", "underestimatedCount"]
+- ["4Bond20ObservableDictionaryC", "updateValue"]
+- ["4Bond25ObservableDictionaryEventV", "Key"]
+- ["4Bond25ObservableDictionaryEventV", "ObservableDictionary"]
+- ["4Bond25ObservableDictionaryEventV", "ObservableDictionaryEventKind"]
+- ["4Bond25ObservableDictionaryEventV", "Value"]
+- ["4Bond25ObservableDictionaryEventV", "init"]
+- ["4Bond25ObservableDictionaryEventV", "kind"]
+- ["4Bond25ObservableDictionaryEventV", "source"]
+- ["4Bond29ObservableDictionaryEventKindO", "DictionaryIndex"]
+- ["4Bond29ObservableDictionaryEventKindO", "Key"]
+- ["4Bond29ObservableDictionaryEventKindO", "Value"]
+- ["4Bond29ObservableDictionaryEventKindO", "beginBatchEditing"]
+- ["4Bond29ObservableDictionaryEventKindO", "deletes"]
+- ["4Bond29ObservableDictionaryEventKindO", "endBatchEditing"]
+- ["4Bond29ObservableDictionaryEventKindO", "inserts"]
+- ["4Bond29ObservableDictionaryEventKindO", "reset"]
+- ["4Bond29ObservableDictionaryEventKindO", "updates"]
+- !private ["11ReactiveKit16ObserverProtocolP", "disposeBag"]
+- ["11ReactiveKit16ObserverProtocolP", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "next"]
+- !private ["11ReactiveKit16ObserverProtocolP", "observe"]
+- !private ["11ReactiveKit14PublishSubjectC", "disposeBag"]
+- ["11ReactiveKit14PublishSubjectC", "init"]
+- !private ["11ReactiveKit14PublishSubjectC", "next"]
+- !private ["11ReactiveKit14PublishSubjectC", "observe"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "lock"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "unlock"]
+- ["s8SequenceP", "Iterator"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "endIndex"]
+- !private ["s8SequenceP", "index"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "isEmpty"]
+- !private ["s8SequenceP", "makeIterator"]
+- !private ["s8SequenceP", "remove"]
+- !private ["s8SequenceP", "startIndex"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s8SequenceP", "underestimatedCount"]
+- !private ["s8SequenceP", "updateValue"]
+- !private ["11ReactiveKit6SignalV", "observeNext"]
+- !private ["11ReactiveKit6SignalV", "take"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- ["11ReactiveKit14SignalProtocolP", "NSRecursiveLock"]
+- !private ["11ReactiveKit14SignalProtocolP", "ObservableDictionaryEvent"]
+- ["11ReactiveKit14SignalProtocolP", "PublishSubject"]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Element"]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Error"]
+- ["11ReactiveKit14SignalProtocolP", "bind"]
+- ["11ReactiveKit14SignalProtocolP", "deallocated"]
+- !private ["11ReactiveKit14SignalProtocolP", "dictionary"]
+- !private ["11ReactiveKit14SignalProtocolP", "disposeBag"]
+- ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "lock"]
+- !private ["11ReactiveKit14SignalProtocolP", "next"]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- !private ["11ReactiveKit14SignalProtocolP", "observeNext"]
+- !private ["11ReactiveKit14SignalProtocolP", "removeValue"]
+- !private ["11ReactiveKit14SignalProtocolP", "subject"]
+- !private ["11ReactiveKit14SignalProtocolP", "take"]
+- !private ["11ReactiveKit14SignalProtocolP", "updateValue"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- !private ["11ReactiveKit7SubjectC", "disposeBag"]
+- ["11ReactiveKit7SubjectC", "init"]
+- !private ["11ReactiveKit7SubjectC", "next"]
+- !private ["11ReactiveKit7SubjectC", "observe"]
+- !private ["11ReactiveKit15SubjectProtocolP", "disposeBag"]
+- ["11ReactiveKit15SubjectProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "next"]
+- !private ["11ReactiveKit15SubjectProtocolP", "observe"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
+- ["s21_ObjectiveCBridgeableP", "Iterator"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "endIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "index"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "makeIterator"]
+- !private ["s21_ObjectiveCBridgeableP", "remove"]
+- !private ["s21_ObjectiveCBridgeableP", "startIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "underestimatedCount"]
+- !private ["s21_ObjectiveCBridgeableP", "updateValue"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- "11ReactiveKit16BindableProtocolP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- "s9DecodableP"
+- "s10DictionaryV"
+- "s18DictionaryIteratorV"
+- !private "11ReactiveKit10DisposableP"
+- !private "11ReactiveKit10DisposeBagC"
+- !private "11ReactiveKit18DisposeBagProtocolP"
+- "11ReactiveKit18DisposeBagProviderP"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "11ReactiveKit5EventO"
+- "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s16IteratorProtocolP"
+- "11ReactiveKit4LockP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "4Bond27MutableObservableDictionaryC"
+- "So9NSLockingP"
+- !private "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So15NSRecursiveLockC"
+- "4Bond20ObservableDictionaryC"
+- "4Bond25ObservableDictionaryEventV"
+- "4Bond29ObservableDictionaryEventKindO"
+- "11ReactiveKit16ObserverProtocolP"
+- "11ReactiveKit14PublishSubjectC"
+- "s26RangeReplaceableCollectionP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- "s8SequenceP"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- "SS"
+- "s14StringProtocolP"
+- "11ReactiveKit7SubjectC"
+- "11ReactiveKit15SubjectProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Modules/Differ.swiftmodule/arm64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "9243978bd45df8ba2ab2f2d160956c24"

@@ -109,6 +109,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             if !passwordTF.textIsAPassword(){
                 lineView2.backgroundColor = UIColor.red
             }
+            self.loginBtn.isEnabled = true
+            sender.shake()
             return
         }
         
@@ -134,8 +136,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 if let user = user{
                     AppStorage.PersonalInfo.uid = user.uid
                     AppStorage.PersonalInfo.username = user.displayName!
+                    AppStorage.save()
                     
-                    //segue to app
+                    //segues to app
                     let storyboard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
                     if let ivc = storyboard.instantiateInitialViewController(){
                         self.show(ivc, sender: self)

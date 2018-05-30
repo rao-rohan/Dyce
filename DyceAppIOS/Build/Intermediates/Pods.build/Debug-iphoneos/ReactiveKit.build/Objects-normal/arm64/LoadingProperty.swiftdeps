@@ -1,0 +1,316 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoadingProperty"
+provides-nominal:
+- "11ReactiveKit15LoadingPropertyC"
+provides-member:
+- ["11ReactiveKit15LoadingPropertyC", ""]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "reloading"]
+- ["11ReactiveKit14SignalProtocolP", "reloading"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "=="
+- !private "??"
+- "AssignmentPrecedence"
+- !private "BlockDisposable"
+- "Bool"
+- "BooleanLiteralType"
+- "Disposable"
+- "DisposeBag"
+- "DisposeBagProvider"
+- "Event"
+- "FlattenStrategy"
+- "LoadingProperty"
+- "LoadingSignal"
+- "LoadingState"
+- "LoadingStateProtocol"
+- "NoError"
+- "PropertyProtocol"
+- "PublishSubject"
+- "Signal"
+- "SignalProtocol"
+- "Swift"
+- "Void"
+depends-member:
+- !private ["11ReactiveKit14AtomicObserverC", "completed"]
+- !private ["11ReactiveKit14AtomicObserverC", "deinit"]
+- !private ["11ReactiveKit14AtomicObserverC", "next"]
+- !private ["11ReactiveKit16BindableProtocolP", "disposeBag"]
+- ["11ReactiveKit16BindableProtocolP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "next"]
+- !private ["11ReactiveKit16BindableProtocolP", "start"]
+- !private ["11ReactiveKit15BlockDisposableC", "deinit"]
+- !private ["11ReactiveKit15BlockDisposableC", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s28CustomDebugStringConvertibleP", "flatMap"]
+- !private ["s28CustomDebugStringConvertibleP", "loaded"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "flatMap"]
+- !private ["s17CustomReflectableP", "loaded"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["11ReactiveKit13DeallocatableP", "BlockDisposable"]
+- ["11ReactiveKit13DeallocatableP", "Element"]
+- ["11ReactiveKit13DeallocatableP", "Error"]
+- !private ["11ReactiveKit13DeallocatableP", "LoadingSignal"]
+- ["11ReactiveKit13DeallocatableP", "ProperyElement"]
+- ["11ReactiveKit13DeallocatableP", "PublishSubject"]
+- ["11ReactiveKit13DeallocatableP", ""]
+- ["11ReactiveKit13DeallocatableP", "_Default_Element"]
+- ["11ReactiveKit13DeallocatableP", "_Default_Error"]
+- ["11ReactiveKit13DeallocatableP", "_Default_ProperyElement"]
+- ["11ReactiveKit13DeallocatableP", "bag"]
+- ["11ReactiveKit13DeallocatableP", "deallocated"]
+- !private ["11ReactiveKit13DeallocatableP", "load"]
+- !private ["11ReactiveKit13DeallocatableP", "loadingDisposable"]
+- !private ["11ReactiveKit13DeallocatableP", "loadingState"]
+- ["11ReactiveKit13DeallocatableP", "observe"]
+- !private ["11ReactiveKit13DeallocatableP", "reload"]
+- !private ["11ReactiveKit13DeallocatableP", "signalProducer"]
+- !private ["11ReactiveKit13DeallocatableP", "subject"]
+- ["11ReactiveKit13DeallocatableP", "value"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "flatMap"]
+- !private ["s9DecodableP", "loaded"]
+- !private ["11ReactiveKit10DisposableP", "dispose"]
+- !private ["11ReactiveKit10DisposableP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "BlockDisposable"]
+- ["11ReactiveKit18DisposeBagProviderP", "Element"]
+- ["11ReactiveKit18DisposeBagProviderP", "Error"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "LoadingSignal"]
+- ["11ReactiveKit18DisposeBagProviderP", "ProperyElement"]
+- ["11ReactiveKit18DisposeBagProviderP", "PublishSubject"]
+- ["11ReactiveKit18DisposeBagProviderP", ""]
+- ["11ReactiveKit18DisposeBagProviderP", "_Default_Element"]
+- ["11ReactiveKit18DisposeBagProviderP", "_Default_Error"]
+- ["11ReactiveKit18DisposeBagProviderP", "_Default_ProperyElement"]
+- ["11ReactiveKit18DisposeBagProviderP", "bag"]
+- ["11ReactiveKit18DisposeBagProviderP", "deallocated"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "load"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "loadingDisposable"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "loadingState"]
+- ["11ReactiveKit18DisposeBagProviderP", "observe"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "reload"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "signalProducer"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "subject"]
+- ["11ReactiveKit18DisposeBagProviderP", "value"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "flatMap"]
+- !private ["s9EncodableP", "loaded"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "flatMap"]
+- !private ["s9EquatableP", "latest"]
+- !private ["s9EquatableP", "loaded"]
+- !private ["11ReactiveKit5EventO", "completed"]
+- !private ["11ReactiveKit5EventO", "failed"]
+- !private ["11ReactiveKit5EventO", "next"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s23ExpressibleByNilLiteralP", "flatMap"]
+- !private ["s23ExpressibleByNilLiteralP", "loaded"]
+- !private ["11ReactiveKit15FlattenStrategyO", "latest"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "latest"]
+- !private ["11ReactiveKit15LoadingPropertyC", "BlockDisposable"]
+- ["11ReactiveKit15LoadingPropertyC", "Bool"]
+- ["11ReactiveKit15LoadingPropertyC", "Disposable"]
+- ["11ReactiveKit15LoadingPropertyC", "DisposeBag"]
+- ["11ReactiveKit15LoadingPropertyC", "Element"]
+- ["11ReactiveKit15LoadingPropertyC", "Error"]
+- ["11ReactiveKit15LoadingPropertyC", "Event"]
+- ["11ReactiveKit15LoadingPropertyC", "LoadingError"]
+- ["11ReactiveKit15LoadingPropertyC", "LoadingSignal"]
+- ["11ReactiveKit15LoadingPropertyC", "LoadingState"]
+- ["11ReactiveKit15LoadingPropertyC", "LoadingValue"]
+- ["11ReactiveKit15LoadingPropertyC", "NoError"]
+- ["11ReactiveKit15LoadingPropertyC", "ProperyElement"]
+- ["11ReactiveKit15LoadingPropertyC", "PublishSubject"]
+- ["11ReactiveKit15LoadingPropertyC", "Void"]
+- ["11ReactiveKit15LoadingPropertyC", "_Default_Element"]
+- ["11ReactiveKit15LoadingPropertyC", "_Default_Error"]
+- ["11ReactiveKit15LoadingPropertyC", "_Default_ProperyElement"]
+- ["11ReactiveKit15LoadingPropertyC", "bag"]
+- ["11ReactiveKit15LoadingPropertyC", "deallocated"]
+- ["11ReactiveKit15LoadingPropertyC", "deinit"]
+- ["11ReactiveKit15LoadingPropertyC", "init"]
+- !private ["11ReactiveKit15LoadingPropertyC", "load"]
+- !private ["11ReactiveKit15LoadingPropertyC", "loadingDisposable"]
+- ["11ReactiveKit15LoadingPropertyC", "loadingState"]
+- ["11ReactiveKit15LoadingPropertyC", "observe"]
+- ["11ReactiveKit15LoadingPropertyC", "reload"]
+- !private ["11ReactiveKit15LoadingPropertyC", "signalProducer"]
+- !private ["11ReactiveKit15LoadingPropertyC", "subject"]
+- ["11ReactiveKit15LoadingPropertyC", "value"]
+- !private ["11ReactiveKit12LoadingStateO", "asLoadingState"]
+- !private ["11ReactiveKit12LoadingStateO", "deinit"]
+- !private ["11ReactiveKit12LoadingStateO", "failed"]
+- !private ["11ReactiveKit12LoadingStateO", "loaded"]
+- ["11ReactiveKit12LoadingStateO", "loading"]
+- !private ["11ReactiveKit12LoadingStateO", "value"]
+- !private ["11ReactiveKit20LoadingStateProtocolP", "asLoadingState"]
+- !private ["11ReactiveKit20LoadingStateProtocolP", "failed"]
+- !private ["11ReactiveKit20LoadingStateProtocolP", "loaded"]
+- ["11ReactiveKit20LoadingStateProtocolP", "loading"]
+- !private ["11ReactiveKit20LoadingStateProtocolP", "value"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["11ReactiveKit7NoErrorO", "deinit"]
+- !private ["11ReactiveKit16ObserverProtocolP", "completed"]
+- !private ["11ReactiveKit16ObserverProtocolP", "disposeBag"]
+- ["11ReactiveKit16ObserverProtocolP", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "next"]
+- !private ["11ReactiveKit16ObserverProtocolP", "start"]
+- !private ["Sq", "deinit"]
+- !private ["Sq", "flatMap"]
+- !private ["Sq", "loaded"]
+- !private ["11ReactiveKit16OptionalProtocolP", "flatMap"]
+- !private ["11ReactiveKit16OptionalProtocolP", "loaded"]
+- !private ["11ReactiveKit16PropertyProtocolP", "BlockDisposable"]
+- ["11ReactiveKit16PropertyProtocolP", "Element"]
+- ["11ReactiveKit16PropertyProtocolP", "Error"]
+- !private ["11ReactiveKit16PropertyProtocolP", "LoadingSignal"]
+- ["11ReactiveKit16PropertyProtocolP", "ProperyElement"]
+- ["11ReactiveKit16PropertyProtocolP", "PublishSubject"]
+- ["11ReactiveKit16PropertyProtocolP", ""]
+- ["11ReactiveKit16PropertyProtocolP", "_Default_Element"]
+- ["11ReactiveKit16PropertyProtocolP", "_Default_Error"]
+- ["11ReactiveKit16PropertyProtocolP", "_Default_ProperyElement"]
+- ["11ReactiveKit16PropertyProtocolP", "bag"]
+- ["11ReactiveKit16PropertyProtocolP", "deallocated"]
+- !private ["11ReactiveKit16PropertyProtocolP", "load"]
+- !private ["11ReactiveKit16PropertyProtocolP", "loadingDisposable"]
+- !private ["11ReactiveKit16PropertyProtocolP", "loadingState"]
+- ["11ReactiveKit16PropertyProtocolP", "observe"]
+- !private ["11ReactiveKit16PropertyProtocolP", "reload"]
+- !private ["11ReactiveKit16PropertyProtocolP", "signalProducer"]
+- !private ["11ReactiveKit16PropertyProtocolP", "subject"]
+- ["11ReactiveKit16PropertyProtocolP", "value"]
+- !private ["11ReactiveKit14PublishSubjectC", "deinit"]
+- !private ["11ReactiveKit14PublishSubjectC", "disposeBag"]
+- ["11ReactiveKit14PublishSubjectC", "init"]
+- !private ["11ReactiveKit14PublishSubjectC", "next"]
+- !private ["11ReactiveKit14PublishSubjectC", "start"]
+- !private ["11ReactiveKit6SignalV", "deinit"]
+- !private ["11ReactiveKit6SignalV", "dematerializeLoadingState"]
+- !private ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit6SignalV", "map"]
+- !private ["11ReactiveKit6SignalV", "mapValue"]
+- !private ["11ReactiveKit6SignalV", "observe"]
+- !private ["11ReactiveKit6SignalV", "observeCompleted"]
+- !private ["11ReactiveKit14SignalProtocolP", "BlockDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- ["11ReactiveKit14SignalProtocolP", "FlattenStrategy"]
+- ["11ReactiveKit14SignalProtocolP", "LoadingError"]
+- ["11ReactiveKit14SignalProtocolP", "LoadingProperty"]
+- ["11ReactiveKit14SignalProtocolP", "LoadingSignal"]
+- ["11ReactiveKit14SignalProtocolP", "LoadingStateProtocol"]
+- ["11ReactiveKit14SignalProtocolP", "LoadingValue"]
+- ["11ReactiveKit14SignalProtocolP", "NoError"]
+- ["11ReactiveKit14SignalProtocolP", "ProperyElement"]
+- ["11ReactiveKit14SignalProtocolP", "PublishSubject"]
+- ["11ReactiveKit14SignalProtocolP", "Signal"]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Element"]
+- ["11ReactiveKit14SignalProtocolP", "_Default_Error"]
+- ["11ReactiveKit14SignalProtocolP", "_Default_ProperyElement"]
+- ["11ReactiveKit14SignalProtocolP", "bag"]
+- ["11ReactiveKit14SignalProtocolP", "deallocated"]
+- !private ["11ReactiveKit14SignalProtocolP", "dematerializeLoadingState"]
+- !private ["11ReactiveKit14SignalProtocolP", "disposeBag"]
+- !private ["11ReactiveKit14SignalProtocolP", "flatMapLatest"]
+- !private ["11ReactiveKit14SignalProtocolP", "flatMapValue"]
+- ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "load"]
+- !private ["11ReactiveKit14SignalProtocolP", "loadingDisposable"]
+- !private ["11ReactiveKit14SignalProtocolP", "loadingState"]
+- !private ["11ReactiveKit14SignalProtocolP", "map"]
+- !private ["11ReactiveKit14SignalProtocolP", "mapValue"]
+- !private ["11ReactiveKit14SignalProtocolP", "next"]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- !private ["11ReactiveKit14SignalProtocolP", "observeCompleted"]
+- !private ["11ReactiveKit14SignalProtocolP", "reload"]
+- ["11ReactiveKit14SignalProtocolP", "reloading"]
+- !private ["11ReactiveKit14SignalProtocolP", "signalProducer"]
+- !private ["11ReactiveKit14SignalProtocolP", "start"]
+- !private ["11ReactiveKit14SignalProtocolP", "subject"]
+- ["11ReactiveKit14SignalProtocolP", "value"]
+- !private ["11ReactiveKit7SubjectC", "disposeBag"]
+- ["11ReactiveKit7SubjectC", "init"]
+- !private ["11ReactiveKit7SubjectC", "next"]
+- !private ["11ReactiveKit7SubjectC", "start"]
+- !private ["11ReactiveKit15SubjectProtocolP", "disposeBag"]
+- ["11ReactiveKit15SubjectProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "next"]
+- !private ["11ReactiveKit15SubjectProtocolP", "start"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "flatMap"]
+- !private ["s21_ObjectiveCBridgeableP", "loaded"]
+depends-nominal:
+- !private "11ReactiveKit14AtomicObserverC"
+- "11ReactiveKit16BindableProtocolP"
+- !private "11ReactiveKit15BlockDisposableC"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- !private "s9DecodableP"
+- !private "11ReactiveKit10DisposableP"
+- "11ReactiveKit18DisposeBagProviderP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "11ReactiveKit5EventO"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "11ReactiveKit15FlattenStrategyO"
+- !private "s8HashableP"
+- "11ReactiveKit15LoadingPropertyC"
+- "11ReactiveKit12LoadingStateO"
+- "11ReactiveKit20LoadingStateProtocolP"
+- !private "s25LosslessStringConvertibleP"
+- "11ReactiveKit7NoErrorO"
+- "11ReactiveKit16ObserverProtocolP"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- "11ReactiveKit16PropertyProtocolP"
+- "11ReactiveKit14PublishSubjectC"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- "11ReactiveKit7SubjectC"
+- "11ReactiveKit15SubjectProtocolP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ReactiveKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "af01458428a2aedbc0fa557a971db9c6"

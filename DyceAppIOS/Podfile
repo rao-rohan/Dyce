@@ -1,16 +1,22 @@
 # platform :ios, '9.0'
+#These are the frameworks we used (in other words the libraries that helped us to create our app)
+#Note: Most of these libraries are required for the database
+
 target 'DyceAppIOS' do
   use_frameworks!
+  
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 pod 'Firebase/Database'
-
 pod 'Firebase/Crash'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Performance'
 pod 'Firebase/Firestore'
+
 pod 'SVProgressHUD'
+pod 'ESPullToRefresh'
+
 pod 'DZNEmptyDataSet'
 pod 'Bond’
 pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'master'

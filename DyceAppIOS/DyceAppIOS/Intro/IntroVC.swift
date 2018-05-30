@@ -9,7 +9,6 @@ class IntroVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //rounds buttons
         loginBtn.layer.cornerRadius = 10
         registerBtn.layer.cornerRadius = 10
     }

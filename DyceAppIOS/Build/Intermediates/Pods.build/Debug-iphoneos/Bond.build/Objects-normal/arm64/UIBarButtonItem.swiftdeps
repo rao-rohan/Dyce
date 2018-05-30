@@ -1,0 +1,338 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["11ReactiveKit0A10ExtensionsP", "tap"]
+provides-dynamic-lookup:
+- "eventHandler"
+depends-top-level:
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "NSObject"
+- "NoError"
+- "PublishSubject"
+- "ReactiveExtensions"
+- "SafeSignal"
+- "StringLiteralType"
+- "UIBarButtonItem"
+- "Void"
+- !private "objc_AssociationPolicy"
+- !private "objc_getAssociatedObject"
+- !private "objc_setAssociatedObject"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "completed"]
+- ["11ReactiveKit16BindableProtocolP", "init"]
+- !private ["11ReactiveKit16BindableProtocolP", "next"]
+- !private ["11ReactiveKit16BindableProtocolP", "toSignal"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "AssociatedKeys"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "BondTarget"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "PublishSubject"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "action"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "target"]
+- !private ["s7CVarArgP", "AssociatedKeys"]
+- !private ["s7CVarArgP", "BondTarget"]
+- ["s7CVarArgP", "PublishSubject"]
+- !private ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "action"]
+- !private ["s7CVarArgP", "barButtonItem"]
+- !private ["s7CVarArgP", "eventHandler"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subject"]
+- !private ["s7CVarArgP", "target"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "AssociatedKeys"]
+- !private ["s28CustomDebugStringConvertibleP", "BondTarget"]
+- ["s28CustomDebugStringConvertibleP", "PublishSubject"]
+- !private ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "action"]
+- !private ["s28CustomDebugStringConvertibleP", "barButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "eventHandler"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subject"]
+- !private ["s28CustomDebugStringConvertibleP", "target"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "AssociatedKeys"]
+- !private ["s23CustomStringConvertibleP", "BondTarget"]
+- ["s23CustomStringConvertibleP", "PublishSubject"]
+- !private ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "action"]
+- !private ["s23CustomStringConvertibleP", "barButtonItem"]
+- !private ["s23CustomStringConvertibleP", "eventHandler"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subject"]
+- !private ["s23CustomStringConvertibleP", "target"]
+- !private ["11ReactiveKit13DeallocatableP", "AssociatedKeys"]
+- !private ["11ReactiveKit13DeallocatableP", "BondTarget"]
+- ["11ReactiveKit13DeallocatableP", "PublishSubject"]
+- !private ["11ReactiveKit13DeallocatableP", ""]
+- !private ["11ReactiveKit13DeallocatableP", "action"]
+- !private ["11ReactiveKit13DeallocatableP", "barButtonItem"]
+- !private ["11ReactiveKit13DeallocatableP", "eventHandler"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "subject"]
+- !private ["11ReactiveKit13DeallocatableP", "target"]
+- ["s9DecodableP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "AssociatedKeys"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "BondTarget"]
+- ["11ReactiveKit18DisposeBagProviderP", "PublishSubject"]
+- !private ["11ReactiveKit18DisposeBagProviderP", ""]
+- !private ["11ReactiveKit18DisposeBagProviderP", "action"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "barButtonItem"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "eventHandler"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "subject"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "target"]
+- ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "AssociatedKeys"]
+- !private ["s9EquatableP", "BondTarget"]
+- !private ["s9EquatableP", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s9EquatableP", "PublishSubject"]
+- !private ["s9EquatableP", ""]
+- !private ["s9EquatableP", "action"]
+- !private ["s9EquatableP", "barButtonItem"]
+- !private ["s9EquatableP", "eventHandler"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "subject"]
+- !private ["s9EquatableP", "target"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "AssociatedKeys"]
+- !private ["s8HashableP", "BondTarget"]
+- !private ["s8HashableP", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- ["s8HashableP", "PublishSubject"]
+- !private ["s8HashableP", ""]
+- !private ["s8HashableP", "action"]
+- !private ["s8HashableP", "barButtonItem"]
+- !private ["s8HashableP", "eventHandler"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "subject"]
+- !private ["s8HashableP", "target"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "AssociatedKeys"]
+- !private ["So8NSCodingP", "BondTarget"]
+- ["So8NSCodingP", "PublishSubject"]
+- !private ["So8NSCodingP", "action"]
+- !private ["So8NSCodingP", "target"]
+- !private ["So8NSObjectC", "AssociatedKeys"]
+- !private ["So8NSObjectC", "BondTarget"]
+- ["So8NSObjectC", "NSObject"]
+- ["So8NSObjectC", "NoError"]
+- ["So8NSObjectC", "PublishSubject"]
+- ["So8NSObjectC", "UIBarButtonItem"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "action"]
+- ["So8NSObjectC", "barButtonItem"]
+- ["So8NSObjectC", "eventHandler"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "subject"]
+- !private ["So8NSObjectC", "target"]
+- !private ["So16NSObjectProtocolP", "AssociatedKeys"]
+- !private ["So16NSObjectProtocolP", "BondTarget"]
+- ["So16NSObjectProtocolP", "PublishSubject"]
+- !private ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "action"]
+- !private ["So16NSObjectProtocolP", "barButtonItem"]
+- !private ["So16NSObjectProtocolP", "eventHandler"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "subject"]
+- !private ["So16NSObjectProtocolP", "target"]
+- !private ["11ReactiveKit16ObserverProtocolP", "completed"]
+- ["11ReactiveKit16ObserverProtocolP", "init"]
+- !private ["11ReactiveKit16ObserverProtocolP", "next"]
+- !private ["11ReactiveKit16ObserverProtocolP", "toSignal"]
+- !private ["11ReactiveKit14PublishSubjectC", "completed"]
+- ["11ReactiveKit14PublishSubjectC", "init"]
+- !private ["11ReactiveKit14PublishSubjectC", "next"]
+- !private ["11ReactiveKit14PublishSubjectC", "toSignal"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+- !private ["11ReactiveKit0A10ExtensionsP", "AnyObject"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- ["11ReactiveKit0A10ExtensionsP", "SafeSignal"]
+- ["11ReactiveKit0A10ExtensionsP", "UIBarButtonItem"]
+- ["11ReactiveKit0A10ExtensionsP", "Void"]
+- !private ["11ReactiveKit0A10ExtensionsP", "base"]
+- !private ["11ReactiveKit0A10ExtensionsP", "objc_AssociationPolicy"]
+- !private ["11ReactiveKit0A10ExtensionsP", "objc_getAssociatedObject"]
+- !private ["11ReactiveKit0A10ExtensionsP", "objc_setAssociatedObject"]
+- ["11ReactiveKit0A10ExtensionsP", "tap"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "AssociatedKeys"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "BondTarget"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "PublishSubject"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", ""]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "action"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "barButtonItem"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "eventHandler"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "subject"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "target"]
+- ["s8SequenceP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "completed"]
+- ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "next"]
+- !private ["11ReactiveKit14SignalProtocolP", "toSignal"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- !private ["11ReactiveKit7SubjectC", "completed"]
+- ["11ReactiveKit7SubjectC", "init"]
+- !private ["11ReactiveKit7SubjectC", "next"]
+- !private ["11ReactiveKit7SubjectC", "toSignal"]
+- !private ["11ReactiveKit15SubjectProtocolP", "completed"]
+- ["11ReactiveKit15SubjectProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "next"]
+- !private ["11ReactiveKit15SubjectProtocolP", "toSignal"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "AssociatedKeys"]
+- !private ["So29UIAccessibilityIdentificationP", "BondTarget"]
+- ["So29UIAccessibilityIdentificationP", "PublishSubject"]
+- !private ["So29UIAccessibilityIdentificationP", "action"]
+- !private ["So29UIAccessibilityIdentificationP", "target"]
+- !private ["So12UIAppearanceP", "AssociatedKeys"]
+- !private ["So12UIAppearanceP", "BondTarget"]
+- ["So12UIAppearanceP", "PublishSubject"]
+- !private ["So12UIAppearanceP", "action"]
+- !private ["So12UIAppearanceP", "target"]
+- !private ["So15UIBarButtonItemC", "AssociatedKeys"]
+- !private ["So15UIBarButtonItemC", "BondTarget"]
+- ["So15UIBarButtonItemC", "NSObject"]
+- ["So15UIBarButtonItemC", "NoError"]
+- ["So15UIBarButtonItemC", "PublishSubject"]
+- ["So15UIBarButtonItemC", "UIBarButtonItem"]
+- ["So15UIBarButtonItemC", "Void"]
+- !private ["So15UIBarButtonItemC", "action"]
+- !private ["So15UIBarButtonItemC", "target"]
+- !private ["So9UIBarItemC", "AssociatedKeys"]
+- !private ["So9UIBarItemC", "BondTarget"]
+- ["So9UIBarItemC", "NSObject"]
+- ["So9UIBarItemC", "NoError"]
+- ["So9UIBarItemC", "PublishSubject"]
+- ["So9UIBarItemC", "UIBarButtonItem"]
+- ["So9UIBarItemC", "Void"]
+- !private ["So9UIBarItemC", "action"]
+- !private ["So9UIBarItemC", "target"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "AssociatedKeys"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "BondTarget"]
+- ["So35UISpringLoadedInteractionSupportingP", "PublishSubject"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "action"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "target"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AssociatedKeys"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BondTarget"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "PublishSubject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "action"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "barButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "eventHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "target"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["SC22objc_AssociationPolicyO", "OBJC_ASSOCIATION_RETAIN_NONATOMIC"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- "11ReactiveKit16BindableProtocolP"
+- "11ReactiveKit31BindingExecutionContextProviderP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- "s9DecodableP"
+- "11ReactiveKit18DisposeBagProviderP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "11ReactiveKit16ObserverProtocolP"
+- "11ReactiveKit14PublishSubjectC"
+- "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- "s8SequenceP"
+- "11ReactiveKit14SignalProtocolP"
+- !private "s12StaticStringV"
+- "SS"
+- "s14StringProtocolP"
+- "11ReactiveKit7SubjectC"
+- "11ReactiveKit15SubjectProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So15UIBarButtonItemC"
+- "So9UIBarItemC"
+- "So35UISpringLoadedInteractionSupportingP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+- !private "SC22objc_AssociationPolicyO"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Modules/Differ.swiftmodule/arm64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "2866fcb1d14b193f4d3239d2ee50246a"

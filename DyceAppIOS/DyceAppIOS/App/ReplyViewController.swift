@@ -4,13 +4,17 @@ import Firebase
 import SVProgressHUD
 import SCLAlertView
 
+//this view controller operates with an array of Reply objects to display
+
 class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource{
     
     var question = Question()
     var keyboardHeight : CGFloat = 0
     var height : CGFloat = 0
+    
     @IBOutlet weak var replyTextField: UITextField!
     @IBOutlet weak var tableView : UITableView!
+    
     private var replies = [Reply]() {didSet{tableView.reloadData()}}
     var questionHeaderView: QuestionHeaderView?
     var questionImageHeaderView: QuestionImageHeaderView?
@@ -21,9 +25,10 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         self.replyTextField.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.separatorStyle = .none
+        self.tableView.backgroundColor = UIColor.white
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        
         let image = question.image
         if image != nil {
             
@@ -41,7 +46,6 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
             
         }
         else {
-            //Normal Cell Detail
             questionHeaderView = UINib(nibName: "QuestionHeaderView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionHeaderView
             questionHeaderView?.posterUID = question.creatorUID
             questionHeaderView?.usernameLabel.text = question.creatorUsername
@@ -69,40 +73,36 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         }
         return "\(question.numReplies)" + replies
     }
+    
     func convertTime(_time : Timestamp) -> String {
-        //converts TimeStamp to String
+
         var timeWord = "second"
         let secondsSinceEpoch = TimeInterval(_time.seconds)
-        var timeAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
-        // print("\(timeAgo)" + timeWord)
-        if(timeAgo > 60 && timeWord == "second"){ // more than 60 seconds
-            timeAgo /= 60 // now in minutes
+        var ago = NSDate().timeIntervalSince1970 - secondsSinceEpoch
+        if(ago > 60 && timeWord == "second"){
+            ago /= 60
             timeWord = "minute"
-            //  print("\(timeAgo)" + timeWord)
         }
-        if(timeAgo > 60 && timeWord == "minute") {//if more than 60 minutes
-            timeAgo /= 60 //now in hours
+        if(ago > 60 && timeWord == "minute") {
+            ago /= 60
             timeWord = "hour"
-            //  print("\(timeAgo)" + timeWord)
         }
-        if(timeAgo > 24 && timeWord == "hour" ){ //if more than 24 hours ago
-            timeAgo /= 24 //now in days
+        if(ago > 24 && timeWord == "hour" ){
+            ago /= 24
             timeWord = "day"
-            //  print("\(timeAgo)" + timeWord)
         }
-        
-        if(timeAgo > 1){ //making the time word gramatically correct
+        if(ago > 1){
             timeWord += "s"
-            //  print("\(timeAgo)" + timeWord)
         }
-        
-        let timeSince = (Int) (timeAgo) //casts to an integer
-        return "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
+        let timeSince = (Int) (ago)
+        return "\(timeSince)" + " " + timeWord + " ago"
     }
+    
     func fetchReplies(){
         replies.removeAll()
-        print("fetching replies")
-        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(question.postID).collection(NameFile.Firestore.replies)
+
+        let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.posts).document(question.postID).collection(NameFile.Firestore.replies)
+        
         repliesCollection.getDocuments(completion: { (snapshot, error) in
             if let documents = snapshot?.documents{
                 for document in documents {
@@ -115,6 +115,7 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
             }
         })
     }
+    
     func appendInOrder(_reply : Reply){
         for (index, reply)  in replies.enumerated(){
             let secondsSinceEpochReply = TimeInterval(reply.time.seconds)
@@ -128,6 +129,21 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         }
         self.replies.append(_reply)
         
+        let image = question.image
+        if image != nil {
+            if let text = questionImageHeaderView?.repliesLabel.text{
+                if let numReplies = Int(text){
+                    questionImageHeaderView?.repliesLabel.text = "\(numReplies+1)"
+                }
+            }
+        }
+        else {
+            if let text = questionHeaderView?.repliesLabel.text{
+                if let numReplies = Int(text){
+                    questionHeaderView?.repliesLabel.text = "\(numReplies+1)"
+                }
+            }
+        }
     }
     
     @objc func keyboardWillShow(notification: Notification) {
@@ -136,11 +152,9 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         let keyboardRectangle = keyboardFrame.cgRectValue
         keyboardHeight = keyboardRectangle.height - height
         moveTextField(replyTextField, moveDistance: -keyboardHeight, up: true)
-        // do whatever you want with this keyboard height
     }
     
     @objc func keyboardWillHide(notification: Notification) {
-        // keyboard is dismissed/hidden from the screen
         moveTextField(replyTextField, moveDistance: -keyboardHeight, up: false)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -166,7 +180,7 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         else{
             alert.showError("Error", subTitle: "Couldn't get location!")
         }
-        textFieldShouldReturn(replyTextField)
+        _ = textFieldShouldReturn(replyTextField)
     }
     
     func moveTextField(_ textField: UITextField, moveDistance: CGFloat, up: Bool) {

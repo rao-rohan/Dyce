@@ -1,7 +1,11 @@
 import Foundation
 import UIKit
 
+//this cell displays the appearance of a Question object
+
 class QuestionCell: UITableViewCell {
+    
+    let colorPicker = CategoryHelper()
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -15,41 +19,37 @@ class QuestionCell: UITableViewCell {
 
     private func reloadData(){
         questionLabel.text = question.question
-        //converts TimeStamp to String
+
+        //converts to the appropriate unit of time
         var timeWord = "second"
         let secondsSinceEpoch = TimeInterval(question.time.seconds)
-        var timeAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
-       // print("\(timeAgo)" + timeWord)
-        if(timeAgo > 60 && timeWord == "second"){ // more than 60 seconds
-            timeAgo /= 60 // now in minutes
+        var ago = NSDate().timeIntervalSince1970 - secondsSinceEpoch
+        if ago > 60 && timeWord == "second"{
+            ago /= 60
             timeWord = "minute"
-          //  print("\(timeAgo)" + timeWord)
         }
-        if(timeAgo > 60 && timeWord == "minute") {//if more than 60 minutes
-            timeAgo /= 60 //now in hours
+        if(ago > 60 && timeWord == "minute") {
+            ago /= 60
             timeWord = "hour"
-          //  print("\(timeAgo)" + timeWord)
         }
-        if(timeAgo > 24 && timeWord == "hour" ){ //if more than 24 hours ago
-            timeAgo /= 24 //now in days
+        if(ago > 24 && timeWord == "hour" ){
+            ago /= 24
             timeWord = "day"
-          //  print("\(timeAgo)" + timeWord)
         }
-        
-        if(timeAgo > 1){ //making the time word gramatically correct
+        if(ago > 1){
             timeWord += "s"
-          //  print("\(timeAgo)" + timeWord)
         }
+        let timeSince = (Int) (ago)
+        timeLabel.text = "\(timeSince)" + " " + timeWord + " ago"
         
-        let timeSince = (Int) (timeAgo) //casts to an integer
-        timeLabel.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
-      //  print("\(timeAgo)" + timeWord)
         var replies = " reply"
         if(question.numReplies != 1){
             replies = " replies"
         }
         repliesLabel.text = "\(question.numReplies)" + replies
+        
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
         categoryLabel.text = question.category
+        categoryFlag.backgroundColor = colorPicker.colorChooser(question.category)
     }
 }

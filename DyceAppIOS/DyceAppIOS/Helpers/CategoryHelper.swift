@@ -1,13 +1,8 @@
-//
-//  CategoryHelper.swift
-//  Questions
-//
-//  Created by Rohan Rao on 10/02/17.
-//  Copyright © 2017 Rohan Rao. All rights reserved.
-//
-
 import Foundation
 import UIKit
+
+//chooses the appropriate background color for a specified category
+
 struct CategoryHelper {
     func colorChooser(_ category: String) -> UIColor {
         var color: UIColor?

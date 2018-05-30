@@ -1,15 +1,14 @@
 import Foundation
 
+//stores any name constants for easier access and less error
+
 struct NameFile{
     
     struct Firestore{
-        static let FirestorePosts = "PostCollection"
+        static let posts = "PostCollection"
             //post id (document)
                 static let creatorUID = "CreatorUID"
                 static let creatorUsername = "CreatorUsername"
-                //static let postLocation = "PostLocation"
-                static let postLongitude = "PostLongitude"
-                static let postLatitude = "PostLatitude"
                 static let postCategory = "PostCategory"
                 static let postTime = "PostTime"
                 static let postQuestion = "PostQuestion"
@@ -26,6 +25,5 @@ struct NameFile{
     struct RTDB{
         static let RTDBPosts = "Posts"
             static let firestorePostID = "FirestorePostID"
-        
     }
 }

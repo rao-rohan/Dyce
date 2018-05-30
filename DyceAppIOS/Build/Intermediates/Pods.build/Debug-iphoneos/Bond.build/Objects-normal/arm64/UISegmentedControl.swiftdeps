@@ -1,0 +1,301 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "So18UISegmentedControlC"
+provides-member:
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["So18UISegmentedControlC", ""]
+- ["11ReactiveKit0A10ExtensionsP", "selectedSegmentIndex"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AssignmentPrecedence"
+- "BindableProtocol"
+- "Disposable"
+- "DynamicSubject"
+- "Int"
+- "NoError"
+- "ReactiveExtensions"
+- "Signal"
+- "UISegmentedControl"
+depends-member:
+- ["11ReactiveKit16BindableProtocolP", "Element"]
+- ["11ReactiveKit16BindableProtocolP", ""]
+- ["11ReactiveKit16BindableProtocolP", "_Default_Element"]
+- ["11ReactiveKit16BindableProtocolP", "bind"]
+- !private ["11ReactiveKit16BindableProtocolP", "reactive"]
+- !private ["11ReactiveKit16BindableProtocolP", "selectedSegmentIndex"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "Element"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "_Default_Element"]
+- ["11ReactiveKit31BindingExecutionContextProviderP", "bind"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "reactive"]
+- !private ["11ReactiveKit31BindingExecutionContextProviderP", "selectedSegmentIndex"]
+- ["So15CALayerDelegateP", "Element"]
+- ["So15CALayerDelegateP", "_Default_Element"]
+- ["So15CALayerDelegateP", "bind"]
+- !private ["So15CALayerDelegateP", "reactive"]
+- !private ["So15CALayerDelegateP", "selectedSegmentIndex"]
+- ["s7CVarArgP", "Element"]
+- ["s7CVarArgP", "_Default_Element"]
+- ["s7CVarArgP", "bind"]
+- !private ["s7CVarArgP", "reactive"]
+- !private ["s7CVarArgP", "selectedSegmentIndex"]
+- ["s28CustomDebugStringConvertibleP", "Element"]
+- ["s28CustomDebugStringConvertibleP", "_Default_Element"]
+- ["s28CustomDebugStringConvertibleP", "bind"]
+- !private ["s28CustomDebugStringConvertibleP", "reactive"]
+- !private ["s28CustomDebugStringConvertibleP", "selectedSegmentIndex"]
+- ["s23CustomStringConvertibleP", "Element"]
+- ["s23CustomStringConvertibleP", "_Default_Element"]
+- ["s23CustomStringConvertibleP", "bind"]
+- !private ["s23CustomStringConvertibleP", "reactive"]
+- !private ["s23CustomStringConvertibleP", "selectedSegmentIndex"]
+- ["11ReactiveKit13DeallocatableP", "Element"]
+- ["11ReactiveKit13DeallocatableP", "_Default_Element"]
+- ["11ReactiveKit13DeallocatableP", "bind"]
+- !private ["11ReactiveKit13DeallocatableP", "reactive"]
+- !private ["11ReactiveKit13DeallocatableP", "selectedSegmentIndex"]
+- ["11ReactiveKit18DisposeBagProviderP", "Element"]
+- ["11ReactiveKit18DisposeBagProviderP", "_Default_Element"]
+- ["11ReactiveKit18DisposeBagProviderP", "bind"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "reactive"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "selectedSegmentIndex"]
+- !private ["4Bond15DynamicSubject2V", "bind"]
+- !private ["4Bond15DynamicSubject2V", "deinit"]
+- ["s9EquatableP", "Element"]
+- ["s9EquatableP", "_Default_Element"]
+- ["s9EquatableP", "bind"]
+- !private ["s9EquatableP", "reactive"]
+- !private ["s9EquatableP", "selectedSegmentIndex"]
+- !private ["s9EquatableP", "valueChanged"]
+- !private ["s25ExpressibleByArrayLiteralP", "valueChanged"]
+- ["s8HashableP", "Element"]
+- ["s8HashableP", "_Default_Element"]
+- ["s8HashableP", "bind"]
+- !private ["s8HashableP", "reactive"]
+- !private ["s8HashableP", "selectedSegmentIndex"]
+- ["So8NSCodingP", "Element"]
+- ["So8NSCodingP", "_Default_Element"]
+- ["So8NSCodingP", "bind"]
+- !private ["So8NSCodingP", "reactive"]
+- !private ["So8NSCodingP", "selectedSegmentIndex"]
+- ["So8NSObjectC", "Disposable"]
+- ["So8NSObjectC", "Element"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NoError"]
+- ["So8NSObjectC", "Signal"]
+- ["So8NSObjectC", "_Default_Element"]
+- ["So8NSObjectC", "bind"]
+- !private ["So8NSObjectC", "reactive"]
+- !private ["So8NSObjectC", "selectedSegmentIndex"]
+- ["So16NSObjectProtocolP", "Element"]
+- ["So16NSObjectProtocolP", "_Default_Element"]
+- ["So16NSObjectProtocolP", "bind"]
+- !private ["So16NSObjectProtocolP", "reactive"]
+- !private ["So16NSObjectProtocolP", "selectedSegmentIndex"]
+- !private ["11ReactiveKit16ObserverProtocolP", "bind"]
+- !private ["s9OptionSetP", "valueChanged"]
+- !private ["s16RawRepresentableP", "valueChanged"]
+- !private ["11ReactiveKit0A0V", "selectedSegmentIndex"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- ["11ReactiveKit0A10ExtensionsP", "DynamicSubject"]
+- ["11ReactiveKit0A10ExtensionsP", "Int"]
+- ["11ReactiveKit0A10ExtensionsP", "UISegmentedControl"]
+- !private ["11ReactiveKit0A10ExtensionsP", "controlEvents"]
+- !private ["11ReactiveKit0A10ExtensionsP", "dynamicSubject"]
+- ["11ReactiveKit0A10ExtensionsP", "selectedSegmentIndex"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "Element"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "_Default_Element"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "bind"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "reactive"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "selectedSegmentIndex"]
+- !private ["s10SetAlgebraP", "valueChanged"]
+- !private ["11ReactiveKit6SignalV", "eraseType"]
+- !private ["11ReactiveKit14SignalProtocolP", "bind"]
+- !private ["11ReactiveKit14SignalProtocolP", "eraseType"]
+- !private ["11ReactiveKit15SubjectProtocolP", "bind"]
+- ["So29UIAccessibilityIdentificationP", "Element"]
+- ["So29UIAccessibilityIdentificationP", "_Default_Element"]
+- ["So29UIAccessibilityIdentificationP", "bind"]
+- !private ["So29UIAccessibilityIdentificationP", "reactive"]
+- !private ["So29UIAccessibilityIdentificationP", "selectedSegmentIndex"]
+- ["So12UIAppearanceP", "Element"]
+- ["So12UIAppearanceP", "_Default_Element"]
+- ["So12UIAppearanceP", "bind"]
+- !private ["So12UIAppearanceP", "reactive"]
+- !private ["So12UIAppearanceP", "selectedSegmentIndex"]
+- ["So21UIAppearanceContainerP", "Element"]
+- ["So21UIAppearanceContainerP", "_Default_Element"]
+- ["So21UIAppearanceContainerP", "bind"]
+- !private ["So21UIAppearanceContainerP", "reactive"]
+- !private ["So21UIAppearanceContainerP", "selectedSegmentIndex"]
+- ["So9UIControlC", "Disposable"]
+- ["So9UIControlC", "Element"]
+- ["So9UIControlC", "Int"]
+- ["So9UIControlC", "NoError"]
+- ["So9UIControlC", "Signal"]
+- ["So9UIControlC", "_Default_Element"]
+- ["So9UIControlC", "bind"]
+- !private ["So9UIControlC", "reactive"]
+- !private ["So9UIControlC", "selectedSegmentIndex"]
+- !private ["SC15UIControlEventsV", "valueChanged"]
+- ["So17UICoordinateSpaceP", "Element"]
+- ["So17UICoordinateSpaceP", "_Default_Element"]
+- ["So17UICoordinateSpaceP", "bind"]
+- !private ["So17UICoordinateSpaceP", "reactive"]
+- !private ["So17UICoordinateSpaceP", "selectedSegmentIndex"]
+- ["So13UIDynamicItemP", "Element"]
+- ["So13UIDynamicItemP", "_Default_Element"]
+- ["So13UIDynamicItemP", "bind"]
+- !private ["So13UIDynamicItemP", "reactive"]
+- !private ["So13UIDynamicItemP", "selectedSegmentIndex"]
+- ["So18UIFocusEnvironmentP", "Element"]
+- ["So18UIFocusEnvironmentP", "_Default_Element"]
+- ["So18UIFocusEnvironmentP", "bind"]
+- !private ["So18UIFocusEnvironmentP", "reactive"]
+- !private ["So18UIFocusEnvironmentP", "selectedSegmentIndex"]
+- ["So11UIFocusItemP", "Element"]
+- ["So11UIFocusItemP", "_Default_Element"]
+- ["So11UIFocusItemP", "bind"]
+- !private ["So11UIFocusItemP", "reactive"]
+- !private ["So11UIFocusItemP", "selectedSegmentIndex"]
+- ["So30UIPasteConfigurationSupportingP", "Element"]
+- ["So30UIPasteConfigurationSupportingP", "_Default_Element"]
+- ["So30UIPasteConfigurationSupportingP", "bind"]
+- !private ["So30UIPasteConfigurationSupportingP", "reactive"]
+- !private ["So30UIPasteConfigurationSupportingP", "selectedSegmentIndex"]
+- ["So11UIResponderC", "Disposable"]
+- ["So11UIResponderC", "Element"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "NoError"]
+- ["So11UIResponderC", "Signal"]
+- ["So11UIResponderC", "_Default_Element"]
+- ["So11UIResponderC", "bind"]
+- !private ["So11UIResponderC", "reactive"]
+- !private ["So11UIResponderC", "selectedSegmentIndex"]
+- ["So30UIResponderStandardEditActionsP", "Element"]
+- ["So30UIResponderStandardEditActionsP", "_Default_Element"]
+- ["So30UIResponderStandardEditActionsP", "bind"]
+- !private ["So30UIResponderStandardEditActionsP", "reactive"]
+- !private ["So30UIResponderStandardEditActionsP", "selectedSegmentIndex"]
+- ["So18UISegmentedControlC", "Disposable"]
+- ["So18UISegmentedControlC", "Element"]
+- ["So18UISegmentedControlC", "Int"]
+- ["So18UISegmentedControlC", "NoError"]
+- ["So18UISegmentedControlC", "Signal"]
+- ["So18UISegmentedControlC", "_Default_Element"]
+- ["So18UISegmentedControlC", "bind"]
+- ["So18UISegmentedControlC", "deinit"]
+- !private ["So18UISegmentedControlC", "reactive"]
+- !private ["So18UISegmentedControlC", "selectedSegmentIndex"]
+- ["So35UISpringLoadedInteractionSupportingP", "Element"]
+- ["So35UISpringLoadedInteractionSupportingP", "_Default_Element"]
+- ["So35UISpringLoadedInteractionSupportingP", "bind"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "reactive"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "selectedSegmentIndex"]
+- ["So18UITraitEnvironmentP", "Element"]
+- ["So18UITraitEnvironmentP", "_Default_Element"]
+- ["So18UITraitEnvironmentP", "bind"]
+- !private ["So18UITraitEnvironmentP", "reactive"]
+- !private ["So18UITraitEnvironmentP", "selectedSegmentIndex"]
+- ["So6UIViewC", "Disposable"]
+- ["So6UIViewC", "Element"]
+- ["So6UIViewC", "Int"]
+- ["So6UIViewC", "NoError"]
+- ["So6UIViewC", "Signal"]
+- ["So6UIViewC", "_Default_Element"]
+- ["So6UIViewC", "bind"]
+- !private ["So6UIViewC", "reactive"]
+- !private ["So6UIViewC", "selectedSegmentIndex"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "Element"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "_Default_Element"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "bind"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reactive"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "selectedSegmentIndex"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Element"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "_Default_Element"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "bind"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reactive"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedSegmentIndex"]
+depends-nominal:
+- "11ReactiveKit16BindableProtocolP"
+- "11ReactiveKit31BindingExecutionContextProviderP"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- "11ReactiveKit18DisposeBagProviderP"
+- !private "4Bond15DynamicSubject2V"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "11ReactiveKit16ObserverProtocolP"
+- !private "s9OptionSetP"
+- !private "s16RawRepresentableP"
+- !private "11ReactiveKit0A0V"
+- "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "s10SetAlgebraP"
+- !private "11ReactiveKit6SignalV"
+- !private "11ReactiveKit14SignalProtocolP"
+- !private "11ReactiveKit15SubjectProtocolP"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So9UIControlC"
+- !private "SC15UIControlEventsV"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So18UISegmentedControlC"
+- "So35UISpringLoadedInteractionSupportingP"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Modules/Differ.swiftmodule/arm64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "7551b7827efe1f0780631dc91b79b3b3"

@@ -120,6 +120,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             if !passwordTF.textIsAPassword(){
                 lineView3.backgroundColor = UIColor.red
             }
+            self.registerBtn.isEnabled = true
+            sender.shake()
             return
         }
         
@@ -153,8 +155,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                         }else{
                             AppStorage.PersonalInfo.uid = user.uid
                             AppStorage.PersonalInfo.username = username
+                            AppStorage.save()
                             
-                            //segue to app
+                            //segues to app
                             let storyboard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
                             if let ivc = storyboard.instantiateInitialViewController(){
                                 self.show(ivc, sender: self)

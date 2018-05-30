@@ -11,6 +11,9 @@ public class AppStorage{
         static var uid = ""
         static var username = ""
     }
+    struct Questions {
+        static var category: String?
+    }
     
     static func save(){
         let defaults = UserDefaults.standard
@@ -18,6 +21,9 @@ public class AppStorage{
         //Personal Info save
         defaults.set(PersonalInfo.uid, forKey: "UID")
         defaults.set(PersonalInfo.username, forKey: "Username")
+        
+        //Questions save
+        defaults.set(Questions.category, forKey: "Category")
     }
     
     static func load(){
@@ -26,6 +32,9 @@ public class AppStorage{
         //Personal Info load
         PersonalInfo.uid = defaults.value(forKey: "UID") as? String ?? ""
         PersonalInfo.username = defaults.value(forKey: "Username") as? String ?? ""
+        
+        //Questions load
+        Questions.category = defaults.value(forKey: "Category") as? String
     }
     
 }

@@ -1,0 +1,41 @@
+[debug] [2018-05-25T16:02:20.553Z] ----------------------------------------------------------------------
+[debug] [2018-05-25T16:02:20.555Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2018-05-25T16:02:20.555Z] CLI Version:   3.18.4
+[debug] [2018-05-25T16:02:20.555Z] Platform:      darwin
+[debug] [2018-05-25T16:02:20.555Z] Node Version:  v9.11.1
+[debug] [2018-05-25T16:02:20.556Z] Time:          Fri May 25 2018 09:02:20 GMT-0700 (PDT)
+[debug] [2018-05-25T16:02:20.556Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-25T16:02:20.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-05-25T16:02:20.567Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nikhilsridhar/Desktop/Dyce
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-05-25T16:02:23.169Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-25T16:02:23.170Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/EuPrNpiGKp3lqm75if0LesuP_3SvTvIAceohY7Ug3ec',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri May 25 2018 09:02:23 GMT-0700 (PDT)
+[debug] [2018-05-25T16:02:23.284Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-25T16:02:23.305Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Fri May 25 2018 09:02:23 GMT-0700 (PDT)
+[debug] [2018-05-25T16:02:23.782Z] <<< HTTP RESPONSE 200

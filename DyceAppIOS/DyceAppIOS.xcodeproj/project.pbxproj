@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */; };
-		4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */; };
-		4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */; };
 		4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */; };
 		4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */; };
 		4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */; };
@@ -58,8 +56,6 @@
 
 /* Begin PBXFileReference section */
 		4E2BFFA420A400D500AA0DF0 /* ReplyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
-		4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyContainerViewController.swift; sourceTree = "<group>"; };
-		4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
 		4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHelper.swift; sourceTree = "<group>"; };
 		4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionImageHeaderView.swift; sourceTree = "<group>"; };
 		4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
@@ -149,15 +145,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4EE8CFFB20A6CD410091253E /* OLD FILES */ = {
-			isa = PBXGroup;
-			children = (
-				4E2BFFA620A400E500AA0DF0 /* ReplyContainerViewController.swift */,
-				4E2BFFA720A400E500AA0DF0 /* ReplyTableViewController.swift */,
-			);
-			path = "OLD FILES";
-			sourceTree = "<group>";
-		};
 		4EE8CFFC20A6CD590091253E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +190,6 @@
 		5822CDE4209FF3F100093CD0 /* DyceAppIOS */ = {
 			isa = PBXGroup;
 			children = (
-				4EE8CFFB20A6CD410091253E /* OLD FILES */,
 				4E2BFFAE20A4A9E700AA0DF0 /* Helpers */,
 				5822CE2920A0093C00093CD0 /* NameFile.swift */,
 				5822CE22209FFDC300093CD0 /* AppStorage.swift */,
@@ -426,6 +412,7 @@
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ/Differ.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GeoFire/GeoFire.framework",
@@ -450,6 +437,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoFire.framework",
@@ -501,7 +489,6 @@
 				5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */,
 				5822CE3020A009B500093CD0 /* QuestionImageCell.swift in Sources */,
 				5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */,
-				4E2BFFA820A400E500AA0DF0 /* ReplyContainerViewController.swift in Sources */,
 				5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */,
 				5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */,
 				5822CE3220A009E400093CD0 /* Reply.swift in Sources */,
@@ -510,7 +497,6 @@
 				4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */,
 				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
 				4EE8CFFA20A6C0980091253E /* ReplyViewController.swift in Sources */,
-				4E2BFFA920A400E500AA0DF0 /* ReplyTableViewController.swift in Sources */,
 				4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */,
 				4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */,
 				4E2BFFA520A400D500AA0DF0 /* ReplyCell.swift in Sources */,

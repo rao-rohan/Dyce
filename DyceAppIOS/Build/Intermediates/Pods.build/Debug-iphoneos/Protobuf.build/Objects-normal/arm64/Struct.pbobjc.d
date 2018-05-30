@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.m \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Protobuf.build/module.modulemap \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target\ Support\ Files/Protobuf/Protobuf-prefix.pch \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBProtocolBuffers.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBBootstrap.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBArray.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBRuntimeTypes.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBCodedInputStream.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBCodedOutputStream.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBWireFormat.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBDescriptor.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBDictionary.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBExtensionRegistry.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBMessage.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBRootObject.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBUnknownField.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBUtilities.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBWellKnownTypes.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBDescriptor_PackagePrivate.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBExtensionInternals.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBRootObject_PackagePrivate.h \
+  /Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h

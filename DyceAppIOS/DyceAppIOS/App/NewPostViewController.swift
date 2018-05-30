@@ -5,6 +5,8 @@ import SCLAlertView
 import Firebase
 import CoreLocation
 
+//this view controller displays the template for the user to post a new question
+
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
 
     @IBOutlet weak var ImagePlace: UIImageView!
@@ -22,6 +24,10 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     var imagePickerController: UIImagePickerController?
     var toolbar: UIToolbar!
     var time : Timestamp!
+    
+    var delegate: PushCompletedDelegate?
+    
+    private var deleteCategory = true
     
     override var prefersStatusBarHidden : Bool {
         return true
@@ -41,10 +47,27 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
         
         if(locationManager.location != nil) {
             locationExists = true
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if deleteCategory{
+            AppStorage.Questions.category = nil
+            AppStorage.save()
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationManager.startUpdatingLocation()
+        deleteCategory = true
+        AppStorage.load()
+        if let category = AppStorage.Questions.category{
+            categoryButton.titleLabel?.text = category
         }
     }
     
@@ -77,10 +100,12 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @objc func uploadPost(){
         let question = Question()
+        
         var hasError = false
         let alert = SCLAlertView()
+        
         time = Timestamp()
-        print(time)
+
         if selectedCategory != nil {
             question.category = selectedCategory!
         } else {
@@ -108,13 +133,14 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         question.time = time
         question.creatorUID = AppStorage.PersonalInfo.uid
         question.creatorUsername = AppStorage.PersonalInfo.username
-        print(question.creatorUID)
-        print(question.creatorUsername)
         
         if(hasError == false) {
             SVProgressHUD.show()
-            print(hasError)
-            question.pushToFirestore()
+            question.pushToFirestore {
+                self.delegate?.completedPush()
+            }
+            AppStorage.Questions.category = nil
+            AppStorage.save()
             performSegue(withIdentifier: "backtoFeed", sender: nil)
         }
     }
@@ -125,12 +151,15 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         if(postTextView.isFirstResponder) {
             postTextView.resignFirstResponder()
         }
-        
+
         alertView.addButton("Travel", backgroundColor: UIColor.flatRed, textColor: UIColor.white) {
             self.selectedCategory = "Travel"
             
             self.categoryButton.backgroundColor = UIColor.flatRed
             self.categoryButton.titleLabel?.text = "Travel"
+            
+            AppStorage.Questions.category = "Travel"
+            AppStorage.save()
         }
         
         alertView.addButton("Entertainment", backgroundColor: UIColor.flatOrange) {
@@ -138,6 +167,9 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             
             self.categoryButton.backgroundColor = UIColor.flatYellow
             self.categoryButton.titleLabel?.text = "Entertainment"
+            
+            AppStorage.Questions.category = "Entertainment"
+            AppStorage.save()
         }
         
         alertView.addButton("Meetup", backgroundColor: UIColor.flatYellow, textColor: UIColor.white) {
@@ -145,6 +177,9 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             
             self.categoryButton.backgroundColor = UIColor.flatYellow
             self.categoryButton.titleLabel?.text = "Meetup"
+            
+            AppStorage.Questions.category = "Meetup"
+            AppStorage.save()
         }
         
         alertView.addButton("Listings", backgroundColor: UIColor.flatGreen, textColor: UIColor.white) {
@@ -152,6 +187,9 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             
             self.categoryButton.backgroundColor = UIColor.flatGreen
             self.categoryButton.titleLabel?.text = "Listings"
+            
+            AppStorage.Questions.category = "Listings"
+            AppStorage.save()
         }
         
         alertView.addButton("Recommendations", backgroundColor: UIColor.flatSkyBlue, textColor: UIColor.white) {
@@ -159,21 +197,27 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             
             self.categoryButton.backgroundColor = UIColor.flatSkyBlue
             self.categoryButton.titleLabel?.text = "Recommendations"
+            
+            AppStorage.Questions.category = "Recommendations"
+            AppStorage.save()
         }
         alertView.addButton("Other", backgroundColor: UIColor.flatMagenta, textColor: UIColor.white) {
             self.selectedCategory = "Other"
             
             self.categoryButton.backgroundColor = UIColor.flatMagenta
             self.categoryButton.titleLabel?.text = "Other"
+            
+            AppStorage.Questions.category = "Other"
+            AppStorage.save()
         }
         
         alertView.showNotice("Categories", subTitle: "")
     }
     
-    //MARK: Image Picker Methods
+    
     @objc func chooseImageSource() {
         postTextView.resignFirstResponder()
-        // Allow user to choose between photo library and camera
+
         let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .actionSheet)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -181,14 +225,15 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         alertController.addAction(cancelAction)
         
         let photoLibraryAction = UIAlertAction(title: "Photo from Library", style: .default) { (action) in
+            self.deleteCategory = false
             self.showImagePickerController(.photoLibrary)
         }
         
         alertController.addAction(photoLibraryAction)
         
-        // Only show camera option if rear camera is available
         if (UIImagePickerController.isCameraDeviceAvailable(.rear)) {
             let cameraAction = UIAlertAction(title: "Photo from Camera", style: .default) { (action) in
+                self.deleteCategory = false
                 self.showImagePickerController(.camera)
             }
             alertController.addAction(cameraAction)
@@ -214,7 +259,14 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         present(imagePickerController!, animated: true, completion: nil)
     }
+
 }
+
+protocol PushCompletedDelegate{
+    func completedPush()
+}
+
+
 //MARK: TextView Methods
 
 extension NewPostViewController {
@@ -222,7 +274,7 @@ extension NewPostViewController {
         let alert = UIAlertController(title: "We couldn't fetch your location.", message: message, preferredStyle: UIAlertControllerStyle.alert)
         let cancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil)
         let settings = UIAlertAction(title: "Settings", style: UIAlertActionStyle.default) { (action) -> Void in
-            UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
+            UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
             return
         }
         alert.addAction(settings)
@@ -244,5 +296,7 @@ extension NewPostViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
+        let alert = SCLAlertView()
+        alert.showError("Error", subTitle: "Please enable location services in settings!")
     }
 }

@@ -3,6 +3,10 @@ import UIKit
 import Firebase
 import SCLAlertView
 import SVProgressHUD
+
+//this functions as a Reply object which stores necessary information pertaining to a particular reply
+//in a certain question
+
 class Reply {
     
     var uid: String
@@ -10,21 +14,24 @@ class Reply {
     var reply: String
     var postID: String = ""
     var time : Timestamp
+    
     init(_uid: String, _username: String, _reply: String , _time : Timestamp) {
         uid = _uid
         username = _username
         reply = _reply
         time = _time
     }
+    
+    //default init
     init() {
         uid = ""
         username = ""
         reply = ""
         time = Timestamp(date: Date(timeIntervalSinceNow: 0)) 
     }
+    
     func pushToFirestore(){
-        //firebase references
-        let replyCollectoin: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.FirestorePosts).document(postID).collection(NameFile.Firestore.replies)
+        let replyCollectoin: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.posts).document(postID).collection(NameFile.Firestore.replies)
         replyCollectoin.document().setData([
             NameFile.Firestore.replyUID : self.uid,
             NameFile.Firestore.replyUsername : self.username,

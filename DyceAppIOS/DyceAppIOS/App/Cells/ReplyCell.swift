@@ -1,52 +1,41 @@
-//
-//  ReplyCell.swift
-//  Questions
-//
-//  Created by Rohan Rao on 10/02/17.
-//  Copyright © 2017 Rohan Rao. All rights reserved.
-//
-
 import Foundation
 import UIKit
+
+//this cell displays the appearance of a Reply object
 
 class ReplyCell: UITableViewCell {
     
     @IBOutlet weak var replyText: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postTime: UILabel!
+    
     var reply: Reply = Reply() {didSet { reloadData() } }
     
     private func reloadData(){
         replyText.text = reply.reply
-        //converts TimeStamp to String
+        
+        //converts to the appropriate unit of time
         var timeWord = "second"
         let secondsSinceEpoch = TimeInterval(reply.time.seconds)
-        var timeAgo = NSDate().timeIntervalSince1970 - secondsSinceEpoch
-        // print("\(timeAgo)" + timeWord)
-        if(timeAgo > 60 && timeWord == "second"){ // more than 60 seconds
-            timeAgo /= 60 // now in minutes
+        var ago = NSDate().timeIntervalSince1970 - secondsSinceEpoch
+        if(ago > 60 && timeWord == "second"){
+            ago /= 60
             timeWord = "minute"
-            //  print("\(timeAgo)" + timeWord)
         }
-        if(timeAgo > 60 && timeWord == "minute") {//if more than 60 minutes
-            timeAgo /= 60 //now in hours
+        if(ago > 60 && timeWord == "minute") {
+            ago /= 60
             timeWord = "hour"
-            //  print("\(timeAgo)" + timeWord)
         }
-        if(timeAgo > 24 && timeWord == "hour" ){ //if more than 24 hours ago
-            timeAgo /= 24 //now in days
+        if(ago > 24 && timeWord == "hour" ){
+            ago /= 24
             timeWord = "day"
-            //  print("\(timeAgo)" + timeWord)
         }
-        
-        if(timeAgo > 1){ //making the time word gramatically correct
+        if(ago > 1){
             timeWord += "s"
-            //  print("\(timeAgo)" + timeWord)
         }
-        
-        let timeSince = (Int) (timeAgo) //casts to an integer
-        postTime.text = "\(timeSince)" + " " + timeWord + " ago" //sets it to the label
-        //  print("\(timeAgo)" + timeWord)
+        let timeSince = (Int) (ago)
+        postTime.text = "\(timeSince)" + " " + timeWord + " ago"
+
         usernameLabel.text = reply.username
     }
 }

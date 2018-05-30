@@ -1,0 +1,930 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SignalProtocol"
+- "FlattenStrategy"
+- "combineLatest"
+- "merge"
+provides-nominal:
+- "11ReactiveKit14SignalProtocolP"
+- "11ReactiveKit15FlattenStrategyO"
+provides-member:
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["11ReactiveKit15FlattenStrategyO", ""]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- ["11ReactiveKit14SignalProtocolP", "observeNext"]
+- ["11ReactiveKit14SignalProtocolP", "observeFailed"]
+- ["11ReactiveKit14SignalProtocolP", "observeCompleted"]
+- ["11ReactiveKit14SignalProtocolP", "just"]
+- ["11ReactiveKit14SignalProtocolP", "sequence"]
+- ["11ReactiveKit14SignalProtocolP", "completed"]
+- ["11ReactiveKit14SignalProtocolP", "failed"]
+- ["11ReactiveKit14SignalProtocolP", "never"]
+- ["11ReactiveKit14SignalProtocolP", "interval"]
+- ["11ReactiveKit14SignalProtocolP", "timer"]
+- ["11ReactiveKit14SignalProtocolP", "buffer"]
+- ["11ReactiveKit14SignalProtocolP", "buffer"]
+- ["11ReactiveKit14SignalProtocolP", "flatMap"]
+- ["11ReactiveKit14SignalProtocolP", "compactMap"]
+- ["11ReactiveKit14SignalProtocolP", "flatMap"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapLatest"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapMerge"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapConcat"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapError"]
+- ["11ReactiveKit14SignalProtocolP", "map"]
+- ["11ReactiveKit14SignalProtocolP", "mapError"]
+- ["11ReactiveKit14SignalProtocolP", "replace"]
+- ["11ReactiveKit14SignalProtocolP", "eraseType"]
+- ["11ReactiveKit14SignalProtocolP", "scan"]
+- ["11ReactiveKit14SignalProtocolP", "tryMap"]
+- ["11ReactiveKit14SignalProtocolP", "toSignal"]
+- ["11ReactiveKit14SignalProtocolP", "branchOutError"]
+- ["11ReactiveKit14SignalProtocolP", "branchOutError"]
+- ["11ReactiveKit14SignalProtocolP", "suppressError"]
+- ["11ReactiveKit14SignalProtocolP", "suppressAndFeedError"]
+- ["11ReactiveKit14SignalProtocolP", "recover"]
+- ["11ReactiveKit14SignalProtocolP", "toErrorSignal"]
+- ["11ReactiveKit14SignalProtocolP", "window"]
+- ["11ReactiveKit14SignalProtocolP", "window"]
+- ["11ReactiveKit14SignalProtocolP", "flatMap"]
+- ["11ReactiveKit14SignalProtocolP", "mapWrapped"]
+- ["11ReactiveKit14SignalProtocolP", "flatMap"]
+- ["11ReactiveKit14SignalProtocolP", "mapElement"]
+- ["11ReactiveKit14SignalProtocolP", "unwrap"]
+- ["11ReactiveKit14SignalProtocolP", "debounce"]
+- ["11ReactiveKit14SignalProtocolP", "distinct"]
+- ["11ReactiveKit14SignalProtocolP", "element"]
+- ["11ReactiveKit14SignalProtocolP", "filter"]
+- ["11ReactiveKit14SignalProtocolP", "filter"]
+- ["11ReactiveKit14SignalProtocolP", "first"]
+- ["11ReactiveKit14SignalProtocolP", "ignoreElements"]
+- ["11ReactiveKit14SignalProtocolP", "ignoreTerminal"]
+- ["11ReactiveKit14SignalProtocolP", "last"]
+- ["11ReactiveKit14SignalProtocolP", "sample"]
+- ["11ReactiveKit14SignalProtocolP", "skip"]
+- ["11ReactiveKit14SignalProtocolP", "skip"]
+- ["11ReactiveKit14SignalProtocolP", "skip"]
+- ["11ReactiveKit14SignalProtocolP", "take"]
+- ["11ReactiveKit14SignalProtocolP", "take"]
+- ["11ReactiveKit14SignalProtocolP", "take"]
+- ["11ReactiveKit14SignalProtocolP", "throttle"]
+- ["11ReactiveKit14SignalProtocolP", "distinct"]
+- ["11ReactiveKit14SignalProtocolP", "ignoreNil"]
+- ["11ReactiveKit14SignalProtocolP", "replaceNil"]
+- ["11ReactiveKit14SignalProtocolP", "executeIn"]
+- ["11ReactiveKit14SignalProtocolP", "executeOn"]
+- ["11ReactiveKit14SignalProtocolP", "delay"]
+- ["11ReactiveKit14SignalProtocolP", "doOn"]
+- ["11ReactiveKit14SignalProtocolP", "debug"]
+- ["11ReactiveKit14SignalProtocolP", "observeIn"]
+- ["11ReactiveKit14SignalProtocolP", "observeOn"]
+- ["11ReactiveKit14SignalProtocolP", "pausable"]
+- ["11ReactiveKit14SignalProtocolP", "retry"]
+- ["11ReactiveKit14SignalProtocolP", "retry"]
+- ["11ReactiveKit14SignalProtocolP", "timeout"]
+- ["11ReactiveKit14SignalProtocolP", "collect"]
+- ["11ReactiveKit14SignalProtocolP", "concat"]
+- ["11ReactiveKit14SignalProtocolP", "defaultIfEmpty"]
+- ["11ReactiveKit14SignalProtocolP", "reduce"]
+- ["11ReactiveKit14SignalProtocolP", "replayLatest"]
+- ["11ReactiveKit14SignalProtocolP", "start"]
+- ["11ReactiveKit14SignalProtocolP", "zipPrevious"]
+- ["11ReactiveKit14SignalProtocolP", "materialize"]
+- ["11ReactiveKit14SignalProtocolP", "feedActivity"]
+- ["11ReactiveKit14SignalProtocolP", "feedNext"]
+- ["11ReactiveKit14SignalProtocolP", "feedNext"]
+- ["11ReactiveKit14SignalProtocolP", "feedError"]
+- ["11ReactiveKit14SignalProtocolP", "InnerElement"]
+- ["11ReactiveKit14SignalProtocolP", "flatten"]
+- ["11ReactiveKit14SignalProtocolP", "merge"]
+- ["11ReactiveKit14SignalProtocolP", "switchToLatest"]
+- ["11ReactiveKit14SignalProtocolP", "concat"]
+- ["11ReactiveKit14SignalProtocolP", "amb"]
+- ["11ReactiveKit14SignalProtocolP", "combineLatest"]
+- ["11ReactiveKit14SignalProtocolP", "combineLatest"]
+- ["11ReactiveKit14SignalProtocolP", "merge"]
+- ["11ReactiveKit14SignalProtocolP", "zip"]
+- ["11ReactiveKit14SignalProtocolP", "zip"]
+- ["11ReactiveKit14SignalProtocolP", "with"]
+- ["11ReactiveKit14SignalProtocolP", "with"]
+- ["11ReactiveKit14SignalProtocolP", "castError"]
+- ["11ReactiveKit14SignalProtocolP", "flatMap"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapLatest"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapMerge"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapConcat"]
+- ["11ReactiveKit14SignalProtocolP", "tryMap"]
+- ["11ReactiveKit14SignalProtocolP", "amb"]
+- ["11ReactiveKit14SignalProtocolP", "combineLatest"]
+- ["11ReactiveKit14SignalProtocolP", "combineLatest"]
+- ["11ReactiveKit14SignalProtocolP", "merge"]
+- ["11ReactiveKit14SignalProtocolP", "zip"]
+- ["11ReactiveKit14SignalProtocolP", "zip"]
+- ["11ReactiveKit14SignalProtocolP", "with"]
+- ["11ReactiveKit14SignalProtocolP", "with"]
+- ["11ReactiveKit14SignalProtocolP", "elements"]
+- ["11ReactiveKit14SignalProtocolP", "errors"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "<"
+- "=="
+- !private ">"
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "BlockDisposable"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "CompositeDisposable"
+- !private "Date"
+- "DispatchQueue"
+- !private "DispatchTime"
+- "Disposable"
+- "Double"
+- "Equatable"
+- "Event"
+- "ExecutionContext"
+- "FlattenStrategy"
+- "Int"
+- !private "NSRecursiveLock"
+- "NoError"
+- !private "NonDisposable"
+- "Observer"
+- "ObserverProtocol"
+- "OptionalProtocol"
+- "Result"
+- "SafeSignal"
+- "Sequence"
+- !private "SerialDisposable"
+- "Signal"
+- "SignalProtocol"
+- !private "SimpleDisposable"
+- "String"
+- "StringLiteralType"
+- "SubjectProtocol"
+- "Swift"
+- "UnicodeScalarType"
+- "Void"
+- "combineLatest"
+- "merge"
+- !private "print"
+- !private "||"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "forEach"]
+- !private ["Sa", "init"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "last"]
+- !private ["Sa", "map"]
+- !private ["Sa", "reduce"]
+- !private ["Sa", "removeAll"]
+- !private ["Sa", "removeFirst"]
+- !private ["Sa", "reserveCapacity"]
+- !private ["Sa", "subscript"]
+- !private ["11ReactiveKit14AtomicObserverC", "completed"]
+- !private ["11ReactiveKit14AtomicObserverC", "deinit"]
+- !private ["11ReactiveKit14AtomicObserverC", "failed"]
+- !private ["11ReactiveKit14AtomicObserverC", "next"]
+- !private ["11ReactiveKit14AtomicObserverC", "on"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "components"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "enumerated"]
+- !private ["s23BidirectionalCollectionP", "forEach"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "isEmpty"]
+- !private ["s23BidirectionalCollectionP", "last"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- !private ["s23BidirectionalCollectionP", "reduce"]
+- !private ["s23BidirectionalCollectionP", "removeAll"]
+- !private ["s23BidirectionalCollectionP", "removeFirst"]
+- !private ["s23BidirectionalCollectionP", "reserveCapacity"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s19BinaryFloatingPointP", "rawValue"]
+- !private ["11ReactiveKit15BlockDisposableC", "deinit"]
+- !private ["11ReactiveKit15BlockDisposableC", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "after"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "components"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "disposableAfter"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "forEach"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "last"]
+- !private ["s7CVarArgP", "lock"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "rawValue"]
+- !private ["s7CVarArgP", "reduce"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "removeFirst"]
+- !private ["s7CVarArgP", "reserveCapacity"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "unlock"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "components"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "enumerated"]
+- !private ["s10CollectionP", "forEach"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "isEmpty"]
+- !private ["s10CollectionP", "last"]
+- !private ["s10CollectionP", "map"]
+- !private ["s10CollectionP", "reduce"]
+- !private ["s10CollectionP", "removeAll"]
+- !private ["s10CollectionP", "removeFirst"]
+- !private ["s10CollectionP", "reserveCapacity"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "addingTimeInterval"]
+- !private ["s10ComparableP", "components"]
+- !private ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "now"]
+- !private ["s10ComparableP", "rawValue"]
+- !private ["11ReactiveKit19CompositeDisposableC", "deinit"]
+- !private ["11ReactiveKit19CompositeDisposableC", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "addingTimeInterval"]
+- !private ["s28CustomDebugStringConvertibleP", "after"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "components"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "disposableAfter"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "lock"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "reduce"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "removeFirst"]
+- !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "unlock"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "addingTimeInterval"]
+- !private ["s29CustomPlaygroundQuickLookableP", "components"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "rawValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "addingTimeInterval"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "components"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "forEach"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "last"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "rawValue"]
+- !private ["s17CustomReflectableP", "reduce"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "removeFirst"]
+- !private ["s17CustomReflectableP", "reserveCapacity"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addingTimeInterval"]
+- !private ["s23CustomStringConvertibleP", "after"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "components"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "disposableAfter"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "failure"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "last"]
+- !private ["s23CustomStringConvertibleP", "lock"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "rawValue"]
+- !private ["s23CustomStringConvertibleP", "reduce"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "removeFirst"]
+- !private ["s23CustomStringConvertibleP", "reserveCapacity"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "success"]
+- !private ["s23CustomStringConvertibleP", "unlock"]
+- !private ["10Foundation4DateV", "addingTimeInterval"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "after"]
+- !private ["11ReactiveKit13DeallocatableP", "async"]
+- !private ["11ReactiveKit13DeallocatableP", "components"]
+- !private ["11ReactiveKit13DeallocatableP", "disposableAfter"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- !private ["11ReactiveKit13DeallocatableP", "lock"]
+- !private ["11ReactiveKit13DeallocatableP", "unlock"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "addingTimeInterval"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "components"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "enumerated"]
+- !private ["s9DecodableP", "forEach"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "isEmpty"]
+- !private ["s9DecodableP", "last"]
+- !private ["s9DecodableP", "map"]
+- !private ["s9DecodableP", "rawValue"]
+- !private ["s9DecodableP", "reduce"]
+- !private ["s9DecodableP", "removeAll"]
+- !private ["s9DecodableP", "removeFirst"]
+- !private ["s9DecodableP", "reserveCapacity"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["So14DispatchObjectC", "after"]
+- !private ["So14DispatchObjectC", "async"]
+- !private ["So14DispatchObjectC", "disposableAfter"]
+- !private ["So13DispatchQueueC", "after"]
+- !private ["So13DispatchQueueC", "async"]
+- !private ["So13DispatchQueueC", "disposableAfter"]
+- !private ["So13DispatchQueueC", "init"]
+- !private ["8Dispatch0A4TimeV", "now"]
+- !private ["8Dispatch0A4TimeV", "rawValue"]
+- !private ["11ReactiveKit10DisposableP", "dispose"]
+- !private ["11ReactiveKit10DisposableP", "init"]
+- !private ["11ReactiveKit10DisposableP", "instance"]
+- !private ["11ReactiveKit10DisposableP", "isDisposed"]
+- !private ["11ReactiveKit10DisposableP", "otherDisposable"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "after"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "async"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "components"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "disposableAfter"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "init"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "lock"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "unlock"]
+- !private ["Sd", "rawValue"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "addingTimeInterval"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "components"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "enumerated"]
+- !private ["s9EncodableP", "forEach"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "isEmpty"]
+- !private ["s9EncodableP", "last"]
+- !private ["s9EncodableP", "map"]
+- !private ["s9EncodableP", "rawValue"]
+- !private ["s9EncodableP", "reduce"]
+- !private ["s9EncodableP", "removeAll"]
+- !private ["s9EncodableP", "removeFirst"]
+- !private ["s9EncodableP", "reserveCapacity"]
+- !private ["s9EncodableP", "subscript"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addingTimeInterval"]
+- !private ["s9EquatableP", "after"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "async"]
+- !private ["s9EquatableP", "components"]
+- ["s9EquatableP", "concat"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "disposableAfter"]
+- !private ["s9EquatableP", "enumerated"]
+- !private ["s9EquatableP", "forEach"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
+- !private ["s9EquatableP", "last"]
+- ["s9EquatableP", "latest"]
+- !private ["s9EquatableP", "lock"]
+- !private ["s9EquatableP", "map"]
+- ["s9EquatableP", "merge"]
+- !private ["s9EquatableP", "now"]
+- !private ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "reduce"]
+- !private ["s9EquatableP", "removeAll"]
+- !private ["s9EquatableP", "removeFirst"]
+- !private ["s9EquatableP", "reserveCapacity"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "unlock"]
+- !private ["11ReactiveKit5EventO", "completed"]
+- !private ["11ReactiveKit5EventO", "element"]
+- !private ["11ReactiveKit5EventO", "error"]
+- !private ["11ReactiveKit5EventO", "failed"]
+- !private ["11ReactiveKit5EventO", "isTerminal"]
+- !private ["11ReactiveKit5EventO", "next"]
+- !private ["11ReactiveKit16ExecutionContextV", "execute"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "last"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "reduce"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeFirst"]
+- !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "components"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "rawValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "rawValue"]
+- !private ["s26ExpressibleByStringLiteralP", "components"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "components"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["11ReactiveKit15FlattenStrategyO", "__derived_enum_equals"]
+- ["11ReactiveKit15FlattenStrategyO", "concat"]
+- ["11ReactiveKit15FlattenStrategyO", "deinit"]
+- ["11ReactiveKit15FlattenStrategyO", "hashValue"]
+- ["11ReactiveKit15FlattenStrategyO", "latest"]
+- ["11ReactiveKit15FlattenStrategyO", "merge"]
+- !private ["s13FloatingPointP", "rawValue"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addingTimeInterval"]
+- !private ["s8HashableP", "after"]
+- !private ["s8HashableP", "async"]
+- !private ["s8HashableP", "components"]
+- ["s8HashableP", "concat"]
+- !private ["s8HashableP", "disposableAfter"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", "latest"]
+- !private ["s8HashableP", "lock"]
+- ["s8HashableP", "merge"]
+- !private ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "unlock"]
+- !private ["11ReactiveKit4LockP", "init"]
+- !private ["11ReactiveKit4LockP", "lock"]
+- !private ["11ReactiveKit4LockP", "unlock"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "components"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "rawValue"]
+- !private ["s10MirrorPathP", "components"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "enumerated"]
+- !private ["s17MutableCollectionP", "forEach"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "isEmpty"]
+- !private ["s17MutableCollectionP", "last"]
+- !private ["s17MutableCollectionP", "map"]
+- !private ["s17MutableCollectionP", "reduce"]
+- !private ["s17MutableCollectionP", "removeAll"]
+- !private ["s17MutableCollectionP", "removeFirst"]
+- !private ["s17MutableCollectionP", "reserveCapacity"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSCodingP", "components"]
+- !private ["So9NSCopyingP", "components"]
+- !private ["So21NSItemProviderReadingP", "components"]
+- !private ["So21NSItemProviderWritingP", "components"]
+- !private ["So9NSLockingP", "init"]
+- !private ["So9NSLockingP", "lock"]
+- !private ["So9NSLockingP", "unlock"]
+- !private ["So16NSMutableCopyingP", "components"]
+- !private ["So8NSObjectC", "after"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "components"]
+- !private ["So8NSObjectC", "disposableAfter"]
+- !private ["So8NSObjectC", "lock"]
+- !private ["So8NSObjectC", "unlock"]
+- !private ["So16NSObjectProtocolP", "after"]
+- !private ["So16NSObjectProtocolP", "async"]
+- !private ["So16NSObjectProtocolP", "components"]
+- !private ["So16NSObjectProtocolP", "disposableAfter"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "lock"]
+- !private ["So16NSObjectProtocolP", "unlock"]
+- !private ["So15NSRecursiveLockC", "deinit"]
+- !private ["So15NSRecursiveLockC", "init"]
+- !private ["So15NSRecursiveLockC", "lock"]
+- !private ["So15NSRecursiveLockC", "unlock"]
+- !private ["So14NSSecureCodingP", "components"]
+- !private ["So8NSStringC", "components"]
+- ["11ReactiveKit7NoErrorO", "deinit"]
+- !private ["11ReactiveKit13NonDisposableV", "deinit"]
+- !private ["11ReactiveKit13NonDisposableV", "instance"]
+- !private ["s7NumericP", "rawValue"]
+- !private ["So9OS_objectC", "after"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "disposableAfter"]
+- !private ["11ReactiveKit16ObserverProtocolP", "completed"]
+- !private ["11ReactiveKit16ObserverProtocolP", "failed"]
+- !private ["11ReactiveKit16ObserverProtocolP", "next"]
+- !private ["11ReactiveKit16ObserverProtocolP", "on"]
+- !private ["Sq", "deinit"]
+- !private ["11ReactiveKit16OptionalProtocolP", "_unbox"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "enumerated"]
+- !private ["s22RandomAccessCollectionP", "forEach"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "isEmpty"]
+- !private ["s22RandomAccessCollectionP", "last"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- !private ["s22RandomAccessCollectionP", "reduce"]
+- !private ["s22RandomAccessCollectionP", "removeAll"]
+- !private ["s22RandomAccessCollectionP", "removeFirst"]
+- !private ["s22RandomAccessCollectionP", "reserveCapacity"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "components"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "enumerated"]
+- !private ["s26RangeReplaceableCollectionP", "forEach"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "isEmpty"]
+- !private ["s26RangeReplaceableCollectionP", "last"]
+- !private ["s26RangeReplaceableCollectionP", "map"]
+- !private ["s26RangeReplaceableCollectionP", "reduce"]
+- !private ["s26RangeReplaceableCollectionP", "removeAll"]
+- !private ["s26RangeReplaceableCollectionP", "removeFirst"]
+- !private ["s26RangeReplaceableCollectionP", "reserveCapacity"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "after"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "async"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "components"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "disposableAfter"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "init"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "lock"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "unlock"]
+- !private ["10Foundation20ReferenceConvertibleP", "addingTimeInterval"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["11ReactiveKit6ResultO", "failure"]
+- !private ["11ReactiveKit6ResultO", "success"]
+- !private ["11ReactiveKit14ResultProtocolP", "failure"]
+- !private ["11ReactiveKit14ResultProtocolP", "success"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "components"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "enumerated"]
+- !private ["s8SequenceP", "forEach"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "isEmpty"]
+- !private ["s8SequenceP", "last"]
+- !private ["s8SequenceP", "map"]
+- !private ["s8SequenceP", "reduce"]
+- !private ["s8SequenceP", "removeAll"]
+- !private ["s8SequenceP", "removeFirst"]
+- !private ["s8SequenceP", "reserveCapacity"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["11ReactiveKit16SerialDisposableC", "deinit"]
+- !private ["11ReactiveKit16SerialDisposableC", "dispose"]
+- !private ["11ReactiveKit16SerialDisposableC", "init"]
+- !private ["11ReactiveKit16SerialDisposableC", "isDisposed"]
+- !private ["11ReactiveKit16SerialDisposableC", "otherDisposable"]
+- !private ["11ReactiveKit6SignalV", "_amb"]
+- !private ["11ReactiveKit6SignalV", "_combineLatest"]
+- !private ["11ReactiveKit6SignalV", "_with"]
+- !private ["11ReactiveKit6SignalV", "_zip"]
+- !private ["11ReactiveKit6SignalV", "castError"]
+- !private ["11ReactiveKit6SignalV", "deinit"]
+- !private ["11ReactiveKit6SignalV", "first"]
+- !private ["11ReactiveKit6SignalV", "flatten"]
+- !private ["11ReactiveKit6SignalV", "ignoreNil"]
+- !private ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit6SignalV", "map"]
+- !private ["11ReactiveKit6SignalV", "merge"]
+- !private ["11ReactiveKit6SignalV", "observe"]
+- !private ["11ReactiveKit6SignalV", "sequence"]
+- !private ["11ReactiveKit6SignalV", "suppressError"]
+- !private ["11ReactiveKit6SignalV", "take"]
+- !private ["11ReactiveKit6SignalV", "toErrorSignal"]
+- !private ["11ReactiveKit14SignalProtocolP", "BlockDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "Bool"]
+- !private ["11ReactiveKit14SignalProtocolP", "CompositeDisposable"]
+- !private ["11ReactiveKit14SignalProtocolP", "Date"]
+- ["11ReactiveKit14SignalProtocolP", "DispatchQueue"]
+- !private ["11ReactiveKit14SignalProtocolP", "DispatchTime"]
+- ["11ReactiveKit14SignalProtocolP", "Disposable"]
+- ["11ReactiveKit14SignalProtocolP", "Double"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Equatable"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- ["11ReactiveKit14SignalProtocolP", "Event"]
+- ["11ReactiveKit14SignalProtocolP", "ExecutionContext"]
+- ["11ReactiveKit14SignalProtocolP", "FlattenStrategy"]
+- ["11ReactiveKit14SignalProtocolP", "InnerElement"]
+- ["11ReactiveKit14SignalProtocolP", "Int"]
+- !private ["11ReactiveKit14SignalProtocolP", "NSRecursiveLock"]
+- ["11ReactiveKit14SignalProtocolP", "NoError"]
+- !private ["11ReactiveKit14SignalProtocolP", "NonDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "Observer"]
+- ["11ReactiveKit14SignalProtocolP", "ObserverProtocol"]
+- ["11ReactiveKit14SignalProtocolP", "OptionalProtocol"]
+- ["11ReactiveKit14SignalProtocolP", "Result"]
+- ["11ReactiveKit14SignalProtocolP", "SafeSignal"]
+- ["11ReactiveKit14SignalProtocolP", "Sequence"]
+- !private ["11ReactiveKit14SignalProtocolP", "SerialDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "Signal"]
+- ["11ReactiveKit14SignalProtocolP", "SignalProtocol"]
+- !private ["11ReactiveKit14SignalProtocolP", "SimpleDisposable"]
+- ["11ReactiveKit14SignalProtocolP", "String"]
+- ["11ReactiveKit14SignalProtocolP", "SubjectProtocol"]
+- ["11ReactiveKit14SignalProtocolP", "Swift"]
+- ["11ReactiveKit14SignalProtocolP", "Void"]
+- !private ["11ReactiveKit14SignalProtocolP", "_amb"]
+- !private ["11ReactiveKit14SignalProtocolP", "_combineLatest"]
+- !private ["11ReactiveKit14SignalProtocolP", "_with"]
+- !private ["11ReactiveKit14SignalProtocolP", "_zip"]
+- ["11ReactiveKit14SignalProtocolP", "amb"]
+- ["11ReactiveKit14SignalProtocolP", "branchOutError"]
+- ["11ReactiveKit14SignalProtocolP", "buffer"]
+- ["11ReactiveKit14SignalProtocolP", "castError"]
+- ["11ReactiveKit14SignalProtocolP", "collect"]
+- ["11ReactiveKit14SignalProtocolP", "combineLatest"]
+- ["11ReactiveKit14SignalProtocolP", "compactMap"]
+- ["11ReactiveKit14SignalProtocolP", "completed"]
+- ["11ReactiveKit14SignalProtocolP", "concat"]
+- ["11ReactiveKit14SignalProtocolP", "debounce"]
+- ["11ReactiveKit14SignalProtocolP", "debug"]
+- ["11ReactiveKit14SignalProtocolP", "defaultIfEmpty"]
+- ["11ReactiveKit14SignalProtocolP", "delay"]
+- ["11ReactiveKit14SignalProtocolP", "distinct"]
+- ["11ReactiveKit14SignalProtocolP", "doOn"]
+- ["11ReactiveKit14SignalProtocolP", "element"]
+- ["11ReactiveKit14SignalProtocolP", "elements"]
+- ["11ReactiveKit14SignalProtocolP", "eraseType"]
+- ["11ReactiveKit14SignalProtocolP", "errors"]
+- ["11ReactiveKit14SignalProtocolP", "executeIn"]
+- ["11ReactiveKit14SignalProtocolP", "executeOn"]
+- ["11ReactiveKit14SignalProtocolP", "failed"]
+- ["11ReactiveKit14SignalProtocolP", "feedActivity"]
+- ["11ReactiveKit14SignalProtocolP", "feedError"]
+- ["11ReactiveKit14SignalProtocolP", "feedNext"]
+- ["11ReactiveKit14SignalProtocolP", "filter"]
+- ["11ReactiveKit14SignalProtocolP", "first"]
+- ["11ReactiveKit14SignalProtocolP", "flatMap"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapConcat"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapError"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapLatest"]
+- ["11ReactiveKit14SignalProtocolP", "flatMapMerge"]
+- ["11ReactiveKit14SignalProtocolP", "flatten"]
+- ["11ReactiveKit14SignalProtocolP", "ignoreElements"]
+- ["11ReactiveKit14SignalProtocolP", "ignoreNil"]
+- ["11ReactiveKit14SignalProtocolP", "ignoreTerminal"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- ["11ReactiveKit14SignalProtocolP", "interval"]
+- ["11ReactiveKit14SignalProtocolP", "just"]
+- ["11ReactiveKit14SignalProtocolP", "last"]
+- ["11ReactiveKit14SignalProtocolP", "map"]
+- ["11ReactiveKit14SignalProtocolP", "mapElement"]
+- ["11ReactiveKit14SignalProtocolP", "mapError"]
+- ["11ReactiveKit14SignalProtocolP", "mapWrapped"]
+- ["11ReactiveKit14SignalProtocolP", "materialize"]
+- ["11ReactiveKit14SignalProtocolP", "merge"]
+- ["11ReactiveKit14SignalProtocolP", "never"]
+- !private ["11ReactiveKit14SignalProtocolP", "next"]
+- ["11ReactiveKit14SignalProtocolP", "observe"]
+- ["11ReactiveKit14SignalProtocolP", "observeCompleted"]
+- ["11ReactiveKit14SignalProtocolP", "observeFailed"]
+- ["11ReactiveKit14SignalProtocolP", "observeIn"]
+- ["11ReactiveKit14SignalProtocolP", "observeNext"]
+- ["11ReactiveKit14SignalProtocolP", "observeOn"]
+- ["11ReactiveKit14SignalProtocolP", "pausable"]
+- !private ["11ReactiveKit14SignalProtocolP", "print"]
+- ["11ReactiveKit14SignalProtocolP", "recover"]
+- ["11ReactiveKit14SignalProtocolP", "reduce"]
+- ["11ReactiveKit14SignalProtocolP", "replace"]
+- ["11ReactiveKit14SignalProtocolP", "replaceNil"]
+- ["11ReactiveKit14SignalProtocolP", "replayLatest"]
+- ["11ReactiveKit14SignalProtocolP", "retry"]
+- ["11ReactiveKit14SignalProtocolP", "sample"]
+- ["11ReactiveKit14SignalProtocolP", "scan"]
+- ["11ReactiveKit14SignalProtocolP", "sequence"]
+- !private ["11ReactiveKit14SignalProtocolP", "shareReplay"]
+- ["11ReactiveKit14SignalProtocolP", "skip"]
+- ["11ReactiveKit14SignalProtocolP", "start"]
+- ["11ReactiveKit14SignalProtocolP", "suppressAndFeedError"]
+- ["11ReactiveKit14SignalProtocolP", "suppressError"]
+- ["11ReactiveKit14SignalProtocolP", "switchToLatest"]
+- ["11ReactiveKit14SignalProtocolP", "take"]
+- ["11ReactiveKit14SignalProtocolP", "throttle"]
+- ["11ReactiveKit14SignalProtocolP", "timeout"]
+- ["11ReactiveKit14SignalProtocolP", "timer"]
+- ["11ReactiveKit14SignalProtocolP", "toErrorSignal"]
+- ["11ReactiveKit14SignalProtocolP", "toSignal"]
+- ["11ReactiveKit14SignalProtocolP", "tryMap"]
+- ["11ReactiveKit14SignalProtocolP", "unwrap"]
+- ["11ReactiveKit14SignalProtocolP", "window"]
+- ["11ReactiveKit14SignalProtocolP", "with"]
+- ["11ReactiveKit14SignalProtocolP", "zip"]
+- ["11ReactiveKit14SignalProtocolP", "zipPrevious"]
+- !private ["s13SignedNumericP", "rawValue"]
+- !private ["11ReactiveKit16SimpleDisposableC", "deinit"]
+- !private ["11ReactiveKit16SimpleDisposableC", "init"]
+- !private ["11ReactiveKit16SimpleDisposableC", "isDisposed"]
+- !private ["s10StrideableP", "rawValue"]
+- !private ["SS", "components"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "components"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["11ReactiveKit15SubjectProtocolP", "next"]
+- !private ["s16TextOutputStreamP", "components"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "components"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "last"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "reduce"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
+- !private ["s14_ArrayProtocolP", "removeFirst"]
+- !private ["s14_ArrayProtocolP", "reserveCapacity"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s15_CVarArgAlignedP", "rawValue"]
+- !private ["s22_CVarArgPassedAsDoubleP", "rawValue"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "last"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "reduce"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "removeFirst"]
+- !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "rawValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "rawValue"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "components"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "components"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "components"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "components"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "after"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "disposableAfter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lock"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "addingTimeInterval"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "components"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "rawValue"]
+- !private ["s21_ObjectiveCBridgeableP", "reduce"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "removeFirst"]
+- !private ["s21_ObjectiveCBridgeableP", "reserveCapacity"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "components"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "11ReactiveKit14AtomicObserverC"
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "11ReactiveKit15BlockDisposableC"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "11ReactiveKit19CompositeDisposableC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation4DateV"
+- !private "11ReactiveKit13DeallocatableP"
+- !private "s9DecodableP"
+- !private "So14DispatchObjectC"
+- !private "So13DispatchQueueC"
+- !private "8Dispatch0A4TimeV"
+- !private "11ReactiveKit10DisposableP"
+- !private "11ReactiveKit18DisposeBagProviderP"
+- !private "Sd"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "11ReactiveKit5EventO"
+- !private "11ReactiveKit16ExecutionContextV"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "11ReactiveKit15FlattenStrategyO"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "11ReactiveKit4LockP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So9NSLockingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So15NSRecursiveLockC"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- "11ReactiveKit7NoErrorO"
+- !private "11ReactiveKit13NonDisposableV"
+- !private "s7NumericP"
+- !private "So9OS_objectC"
+- !private "11ReactiveKit16ObserverProtocolP"
+- !private "Sq"
+- !private "11ReactiveKit16OptionalProtocolP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "11ReactiveKit0A18ExtensionsProviderP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "11ReactiveKit6ResultO"
+- !private "11ReactiveKit14ResultProtocolP"
+- !private "s8SequenceP"
+- !private "11ReactiveKit16SerialDisposableC"
+- !private "11ReactiveKit6SignalV"
+- "11ReactiveKit14SignalProtocolP"
+- !private "s13SignedNumericP"
+- !private "11ReactiveKit16SimpleDisposableC"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "11ReactiveKit15SubjectProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ReactiveKit.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "46780259240fa68996abe14895fce0a4"

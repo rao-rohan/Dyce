@@ -1,0 +1,394 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SelectionType"
+- "SelectableSectionType"
+- "SelectableSection"
+provides-nominal:
+- "6Eureka13SelectionTypeO"
+- "6Eureka21SelectableSectionTypeP"
+- "6Eureka17SelectableSectionC"
+provides-member:
+- ["6Eureka13SelectionTypeO", ""]
+- ["6Eureka21SelectableSectionTypeP", ""]
+- ["6Eureka17SelectableSectionC", ""]
+- ["6Eureka21SelectableSectionTypeP", "selectedRow"]
+- ["6Eureka21SelectableSectionTypeP", "selectedRows"]
+- ["6Eureka21SelectableSectionTypeP", "prepare"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "=="
+- "AssignmentPrecedence"
+- "BaseRow"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "Collection"
+- "IndexSet"
+- "Section"
+- "SelectableRowType"
+- "SelectableSection"
+- "SelectableSectionType"
+- "SelectionType"
+- "Sequence"
+- "String"
+- !private "StringLiteralType"
+- !private "TernaryPrecedence"
+- "Void"
+depends-member:
+- !private ["Sa", "first"]
+- !private ["Sa", "map"]
+- ["6Eureka7BaseRowC", "Cell"]
+- !private ["6Eureka7BaseRowC", "baseValue"]
+- !private ["6Eureka7BaseRowC", "deinit"]
+- !private ["6Eureka7BaseRowC", "isDisabled"]
+- !private ["6Eureka7BaseRowC", "onCellSelection"]
+- !private ["6Eureka7BaseRowC", "selectableValue"]
+- !private ["6Eureka7BaseRowC", "updateCell"]
+- !private ["6Eureka7BaseRowC", "value"]
+- ["6Eureka11BaseRowTypeP", "Cell"]
+- !private ["6Eureka11BaseRowTypeP", "baseValue"]
+- !private ["6Eureka11BaseRowTypeP", "isDisabled"]
+- !private ["6Eureka11BaseRowTypeP", "onCellSelection"]
+- !private ["6Eureka11BaseRowTypeP", "selectableValue"]
+- !private ["6Eureka11BaseRowTypeP", "updateCell"]
+- !private ["6Eureka11BaseRowTypeP", "value"]
+- ["s23BidirectionalCollectionP", "SelectableRow"]
+- ["s23BidirectionalCollectionP", "SelectionType"]
+- ["s23BidirectionalCollectionP", ""]
+- !private ["s23BidirectionalCollectionP", "filter"]
+- !private ["s23BidirectionalCollectionP", "first"]
+- !private ["s23BidirectionalCollectionP", "forEach"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- ["s23BidirectionalCollectionP", "onSelectSelectableRow"]
+- !private ["s23BidirectionalCollectionP", "prepare"]
+- ["s23BidirectionalCollectionP", "selectedRow"]
+- ["s23BidirectionalCollectionP", "selectedRows"]
+- ["s23BidirectionalCollectionP", "selectionType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "map"]
+- ["s10CollectionP", "BaseRow"]
+- ["s10CollectionP", "Section"]
+- ["s10CollectionP", "SelectableRow"]
+- ["s10CollectionP", "SelectableRowType"]
+- ["s10CollectionP", "SelectionType"]
+- ["s10CollectionP", "Void"]
+- ["s10CollectionP", ""]
+- !private ["s10CollectionP", "filter"]
+- !private ["s10CollectionP", "first"]
+- !private ["s10CollectionP", "forEach"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "map"]
+- ["s10CollectionP", "onSelectSelectableRow"]
+- !private ["s10CollectionP", "prepare"]
+- ["s10CollectionP", "selectedRow"]
+- ["s10CollectionP", "selectedRows"]
+- ["s10CollectionP", "selectionType"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "first"]
+- !private ["s9DecodableP", "map"]
+- ["6Eureka11DisableableP", "Cell"]
+- !private ["6Eureka11DisableableP", "baseValue"]
+- !private ["6Eureka11DisableableP", "isDisabled"]
+- !private ["6Eureka11DisableableP", "onCellSelection"]
+- !private ["6Eureka11DisableableP", "selectableValue"]
+- !private ["6Eureka11DisableableP", "updateCell"]
+- !private ["6Eureka11DisableableP", "value"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "first"]
+- !private ["s9EncodableP", "map"]
+- ["s9EquatableP", "Cell"]
+- ["s9EquatableP", "SelectableRow"]
+- ["s9EquatableP", "SelectionType"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "baseValue"]
+- !private ["s9EquatableP", "filter"]
+- !private ["s9EquatableP", "first"]
+- !private ["s9EquatableP", "forEach"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isDisabled"]
+- !private ["s9EquatableP", "map"]
+- !private ["s9EquatableP", "onCellSelection"]
+- ["s9EquatableP", "onSelectSelectableRow"]
+- !private ["s9EquatableP", "prepare"]
+- !private ["s9EquatableP", "selectableValue"]
+- ["s9EquatableP", "selectedRow"]
+- ["s9EquatableP", "selectedRows"]
+- ["s9EquatableP", "selectionType"]
+- !private ["s9EquatableP", "updateCell"]
+- !private ["s9EquatableP", "value"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["6Eureka7HidableP", "Cell"]
+- ["6Eureka7HidableP", "SelectableRow"]
+- ["6Eureka7HidableP", "SelectionType"]
+- ["6Eureka7HidableP", ""]
+- !private ["6Eureka7HidableP", "baseValue"]
+- !private ["6Eureka7HidableP", "filter"]
+- !private ["6Eureka7HidableP", "forEach"]
+- !private ["6Eureka7HidableP", "init"]
+- !private ["6Eureka7HidableP", "isDisabled"]
+- !private ["6Eureka7HidableP", "onCellSelection"]
+- ["6Eureka7HidableP", "onSelectSelectableRow"]
+- !private ["6Eureka7HidableP", "prepare"]
+- !private ["6Eureka7HidableP", "selectableValue"]
+- ["6Eureka7HidableP", "selectedRow"]
+- ["6Eureka7HidableP", "selectedRows"]
+- ["6Eureka7HidableP", "selectionType"]
+- !private ["6Eureka7HidableP", "updateCell"]
+- !private ["6Eureka7HidableP", "value"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s17MutableCollectionP", "SelectableRow"]
+- ["s17MutableCollectionP", "SelectionType"]
+- ["s17MutableCollectionP", ""]
+- !private ["s17MutableCollectionP", "filter"]
+- !private ["s17MutableCollectionP", "first"]
+- !private ["s17MutableCollectionP", "forEach"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "map"]
+- ["s17MutableCollectionP", "onSelectSelectableRow"]
+- !private ["s17MutableCollectionP", "prepare"]
+- ["s17MutableCollectionP", "selectedRow"]
+- ["s17MutableCollectionP", "selectedRows"]
+- ["s17MutableCollectionP", "selectionType"]
+- !private ["s22RandomAccessCollectionP", "first"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- ["s26RangeReplaceableCollectionP", "SelectableRow"]
+- ["s26RangeReplaceableCollectionP", "SelectionType"]
+- ["s26RangeReplaceableCollectionP", ""]
+- !private ["s26RangeReplaceableCollectionP", "filter"]
+- !private ["s26RangeReplaceableCollectionP", "first"]
+- !private ["s26RangeReplaceableCollectionP", "forEach"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "map"]
+- ["s26RangeReplaceableCollectionP", "onSelectSelectableRow"]
+- !private ["s26RangeReplaceableCollectionP", "prepare"]
+- ["s26RangeReplaceableCollectionP", "selectedRow"]
+- ["s26RangeReplaceableCollectionP", "selectedRows"]
+- ["s26RangeReplaceableCollectionP", "selectionType"]
+- ["6Eureka7RowTypeP", "Cell"]
+- !private ["6Eureka7RowTypeP", "isDisabled"]
+- !private ["6Eureka7RowTypeP", "onCellSelection"]
+- !private ["6Eureka7RowTypeP", "selectableValue"]
+- !private ["6Eureka7RowTypeP", "updateCell"]
+- !private ["6Eureka7RowTypeP", "value"]
+- ["6Eureka7SectionC", "BaseRow"]
+- ["6Eureka7SectionC", "IndexSet"]
+- ["6Eureka7SectionC", "Row"]
+- ["6Eureka7SectionC", "SelectableRow"]
+- ["6Eureka7SectionC", "SelectableSection"]
+- ["6Eureka7SectionC", "SelectionType"]
+- ["6Eureka7SectionC", "Sequence"]
+- ["6Eureka7SectionC", "String"]
+- ["6Eureka7SectionC", "Void"]
+- ["6Eureka7SectionC", ""]
+- !private ["6Eureka7SectionC", "deinit"]
+- !private ["6Eureka7SectionC", "filter"]
+- !private ["6Eureka7SectionC", "forEach"]
+- ["6Eureka7SectionC", "init"]
+- ["6Eureka7SectionC", "onSelectSelectableRow"]
+- !private ["6Eureka7SectionC", "prepare"]
+- ["6Eureka7SectionC", "rowsHaveBeenAdded"]
+- ["6Eureka7SectionC", "selectedRow"]
+- ["6Eureka7SectionC", "selectedRows"]
+- ["6Eureka7SectionC", "selectionType"]
+- ["6Eureka15SectionDelegateP", "SelectableRow"]
+- ["6Eureka15SectionDelegateP", "SelectionType"]
+- ["6Eureka15SectionDelegateP", ""]
+- !private ["6Eureka15SectionDelegateP", "filter"]
+- !private ["6Eureka15SectionDelegateP", "forEach"]
+- !private ["6Eureka15SectionDelegateP", "init"]
+- ["6Eureka15SectionDelegateP", "onSelectSelectableRow"]
+- !private ["6Eureka15SectionDelegateP", "prepare"]
+- ["6Eureka15SectionDelegateP", "selectedRow"]
+- ["6Eureka15SectionDelegateP", "selectedRows"]
+- ["6Eureka15SectionDelegateP", "selectionType"]
+- ["6Eureka17SelectableRowTypeP", "Cell"]
+- !private ["6Eureka17SelectableRowTypeP", "isDisabled"]
+- !private ["6Eureka17SelectableRowTypeP", "onCellSelection"]
+- !private ["6Eureka17SelectableRowTypeP", "selectableValue"]
+- !private ["6Eureka17SelectableRowTypeP", "updateCell"]
+- !private ["6Eureka17SelectableRowTypeP", "value"]
+- ["6Eureka17SelectableSectionC", "BaseRow"]
+- ["6Eureka17SelectableSectionC", "IndexSet"]
+- ["6Eureka17SelectableSectionC", "Row"]
+- ["6Eureka17SelectableSectionC", "SelectableRow"]
+- ["6Eureka17SelectableSectionC", "SelectableSection"]
+- ["6Eureka17SelectableSectionC", "SelectionType"]
+- ["6Eureka17SelectableSectionC", "Sequence"]
+- ["6Eureka17SelectableSectionC", "String"]
+- ["6Eureka17SelectableSectionC", "Void"]
+- ["6Eureka17SelectableSectionC", "deinit"]
+- ["6Eureka17SelectableSectionC", "init"]
+- ["6Eureka17SelectableSectionC", "onSelectSelectableRow"]
+- !private ["6Eureka17SelectableSectionC", "prepare"]
+- ["6Eureka17SelectableSectionC", "rowsHaveBeenAdded"]
+- ["6Eureka17SelectableSectionC", "selectedRow"]
+- ["6Eureka17SelectableSectionC", "selectedRows"]
+- ["6Eureka17SelectableSectionC", "selectionType"]
+- ["6Eureka21SelectableSectionTypeP", "BaseRow"]
+- ["6Eureka21SelectableSectionTypeP", "Section"]
+- ["6Eureka21SelectableSectionTypeP", "SelectableRow"]
+- ["6Eureka21SelectableSectionTypeP", "SelectableRowType"]
+- ["6Eureka21SelectableSectionTypeP", "SelectionType"]
+- ["6Eureka21SelectableSectionTypeP", "Void"]
+- ["6Eureka21SelectableSectionTypeP", ""]
+- !private ["6Eureka21SelectableSectionTypeP", "filter"]
+- !private ["6Eureka21SelectableSectionTypeP", "forEach"]
+- ["6Eureka21SelectableSectionTypeP", "onSelectSelectableRow"]
+- ["6Eureka21SelectableSectionTypeP", "prepare"]
+- ["6Eureka21SelectableSectionTypeP", "selectedRow"]
+- ["6Eureka21SelectableSectionTypeP", "selectedRows"]
+- ["6Eureka21SelectableSectionTypeP", "selectionType"]
+- ["6Eureka13SelectionTypeO", "Bool"]
+- ["6Eureka13SelectionTypeO", "multipleSelection"]
+- ["6Eureka13SelectionTypeO", "singleSelection"]
+- ["s8SequenceP", "BaseRow"]
+- ["s8SequenceP", "Section"]
+- ["s8SequenceP", "SelectableRow"]
+- ["s8SequenceP", "SelectableRowType"]
+- ["s8SequenceP", "SelectionType"]
+- ["s8SequenceP", "Void"]
+- ["s8SequenceP", ""]
+- !private ["s8SequenceP", "filter"]
+- !private ["s8SequenceP", "first"]
+- !private ["s8SequenceP", "forEach"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "map"]
+- ["s8SequenceP", "onSelectSelectableRow"]
+- !private ["s8SequenceP", "prepare"]
+- ["s8SequenceP", "selectedRow"]
+- ["s8SequenceP", "selectedRows"]
+- ["s8SequenceP", "selectionType"]
+- !private ["s12StaticStringV", "init"]
+- ["6Eureka8TaggableP", "Cell"]
+- ["6Eureka8TaggableP", "SelectableRow"]
+- ["6Eureka8TaggableP", "SelectionType"]
+- ["6Eureka8TaggableP", ""]
+- !private ["6Eureka8TaggableP", "baseValue"]
+- !private ["6Eureka8TaggableP", "filter"]
+- !private ["6Eureka8TaggableP", "forEach"]
+- !private ["6Eureka8TaggableP", "init"]
+- !private ["6Eureka8TaggableP", "isDisabled"]
+- !private ["6Eureka8TaggableP", "onCellSelection"]
+- ["6Eureka8TaggableP", "onSelectSelectableRow"]
+- !private ["6Eureka8TaggableP", "prepare"]
+- !private ["6Eureka8TaggableP", "selectableValue"]
+- ["6Eureka8TaggableP", "selectedRow"]
+- ["6Eureka8TaggableP", "selectedRows"]
+- ["6Eureka8TaggableP", "selectionType"]
+- !private ["6Eureka8TaggableP", "updateCell"]
+- !private ["6Eureka8TaggableP", "value"]
+- ["6Eureka12TypedRowTypeP", "Cell"]
+- !private ["6Eureka12TypedRowTypeP", "isDisabled"]
+- !private ["6Eureka12TypedRowTypeP", "onCellSelection"]
+- !private ["6Eureka12TypedRowTypeP", "selectableValue"]
+- !private ["6Eureka12TypedRowTypeP", "updateCell"]
+- !private ["6Eureka12TypedRowTypeP", "value"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- !private "Sa"
+- "6Eureka7BaseRowC"
+- "6Eureka11BaseRowTypeP"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- "s10CollectionP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- "6Eureka11DisableableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s8HashableP"
+- "6Eureka7HidableP"
+- !private "s25LosslessStringConvertibleP"
+- "s17MutableCollectionP"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "6Eureka7RowTypeP"
+- "6Eureka7SectionC"
+- "6Eureka15SectionDelegateP"
+- "6Eureka17SelectableRowTypeP"
+- "6Eureka17SelectableSectionC"
+- "6Eureka21SelectableSectionTypeP"
+- "6Eureka13SelectionTypeO"
+- "s8SequenceP"
+- !private "s12StaticStringV"
+- "6Eureka8TaggableP"
+- "6Eureka12TypedRowTypeP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Eureka/Eureka-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Eureka.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "28f487159705ef36d40b83e1e8bff8c0"

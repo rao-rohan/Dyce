@@ -1,0 +1,21 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "71e3877c8661daa063e900a74c79bba9"
+build_time: [1527696514, 982290000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/Intro/IntroVC.swift": [1527693909, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/QuestionsViewController.swift": [1527695414, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/Intro/SignUpVC.swift": [1527694030, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/Cells/QuestionImageCell.swift": [1527694340, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/NameFile.swift": [1527693712, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/NewPostViewController.swift": [1527694413, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/AppDelegate.swift": [1527696018, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/Models/Reply.swift": [1527694252, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/Cells/QuestionCell.swift": [1527694286, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/Intro/LoginVC.swift": [1527693957, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/Views/QuestionHeaderView.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/Models/Question.swift": [1527696512, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/ReplyViewController.swift": [1527694380, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/Helpers/CategoryHelper.swift": [1527648915, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/Views/QuestionImageHeaderView.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/App/Cells/ReplyCell.swift": [1527694311, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/DyceAppIOS/AppStorage.swift": [1527693852, 0]

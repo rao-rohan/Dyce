@@ -1,3 +1,9 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: IntroVC.swift
+//
+// File Description: This class represents the intro screen in the login. 
+
 import UIKit
 
 class IntroVC: UIViewController {

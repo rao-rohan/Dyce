@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/AlertOnboarding/AlertOnboarding.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/AlertOnboarding/AlertOnboarding.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AlertOnboarding-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/AlertOnboarding/AlertOnboarding.framework/Headers/AlertOnboarding-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/AlertOnboarding/AlertOnboarding.framework/Headers/AlertOnboarding-Swift.h"
         },
         {
           'type': 'file',
@@ -20,18 +20,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/AlertOnboarding/AlertOnboarding.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/AlertOnboarding/AlertOnboarding.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/AlertOnboarding.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/AlertOnboarding.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Bond/Bond.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -41,7 +41,7 @@
         {
           'type': 'file',
           'name': "Bond-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Bond/Bond.framework/Headers/Bond-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Bond/Bond.framework/Headers/Bond-Swift.h"
         },
         {
           'type': 'file',
@@ -57,40 +57,40 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Bond/Bond.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Bond/Bond.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bond.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Bond.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/BoringSSL/openssl.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/BoringSSL/openssl.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "openssl-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/BoringSSL/openssl.framework/Headers/openssl-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/BoringSSL/openssl.framework/Headers/openssl-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/BoringSSL/openssl.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/BoringSSL/openssl.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/BoringSSL.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/BoringSSL.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -110,7 +110,7 @@
         {
           'type': 'file',
           'name': "ChameleonFramework-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
         },
         {
           'type': 'file',
@@ -181,23 +181,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ChameleonFramework.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ChameleonFramework.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "DZNEmptyDataSet-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-Swift.h"
         },
         {
           'type': 'file',
@@ -213,23 +213,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/DZNEmptyDataSet.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/DZNEmptyDataSet.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Differ-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Headers/Differ-Swift.h"
         },
         {
           'type': 'file',
@@ -240,23 +240,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Differ/Differ.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Differ.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "ESPullToRefresh-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
         },
         {
           'type': 'file',
@@ -267,23 +267,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ESPullToRefresh.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ESPullToRefresh.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Eureka/Eureka.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Eureka-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework/Headers/Eureka-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Eureka/Eureka.framework/Headers/Eureka-Swift.h"
         },
         {
           'type': 'file',
@@ -294,23 +294,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Eureka/Eureka.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Eureka/Eureka.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Eureka.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Eureka.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "GTMSessionFetcher-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
         },
         {
           'type': 'file',
@@ -341,18 +341,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/GTMSessionFetcher.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -397,7 +397,7 @@
         {
           'type': 'file',
           'name': "GeoFire-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GeoFire-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Headers/GeoFire-Swift.h"
         },
         {
           'type': 'file',
@@ -413,18 +413,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/GeoFire.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/GeoFire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -469,7 +469,7 @@
         {
           'type': 'file',
           'name': "GoogleToolboxForMac-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
         },
         {
           'type': 'file',
@@ -480,23 +480,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/KMPlaceholderTextView/KMPlaceholderTextView.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/KMPlaceholderTextView/KMPlaceholderTextView.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "KMPlaceholderTextView-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/KMPlaceholderTextView/KMPlaceholderTextView.framework/Headers/KMPlaceholderTextView-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/KMPlaceholderTextView/KMPlaceholderTextView.framework/Headers/KMPlaceholderTextView-Swift.h"
         },
         {
           'type': 'file',
@@ -507,18 +507,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/KMPlaceholderTextView/KMPlaceholderTextView.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/KMPlaceholderTextView/KMPlaceholderTextView.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/KMPlaceholderTextView.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/KMPlaceholderTextView.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Pods_DyceAppIOS.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Pods_DyceAppIOS.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -528,24 +528,24 @@
         {
           'type': 'file',
           'name': "Pods_DyceAppIOS-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Pods_DyceAppIOS.framework/Headers/Pods_DyceAppIOS-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Pods_DyceAppIOS.framework/Headers/Pods_DyceAppIOS-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Pods_DyceAppIOS.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Pods_DyceAppIOS.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-DyceAppIOS.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-DyceAppIOS.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -715,7 +715,7 @@
         {
           'type': 'file',
           'name': "Protobuf-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Headers/Protobuf-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Headers/Protobuf-Swift.h"
         },
         {
           'type': 'file',
@@ -751,23 +751,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/Protobuf/Protobuf.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Protobuf.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/Protobuf.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "ReactiveKit-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
         },
         {
           'type': 'file',
@@ -783,23 +783,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ReactiveKit/ReactiveKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ReactiveKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SCLAlertView-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
         },
         {
           'type': 'file',
@@ -810,18 +810,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/SCLAlertView.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/SCLAlertView.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -836,7 +836,7 @@
         {
           'type': 'file',
           'name': "SVProgressHUD-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-Swift.h"
         },
         {
           'type': 'file',
@@ -857,45 +857,45 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/SVProgressHUD.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/SVProgressHUD.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-Core/grpc.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "grpc-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-Core/grpc.framework/Headers/grpc-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Headers/grpc-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-Core/grpc.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-Core/grpc.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/gRPC-Core.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/gRPC-Core.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-ProtoRPC/ProtoRPC.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-ProtoRPC/ProtoRPC.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "ProtoRPC-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-ProtoRPC/ProtoRPC.framework/Headers/ProtoRPC-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-ProtoRPC/ProtoRPC.framework/Headers/ProtoRPC-Swift.h"
         },
         {
           'type': 'file',
@@ -906,23 +906,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-ProtoRPC/ProtoRPC.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-ProtoRPC/ProtoRPC.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/gRPC-ProtoRPC.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/gRPC-ProtoRPC.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-RxLibrary/RxLibrary.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-RxLibrary/RxLibrary.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "RxLibrary-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-RxLibrary/RxLibrary.framework/Headers/RxLibrary-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-RxLibrary/RxLibrary.framework/Headers/RxLibrary-Swift.h"
         },
         {
           'type': 'file',
@@ -933,18 +933,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC-RxLibrary/RxLibrary.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC-RxLibrary/RxLibrary.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/gRPC-RxLibrary.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/gRPC-RxLibrary.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC/GRPCClient.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -984,7 +984,7 @@
         {
           'type': 'file',
           'name': "GRPCClient-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/Headers/GRPCClient-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC/GRPCClient.framework/Headers/GRPCClient-Swift.h"
         },
         {
           'type': 'file',
@@ -995,18 +995,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC/GRPCClient.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/gRPC.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/gRPC.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/PrivateHeaders",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/gRPC/GRPCClient.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -1072,7 +1072,7 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/leveldb-library/leveldb.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -1117,7 +1117,7 @@
         {
           'type': 'file',
           'name': "leveldb-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
         },
         {
           'type': 'file',
@@ -1158,23 +1158,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/leveldb-library/leveldb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/leveldb-library.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/leveldb-library.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/nanopb/nanopb.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "nanopb-Swift.h",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
         },
         {
           'type': 'file',
@@ -1205,12 +1205,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
+      'name': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/nanopb/nanopb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
+          'external-contents': "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap"
         }
       ]
     }

@@ -1,0 +1,770 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ReplyCell"
+provides-nominal:
+- "10DyceAppIOS9ReplyCellC"
+provides-member:
+- ["10DyceAppIOS9ReplyCellC", ""]
+provides-dynamic-lookup:
+- "postTime"
+- "replyText"
+- "usernameLabel"
+depends-top-level:
+- !private "&&"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "/="
+- !private "=="
+- !private ">"
+- "AssignmentPrecedence"
+- !private "Int"
+- !private "NSDate"
+- "Reply"
+- "ReplyCell"
+- !private "StringLiteralType"
+- !private "TimeInterval"
+- "UILabel"
+- "UITableViewCell"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "Int"]
+- !private ["So15CALayerDelegateP", "NSDate"]
+- ["So15CALayerDelegateP", "Reply"]
+- !private ["So15CALayerDelegateP", "TimeInterval"]
+- ["So15CALayerDelegateP", ""]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "postTime"]
+- !private ["So15CALayerDelegateP", "reloadData"]
+- !private ["So15CALayerDelegateP", "reply"]
+- !private ["So15CALayerDelegateP", "replyText"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "usernameLabel"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "NSDate"]
+- ["s7CVarArgP", "Reply"]
+- !private ["s7CVarArgP", "TimeInterval"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "postTime"]
+- !private ["s7CVarArgP", "reloadData"]
+- !private ["s7CVarArgP", "reply"]
+- !private ["s7CVarArgP", "replyText"]
+- !private ["s7CVarArgP", "seconds"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "timeIntervalSince1970"]
+- !private ["s7CVarArgP", "usernameLabel"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "NSDate"]
+- ["s28CustomDebugStringConvertibleP", "Reply"]
+- !private ["s28CustomDebugStringConvertibleP", "TimeInterval"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "postTime"]
+- !private ["s28CustomDebugStringConvertibleP", "reloadData"]
+- !private ["s28CustomDebugStringConvertibleP", "reply"]
+- !private ["s28CustomDebugStringConvertibleP", "replyText"]
+- !private ["s28CustomDebugStringConvertibleP", "seconds"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince1970"]
+- !private ["s28CustomDebugStringConvertibleP", "usernameLabel"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "timeIntervalSince1970"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "NSDate"]
+- ["s23CustomStringConvertibleP", "Reply"]
+- !private ["s23CustomStringConvertibleP", "TimeInterval"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "postTime"]
+- !private ["s23CustomStringConvertibleP", "reloadData"]
+- !private ["s23CustomStringConvertibleP", "reply"]
+- !private ["s23CustomStringConvertibleP", "replyText"]
+- !private ["s23CustomStringConvertibleP", "seconds"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "timeIntervalSince1970"]
+- !private ["s23CustomStringConvertibleP", "usernameLabel"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["Sd", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "NSDate"]
+- ["s9EquatableP", "Reply"]
+- !private ["s9EquatableP", "TimeInterval"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "postTime"]
+- !private ["s9EquatableP", "reloadData"]
+- !private ["s9EquatableP", "reply"]
+- !private ["s9EquatableP", "replyText"]
+- !private ["s9EquatableP", "seconds"]
+- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "timeIntervalSince1970"]
+- !private ["s9EquatableP", "usernameLabel"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "NSDate"]
+- ["s8HashableP", "Reply"]
+- !private ["s8HashableP", "TimeInterval"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "postTime"]
+- !private ["s8HashableP", "reloadData"]
+- !private ["s8HashableP", "reply"]
+- !private ["s8HashableP", "replyText"]
+- !private ["s8HashableP", "seconds"]
+- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "timeIntervalSince1970"]
+- !private ["s8HashableP", "usernameLabel"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "NSDate"]
+- ["So8NSCodingP", "Reply"]
+- !private ["So8NSCodingP", "TimeInterval"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "postTime"]
+- !private ["So8NSCodingP", "reloadData"]
+- !private ["So8NSCodingP", "reply"]
+- !private ["So8NSCodingP", "replyText"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "timeIntervalSince1970"]
+- !private ["So8NSCodingP", "usernameLabel"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "seconds"]
+- !private ["So9NSCopyingP", "timeIntervalSince1970"]
+- !private ["So6NSDateC", "init"]
+- !private ["So6NSDateC", "timeIntervalSince1970"]
+- !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "NSDate"]
+- ["So8NSObjectC", "Reply"]
+- !private ["So8NSObjectC", "TimeInterval"]
+- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "postTime"]
+- ["So8NSObjectC", "reloadData"]
+- ["So8NSObjectC", "reply"]
+- ["So8NSObjectC", "replyText"]
+- !private ["So8NSObjectC", "seconds"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "timeIntervalSince1970"]
+- ["So8NSObjectC", "usernameLabel"]
+- !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "NSDate"]
+- ["So16NSObjectProtocolP", "Reply"]
+- !private ["So16NSObjectProtocolP", "TimeInterval"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "postTime"]
+- !private ["So16NSObjectProtocolP", "reloadData"]
+- !private ["So16NSObjectProtocolP", "reply"]
+- !private ["So16NSObjectProtocolP", "replyText"]
+- !private ["So16NSObjectProtocolP", "seconds"]
+- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "timeIntervalSince1970"]
+- !private ["So16NSObjectProtocolP", "usernameLabel"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "timeIntervalSince1970"]
+- !private ["s7NumericP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- ["10DyceAppIOS5ReplyC", "init"]
+- !private ["10DyceAppIOS5ReplyC", "reply"]
+- !private ["10DyceAppIOS5ReplyC", "time"]
+- !private ["10DyceAppIOS5ReplyC", "username"]
+- !private ["10DyceAppIOS9ReplyCellC", "Int"]
+- !private ["10DyceAppIOS9ReplyCellC", "NSDate"]
+- ["10DyceAppIOS9ReplyCellC", "Reply"]
+- !private ["10DyceAppIOS9ReplyCellC", "TimeInterval"]
+- ["10DyceAppIOS9ReplyCellC", "UILabel"]
+- ["10DyceAppIOS9ReplyCellC", "deinit"]
+- ["10DyceAppIOS9ReplyCellC", "init"]
+- ["10DyceAppIOS9ReplyCellC", "postTime"]
+- !private ["10DyceAppIOS9ReplyCellC", "reloadData"]
+- ["10DyceAppIOS9ReplyCellC", "reply"]
+- ["10DyceAppIOS9ReplyCellC", "replyText"]
+- ["10DyceAppIOS9ReplyCellC", "usernameLabel"]
+- !private ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So9TimestampC", "seconds"]
+- !private ["So29UIAccessibilityIdentificationP", "Int"]
+- !private ["So29UIAccessibilityIdentificationP", "NSDate"]
+- ["So29UIAccessibilityIdentificationP", "Reply"]
+- !private ["So29UIAccessibilityIdentificationP", "TimeInterval"]
+- ["So29UIAccessibilityIdentificationP", ""]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "postTime"]
+- !private ["So29UIAccessibilityIdentificationP", "reloadData"]
+- !private ["So29UIAccessibilityIdentificationP", "reply"]
+- !private ["So29UIAccessibilityIdentificationP", "replyText"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "usernameLabel"]
+- !private ["So12UIAppearanceP", "Int"]
+- !private ["So12UIAppearanceP", "NSDate"]
+- ["So12UIAppearanceP", "Reply"]
+- !private ["So12UIAppearanceP", "TimeInterval"]
+- ["So12UIAppearanceP", ""]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "postTime"]
+- !private ["So12UIAppearanceP", "reloadData"]
+- !private ["So12UIAppearanceP", "reply"]
+- !private ["So12UIAppearanceP", "replyText"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "usernameLabel"]
+- !private ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "NSDate"]
+- ["So21UIAppearanceContainerP", "Reply"]
+- !private ["So21UIAppearanceContainerP", "TimeInterval"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "postTime"]
+- !private ["So21UIAppearanceContainerP", "reloadData"]
+- !private ["So21UIAppearanceContainerP", "reply"]
+- !private ["So21UIAppearanceContainerP", "replyText"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "usernameLabel"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So17UICoordinateSpaceP", "Int"]
+- !private ["So17UICoordinateSpaceP", "NSDate"]
+- ["So17UICoordinateSpaceP", "Reply"]
+- !private ["So17UICoordinateSpaceP", "TimeInterval"]
+- ["So17UICoordinateSpaceP", ""]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "postTime"]
+- !private ["So17UICoordinateSpaceP", "reloadData"]
+- !private ["So17UICoordinateSpaceP", "reply"]
+- !private ["So17UICoordinateSpaceP", "replyText"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "usernameLabel"]
+- !private ["So13UIDynamicItemP", "Int"]
+- !private ["So13UIDynamicItemP", "NSDate"]
+- ["So13UIDynamicItemP", "Reply"]
+- !private ["So13UIDynamicItemP", "TimeInterval"]
+- ["So13UIDynamicItemP", ""]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "postTime"]
+- !private ["So13UIDynamicItemP", "reloadData"]
+- !private ["So13UIDynamicItemP", "reply"]
+- !private ["So13UIDynamicItemP", "replyText"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "usernameLabel"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "NSDate"]
+- ["So18UIFocusEnvironmentP", "Reply"]
+- !private ["So18UIFocusEnvironmentP", "TimeInterval"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "postTime"]
+- !private ["So18UIFocusEnvironmentP", "reloadData"]
+- !private ["So18UIFocusEnvironmentP", "reply"]
+- !private ["So18UIFocusEnvironmentP", "replyText"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "usernameLabel"]
+- !private ["So11UIFocusItemP", "Int"]
+- !private ["So11UIFocusItemP", "NSDate"]
+- ["So11UIFocusItemP", "Reply"]
+- !private ["So11UIFocusItemP", "TimeInterval"]
+- ["So11UIFocusItemP", ""]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "postTime"]
+- !private ["So11UIFocusItemP", "reloadData"]
+- !private ["So11UIFocusItemP", "reply"]
+- !private ["So11UIFocusItemP", "replyText"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "usernameLabel"]
+- !private ["So27UIGestureRecognizerDelegateP", "Int"]
+- !private ["So27UIGestureRecognizerDelegateP", "NSDate"]
+- ["So27UIGestureRecognizerDelegateP", "Reply"]
+- !private ["So27UIGestureRecognizerDelegateP", "TimeInterval"]
+- ["So27UIGestureRecognizerDelegateP", ""]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "postTime"]
+- !private ["So27UIGestureRecognizerDelegateP", "reloadData"]
+- !private ["So27UIGestureRecognizerDelegateP", "reply"]
+- !private ["So27UIGestureRecognizerDelegateP", "replyText"]
+- !private ["So27UIGestureRecognizerDelegateP", "usernameLabel"]
+- !private ["So7UILabelC", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSDate"]
+- ["So30UIPasteConfigurationSupportingP", "Reply"]
+- !private ["So30UIPasteConfigurationSupportingP", "TimeInterval"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "postTime"]
+- !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
+- !private ["So30UIPasteConfigurationSupportingP", "reply"]
+- !private ["So30UIPasteConfigurationSupportingP", "replyText"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "usernameLabel"]
+- !private ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "NSDate"]
+- ["So11UIResponderC", "Reply"]
+- !private ["So11UIResponderC", "TimeInterval"]
+- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "postTime"]
+- ["So11UIResponderC", "reloadData"]
+- ["So11UIResponderC", "reply"]
+- ["So11UIResponderC", "replyText"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "usernameLabel"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "NSDate"]
+- ["So30UIResponderStandardEditActionsP", "Reply"]
+- !private ["So30UIResponderStandardEditActionsP", "TimeInterval"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "postTime"]
+- !private ["So30UIResponderStandardEditActionsP", "reloadData"]
+- !private ["So30UIResponderStandardEditActionsP", "reply"]
+- !private ["So30UIResponderStandardEditActionsP", "replyText"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "usernameLabel"]
+- !private ["So15UITableViewCellC", "Int"]
+- !private ["So15UITableViewCellC", "NSDate"]
+- ["So15UITableViewCellC", "Reply"]
+- !private ["So15UITableViewCellC", "TimeInterval"]
+- ["So15UITableViewCellC", "UILabel"]
+- ["So15UITableViewCellC", ""]
+- ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "postTime"]
+- ["So15UITableViewCellC", "reloadData"]
+- ["So15UITableViewCellC", "reply"]
+- ["So15UITableViewCellC", "replyText"]
+- ["So15UITableViewCellC", "usernameLabel"]
+- !private ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "NSDate"]
+- ["So18UITraitEnvironmentP", "Reply"]
+- !private ["So18UITraitEnvironmentP", "TimeInterval"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "postTime"]
+- !private ["So18UITraitEnvironmentP", "reloadData"]
+- !private ["So18UITraitEnvironmentP", "reply"]
+- !private ["So18UITraitEnvironmentP", "replyText"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "usernameLabel"]
+- !private ["So6UIViewC", "Int"]
+- !private ["So6UIViewC", "NSDate"]
+- ["So6UIViewC", "Reply"]
+- !private ["So6UIViewC", "TimeInterval"]
+- ["So6UIViewC", "UILabel"]
+- ["So6UIViewC", "init"]
+- ["So6UIViewC", "postTime"]
+- ["So6UIViewC", "reloadData"]
+- ["So6UIViewC", "reply"]
+- ["So6UIViewC", "replyText"]
+- !private ["So6UIViewC", "text"]
+- ["So6UIViewC", "usernameLabel"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "Int"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "NSDate"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", "Reply"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "TimeInterval"]
+- ["s37_DefaultCustomPlaygroundQuickLookableP", ""]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "postTime"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reply"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "replyText"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "usernameLabel"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "timeIntervalSince1970"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSDate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Reply"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeInterval"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "postTime"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reply"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "replyText"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "seconds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeIntervalSince1970"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "usernameLabel"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "Sd"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So6NSDateC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s7NumericP"
+- !private "s26RangeReplaceableCollectionP"
+- "10DyceAppIOS5ReplyC"
+- "10DyceAppIOS9ReplyCellC"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So9TimestampC"
+- "So29UIAccessibilityIdentificationP"
+- "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- "So17UICoordinateSpaceP"
+- "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So27UIGestureRecognizerDelegateP"
+- !private "So7UILabelC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So15UITableViewCellC"
+- "So18UITraitEnvironmentP"
+- "So6UIViewC"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSnapshotMetadata.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRHTTPMetric.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAppInstallAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeContentAd.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRTrace.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformance.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FirebasePerformance.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRCollectionReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentReference.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdNotificationSource.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentChange.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Headers/FIRPerformanceAttributable.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GeoFire.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestore.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FirebaseFirestore.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdUnconfirmedClickDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GeoFire+Private.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFQuery+Private.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIImage+ChameleonPrivate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIColor+ChameleonPrivate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIView+ChameleonPrivate.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldValue.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrashLog.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRWriteBatch.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFGeoHash.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FIRCrash.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Headers/FirebaseCrash.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFieldPath.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+ConfirmationClick.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UILabel+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIButton+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UINavigationController+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIViewController+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIColor+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/NSArray+Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRListenerRegistration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTransaction.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRTimestamp.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreSettings.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFBase32Utils.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonEnums.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRSetOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonMacros.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdAssetIdentifiers.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRFirestoreErrors.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRGeoPoint.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRDocumentSnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuerySnapshot.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Headers/FIRQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFCircleQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFGeoHashQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Headers/GFRegionQuery.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebasePerformance/Frameworks/FirebasePerformance.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/GeoFire/GeoFire.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d35a4da5c5821a23f4a4af5bc4abaab3"

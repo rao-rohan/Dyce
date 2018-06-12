@@ -1,20 +1,26 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: ReplyViewController.swift
+//
+// File Description: This view controller operates with an array of Reply objects to display.
+
 import Foundation
 import UIKit
 import Firebase
 import SVProgressHUD
 import SCLAlertView
-
-//this view controller operates with an array of Reply objects to display
+import DZNEmptyDataSet
 
 class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource{
     
     var question = Question()
     var keyboardHeight : CGFloat = 0
     var height : CGFloat = 0
-    
+    var isFavorite = false
     @IBOutlet weak var replyTextField: UITextField!
     @IBOutlet weak var tableView : UITableView!
     
+    var delegate: ReplyCompletedDelegate?
     private var replies = [Reply]() {didSet{tableView.reloadData()}}
     var questionHeaderView: QuestionHeaderView?
     var questionImageHeaderView: QuestionImageHeaderView?
@@ -25,39 +31,41 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         self.replyTextField.delegate = self
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.backgroundColor = UIColor.white
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        let image = question.image
-        if image != nil {
-            
-            questionImageHeaderView = UINib(nibName: "QuestionHeaderImageView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionImageHeaderView
-            questionImageHeaderView?.posterUID = question.creatorUID
-            questionImageHeaderView?.usernameLabel.text = question.creatorUsername
-            questionImageHeaderView?.questionLabel.text = question.question
-            questionImageHeaderView?.categoryLabel.text = question.category
-            questionImageHeaderView?.timeLabel.text = convertTime(_time: question.time)
-            questionImageHeaderView?.imageView.clipsToBounds = true
-            questionImageHeaderView?.categoryView.backgroundColor = colorPicker.colorChooser(question.category)
-            questionImageHeaderView?.categoryLabel.text = question.category
-            questionImageHeaderView?.imageView.image = question.image
-            questionImageHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
-            
-        }
-        else {
-            questionHeaderView = UINib(nibName: "QuestionHeaderView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionHeaderView
-            questionHeaderView?.posterUID = question.creatorUID
-            questionHeaderView?.usernameLabel.text = question.creatorUsername
-            questionHeaderView?.questionLabel.text = question.question
-            questionHeaderView?.categoryLabel.text = question.category
-            questionHeaderView?.timeLabel.text = convertTime(_time: question.time)
-            questionHeaderView?.categoryView.backgroundColor = colorPicker.colorChooser(question.category)
-            questionHeaderView?.categoryLabel.text = question.category
-            questionHeaderView?.repliesLabel.text = calcReplies(_reply: question.numReplies)
-        }
+        print(question.question)
+        initQuestionHeader()
         fetchReplies()
         
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
+        tableView.reloadData()
+    }
+    func initQuestionHeader(){
+        if let image = question.image{
+            questionImageHeaderView = UINib(nibName: "QuestionHeaderImageView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionImageHeaderView
+            questionImageHeaderView?.question = Question(_creatorUID: question.creatorUID, _creatorUsername: question.creatorUsername, _postID: question.postID, _category: question.category, _time: question.time, _question: question.question, _numReplies: question.numReplies, _imageURL: question.imageURL, _image: image)
+            if(isFavorite){
+                questionImageHeaderView?.isFavorited = true
+                questionImageHeaderView?.favoriteButton.setImage(#imageLiteral(resourceName: "gold star "), for: .normal)
+            }
+            else{
+                questionImageHeaderView?.isFavorited = false
+                questionImageHeaderView?.favoriteButton.setImage(#imageLiteral(resourceName: "star blank"), for: .normal)
+            }
+            
+        }else{
+            questionHeaderView = UINib(nibName: "QuestionHeaderView", bundle: Bundle.main).instantiate(withOwner: nil, options: nil).first as? QuestionHeaderView
+            questionHeaderView?.question = Question(_creatorUID: question.creatorUID, _creatorUsername: question.creatorUsername, _postID: question.postID, _category: question.category, _time: question.time, _question: question.question, _numReplies: question.numReplies, _imageURL: question.imageURL)
+            if(isFavorite){
+                questionHeaderView?.isFavorited = true
+                questionHeaderView?.favoriteButton.setImage(#imageLiteral(resourceName: "gold star "), for: .normal)
+            }
+            else{
+                questionHeaderView?.isFavorited = false
+                questionHeaderView?.favoriteButton.setImage(#imageLiteral(resourceName: "star blank"), for: .normal)
+            }
+        }
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -75,7 +83,7 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
     }
     
     func convertTime(_time : Timestamp) -> String {
-
+        
         var timeWord = "second"
         let secondsSinceEpoch = TimeInterval(_time.seconds)
         var ago = NSDate().timeIntervalSince1970 - secondsSinceEpoch
@@ -100,7 +108,7 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
     
     func fetchReplies(){
         replies.removeAll()
-
+        
         let repliesCollection = Firestore.firestore().collection(NameFile.Firestore.posts).document(question.postID).collection(NameFile.Firestore.replies)
         
         repliesCollection.getDocuments(completion: { (snapshot, error) in
@@ -150,7 +158,7 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
         let userInfo:NSDictionary = notification.userInfo! as NSDictionary
         let keyboardFrame:NSValue = userInfo.value(forKey: UIKeyboardFrameEndUserInfoKey) as! NSValue
         let keyboardRectangle = keyboardFrame.cgRectValue
-        keyboardHeight = keyboardRectangle.height - height
+        keyboardHeight = keyboardRectangle.height
         moveTextField(replyTextField, moveDistance: -keyboardHeight, up: true)
     }
     
@@ -227,4 +235,28 @@ class ReplyViewController: UIViewController, UITextFieldDelegate, UITableViewDel
     }
     
 }
+protocol ReplyCompletedDelegate{
+    func completedReply()
+}
+extension ReplyViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    //MARK: Empty Data Set
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "There's nothing here!"
+        let changes = [kCTFontAttributeName: UIFont(name: "Avenir Next", size: 24.0)!, kCTForegroundColorAttributeName: UIColor.flatGray]
+        
+        return NSAttributedString(string: str, attributes: changes as [NSAttributedStringKey : Any])
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "Be the first reply for this post!"
+        let attrs = [kCTFontAttributeName: UIFont(name: "Avenir Next", size: 18.0)!, kCTForegroundColorAttributeName: UIColor.flatGray]
+        return NSAttributedString(string: str, attributes: attrs as [NSAttributedStringKey : Any])
+    }
+    
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "exclamation_mark_filled")
+    }
+    
+}
+
 

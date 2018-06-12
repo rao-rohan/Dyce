@@ -1,0 +1,145 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ESRefreshAnimator"
+provides-nominal:
+- "15ESPullToRefresh17ESRefreshAnimatorC"
+provides-member:
+- ["15ESPullToRefresh17ESRefreshAnimatorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "CGFloat"
+- "ESRefreshAnimator"
+- "ESRefreshAnimatorProtocol"
+- "ESRefreshComponent"
+- "ESRefreshProtocol"
+- "ESRefreshViewState"
+- "FloatLiteralType"
+- "UIEdgeInsets"
+- "UIView"
+depends-member:
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "CGFloat"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "ESRefreshComponent"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "ESRefreshViewState"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "UIEdgeInsets"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "UIView"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "deinit"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "executeIncremental"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "init"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "insets"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "refresh"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "refreshAnimationBegin"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "refreshAnimationEnd"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "refreshAnimationWillEnd"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "state"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "trigger"]
+- ["15ESPullToRefresh17ESRefreshAnimatorC", "view"]
+- !private ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "UIEdgeInsets"]
+- !private ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "UIView"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", ""]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "executeIncremental"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "insets"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "refresh"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "refreshAnimationBegin"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "refreshAnimationEnd"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "state"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "trigger"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "view"]
+- !private ["15ESPullToRefresh17ESRefreshProtocolP", "UIEdgeInsets"]
+- !private ["15ESPullToRefresh17ESRefreshProtocolP", "UIView"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", ""]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "executeIncremental"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "insets"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "refresh"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "refreshAnimationBegin"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "refreshAnimationEnd"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "state"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "trigger"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "view"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "pullToRefresh"]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "pullToRefresh"]
+- !private ["s9EquatableP", "zero"]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", "pullToRefresh"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["SC12UIEdgeInsetsV", "zero"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So6UIViewC", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- "15ESPullToRefresh17ESRefreshAnimatorC"
+- "15ESPullToRefresh25ESRefreshAnimatorProtocolP"
+- "15ESPullToRefresh17ESRefreshProtocolP"
+- "15ESPullToRefresh18ESRefreshViewStateO"
+- "s9EquatableP"
+- "s8HashableP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "SC12UIEdgeInsetsV"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ESPullToRefresh/ESPullToRefresh-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphoneos/ESPullToRefresh.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "39903a46b9bf594406558fa87ff36484"

@@ -1,0 +1,135 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["11ReactiveKit0A10ExtensionsP", ""]
+- ["11ReactiveKit0A10ExtensionsP", "notification"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AnyObject"
+- !private "BlockDisposable"
+- "NSNotification"
+- "NoError"
+- "Notification"
+- "NotificationCenter"
+- "ReactiveExtensions"
+- "Signal"
+depends-member:
+- !private ["11ReactiveKit14AtomicObserverC", "next"]
+- !private ["11ReactiveKit15BlockDisposableC", "init"]
+- ["s7CVarArgP", "Name"]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "removeObserver"]
+- ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
+- ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "removeObserver"]
+- ["11ReactiveKit13DeallocatableP", "Name"]
+- !private ["11ReactiveKit13DeallocatableP", "addObserver"]
+- !private ["11ReactiveKit13DeallocatableP", "removeObserver"]
+- !private ["11ReactiveKit10DisposableP", "init"]
+- ["11ReactiveKit18DisposeBagProviderP", "Name"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "addObserver"]
+- !private ["11ReactiveKit18DisposeBagProviderP", "removeObserver"]
+- ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "addObserver"]
+- !private ["s9EquatableP", "removeObserver"]
+- ["s8HashableP", "Name"]
+- !private ["s8HashableP", "addObserver"]
+- !private ["s8HashableP", "removeObserver"]
+- ["So8NSCodingP", "Name"]
+- ["So9NSCopyingP", "Name"]
+- ["So14NSNotificationC", "Name"]
+- ["So8NSObjectC", "Name"]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "removeObserver"]
+- ["So16NSObjectProtocolP", "Name"]
+- !private ["So16NSObjectProtocolP", "addObserver"]
+- !private ["So16NSObjectProtocolP", "removeObserver"]
+- !private ["So18NotificationCenterC", "addObserver"]
+- !private ["So18NotificationCenterC", "removeObserver"]
+- !private ["11ReactiveKit16ObserverProtocolP", "next"]
+- ["11ReactiveKit0A10ExtensionsP", "AnyObject"]
+- ["11ReactiveKit0A10ExtensionsP", "Base"]
+- !private ["11ReactiveKit0A10ExtensionsP", "BlockDisposable"]
+- ["11ReactiveKit0A10ExtensionsP", "NSNotification"]
+- ["11ReactiveKit0A10ExtensionsP", "NoError"]
+- ["11ReactiveKit0A10ExtensionsP", "Notification"]
+- ["11ReactiveKit0A10ExtensionsP", "NotificationCenter"]
+- ["11ReactiveKit0A10ExtensionsP", "Signal"]
+- !private ["11ReactiveKit0A10ExtensionsP", "base"]
+- ["11ReactiveKit0A10ExtensionsP", "notification"]
+- ["11ReactiveKit0A18ExtensionsProviderP", "Name"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "addObserver"]
+- !private ["11ReactiveKit0A18ExtensionsProviderP", "removeObserver"]
+- !private ["11ReactiveKit6SignalV", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "Name"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "Name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
+depends-nominal:
+- !private "11ReactiveKit14AtomicObserverC"
+- !private "11ReactiveKit15BlockDisposableC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "11ReactiveKit13DeallocatableP"
+- !private "11ReactiveKit10DisposableP"
+- "11ReactiveKit18DisposeBagProviderP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- "So14NSNotificationC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So18NotificationCenterC"
+- !private "11ReactiveKit16ObserverProtocolP"
+- "11ReactiveKit0A10ExtensionsP"
+- "11ReactiveKit0A18ExtensionsProviderP"
+- !private "11ReactiveKit6SignalV"
+- !private "11ReactiveKit14SignalProtocolP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "88030f74a86d8c70025094eadb901c33"

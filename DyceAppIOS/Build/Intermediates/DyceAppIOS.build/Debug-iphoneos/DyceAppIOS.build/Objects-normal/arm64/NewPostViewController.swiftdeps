@@ -1,12 +1,13 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "NewPostViewController"
+- "PushCompletedDelegate"
 provides-nominal:
 - "10DyceAppIOS21NewPostViewControllerC"
+- "10DyceAppIOS21PushCompletedDelegateP"
 provides-member:
 - ["10DyceAppIOS21NewPostViewControllerC", ""]
-- ["So7UIImageC", ""]
-- ["So7UIImageC", "resizeImage"]
+- ["10DyceAppIOS21PushCompletedDelegateP", ""]
 - ["10DyceAppIOS21NewPostViewControllerC", "alert"]
 provides-dynamic-lookup:
 - "ImagePlace"
@@ -24,11 +25,11 @@ provides-dynamic-lookup:
 - "textViewDidChange"
 - "touchesBegan"
 - "uploadPost"
+- "viewDidAppear"
+- "viewDidDisappear"
 - "viewDidLoad"
 depends-top-level:
 - !private "!="
-- !private "*"
-- !private "/"
 - !private "=="
 - !private ">"
 - "AnyObject"
@@ -37,9 +38,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
-- "CGFloat"
-- !private "CGRect"
-- !private "CGSize"
 - "CLLocation"
 - "CLLocationCoordinate2D"
 - "CLLocationManager"
@@ -51,6 +49,7 @@ depends-top-level:
 - !private "NSAttributedStringKey"
 - !private "NSTextAlignment"
 - "NewPostViewController"
+- "PushCompletedDelegate"
 - !private "Question"
 - !private "SCLAlertView"
 - !private "SVProgressHUD"
@@ -70,11 +69,6 @@ depends-top-level:
 - !private "UIColor"
 - "UIEvent"
 - !private "UIFont"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "UIGraphicsEndImageContext"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
-- !private "UIGraphicsImageRenderer"
-- !private "UIGraphicsImageRendererFormat"
 - "UIImage"
 - "UIImagePickerController"
 - "UIImagePickerControllerDelegate"
@@ -88,15 +82,16 @@ depends-top-level:
 - "UIToolbar"
 - "UITouch"
 - "UIView"
-- "UIViewContentMode"
 - "UIViewController"
 - !private "URL"
 - !private "Void"
-- !private "fatalError"
 - !private "kCLLocationAccuracyBest"
 - !private "print"
 depends-member:
 - !private ["10DyceAppIOS0B7StorageC", "PersonalInfo"]
+- !private ["10DyceAppIOS0B7StorageC", "Questions"]
+- !private ["10DyceAppIOS0B7StorageC", "load"]
+- !private ["10DyceAppIOS0B7StorageC", "save"]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
 - !private ["s23BidirectionalCollectionP", "count"]
@@ -123,10 +118,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "textAlignment"]
 - !private ["So15CALayerDelegateP", "tintColor"]
 - !private ["So15CALayerDelegateP", "titleLabel"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "init"]
-- !private ["SC6CGSizeV", "width"]
 - !private ["So10CLLocationC", "coordinate"]
 - !private ["SC22CLLocationCoordinate2DV", "latitude"]
 - !private ["SC22CLLocationCoordinate2DV", "longitude"]
@@ -167,6 +158,8 @@ depends-member:
 - !private ["So25CLLocationManagerDelegateP", "categoryButton"]
 - !private ["So25CLLocationManagerDelegateP", "chooseImageSource"]
 - !private ["So25CLLocationManagerDelegateP", "currLocation"]
+- !private ["So25CLLocationManagerDelegateP", "delegate"]
+- !private ["So25CLLocationManagerDelegateP", "deleteCategory"]
 - !private ["So25CLLocationManagerDelegateP", "dismiss"]
 - !private ["So25CLLocationManagerDelegateP", "image"]
 - ["So25CLLocationManagerDelegateP", "imagePickerController"]
@@ -215,8 +208,6 @@ depends-member:
 - ["So25CLLocationManagerDelegateP", "viewForZooming"]
 - ["So25CLLocationManagerDelegateP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "AppStorage"]
-- !private ["s7CVarArgP", "CGRect"]
-- !private ["s7CVarArgP", "CGSize"]
 - ["s7CVarArgP", "CLLocationManager"]
 - !private ["s7CVarArgP", "GeoPoint"]
 - !private ["s7CVarArgP", "ImagePlace"]
@@ -236,11 +227,6 @@ depends-member:
 - !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIFont"]
-- !private ["s7CVarArgP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s7CVarArgP", "UIGraphicsEndImageContext"]
-- !private ["s7CVarArgP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s7CVarArgP", "UIGraphicsImageRenderer"]
-- !private ["s7CVarArgP", "UIGraphicsImageRendererFormat"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIImagePickerController"]
 - !private ["s7CVarArgP", "UIImagePickerControllerOriginalImage"]
@@ -259,13 +245,11 @@ depends-member:
 - !private ["s7CVarArgP", "coordinate"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "currLocation"]
-- !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "deleteCategory"]
 - !private ["s7CVarArgP", "desiredAccuracy"]
 - !private ["s7CVarArgP", "dismiss"]
-- !private ["s7CVarArgP", "draw"]
 - !private ["s7CVarArgP", "endEditing"]
-- !private ["s7CVarArgP", "fatalError"]
 - !private ["s7CVarArgP", "flatBlack"]
 - !private ["s7CVarArgP", "flatGray"]
 - !private ["s7CVarArgP", "flatGreen"]
@@ -296,8 +280,7 @@ depends-member:
 - ["s7CVarArgP", "navigationController"]
 - ["s7CVarArgP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s7CVarArgP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["s7CVarArgP", "opaque"]
-- !private ["s7CVarArgP", "openURL"]
+- !private ["s7CVarArgP", "open"]
 - !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "placeHolderText"]
 - !private ["s7CVarArgP", "postTextView"]
@@ -305,7 +288,6 @@ depends-member:
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "requestWhenInUseAuthorization"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
-- !private ["s7CVarArgP", "resizeImage"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
 - ["s7CVarArgP", "scrollViewDidEndDragging"]
@@ -326,7 +308,6 @@ depends-member:
 - !private ["s7CVarArgP", "showError"]
 - !private ["s7CVarArgP", "showImagePickerController"]
 - !private ["s7CVarArgP", "showNotice"]
-- !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "sizeToFit"]
 - !private ["s7CVarArgP", "sourceType"]
 - !private ["s7CVarArgP", "startUpdatingLocation"]
@@ -347,6 +328,8 @@ depends-member:
 - !private ["s7CVarArgP", "toolbar"]
 - !private ["s7CVarArgP", "uploadPost"]
 - !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidAppear"]
+- !private ["s7CVarArgP", "viewDidDisappear"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
@@ -358,8 +341,6 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "AppStorage"]
-- !private ["s28CustomDebugStringConvertibleP", "CGRect"]
-- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
 - ["s28CustomDebugStringConvertibleP", "CLLocationManager"]
 - !private ["s28CustomDebugStringConvertibleP", "GeoPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "ImagePlace"]
@@ -379,11 +360,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIFont"]
-- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsEndImageContext"]
-- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsImageRenderer"]
-- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsImageRendererFormat"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImagePickerControllerOriginalImage"]
@@ -401,13 +377,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "coordinate"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "currLocation"]
-- !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "deleteCategory"]
 - !private ["s28CustomDebugStringConvertibleP", "desiredAccuracy"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
-- !private ["s28CustomDebugStringConvertibleP", "draw"]
 - !private ["s28CustomDebugStringConvertibleP", "endEditing"]
-- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
 - !private ["s28CustomDebugStringConvertibleP", "flatBlack"]
 - !private ["s28CustomDebugStringConvertibleP", "flatGray"]
 - !private ["s28CustomDebugStringConvertibleP", "flatGreen"]
@@ -416,7 +390,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "flatRed"]
 - !private ["s28CustomDebugStringConvertibleP", "flatSkyBlue"]
 - !private ["s28CustomDebugStringConvertibleP", "flatYellow"]
-- !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - ["s28CustomDebugStringConvertibleP", "imagePickerController"]
 - ["s28CustomDebugStringConvertibleP", "imagePickerControllerDidCancel"]
@@ -439,8 +412,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "navigationController"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s28CustomDebugStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["s28CustomDebugStringConvertibleP", "opaque"]
-- !private ["s28CustomDebugStringConvertibleP", "openURL"]
+- !private ["s28CustomDebugStringConvertibleP", "open"]
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "placeHolderText"]
 - !private ["s28CustomDebugStringConvertibleP", "postTextView"]
@@ -448,7 +420,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "requestWhenInUseAuthorization"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
-- !private ["s28CustomDebugStringConvertibleP", "resizeImage"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
@@ -469,7 +440,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "showError"]
 - !private ["s28CustomDebugStringConvertibleP", "showImagePickerController"]
 - !private ["s28CustomDebugStringConvertibleP", "showNotice"]
-- !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "sizeToFit"]
 - !private ["s28CustomDebugStringConvertibleP", "sourceType"]
 - !private ["s28CustomDebugStringConvertibleP", "startUpdatingLocation"]
@@ -490,26 +460,21 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "toolbar"]
 - !private ["s28CustomDebugStringConvertibleP", "uploadPost"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidAppear"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
-- !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "isEmpty"]
-- !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
-- !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "isEmpty"]
 - !private ["s17CustomReflectableP", "subscript"]
-- !private ["s17CustomReflectableP", "width"]
 - !private ["s23CustomStringConvertibleP", "AppStorage"]
-- !private ["s23CustomStringConvertibleP", "CGRect"]
-- !private ["s23CustomStringConvertibleP", "CGSize"]
 - ["s23CustomStringConvertibleP", "CLLocationManager"]
 - !private ["s23CustomStringConvertibleP", "GeoPoint"]
 - !private ["s23CustomStringConvertibleP", "ImagePlace"]
@@ -529,11 +494,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIFont"]
-- !private ["s23CustomStringConvertibleP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s23CustomStringConvertibleP", "UIGraphicsEndImageContext"]
-- !private ["s23CustomStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s23CustomStringConvertibleP", "UIGraphicsImageRenderer"]
-- !private ["s23CustomStringConvertibleP", "UIGraphicsImageRendererFormat"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerController"]
 - !private ["s23CustomStringConvertibleP", "UIImagePickerControllerOriginalImage"]
@@ -552,13 +512,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "coordinate"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "currLocation"]
-- !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "deleteCategory"]
 - !private ["s23CustomStringConvertibleP", "desiredAccuracy"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
-- !private ["s23CustomStringConvertibleP", "draw"]
 - !private ["s23CustomStringConvertibleP", "endEditing"]
-- !private ["s23CustomStringConvertibleP", "fatalError"]
 - !private ["s23CustomStringConvertibleP", "flatBlack"]
 - !private ["s23CustomStringConvertibleP", "flatGray"]
 - !private ["s23CustomStringConvertibleP", "flatGreen"]
@@ -589,8 +547,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "navigationController"]
 - ["s23CustomStringConvertibleP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s23CustomStringConvertibleP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["s23CustomStringConvertibleP", "opaque"]
-- !private ["s23CustomStringConvertibleP", "openURL"]
+- !private ["s23CustomStringConvertibleP", "open"]
 - !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "placeHolderText"]
 - !private ["s23CustomStringConvertibleP", "postTextView"]
@@ -598,7 +555,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "requestWhenInUseAuthorization"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
-- !private ["s23CustomStringConvertibleP", "resizeImage"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
@@ -619,7 +575,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "showError"]
 - !private ["s23CustomStringConvertibleP", "showImagePickerController"]
 - !private ["s23CustomStringConvertibleP", "showNotice"]
-- !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "sizeToFit"]
 - !private ["s23CustomStringConvertibleP", "sourceType"]
 - !private ["s23CustomStringConvertibleP", "startUpdatingLocation"]
@@ -640,28 +595,30 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "toolbar"]
 - !private ["s23CustomStringConvertibleP", "uploadPost"]
 - !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidAppear"]
+- !private ["s23CustomStringConvertibleP", "viewDidDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "height"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "isEmpty"]
 - !private ["s9DecodableP", "subscript"]
-- !private ["s9DecodableP", "width"]
 - !private ["s10DictionaryV", "subscript"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "delegate"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "isFirstResponder"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "layoutIfNeeded"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "resignFirstResponder"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "sizeToFit"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "text"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "height"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "isEmpty"]
 - !private ["s9EncodableP", "subscript"]
-- !private ["s9EncodableP", "width"]
 - !private ["s9EquatableP", "AppStorage"]
-- !private ["s9EquatableP", "CGRect"]
-- !private ["s9EquatableP", "CGSize"]
 - ["s9EquatableP", "CLLocationManager"]
 - !private ["s9EquatableP", "GeoPoint"]
 - !private ["s9EquatableP", "ImagePlace"]
@@ -681,11 +638,6 @@ depends-member:
 - !private ["s9EquatableP", "UIBarButtonItem"]
 - !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "UIFont"]
-- !private ["s9EquatableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s9EquatableP", "UIGraphicsEndImageContext"]
-- !private ["s9EquatableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s9EquatableP", "UIGraphicsImageRenderer"]
-- !private ["s9EquatableP", "UIGraphicsImageRendererFormat"]
 - !private ["s9EquatableP", "UIImage"]
 - !private ["s9EquatableP", "UIImagePickerController"]
 - !private ["s9EquatableP", "UIImagePickerControllerOriginalImage"]
@@ -711,11 +663,10 @@ depends-member:
 - !private ["s9EquatableP", "currLocation"]
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "deleteCategory"]
 - !private ["s9EquatableP", "desiredAccuracy"]
 - !private ["s9EquatableP", "dismiss"]
-- !private ["s9EquatableP", "draw"]
 - !private ["s9EquatableP", "endEditing"]
-- !private ["s9EquatableP", "fatalError"]
 - !private ["s9EquatableP", "flatBlack"]
 - !private ["s9EquatableP", "flatGray"]
 - !private ["s9EquatableP", "flatGreen"]
@@ -727,7 +678,6 @@ depends-member:
 - !private ["s9EquatableP", "flexibleSpace"]
 - !private ["s9EquatableP", "font"]
 - !private ["s9EquatableP", "foregroundColor"]
-- !private ["s9EquatableP", "height"]
 - !private ["s9EquatableP", "image"]
 - ["s9EquatableP", "imagePickerController"]
 - ["s9EquatableP", "imagePickerControllerDidCancel"]
@@ -751,8 +701,7 @@ depends-member:
 - ["s9EquatableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s9EquatableP", "navigationControllerSupportedInterfaceOrientations"]
 - !private ["s9EquatableP", "normal"]
-- !private ["s9EquatableP", "opaque"]
-- !private ["s9EquatableP", "openURL"]
+- !private ["s9EquatableP", "open"]
 - !private ["s9EquatableP", "performSegue"]
 - !private ["s9EquatableP", "photoLibrary"]
 - !private ["s9EquatableP", "placeHolderText"]
@@ -763,8 +712,6 @@ depends-member:
 - !private ["s9EquatableP", "rear"]
 - !private ["s9EquatableP", "requestWhenInUseAuthorization"]
 - !private ["s9EquatableP", "resignFirstResponder"]
-- !private ["s9EquatableP", "resizeImage"]
-- ["s9EquatableP", "scaleAspectFit"]
 - ["s9EquatableP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s9EquatableP", "scrollViewDidEndDecelerating"]
 - ["s9EquatableP", "scrollViewDidEndDragging"]
@@ -785,7 +732,6 @@ depends-member:
 - !private ["s9EquatableP", "showError"]
 - !private ["s9EquatableP", "showImagePickerController"]
 - !private ["s9EquatableP", "showNotice"]
-- !private ["s9EquatableP", "size"]
 - !private ["s9EquatableP", "sizeToFit"]
 - !private ["s9EquatableP", "sourceType"]
 - !private ["s9EquatableP", "startUpdatingLocation"]
@@ -806,11 +752,12 @@ depends-member:
 - !private ["s9EquatableP", "toolbar"]
 - !private ["s9EquatableP", "uploadPost"]
 - !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "viewDidAppear"]
+- !private ["s9EquatableP", "viewDidDisappear"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
 - !private ["s9EquatableP", "white"]
-- !private ["s9EquatableP", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "normal"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -824,8 +771,6 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
 - !private ["So8GeoPointC", "init"]
 - !private ["s8HashableP", "AppStorage"]
-- !private ["s8HashableP", "CGRect"]
-- !private ["s8HashableP", "CGSize"]
 - ["s8HashableP", "CLLocationManager"]
 - !private ["s8HashableP", "GeoPoint"]
 - !private ["s8HashableP", "ImagePlace"]
@@ -845,11 +790,6 @@ depends-member:
 - !private ["s8HashableP", "UIBarButtonItem"]
 - !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "UIFont"]
-- !private ["s8HashableP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s8HashableP", "UIGraphicsEndImageContext"]
-- !private ["s8HashableP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s8HashableP", "UIGraphicsImageRenderer"]
-- !private ["s8HashableP", "UIGraphicsImageRendererFormat"]
 - !private ["s8HashableP", "UIImage"]
 - !private ["s8HashableP", "UIImagePickerController"]
 - !private ["s8HashableP", "UIImagePickerControllerOriginalImage"]
@@ -874,11 +814,10 @@ depends-member:
 - !private ["s8HashableP", "currLocation"]
 - !private ["s8HashableP", "default"]
 - !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "deleteCategory"]
 - !private ["s8HashableP", "desiredAccuracy"]
 - !private ["s8HashableP", "dismiss"]
-- !private ["s8HashableP", "draw"]
 - !private ["s8HashableP", "endEditing"]
-- !private ["s8HashableP", "fatalError"]
 - !private ["s8HashableP", "flatBlack"]
 - !private ["s8HashableP", "flatGray"]
 - !private ["s8HashableP", "flatGreen"]
@@ -912,8 +851,7 @@ depends-member:
 - ["s8HashableP", "navigationController"]
 - ["s8HashableP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["s8HashableP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["s8HashableP", "opaque"]
-- !private ["s8HashableP", "openURL"]
+- !private ["s8HashableP", "open"]
 - !private ["s8HashableP", "performSegue"]
 - !private ["s8HashableP", "photoLibrary"]
 - !private ["s8HashableP", "placeHolderText"]
@@ -924,8 +862,6 @@ depends-member:
 - !private ["s8HashableP", "rear"]
 - !private ["s8HashableP", "requestWhenInUseAuthorization"]
 - !private ["s8HashableP", "resignFirstResponder"]
-- !private ["s8HashableP", "resizeImage"]
-- ["s8HashableP", "scaleAspectFit"]
 - ["s8HashableP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s8HashableP", "scrollViewDidEndDecelerating"]
 - ["s8HashableP", "scrollViewDidEndDragging"]
@@ -946,7 +882,6 @@ depends-member:
 - !private ["s8HashableP", "showError"]
 - !private ["s8HashableP", "showImagePickerController"]
 - !private ["s8HashableP", "showNotice"]
-- !private ["s8HashableP", "size"]
 - !private ["s8HashableP", "sizeToFit"]
 - !private ["s8HashableP", "sourceType"]
 - !private ["s8HashableP", "startUpdatingLocation"]
@@ -966,6 +901,8 @@ depends-member:
 - !private ["s8HashableP", "toolbar"]
 - !private ["s8HashableP", "uploadPost"]
 - !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "viewDidAppear"]
+- !private ["s8HashableP", "viewDidDisappear"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
@@ -980,8 +917,6 @@ depends-member:
 - !private ["SC21NSAttributedStringKeyV", "font"]
 - !private ["SC21NSAttributedStringKeyV", "foregroundColor"]
 - !private ["So8NSCodingP", "AppStorage"]
-- !private ["So8NSCodingP", "CGRect"]
-- !private ["So8NSCodingP", "CGSize"]
 - ["So8NSCodingP", "CLLocationManager"]
 - !private ["So8NSCodingP", "GeoPoint"]
 - !private ["So8NSCodingP", "ImagePlace"]
@@ -1001,11 +936,6 @@ depends-member:
 - !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIFont"]
-- !private ["So8NSCodingP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So8NSCodingP", "UIGraphicsEndImageContext"]
-- !private ["So8NSCodingP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So8NSCodingP", "UIGraphicsImageRenderer"]
-- !private ["So8NSCodingP", "UIGraphicsImageRendererFormat"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIImagePickerController"]
 - !private ["So8NSCodingP", "UIImagePickerControllerOriginalImage"]
@@ -1023,10 +953,9 @@ depends-member:
 - !private ["So8NSCodingP", "coordinate"]
 - !private ["So8NSCodingP", "currLocation"]
 - !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "deleteCategory"]
 - !private ["So8NSCodingP", "dismiss"]
-- !private ["So8NSCodingP", "draw"]
 - !private ["So8NSCodingP", "endEditing"]
-- !private ["So8NSCodingP", "fatalError"]
 - !private ["So8NSCodingP", "flatBlack"]
 - !private ["So8NSCodingP", "flatGray"]
 - !private ["So8NSCodingP", "flatGreen"]
@@ -1062,7 +991,6 @@ depends-member:
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
-- !private ["So8NSCodingP", "resizeImage"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
 - ["So8NSCodingP", "scrollViewDidEndDragging"]
@@ -1082,7 +1010,6 @@ depends-member:
 - !private ["So8NSCodingP", "showError"]
 - !private ["So8NSCodingP", "showImagePickerController"]
 - !private ["So8NSCodingP", "showNotice"]
-- !private ["So8NSCodingP", "size"]
 - !private ["So8NSCodingP", "sizeToFit"]
 - !private ["So8NSCodingP", "sourceType"]
 - !private ["So8NSCodingP", "text"]
@@ -1100,12 +1027,13 @@ depends-member:
 - !private ["So8NSCodingP", "toolbar"]
 - !private ["So8NSCodingP", "uploadPost"]
 - !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidAppear"]
+- !private ["So8NSCodingP", "viewDidDisappear"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "coordinate"]
-- !private ["So9NSCopyingP", "default"]
 - !private ["So9NSCopyingP", "flatBlack"]
 - !private ["So9NSCopyingP", "flatGray"]
 - !private ["So9NSCopyingP", "flatGreen"]
@@ -1116,7 +1044,6 @@ depends-member:
 - !private ["So9NSCopyingP", "flatYellow"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "isEmpty"]
-- !private ["So9NSCopyingP", "opaque"]
 - !private ["So9NSCopyingP", "white"]
 - !private ["So26NSExtensionRequestHandlingP", "AppStorage"]
 - ["So26NSExtensionRequestHandlingP", "CLLocationManager"]
@@ -1151,6 +1078,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "chooseImageSource"]
 - !private ["So26NSExtensionRequestHandlingP", "currLocation"]
 - !private ["So26NSExtensionRequestHandlingP", "delegate"]
+- !private ["So26NSExtensionRequestHandlingP", "deleteCategory"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "image"]
 - ["So26NSExtensionRequestHandlingP", "imagePickerController"]
@@ -1201,18 +1129,11 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "toolbar"]
 - !private ["So26NSExtensionRequestHandlingP", "uploadPost"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidAppear"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidDisappear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
-- !private ["So21NSItemProviderReadingP", "CGRect"]
-- !private ["So21NSItemProviderReadingP", "CGSize"]
-- !private ["So21NSItemProviderReadingP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So21NSItemProviderReadingP", "UIGraphicsEndImageContext"]
-- !private ["So21NSItemProviderReadingP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So21NSItemProviderReadingP", "UIGraphicsImageRenderer"]
-- !private ["So21NSItemProviderReadingP", "UIGraphicsImageRendererFormat"]
-- !private ["So21NSItemProviderReadingP", "draw"]
-- !private ["So21NSItemProviderReadingP", "fatalError"]
 - !private ["So21NSItemProviderReadingP", "flatBlack"]
 - !private ["So21NSItemProviderReadingP", "flatGray"]
 - !private ["So21NSItemProviderReadingP", "flatGreen"]
@@ -1223,18 +1144,7 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "flatYellow"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "isEmpty"]
-- !private ["So21NSItemProviderReadingP", "resizeImage"]
-- !private ["So21NSItemProviderReadingP", "size"]
 - !private ["So21NSItemProviderReadingP", "white"]
-- !private ["So21NSItemProviderWritingP", "CGRect"]
-- !private ["So21NSItemProviderWritingP", "CGSize"]
-- !private ["So21NSItemProviderWritingP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So21NSItemProviderWritingP", "UIGraphicsEndImageContext"]
-- !private ["So21NSItemProviderWritingP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So21NSItemProviderWritingP", "UIGraphicsImageRenderer"]
-- !private ["So21NSItemProviderWritingP", "UIGraphicsImageRendererFormat"]
-- !private ["So21NSItemProviderWritingP", "draw"]
-- !private ["So21NSItemProviderWritingP", "fatalError"]
 - !private ["So21NSItemProviderWritingP", "flatBlack"]
 - !private ["So21NSItemProviderWritingP", "flatGray"]
 - !private ["So21NSItemProviderWritingP", "flatGreen"]
@@ -1245,16 +1155,11 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "flatYellow"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "isEmpty"]
-- !private ["So21NSItemProviderWritingP", "resizeImage"]
-- !private ["So21NSItemProviderWritingP", "size"]
 - !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So16NSMutableCopyingP", "isEmpty"]
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "AppStorage"]
 - ["So8NSObjectC", "Bool"]
-- ["So8NSObjectC", "CGFloat"]
-- !private ["So8NSObjectC", "CGRect"]
-- !private ["So8NSObjectC", "CGSize"]
 - ["So8NSObjectC", "CLLocation"]
 - ["So8NSObjectC", "CLLocationCoordinate2D"]
 - ["So8NSObjectC", "CLLocationManager"]
@@ -1264,6 +1169,7 @@ depends-member:
 - !private ["So8NSObjectC", "NSAttributedStringKey"]
 - !private ["So8NSObjectC", "NSTextAlignment"]
 - !private ["So8NSObjectC", "NewPostViewController"]
+- ["So8NSObjectC", "PushCompletedDelegate"]
 - !private ["So8NSObjectC", "Question"]
 - !private ["So8NSObjectC", "SCLAlertView"]
 - !private ["So8NSObjectC", "SVProgressHUD"]
@@ -1281,11 +1187,6 @@ depends-member:
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIEvent"]
 - !private ["So8NSObjectC", "UIFont"]
-- !private ["So8NSObjectC", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So8NSObjectC", "UIGraphicsEndImageContext"]
-- !private ["So8NSObjectC", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So8NSObjectC", "UIGraphicsImageRenderer"]
-- !private ["So8NSObjectC", "UIGraphicsImageRendererFormat"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImagePickerController"]
 - !private ["So8NSObjectC", "UIImagePickerControllerOriginalImage"]
@@ -1296,7 +1197,6 @@ depends-member:
 - ["So8NSObjectC", "UIToolbar"]
 - ["So8NSObjectC", "UITouch"]
 - ["So8NSObjectC", "UIView"]
-- ["So8NSObjectC", "UIViewContentMode"]
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "addAction"]
@@ -1310,13 +1210,11 @@ depends-member:
 - ["So8NSObjectC", "chooseImageSource"]
 - !private ["So8NSObjectC", "coordinate"]
 - ["So8NSObjectC", "currLocation"]
-- !private ["So8NSObjectC", "default"]
-- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "deleteCategory"]
 - !private ["So8NSObjectC", "desiredAccuracy"]
 - !private ["So8NSObjectC", "dismiss"]
-- !private ["So8NSObjectC", "draw"]
 - !private ["So8NSObjectC", "endEditing"]
-- !private ["So8NSObjectC", "fatalError"]
 - !private ["So8NSObjectC", "flatBlack"]
 - !private ["So8NSObjectC", "flatGray"]
 - !private ["So8NSObjectC", "flatGreen"]
@@ -1348,8 +1246,7 @@ depends-member:
 - ["So8NSObjectC", "navigationController"]
 - ["So8NSObjectC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So8NSObjectC", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["So8NSObjectC", "opaque"]
-- !private ["So8NSObjectC", "openURL"]
+- !private ["So8NSObjectC", "open"]
 - !private ["So8NSObjectC", "performSegue"]
 - ["So8NSObjectC", "placeHolderText"]
 - ["So8NSObjectC", "postTextView"]
@@ -1360,7 +1257,6 @@ depends-member:
 - !private ["So8NSObjectC", "requestWhenInUseAuthorization"]
 - ["So8NSObjectC", "reset"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
-- ["So8NSObjectC", "resizeImage"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectC", "scrollViewDidEndDragging"]
@@ -1381,7 +1277,6 @@ depends-member:
 - !private ["So8NSObjectC", "showError"]
 - ["So8NSObjectC", "showImagePickerController"]
 - !private ["So8NSObjectC", "showNotice"]
-- !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "sizeToFit"]
 - !private ["So8NSObjectC", "sourceType"]
 - !private ["So8NSObjectC", "startUpdatingLocation"]
@@ -1402,13 +1297,13 @@ depends-member:
 - ["So8NSObjectC", "touchesBegan"]
 - ["So8NSObjectC", "uploadPost"]
 - !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidAppear"]
+- ["So8NSObjectC", "viewDidDisappear"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectC", "white"]
 - !private ["So16NSObjectProtocolP", "AppStorage"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
 - ["So16NSObjectProtocolP", "CLLocationManager"]
 - !private ["So16NSObjectProtocolP", "GeoPoint"]
 - !private ["So16NSObjectProtocolP", "ImagePlace"]
@@ -1428,11 +1323,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIBarButtonItem"]
 - !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "UIFont"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsEndImageContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsImageRenderer"]
-- !private ["So16NSObjectProtocolP", "UIGraphicsImageRendererFormat"]
 - !private ["So16NSObjectProtocolP", "UIImage"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerController"]
 - !private ["So16NSObjectProtocolP", "UIImagePickerControllerOriginalImage"]
@@ -1449,13 +1339,11 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "chooseImageSource"]
 - !private ["So16NSObjectProtocolP", "coordinate"]
 - !private ["So16NSObjectProtocolP", "currLocation"]
-- !private ["So16NSObjectProtocolP", "default"]
 - !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "deleteCategory"]
 - !private ["So16NSObjectProtocolP", "desiredAccuracy"]
 - !private ["So16NSObjectProtocolP", "dismiss"]
-- !private ["So16NSObjectProtocolP", "draw"]
 - !private ["So16NSObjectProtocolP", "endEditing"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
 - !private ["So16NSObjectProtocolP", "flatBlack"]
 - !private ["So16NSObjectProtocolP", "flatGray"]
 - !private ["So16NSObjectProtocolP", "flatGreen"]
@@ -1486,8 +1374,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "navigationController"]
 - ["So16NSObjectProtocolP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So16NSObjectProtocolP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["So16NSObjectProtocolP", "opaque"]
-- !private ["So16NSObjectProtocolP", "openURL"]
+- !private ["So16NSObjectProtocolP", "open"]
 - !private ["So16NSObjectProtocolP", "performSegue"]
 - !private ["So16NSObjectProtocolP", "placeHolderText"]
 - !private ["So16NSObjectProtocolP", "postTextView"]
@@ -1495,7 +1382,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "print"]
 - !private ["So16NSObjectProtocolP", "requestWhenInUseAuthorization"]
 - !private ["So16NSObjectProtocolP", "resignFirstResponder"]
-- !private ["So16NSObjectProtocolP", "resizeImage"]
 - ["So16NSObjectProtocolP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16NSObjectProtocolP", "scrollViewDidEndDecelerating"]
 - ["So16NSObjectProtocolP", "scrollViewDidEndDragging"]
@@ -1516,7 +1402,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "showError"]
 - !private ["So16NSObjectProtocolP", "showImagePickerController"]
 - !private ["So16NSObjectProtocolP", "showNotice"]
-- !private ["So16NSObjectProtocolP", "size"]
 - !private ["So16NSObjectProtocolP", "sizeToFit"]
 - !private ["So16NSObjectProtocolP", "sourceType"]
 - !private ["So16NSObjectProtocolP", "startUpdatingLocation"]
@@ -1536,20 +1421,13 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "toolbar"]
 - !private ["So16NSObjectProtocolP", "uploadPost"]
 - !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewDidAppear"]
+- !private ["So16NSObjectProtocolP", "viewDidDisappear"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - !private ["So16NSObjectProtocolP", "white"]
-- !private ["So14NSSecureCodingP", "CGRect"]
-- !private ["So14NSSecureCodingP", "CGSize"]
-- !private ["So14NSSecureCodingP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So14NSSecureCodingP", "UIGraphicsEndImageContext"]
-- !private ["So14NSSecureCodingP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So14NSSecureCodingP", "UIGraphicsImageRenderer"]
-- !private ["So14NSSecureCodingP", "UIGraphicsImageRendererFormat"]
 - !private ["So14NSSecureCodingP", "coordinate"]
-- !private ["So14NSSecureCodingP", "draw"]
-- !private ["So14NSSecureCodingP", "fatalError"]
 - !private ["So14NSSecureCodingP", "flatBlack"]
 - !private ["So14NSSecureCodingP", "flatGray"]
 - !private ["So14NSSecureCodingP", "flatGreen"]
@@ -1560,8 +1438,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "flatYellow"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
-- !private ["So14NSSecureCodingP", "resizeImage"]
-- !private ["So14NSSecureCodingP", "size"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["SC15NSTextAlignmentO", "center"]
@@ -1577,6 +1453,7 @@ depends-member:
 - !private ["10DyceAppIOS21NewPostViewControllerC", "NSAttributedStringKey"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "NSTextAlignment"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "NewPostViewController"]
+- ["10DyceAppIOS21NewPostViewControllerC", "PushCompletedDelegate"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "Question"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "SCLAlertView"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "SVProgressHUD"]
@@ -1612,6 +1489,8 @@ depends-member:
 - ["10DyceAppIOS21NewPostViewControllerC", "chooseImageSource"]
 - ["10DyceAppIOS21NewPostViewControllerC", "currLocation"]
 - ["10DyceAppIOS21NewPostViewControllerC", "deinit"]
+- ["10DyceAppIOS21NewPostViewControllerC", "delegate"]
+- !private ["10DyceAppIOS21NewPostViewControllerC", "deleteCategory"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "dismiss"]
 - ["10DyceAppIOS21NewPostViewControllerC", "image"]
 - ["10DyceAppIOS21NewPostViewControllerC", "imagePickerController"]
@@ -1663,12 +1542,15 @@ depends-member:
 - ["10DyceAppIOS21NewPostViewControllerC", "touchesBegan"]
 - ["10DyceAppIOS21NewPostViewControllerC", "uploadPost"]
 - !private ["10DyceAppIOS21NewPostViewControllerC", "view"]
+- ["10DyceAppIOS21NewPostViewControllerC", "viewDidAppear"]
+- ["10DyceAppIOS21NewPostViewControllerC", "viewDidDisappear"]
 - ["10DyceAppIOS21NewPostViewControllerC", "viewDidLoad"]
 - ["10DyceAppIOS21NewPostViewControllerC", "viewForZooming"]
 - ["10DyceAppIOS21NewPostViewControllerC", "viewForZoomingInScrollView"]
 - !private ["s9OptionSetP", "normal"]
 - !private ["10DyceAppIOS0B7StorageC12PersonalInfoV", "uid"]
 - !private ["10DyceAppIOS0B7StorageC12PersonalInfoV", "username"]
+- ["10DyceAppIOS21PushCompletedDelegateP", "completedPush"]
 - !private ["10DyceAppIOS8QuestionC", "category"]
 - !private ["10DyceAppIOS8QuestionC", "creatorUID"]
 - !private ["10DyceAppIOS8QuestionC", "creatorUsername"]
@@ -1678,6 +1560,7 @@ depends-member:
 - !private ["10DyceAppIOS8QuestionC", "pushToFirestore"]
 - !private ["10DyceAppIOS8QuestionC", "question"]
 - !private ["10DyceAppIOS8QuestionC", "time"]
+- !private ["10DyceAppIOS0B7StorageC9QuestionsV", "category"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
@@ -1697,7 +1580,6 @@ depends-member:
 - !private ["s16RawRepresentableP", "photoLibrary"]
 - !private ["s16RawRepresentableP", "plain"]
 - !private ["s16RawRepresentableP", "rear"]
-- ["s16RawRepresentableP", "scaleAspectFit"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["12SCLAlertViewAAC", "addButton"]
 - !private ["12SCLAlertViewAAC", "init"]
@@ -1709,7 +1591,6 @@ depends-member:
 - !private ["s8SequenceP", "isEmpty"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s10SetAlgebraP", "normal"]
-- !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
 - !private ["SS", "isEmpty"]
 - !private ["s14StringProtocolP", "init"]
@@ -1722,20 +1603,11 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "titleLabel"]
-- !private ["So29UIAccessibilityIdentificationP", "CGRect"]
-- !private ["So29UIAccessibilityIdentificationP", "CGSize"]
-- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsEndImageContext"]
-- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsImageRenderer"]
-- !private ["So29UIAccessibilityIdentificationP", "UIGraphicsImageRendererFormat"]
 - !private ["So29UIAccessibilityIdentificationP", "alpha"]
 - !private ["So29UIAccessibilityIdentificationP", "animate"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
-- !private ["So29UIAccessibilityIdentificationP", "draw"]
 - !private ["So29UIAccessibilityIdentificationP", "endEditing"]
-- !private ["So29UIAccessibilityIdentificationP", "fatalError"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "isFirstResponder"]
@@ -1744,10 +1616,8 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "items"]
 - !private ["So29UIAccessibilityIdentificationP", "layoutIfNeeded"]
 - !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
-- !private ["So29UIAccessibilityIdentificationP", "resizeImage"]
 - !private ["So29UIAccessibilityIdentificationP", "setTitleTextAttributes"]
 - !private ["So29UIAccessibilityIdentificationP", "show"]
-- !private ["So29UIAccessibilityIdentificationP", "size"]
 - !private ["So29UIAccessibilityIdentificationP", "sizeToFit"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textAlignment"]
@@ -1816,6 +1686,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "chooseImageSource"]
 - !private ["So21UIAppearanceContainerP", "currLocation"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "deleteCategory"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "endEditing"]
 - !private ["So21UIAppearanceContainerP", "image"]
@@ -1879,10 +1750,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "toolbar"]
 - !private ["So21UIAppearanceContainerP", "uploadPost"]
 - !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidAppear"]
+- !private ["So21UIAppearanceContainerP", "viewDidDisappear"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
-- !private ["So13UIApplicationC", "openURL"]
+- !private ["So13UIApplicationC", "open"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So15UIBarButtonItemC", "init"]
 - !private ["So15UIBarButtonItemC", "setTitleTextAttributes"]
@@ -1942,6 +1815,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "chooseImageSource"]
 - !private ["So18UIContentContainerP", "currLocation"]
 - !private ["So18UIContentContainerP", "delegate"]
+- !private ["So18UIContentContainerP", "deleteCategory"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "image"]
 - ["So18UIContentContainerP", "imagePickerController"]
@@ -1992,6 +1866,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "toolbar"]
 - !private ["So18UIContentContainerP", "uploadPost"]
 - !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidAppear"]
+- !private ["So18UIContentContainerP", "viewDidDisappear"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", "viewForZooming"]
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
@@ -2080,6 +1956,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "chooseImageSource"]
 - !private ["So18UIFocusEnvironmentP", "currLocation"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "deleteCategory"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "endEditing"]
 - !private ["So18UIFocusEnvironmentP", "image"]
@@ -2143,6 +2020,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "toolbar"]
 - !private ["So18UIFocusEnvironmentP", "uploadPost"]
 - !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidAppear"]
+- !private ["So18UIFocusEnvironmentP", "viewDidDisappear"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
@@ -2166,30 +2045,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "tintColor"]
 - !private ["So11UIFocusItemP", "titleLabel"]
 - !private ["So6UIFontC", "init"]
-- !private ["So23UIGraphicsImageRendererC", "image"]
-- !private ["So23UIGraphicsImageRendererC", "init"]
-- !private ["So29UIGraphicsImageRendererFormatC", "default"]
-- !private ["So29UIGraphicsImageRendererFormatC", "opaque"]
-- !private ["So18UIGraphicsRendererC", "image"]
-- !private ["So18UIGraphicsRendererC", "init"]
-- !private ["So24UIGraphicsRendererFormatC", "default"]
-- !private ["So24UIGraphicsRendererFormatC", "opaque"]
-- ["So7UIImageC", "Bool"]
-- ["So7UIImageC", "CGFloat"]
-- !private ["So7UIImageC", "CGRect"]
-- !private ["So7UIImageC", "CGSize"]
-- !private ["So7UIImageC", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So7UIImageC", "UIGraphicsEndImageContext"]
-- !private ["So7UIImageC", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So7UIImageC", "UIGraphicsImageRenderer"]
-- !private ["So7UIImageC", "UIGraphicsImageRendererFormat"]
-- ["So7UIImageC", "UIImage"]
-- ["So7UIImageC", "UIViewContentMode"]
-- !private ["So7UIImageC", "draw"]
-- !private ["So7UIImageC", "fatalError"]
 - !private ["So7UIImageC", "init"]
-- ["So7UIImageC", "resizeImage"]
-- !private ["So7UIImageC", "size"]
 - !private ["So23UIImagePickerControllerC", "delegate"]
 - !private ["So23UIImagePickerControllerC", "init"]
 - !private ["So23UIImagePickerControllerC", "isCameraDeviceAvailable"]
@@ -2225,6 +2081,8 @@ depends-member:
 - !private ["So31UIImagePickerControllerDelegateP", "categoryButton"]
 - !private ["So31UIImagePickerControllerDelegateP", "chooseImageSource"]
 - !private ["So31UIImagePickerControllerDelegateP", "currLocation"]
+- !private ["So31UIImagePickerControllerDelegateP", "delegate"]
+- !private ["So31UIImagePickerControllerDelegateP", "deleteCategory"]
 - !private ["So31UIImagePickerControllerDelegateP", "dismiss"]
 - !private ["So31UIImagePickerControllerDelegateP", "image"]
 - ["So31UIImagePickerControllerDelegateP", "imagePickerController"]
@@ -2275,18 +2133,7 @@ depends-member:
 - !private ["SC33UIImagePickerControllerSourceTypeO", "camera"]
 - !private ["SC33UIImagePickerControllerSourceTypeO", "photoLibrary"]
 - !private ["So11UIImageViewC", "image"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "CGRect"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "CGSize"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "UIGraphicsEndImageContext"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "UIGraphicsImageRenderer"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "UIGraphicsImageRendererFormat"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "draw"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "fatalError"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "resizeImage"]
-- !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
 - !private ["So10UIKeyInputP", "delegate"]
 - !private ["So10UIKeyInputP", "isFirstResponder"]
 - !private ["So10UIKeyInputP", "layoutIfNeeded"]
@@ -2330,6 +2177,8 @@ depends-member:
 - !private ["So30UINavigationControllerDelegateP", "categoryButton"]
 - !private ["So30UINavigationControllerDelegateP", "chooseImageSource"]
 - !private ["So30UINavigationControllerDelegateP", "currLocation"]
+- !private ["So30UINavigationControllerDelegateP", "delegate"]
+- !private ["So30UINavigationControllerDelegateP", "deleteCategory"]
 - !private ["So30UINavigationControllerDelegateP", "dismiss"]
 - !private ["So30UINavigationControllerDelegateP", "image"]
 - ["So30UINavigationControllerDelegateP", "imagePickerController"]
@@ -2413,6 +2262,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "chooseImageSource"]
 - !private ["So30UIPasteConfigurationSupportingP", "currLocation"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "deleteCategory"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "endEditing"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
@@ -2435,7 +2285,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIPasteConfigurationSupportingP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["So30UIPasteConfigurationSupportingP", "openURL"]
+- !private ["So30UIPasteConfigurationSupportingP", "open"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
 - !private ["So30UIPasteConfigurationSupportingP", "placeHolderText"]
 - !private ["So30UIPasteConfigurationSupportingP", "postTextView"]
@@ -2478,6 +2328,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "toolbar"]
 - !private ["So30UIPasteConfigurationSupportingP", "uploadPost"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidAppear"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
@@ -2493,6 +2345,7 @@ depends-member:
 - !private ["So11UIResponderC", "NSAttributedStringKey"]
 - !private ["So11UIResponderC", "NSTextAlignment"]
 - !private ["So11UIResponderC", "NewPostViewController"]
+- ["So11UIResponderC", "PushCompletedDelegate"]
 - !private ["So11UIResponderC", "Question"]
 - !private ["So11UIResponderC", "SCLAlertView"]
 - !private ["So11UIResponderC", "SVProgressHUD"]
@@ -2532,7 +2385,8 @@ depends-member:
 - ["So11UIResponderC", "categoryButton"]
 - ["So11UIResponderC", "chooseImageSource"]
 - ["So11UIResponderC", "currLocation"]
-- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "deleteCategory"]
 - !private ["So11UIResponderC", "dismiss"]
 - !private ["So11UIResponderC", "endEditing"]
 - ["So11UIResponderC", "image"]
@@ -2556,7 +2410,7 @@ depends-member:
 - ["So11UIResponderC", "navigationController"]
 - ["So11UIResponderC", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So11UIResponderC", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["So11UIResponderC", "openURL"]
+- !private ["So11UIResponderC", "open"]
 - !private ["So11UIResponderC", "performSegue"]
 - ["So11UIResponderC", "placeHolderText"]
 - ["So11UIResponderC", "postTextView"]
@@ -2603,6 +2457,8 @@ depends-member:
 - ["So11UIResponderC", "touchesBegan"]
 - ["So11UIResponderC", "uploadPost"]
 - !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidAppear"]
+- ["So11UIResponderC", "viewDidDisappear"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
@@ -2642,6 +2498,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "chooseImageSource"]
 - !private ["So30UIResponderStandardEditActionsP", "currLocation"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "deleteCategory"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "endEditing"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
@@ -2664,7 +2521,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "navigationController"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["So30UIResponderStandardEditActionsP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["So30UIResponderStandardEditActionsP", "openURL"]
+- !private ["So30UIResponderStandardEditActionsP", "open"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
 - !private ["So30UIResponderStandardEditActionsP", "placeHolderText"]
 - !private ["So30UIResponderStandardEditActionsP", "postTextView"]
@@ -2707,6 +2564,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "toolbar"]
 - !private ["So30UIResponderStandardEditActionsP", "uploadPost"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
@@ -2746,6 +2605,8 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "categoryButton"]
 - !private ["So20UIScrollViewDelegateP", "chooseImageSource"]
 - !private ["So20UIScrollViewDelegateP", "currLocation"]
+- !private ["So20UIScrollViewDelegateP", "delegate"]
+- !private ["So20UIScrollViewDelegateP", "deleteCategory"]
 - !private ["So20UIScrollViewDelegateP", "dismiss"]
 - !private ["So20UIScrollViewDelegateP", "image"]
 - ["So20UIScrollViewDelegateP", "imagePickerController"]
@@ -2832,6 +2693,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "chooseImageSource"]
 - !private ["So16UIStateRestoringP", "currLocation"]
 - !private ["So16UIStateRestoringP", "delegate"]
+- !private ["So16UIStateRestoringP", "deleteCategory"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "image"]
 - ["So16UIStateRestoringP", "imagePickerController"]
@@ -2882,6 +2744,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "toolbar"]
 - !private ["So16UIStateRestoringP", "uploadPost"]
 - !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidAppear"]
+- !private ["So16UIStateRestoringP", "viewDidDisappear"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
@@ -2951,6 +2815,8 @@ depends-member:
 - !private ["So18UITextViewDelegateP", "categoryButton"]
 - !private ["So18UITextViewDelegateP", "chooseImageSource"]
 - !private ["So18UITextViewDelegateP", "currLocation"]
+- !private ["So18UITextViewDelegateP", "delegate"]
+- !private ["So18UITextViewDelegateP", "deleteCategory"]
 - !private ["So18UITextViewDelegateP", "dismiss"]
 - !private ["So18UITextViewDelegateP", "image"]
 - ["So18UITextViewDelegateP", "imagePickerController"]
@@ -3040,6 +2906,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "chooseImageSource"]
 - !private ["So18UITraitEnvironmentP", "currLocation"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "deleteCategory"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "endEditing"]
 - !private ["So18UITraitEnvironmentP", "image"]
@@ -3103,6 +2970,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "toolbar"]
 - !private ["So18UITraitEnvironmentP", "uploadPost"]
 - !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidAppear"]
+- !private ["So18UITraitEnvironmentP", "viewDidDisappear"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", "viewForZooming"]
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
@@ -3125,7 +2994,6 @@ depends-member:
 - !private ["So6UIViewC", "textAlignment"]
 - !private ["So6UIViewC", "tintColor"]
 - !private ["So6UIViewC", "titleLabel"]
-- ["SC17UIViewContentModeO", "scaleAspectFit"]
 - ["So16UIViewControllerC", "AnyObject"]
 - !private ["So16UIViewControllerC", "AppStorage"]
 - ["So16UIViewControllerC", "Bool"]
@@ -3138,6 +3006,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSAttributedStringKey"]
 - !private ["So16UIViewControllerC", "NSTextAlignment"]
 - !private ["So16UIViewControllerC", "NewPostViewController"]
+- ["So16UIViewControllerC", "PushCompletedDelegate"]
 - !private ["So16UIViewControllerC", "Question"]
 - !private ["So16UIViewControllerC", "SCLAlertView"]
 - !private ["So16UIViewControllerC", "SVProgressHUD"]
@@ -3175,7 +3044,8 @@ depends-member:
 - ["So16UIViewControllerC", "categoryButton"]
 - ["So16UIViewControllerC", "chooseImageSource"]
 - ["So16UIViewControllerC", "currLocation"]
-- !private ["So16UIViewControllerC", "delegate"]
+- ["So16UIViewControllerC", "delegate"]
+- ["So16UIViewControllerC", "deleteCategory"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "image"]
 - ["So16UIViewControllerC", "imagePickerController"]
@@ -3231,6 +3101,8 @@ depends-member:
 - ["So16UIViewControllerC", "touchesBegan"]
 - ["So16UIViewControllerC", "uploadPost"]
 - !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidAppear"]
+- ["So16UIViewControllerC", "viewDidDisappear"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
@@ -3277,24 +3149,11 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "flatYellow"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "CGRect"]
-- !private ["s26_ExpressibleByImageLiteralP", "CGSize"]
-- !private ["s26_ExpressibleByImageLiteralP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["s26_ExpressibleByImageLiteralP", "UIGraphicsEndImageContext"]
-- !private ["s26_ExpressibleByImageLiteralP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["s26_ExpressibleByImageLiteralP", "UIGraphicsImageRenderer"]
-- !private ["s26_ExpressibleByImageLiteralP", "UIGraphicsImageRendererFormat"]
-- !private ["s26_ExpressibleByImageLiteralP", "draw"]
-- !private ["s26_ExpressibleByImageLiteralP", "fatalError"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
-- !private ["s26_ExpressibleByImageLiteralP", "resizeImage"]
-- !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AppStorage"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CLLocationManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GeoPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ImagePlace"]
@@ -3314,11 +3173,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsEndImageContext"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsImageRenderer"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsImageRendererFormat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImagePickerControllerOriginalImage"]
@@ -3335,13 +3189,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "chooseImageSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "coordinate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currLocation"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deleteCategory"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "desiredAccuracy"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "draw"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "flatBlack"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "flatGray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "flatGreen"]
@@ -3372,8 +3224,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "navigationControllerSupportedInterfaceOrientations"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "opaque"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "openURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "open"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeHolderText"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "postTextView"]
@@ -3381,7 +3232,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "requestWhenInUseAuthorization"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "resizeImage"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
@@ -3402,7 +3252,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showImagePickerController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showNotice"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sizeToFit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sourceType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startUpdatingLocation"]
@@ -3422,6 +3271,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toolbar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uploadPost"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidAppear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
@@ -3430,13 +3281,11 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
-- !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "latitude"]
 - !private ["s21_ObjectiveCBridgeableP", "longitude"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s20_SwiftNewtypeWrapperP", "font"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s16_SwiftStringViewP", "init"]
@@ -3447,8 +3296,6 @@ depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
 - !private "So10CLLocationC"
 - !private "SC22CLLocationCoordinate2DV"
 - "So17CLLocationManagerC"
@@ -3462,6 +3309,7 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
 - !private "s10DictionaryV"
+- !private "15ESPullToRefresh20ESExtensionsProviderP"
 - !private "s9EncodableP"
 - "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -3490,16 +3338,17 @@ depends-nominal:
 - "10DyceAppIOS21NewPostViewControllerC"
 - !private "s9OptionSetP"
 - !private "10DyceAppIOS0B7StorageC12PersonalInfoV"
+- "10DyceAppIOS21PushCompletedDelegateP"
 - !private "10DyceAppIOS8QuestionC"
+- !private "10DyceAppIOS0B7StorageC9QuestionsV"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
+- !private "s16RawRepresentableP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "12SCLAlertViewAAC"
 - !private "So13SVProgressHUDC"
 - !private "s8SequenceP"
 - !private "s10SetAlgebraP"
-- !private "s12StaticStringV"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -3530,11 +3379,7 @@ depends-nominal:
 - "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So6UIFontC"
-- !private "So23UIGraphicsImageRendererC"
-- !private "So29UIGraphicsImageRendererFormatC"
-- !private "So18UIGraphicsRendererC"
-- !private "So24UIGraphicsRendererFormatC"
-- "So7UIImageC"
+- !private "So7UIImageC"
 - !private "So23UIImagePickerControllerC"
 - !private "SC35UIImagePickerControllerCameraDeviceO"
 - "So31UIImagePickerControllerDelegateP"
@@ -3562,7 +3407,6 @@ depends-nominal:
 - !private "So9UIToolbarC"
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
-- "SC17UIViewContentModeO"
 - "So16UIViewControllerC"
 - !private "10Foundation3URLV"
 - !private "s14_ArrayProtocolP"
@@ -3585,6 +3429,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -3607,6 +3452,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
@@ -3777,6 +3623,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -3818,23 +3665,24 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "c518a74f8d029a8259f07f7c97b002f3"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "6a9ab327f0ff4e8ed117fcdd72b8fb7b"

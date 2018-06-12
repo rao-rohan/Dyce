@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ChameleonFramework.build/unextended-module.modulemap',
+    }]
+  }]
+}

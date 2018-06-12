@@ -1,11 +1,15 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: NewPostViewController.swift
+//
+// File Description: This view controller displays the template for the user to post a new question.
+
 import Foundation
 import ChameleonFramework
 import SVProgressHUD
 import SCLAlertView
 import Firebase
 import CoreLocation
-
-//this view controller displays the template for the user to post a new question
 
 class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
 
@@ -22,16 +26,11 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     var reset: Bool = false
     let locationManager = CLLocationManager()
     var imagePickerController: UIImagePickerController?
-    var toolbar: UIToolbar!
     var time : Timestamp!
-    
+
     var delegate: PushCompletedDelegate?
     
     private var deleteCategory = true
-    
-    override var prefersStatusBarHidden : Bool {
-        return true
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,21 +83,21 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             self.placeHolderText.alpha = textView.text.isEmpty ? 1 : 0
         }
     }
-    override var inputAccessoryView: UIView? {
-        toolbar = UIToolbar()
-        toolbar.isTranslucent = false
-        toolbar.tintColor = UIColor.flatBlack
-        let cameraButton = UIBarButtonItem(image: UIImage(named: "camera"), style: .plain, target: self, action: #selector(NewPostViewController.chooseImageSource))
-        cameraButton.tintColor = UIColor.flatGray
-        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let postButton = UIBarButtonItem(title: "POST", style: .plain, target: self, action: #selector(NewPostViewController.uploadPost))
-        postButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Avenir", size: 10.0)!, NSAttributedStringKey.foregroundColor: UIColor.flatGray], for: .normal)
-        toolbar.items = [cameraButton, space, postButton]
-        toolbar.sizeToFit()
-        return toolbar
-    }
+//    override var inputAccessoryView: UIView? {
+//        toolbar = UIToolbar()
+//        toolbar.isTranslucent = false
+//        toolbar.tintColor = UIColor.flatBlack
+//        let cameraButton = UIBarButtonItem(image: UIImage(named: "camera"), style: .plain, target: self, action: #selector(NewPostViewController.chooseImageSource))
+//        cameraButton.tintColor = UIColor.flatGray
+//        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+//        let postButton = UIBarButtonItem(title: "POST", style: .plain, target: self, action: #selector(NewPostViewController.uploadPost))
+//        postButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont(name: "Avenir", size: 10.0)!, NSAttributedStringKey.foregroundColor: UIColor.flatGray], for: .normal)
+//        toolbar.items = [cameraButton, space, postButton]
+//        toolbar.sizeToFit()
+//        return toolbar
+//    }
     
-    @objc func uploadPost(){
+    @IBAction func uploadPost(_ sender: AnyObject){
         let question = Question()
         
         var hasError = false
@@ -215,7 +214,7 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     
-    @objc func chooseImageSource() {
+    @IBAction func chooseImageSource(_ sender: AnyObject) {
         postTextView.resignFirstResponder()
 
         let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .actionSheet)
@@ -239,7 +238,6 @@ class NewPostViewController: UIViewController, UIImagePickerControllerDelegate, 
             alertController.addAction(cameraAction)
         }
         present(alertController, animated: true, completion: nil)
-        toolbar.isHidden = false
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

@@ -1,0 +1,16 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "e663e7ae4cd9d596378682a3e03f50fc"
+build_time: [1527696172, 961275000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Diff+UIKit.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Diff.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/ExtendedDiff.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/ExtendedPatch+Apply.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/ExtendedPatch.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/GenericPatch.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/LinkedList.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/NestedDiff.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/NestedExtendedDiff.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Patch+Apply.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Patch+Sort.swift": [1527262161, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Differ/Sources/Differ/Patch.swift": [1527262161, 0]

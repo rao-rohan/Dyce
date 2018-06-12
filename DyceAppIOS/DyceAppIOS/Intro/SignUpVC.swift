@@ -1,3 +1,9 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: SignUpVC.swift
+//
+// File Description: This class represents and manages the sign up screen.
+
 import UIKit
 import Firebase
 import SVProgressHUD
@@ -98,7 +104,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             self?.toBottom.constant = keyboardHeight + 10 - (self?.bottomSafeAreaInset)!
             }, completion: nil)
     }
-
+    
     
     @objc func register(sender: UIButton){
         
@@ -155,8 +161,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                         }else{
                             AppStorage.PersonalInfo.uid = user.uid
                             AppStorage.PersonalInfo.username = username
+                            AppStorage.PersonalInfo.email = email
+                            AppStorage.PersonalInfo.password = password
                             AppStorage.save()
-                            
+                            self.createNewUserCollection(userID: user.uid, username: username)
                             //segues to app
                             let storyboard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
                             if let ivc = storyboard.instantiateInitialViewController(){
@@ -167,10 +175,14 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-
+        
     }
     
-    
+    func createNewUserCollection(userID : String, username : String){
+        let userCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.users)
+        userCollection.document(userID).setData([
+            "username" : username])
+    }
     
     // MARK: - Navigation
     

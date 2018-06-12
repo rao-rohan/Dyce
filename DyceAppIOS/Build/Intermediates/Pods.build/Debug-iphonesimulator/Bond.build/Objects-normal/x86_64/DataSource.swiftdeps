@@ -1,0 +1,474 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DataSourceProtocol"
+- "DataSourceEventKind"
+- "DataSourceBatchKind"
+- "BatchKindDiff"
+- "BatchKindPatch"
+- "DataSourceEventProtocol"
+- "DataSourceEvent"
+provides-nominal:
+- "4Bond18DataSourceProtocolP"
+- "4Bond19DataSourceEventKindO"
+- "4Bond19DataSourceBatchKindP"
+- "4Bond13BatchKindDiffO"
+- "4Bond14BatchKindPatchO"
+- "4Bond23DataSourceEventProtocolP"
+- "4Bond15DataSourceEventV"
+- "Sa"
+provides-member:
+- ["4Bond18DataSourceProtocolP", ""]
+- ["4Bond19DataSourceEventKindO", ""]
+- ["4Bond19DataSourceBatchKindP", ""]
+- ["4Bond13BatchKindDiffO", ""]
+- ["4Bond14BatchKindPatchO", ""]
+- ["4Bond23DataSourceEventProtocolP", ""]
+- ["4Bond15DataSourceEventV", ""]
+- ["Sa", ""]
+- ["11ReactiveKit14SignalProtocolP", ""]
+- ["4Bond23DataSourceEventProtocolP", "_unbox"]
+- ["11ReactiveKit14SignalProtocolP", "mapToDataSourceEvent"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- "BatchKindDiff"
+- "BatchKindPatch"
+- "CastingPrecedence"
+- "DataSourceBatchKind"
+- "DataSourceEvent"
+- "DataSourceEventKind"
+- "DataSourceEventProtocol"
+- "DataSourceProtocol"
+- "IndexPath"
+- "IndexSet"
+- "Int"
+- "NoError"
+- "ObservableArray"
+- "ObservableArrayChange"
+- "ObservableArrayEventProtocol"
+- "SafeSignal"
+- "SignalProtocol"
+depends-member:
+- ["Sa", "Array"]
+- ["Sa", "BatchKind"]
+- ["Sa", "BatchKindDiff"]
+- ["Sa", "DataSource"]
+- ["Sa", "DataSourceEventKind"]
+- ["Sa", "Element"]
+- ["Sa", "Int"]
+- ["Sa", "Item"]
+- ["Sa", "Iterator"]
+- ["Sa", "ObservableArray"]
+- ["Sa", "ObservableArrayChange"]
+- ["Sa", "_Default_DataSource"]
+- ["Sa", "_Default_Item"]
+- ["Sa", "change"]
+- !private ["Sa", "count"]
+- ["Sa", "dataSource"]
+- ["Sa", "deinit"]
+- ["Sa", "kind"]
+- ["Sa", "numberOfItems"]
+- ["Sa", "numberOfSections"]
+- ["Sa", "source"]
+- ["4Bond13BatchKindDiffO", "deinit"]
+- ["4Bond14BatchKindPatchO", "deinit"]
+- ["s23BidirectionalCollectionP", "BatchKind"]
+- ["s23BidirectionalCollectionP", "DataSource"]
+- ["s23BidirectionalCollectionP", "Item"]
+- !private ["s23BidirectionalCollectionP", "ObservableArray"]
+- ["s23BidirectionalCollectionP", "_Default_DataSource"]
+- ["s23BidirectionalCollectionP", "_Default_Item"]
+- ["s23BidirectionalCollectionP", "change"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- ["s23BidirectionalCollectionP", "dataSource"]
+- ["s23BidirectionalCollectionP", "kind"]
+- ["s23BidirectionalCollectionP", "numberOfItems"]
+- ["s23BidirectionalCollectionP", "numberOfSections"]
+- ["s23BidirectionalCollectionP", "source"]
+- ["s7CVarArgP", "BatchKind"]
+- ["s7CVarArgP", "DataSource"]
+- ["s7CVarArgP", "Item"]
+- !private ["s7CVarArgP", "ObservableArray"]
+- ["s7CVarArgP", "_Default_DataSource"]
+- ["s7CVarArgP", "_Default_Item"]
+- ["s7CVarArgP", "change"]
+- !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "dataSource"]
+- ["s7CVarArgP", "kind"]
+- ["s7CVarArgP", "numberOfItems"]
+- ["s7CVarArgP", "numberOfSections"]
+- ["s7CVarArgP", "source"]
+- ["s10CollectionP", "BatchKind"]
+- ["s10CollectionP", "DataSource"]
+- ["s10CollectionP", "Item"]
+- !private ["s10CollectionP", "ObservableArray"]
+- ["s10CollectionP", "_Default_DataSource"]
+- ["s10CollectionP", "_Default_Item"]
+- ["s10CollectionP", "change"]
+- !private ["s10CollectionP", "count"]
+- ["s10CollectionP", "dataSource"]
+- ["s10CollectionP", "kind"]
+- ["s10CollectionP", "numberOfItems"]
+- ["s10CollectionP", "numberOfSections"]
+- ["s10CollectionP", "source"]
+- ["s28CustomDebugStringConvertibleP", "BatchKind"]
+- ["s28CustomDebugStringConvertibleP", "DataSource"]
+- ["s28CustomDebugStringConvertibleP", "Item"]
+- !private ["s28CustomDebugStringConvertibleP", "ObservableArray"]
+- ["s28CustomDebugStringConvertibleP", "_Default_DataSource"]
+- ["s28CustomDebugStringConvertibleP", "_Default_Item"]
+- ["s28CustomDebugStringConvertibleP", "change"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- ["s28CustomDebugStringConvertibleP", "dataSource"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "kind"]
+- ["s28CustomDebugStringConvertibleP", "numberOfItems"]
+- ["s28CustomDebugStringConvertibleP", "numberOfSections"]
+- ["s28CustomDebugStringConvertibleP", "source"]
+- ["s17CustomReflectableP", "BatchKind"]
+- ["s17CustomReflectableP", "DataSource"]
+- ["s17CustomReflectableP", "Item"]
+- !private ["s17CustomReflectableP", "ObservableArray"]
+- ["s17CustomReflectableP", "_Default_DataSource"]
+- ["s17CustomReflectableP", "_Default_Item"]
+- ["s17CustomReflectableP", "change"]
+- !private ["s17CustomReflectableP", "count"]
+- ["s17CustomReflectableP", "dataSource"]
+- ["s17CustomReflectableP", "kind"]
+- ["s17CustomReflectableP", "numberOfItems"]
+- ["s17CustomReflectableP", "numberOfSections"]
+- ["s17CustomReflectableP", "source"]
+- ["s23CustomStringConvertibleP", "BatchKind"]
+- ["s23CustomStringConvertibleP", "DataSource"]
+- ["s23CustomStringConvertibleP", "Item"]
+- !private ["s23CustomStringConvertibleP", "ObservableArray"]
+- ["s23CustomStringConvertibleP", "_Default_DataSource"]
+- ["s23CustomStringConvertibleP", "_Default_Item"]
+- ["s23CustomStringConvertibleP", "change"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- ["s23CustomStringConvertibleP", "dataSource"]
+- ["s23CustomStringConvertibleP", "kind"]
+- ["s23CustomStringConvertibleP", "numberOfItems"]
+- ["s23CustomStringConvertibleP", "numberOfSections"]
+- ["s23CustomStringConvertibleP", "source"]
+- ["4Bond19DataSourceBatchKindP", ""]
+- ["4Bond15DataSourceEventV", "BatchKind"]
+- ["4Bond15DataSourceEventV", "DataSource"]
+- ["4Bond15DataSourceEventV", "DataSourceEventKind"]
+- ["4Bond15DataSourceEventV", "_BatchKind"]
+- ["4Bond15DataSourceEventV", "_Default_DataSource"]
+- ["4Bond15DataSourceEventV", "dataSource"]
+- ["4Bond15DataSourceEventV", "deinit"]
+- ["4Bond15DataSourceEventV", "init"]
+- ["4Bond15DataSourceEventV", "kind"]
+- ["4Bond19DataSourceEventKindO", "IndexPath"]
+- ["4Bond19DataSourceEventKindO", "IndexSet"]
+- ["4Bond19DataSourceEventKindO", "Int"]
+- ["4Bond19DataSourceEventKindO", "beginUpdates"]
+- ["4Bond19DataSourceEventKindO", "deleteItems"]
+- ["4Bond19DataSourceEventKindO", "deleteSections"]
+- ["4Bond19DataSourceEventKindO", "endUpdates"]
+- ["4Bond19DataSourceEventKindO", "insertItems"]
+- ["4Bond19DataSourceEventKindO", "insertSections"]
+- ["4Bond19DataSourceEventKindO", "moveItem"]
+- ["4Bond19DataSourceEventKindO", "moveSection"]
+- ["4Bond19DataSourceEventKindO", "reload"]
+- ["4Bond19DataSourceEventKindO", "reloadItems"]
+- ["4Bond19DataSourceEventKindO", "reloadSections"]
+- ["4Bond23DataSourceEventProtocolP", "BatchKind"]
+- ["4Bond23DataSourceEventProtocolP", "DataSource"]
+- ["4Bond23DataSourceEventProtocolP", "DataSourceBatchKind"]
+- ["4Bond23DataSourceEventProtocolP", "DataSourceEvent"]
+- ["4Bond23DataSourceEventProtocolP", "DataSourceEventKind"]
+- ["4Bond23DataSourceEventProtocolP", "DataSourceProtocol"]
+- ["4Bond23DataSourceEventProtocolP", "Item"]
+- !private ["4Bond23DataSourceEventProtocolP", "ObservableArray"]
+- ["4Bond23DataSourceEventProtocolP", ""]
+- ["4Bond23DataSourceEventProtocolP", "_Default_DataSource"]
+- ["4Bond23DataSourceEventProtocolP", "_Default_Item"]
+- ["4Bond23DataSourceEventProtocolP", "_unbox"]
+- ["4Bond23DataSourceEventProtocolP", "change"]
+- !private ["4Bond23DataSourceEventProtocolP", "count"]
+- ["4Bond23DataSourceEventProtocolP", "dataSource"]
+- !private ["4Bond23DataSourceEventProtocolP", "init"]
+- ["4Bond23DataSourceEventProtocolP", "kind"]
+- ["4Bond23DataSourceEventProtocolP", "numberOfItems"]
+- ["4Bond23DataSourceEventProtocolP", "numberOfSections"]
+- ["4Bond23DataSourceEventProtocolP", "source"]
+- ["4Bond18DataSourceProtocolP", "BatchKind"]
+- ["4Bond18DataSourceProtocolP", "DataSource"]
+- ["4Bond18DataSourceProtocolP", "Int"]
+- ["4Bond18DataSourceProtocolP", "Item"]
+- !private ["4Bond18DataSourceProtocolP", "ObservableArray"]
+- ["4Bond18DataSourceProtocolP", ""]
+- ["4Bond18DataSourceProtocolP", "_Default_DataSource"]
+- ["4Bond18DataSourceProtocolP", "_Default_Item"]
+- ["4Bond18DataSourceProtocolP", "change"]
+- !private ["4Bond18DataSourceProtocolP", "count"]
+- ["4Bond18DataSourceProtocolP", "dataSource"]
+- !private ["4Bond18DataSourceProtocolP", "init"]
+- ["4Bond18DataSourceProtocolP", "kind"]
+- ["4Bond18DataSourceProtocolP", "numberOfItems"]
+- ["4Bond18DataSourceProtocolP", "numberOfSections"]
+- ["4Bond18DataSourceProtocolP", "source"]
+- !private ["11ReactiveKit13DeallocatableP", "init"]
+- ["s9DecodableP", "BatchKind"]
+- ["s9DecodableP", "DataSource"]
+- ["s9DecodableP", "Item"]
+- !private ["s9DecodableP", "ObservableArray"]
+- ["s9DecodableP", "_Default_DataSource"]
+- ["s9DecodableP", "_Default_Item"]
+- ["s9DecodableP", "change"]
+- !private ["s9DecodableP", "count"]
+- ["s9DecodableP", "dataSource"]
+- ["s9DecodableP", "kind"]
+- ["s9DecodableP", "numberOfItems"]
+- ["s9DecodableP", "numberOfSections"]
+- ["s9DecodableP", "source"]
+- ["s9EncodableP", "BatchKind"]
+- ["s9EncodableP", "DataSource"]
+- ["s9EncodableP", "Item"]
+- !private ["s9EncodableP", "ObservableArray"]
+- ["s9EncodableP", "_Default_DataSource"]
+- ["s9EncodableP", "_Default_Item"]
+- ["s9EncodableP", "change"]
+- !private ["s9EncodableP", "count"]
+- ["s9EncodableP", "dataSource"]
+- ["s9EncodableP", "kind"]
+- ["s9EncodableP", "numberOfItems"]
+- ["s9EncodableP", "numberOfSections"]
+- ["s9EncodableP", "source"]
+- ["s9EquatableP", "BatchKind"]
+- ["s9EquatableP", "DataSource"]
+- ["s9EquatableP", "Item"]
+- !private ["s9EquatableP", "ObservableArray"]
+- ["s9EquatableP", "_Default_DataSource"]
+- ["s9EquatableP", "_Default_Item"]
+- ["s9EquatableP", "change"]
+- !private ["s9EquatableP", "count"]
+- ["s9EquatableP", "dataSource"]
+- ["s9EquatableP", "kind"]
+- ["s9EquatableP", "numberOfItems"]
+- ["s9EquatableP", "numberOfSections"]
+- !private ["s9EquatableP", "reset"]
+- ["s9EquatableP", "source"]
+- ["s25ExpressibleByArrayLiteralP", "BatchKind"]
+- ["s25ExpressibleByArrayLiteralP", "DataSource"]
+- ["s25ExpressibleByArrayLiteralP", "Item"]
+- !private ["s25ExpressibleByArrayLiteralP", "ObservableArray"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_DataSource"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_Item"]
+- ["s25ExpressibleByArrayLiteralP", "change"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- ["s25ExpressibleByArrayLiteralP", "dataSource"]
+- ["s25ExpressibleByArrayLiteralP", "kind"]
+- ["s25ExpressibleByArrayLiteralP", "numberOfItems"]
+- ["s25ExpressibleByArrayLiteralP", "numberOfSections"]
+- ["s25ExpressibleByArrayLiteralP", "source"]
+- ["s16IndexingIteratorV", "Element"]
+- ["s16IteratorProtocolP", "Element"]
+- ["s17MutableCollectionP", "BatchKind"]
+- ["s17MutableCollectionP", "DataSource"]
+- ["s17MutableCollectionP", "Item"]
+- !private ["s17MutableCollectionP", "ObservableArray"]
+- ["s17MutableCollectionP", "_Default_DataSource"]
+- ["s17MutableCollectionP", "_Default_Item"]
+- ["s17MutableCollectionP", "change"]
+- !private ["s17MutableCollectionP", "count"]
+- ["s17MutableCollectionP", "dataSource"]
+- ["s17MutableCollectionP", "kind"]
+- ["s17MutableCollectionP", "numberOfItems"]
+- ["s17MutableCollectionP", "numberOfSections"]
+- ["s17MutableCollectionP", "source"]
+- !private ["4Bond15ObservableArrayC", "init"]
+- !private ["4Bond21ObservableArrayChangeO", "reset"]
+- ["4Bond28ObservableArrayEventProtocolP", "BatchKind"]
+- ["4Bond28ObservableArrayEventProtocolP", "DataSource"]
+- ["4Bond28ObservableArrayEventProtocolP", "Item"]
+- !private ["4Bond28ObservableArrayEventProtocolP", "ObservableArray"]
+- ["4Bond28ObservableArrayEventProtocolP", ""]
+- ["4Bond28ObservableArrayEventProtocolP", "_Default_DataSource"]
+- ["4Bond28ObservableArrayEventProtocolP", "_Default_Item"]
+- ["4Bond28ObservableArrayEventProtocolP", "change"]
+- !private ["4Bond28ObservableArrayEventProtocolP", "count"]
+- ["4Bond28ObservableArrayEventProtocolP", "dataSource"]
+- ["4Bond28ObservableArrayEventProtocolP", "kind"]
+- ["4Bond28ObservableArrayEventProtocolP", "numberOfItems"]
+- ["4Bond28ObservableArrayEventProtocolP", "numberOfSections"]
+- ["4Bond28ObservableArrayEventProtocolP", "source"]
+- ["4Bond27QueryableDataSourceProtocolP", "BatchKind"]
+- ["4Bond27QueryableDataSourceProtocolP", "DataSource"]
+- ["4Bond27QueryableDataSourceProtocolP", "Item"]
+- !private ["4Bond27QueryableDataSourceProtocolP", "ObservableArray"]
+- ["4Bond27QueryableDataSourceProtocolP", "_Default_DataSource"]
+- ["4Bond27QueryableDataSourceProtocolP", "_Default_Item"]
+- ["4Bond27QueryableDataSourceProtocolP", "change"]
+- !private ["4Bond27QueryableDataSourceProtocolP", "count"]
+- ["4Bond27QueryableDataSourceProtocolP", "dataSource"]
+- !private ["4Bond27QueryableDataSourceProtocolP", "init"]
+- ["4Bond27QueryableDataSourceProtocolP", "kind"]
+- ["4Bond27QueryableDataSourceProtocolP", "numberOfItems"]
+- ["4Bond27QueryableDataSourceProtocolP", "numberOfSections"]
+- ["4Bond27QueryableDataSourceProtocolP", "source"]
+- ["s22RandomAccessCollectionP", "BatchKind"]
+- ["s22RandomAccessCollectionP", "DataSource"]
+- ["s22RandomAccessCollectionP", "Item"]
+- !private ["s22RandomAccessCollectionP", "ObservableArray"]
+- ["s22RandomAccessCollectionP", "_Default_DataSource"]
+- ["s22RandomAccessCollectionP", "_Default_Item"]
+- ["s22RandomAccessCollectionP", "change"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- ["s22RandomAccessCollectionP", "dataSource"]
+- ["s22RandomAccessCollectionP", "kind"]
+- ["s22RandomAccessCollectionP", "numberOfItems"]
+- ["s22RandomAccessCollectionP", "numberOfSections"]
+- ["s22RandomAccessCollectionP", "source"]
+- ["s26RangeReplaceableCollectionP", "BatchKind"]
+- ["s26RangeReplaceableCollectionP", "DataSource"]
+- ["s26RangeReplaceableCollectionP", "Item"]
+- !private ["s26RangeReplaceableCollectionP", "ObservableArray"]
+- ["s26RangeReplaceableCollectionP", "_Default_DataSource"]
+- ["s26RangeReplaceableCollectionP", "_Default_Item"]
+- ["s26RangeReplaceableCollectionP", "change"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- ["s26RangeReplaceableCollectionP", "dataSource"]
+- ["s26RangeReplaceableCollectionP", "kind"]
+- ["s26RangeReplaceableCollectionP", "numberOfItems"]
+- ["s26RangeReplaceableCollectionP", "numberOfSections"]
+- ["s26RangeReplaceableCollectionP", "source"]
+- ["s8SequenceP", "BatchKind"]
+- ["s8SequenceP", "DataSource"]
+- ["s8SequenceP", "Element"]
+- ["s8SequenceP", "Item"]
+- !private ["s8SequenceP", "ObservableArray"]
+- ["s8SequenceP", "_Default_DataSource"]
+- ["s8SequenceP", "_Default_Item"]
+- ["s8SequenceP", "change"]
+- !private ["s8SequenceP", "count"]
+- ["s8SequenceP", "dataSource"]
+- ["s8SequenceP", "kind"]
+- ["s8SequenceP", "numberOfItems"]
+- ["s8SequenceP", "numberOfSections"]
+- ["s8SequenceP", "source"]
+- ["11ReactiveKit14SignalProtocolP", "BatchKindDiff"]
+- ["11ReactiveKit14SignalProtocolP", "DataSourceEvent"]
+- ["11ReactiveKit14SignalProtocolP", "DataSourceProtocol"]
+- ["11ReactiveKit14SignalProtocolP", "Element"]
+- ["11ReactiveKit14SignalProtocolP", "Error"]
+- ["11ReactiveKit14SignalProtocolP", "NoError"]
+- ["11ReactiveKit14SignalProtocolP", "SafeSignal"]
+- !private ["11ReactiveKit14SignalProtocolP", "init"]
+- !private ["11ReactiveKit14SignalProtocolP", "map"]
+- ["11ReactiveKit14SignalProtocolP", "mapToDataSourceEvent"]
+- ["s14_ArrayProtocolP", "BatchKind"]
+- ["s14_ArrayProtocolP", "DataSource"]
+- ["s14_ArrayProtocolP", "Item"]
+- !private ["s14_ArrayProtocolP", "ObservableArray"]
+- ["s14_ArrayProtocolP", "_Default_DataSource"]
+- ["s14_ArrayProtocolP", "_Default_Item"]
+- ["s14_ArrayProtocolP", "change"]
+- !private ["s14_ArrayProtocolP", "count"]
+- ["s14_ArrayProtocolP", "dataSource"]
+- ["s14_ArrayProtocolP", "kind"]
+- ["s14_ArrayProtocolP", "numberOfItems"]
+- ["s14_ArrayProtocolP", "numberOfSections"]
+- ["s14_ArrayProtocolP", "source"]
+- ["s24_DestructorSafeContainerP", "BatchKind"]
+- ["s24_DestructorSafeContainerP", "DataSource"]
+- ["s24_DestructorSafeContainerP", "Item"]
+- !private ["s24_DestructorSafeContainerP", "ObservableArray"]
+- ["s24_DestructorSafeContainerP", "_Default_DataSource"]
+- ["s24_DestructorSafeContainerP", "_Default_Item"]
+- ["s24_DestructorSafeContainerP", "change"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- ["s24_DestructorSafeContainerP", "dataSource"]
+- ["s24_DestructorSafeContainerP", "kind"]
+- ["s24_DestructorSafeContainerP", "numberOfItems"]
+- ["s24_DestructorSafeContainerP", "numberOfSections"]
+- ["s24_DestructorSafeContainerP", "source"]
+- ["s21_ObjectiveCBridgeableP", "BatchKind"]
+- ["s21_ObjectiveCBridgeableP", "DataSource"]
+- ["s21_ObjectiveCBridgeableP", "Item"]
+- !private ["s21_ObjectiveCBridgeableP", "ObservableArray"]
+- ["s21_ObjectiveCBridgeableP", "_Default_DataSource"]
+- ["s21_ObjectiveCBridgeableP", "_Default_Item"]
+- ["s21_ObjectiveCBridgeableP", "change"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- ["s21_ObjectiveCBridgeableP", "dataSource"]
+- ["s21_ObjectiveCBridgeableP", "kind"]
+- ["s21_ObjectiveCBridgeableP", "numberOfItems"]
+- ["s21_ObjectiveCBridgeableP", "numberOfSections"]
+- ["s21_ObjectiveCBridgeableP", "source"]
+depends-nominal:
+- "Sa"
+- "4Bond13BatchKindDiffO"
+- "4Bond14BatchKindPatchO"
+- "s23BidirectionalCollectionP"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "4Bond19DataSourceBatchKindP"
+- "4Bond15DataSourceEventV"
+- "4Bond19DataSourceEventKindO"
+- "4Bond23DataSourceEventProtocolP"
+- "4Bond18DataSourceProtocolP"
+- !private "11ReactiveKit13DeallocatableP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- "s16IndexingIteratorV"
+- "s16IteratorProtocolP"
+- "s17MutableCollectionP"
+- !private "4Bond15ObservableArrayC"
+- !private "4Bond21ObservableArrayChangeO"
+- "4Bond28ObservableArrayEventProtocolP"
+- "4Bond27QueryableDataSourceProtocolP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s8SequenceP"
+- "11ReactiveKit14SignalProtocolP"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Modules/Differ.swiftmodule/x86_64.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Modules/ReactiveKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Bond/Bond-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/Differ/Differ-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ReactiveKit/ReactiveKit-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Supporting Files/Bond.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Bond/Sources/BNDProtocolProxyBase/include/BNDProtocolProxyBase.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/Differ/Differ.framework/Headers/Differ-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphonesimulator/ReactiveKit/ReactiveKit.framework/Headers/ReactiveKit-Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ReactiveKit/ReactiveKit/ReactiveKit.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Bond.build/unextended-module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Differ.build/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ReactiveKit.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "d02398d05b4c8d09c6d37495c9f849e5"

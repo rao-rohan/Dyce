@@ -1,3 +1,9 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: LoginVC.swift
+//
+// File Description: This class represents and manages the login screen.
+
 import UIKit
 import Firebase
 import SVProgressHUD
@@ -136,6 +142,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 if let user = user{
                     AppStorage.PersonalInfo.uid = user.uid
                     AppStorage.PersonalInfo.username = user.displayName!
+                    AppStorage.PersonalInfo.email = email
+                    AppStorage.PersonalInfo.password = password
                     AppStorage.save()
                     
                     //segues to app

@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
+- !private "??"
 - "AssignmentPrecedence"
 - !private "CLLocation"
 - !private "CollectionReference"
@@ -27,7 +28,8 @@ depends-top-level:
 - "String"
 - "Timestamp"
 - "UIImage"
-- !private "UIImagePNGRepresentation"
+- !private "UIImageJPEGRepresentation"
+- "Void"
 - !private "print"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
@@ -141,7 +143,6 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["10DyceAppIOS8NameFileV9FirestoreV", "FirestorePosts"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "creatorUID"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "creatorUsername"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "images"]
@@ -149,6 +150,7 @@ depends-member:
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "postImageURL"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "postQuestion"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "postTime"]
+- !private ["10DyceAppIOS8NameFileV9FirestoreV", "posts"]
 - !private ["So9FirestoreC", "collection"]
 - !private ["So9FirestoreC", "firestore"]
 - !private ["So7GeoFireC", "init"]
@@ -225,6 +227,7 @@ depends-member:
 - !private ["10DyceAppIOS8NameFileV", "Firestore"]
 - !private ["10DyceAppIOS8NameFileV", "RTDB"]
 - !private ["So5QueryC", "document"]
+- ["10DyceAppIOS8QuestionC", "Block"]
 - !private ["10DyceAppIOS8QuestionC", "CLLocation"]
 - !private ["10DyceAppIOS8QuestionC", "CollectionReference"]
 - !private ["10DyceAppIOS8QuestionC", "Database"]
@@ -241,7 +244,8 @@ depends-member:
 - ["10DyceAppIOS8QuestionC", "String"]
 - ["10DyceAppIOS8QuestionC", "Timestamp"]
 - ["10DyceAppIOS8QuestionC", "UIImage"]
-- !private ["10DyceAppIOS8QuestionC", "UIImagePNGRepresentation"]
+- !private ["10DyceAppIOS8QuestionC", "UIImageJPEGRepresentation"]
+- ["10DyceAppIOS8QuestionC", "Void"]
 - ["10DyceAppIOS8QuestionC", "category"]
 - ["10DyceAppIOS8QuestionC", "creatorUID"]
 - ["10DyceAppIOS8QuestionC", "creatorUsername"]
@@ -249,6 +253,7 @@ depends-member:
 - ["10DyceAppIOS8QuestionC", "geoFire"]
 - ["10DyceAppIOS8QuestionC", "geofireRef"]
 - ["10DyceAppIOS8QuestionC", "image"]
+- ["10DyceAppIOS8QuestionC", "imageURL"]
 - ["10DyceAppIOS8QuestionC", "init"]
 - ["10DyceAppIOS8QuestionC", "location"]
 - ["10DyceAppIOS8QuestionC", "numReplies"]
@@ -408,6 +413,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -430,6 +436,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
@@ -600,6 +607,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -641,23 +649,24 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "497082ec1fa208bf94bae6e3b3f5f15e"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "1eaab55a637a02e9a9b8374983d7d017"

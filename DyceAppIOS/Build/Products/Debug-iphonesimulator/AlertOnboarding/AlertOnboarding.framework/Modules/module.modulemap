@@ -1,0 +1,11 @@
+framework module AlertOnboarding {
+  umbrella header "AlertOnboarding-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module AlertOnboarding.Swift {
+    header "AlertOnboarding-Swift.h"
+    requires objc
+}

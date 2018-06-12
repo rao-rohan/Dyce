@@ -1,0 +1,10 @@
+framework module Bond {
+  umbrella header "Bond-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Bond.__Swift {
+    exclude header "Bond-Swift.h"
+}

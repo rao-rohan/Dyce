@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "b36ea2232299469251ff45c36198e326"
+build_time: [1527693463, 593068000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/ES.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/ESPullToRefresh+Manager.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/ESPullToRefresh.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/ESRefreshAnimator.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/ESRefreshComponent.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/Animator/ESRefreshFooterAnimator.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/Animator/ESRefreshHeaderAnimator.swift": [1527637950, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/ESPullToRefresh/Sources/ESRefreshProtocol.swift": [1527637950, 0]

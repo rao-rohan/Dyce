@@ -21,7 +21,6 @@ depends-top-level:
 - "Bool"
 - !private "BooleanLiteralType"
 - !private "FirebaseApp"
-- !private "Firestore"
 - !private "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
@@ -34,7 +33,6 @@ depends-member:
 - !private ["10DyceAppIOS0B8DelegateC", "Auth"]
 - ["10DyceAppIOS0B8DelegateC", "Bool"]
 - !private ["10DyceAppIOS0B8DelegateC", "FirebaseApp"]
-- !private ["10DyceAppIOS0B8DelegateC", "Firestore"]
 - ["10DyceAppIOS0B8DelegateC", "UIApplication"]
 - ["10DyceAppIOS0B8DelegateC", "UIApplicationLaunchOptionsKey"]
 - !private ["10DyceAppIOS0B8DelegateC", "UIStoryboard"]
@@ -63,7 +61,6 @@ depends-member:
 - !private ["s7CVarArgP", "AppStorage"]
 - !private ["s7CVarArgP", "Auth"]
 - !private ["s7CVarArgP", "FirebaseApp"]
-- !private ["s7CVarArgP", "Firestore"]
 - !private ["s7CVarArgP", "UIStoryboard"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "application"]
@@ -81,7 +78,6 @@ depends-member:
 - !private ["s7CVarArgP", "auth"]
 - !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "currentUser"]
-- !private ["s7CVarArgP", "enableLogging"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateInitialViewController"]
 - !private ["s7CVarArgP", "rootViewController"]
@@ -91,7 +87,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "AppStorage"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
-- !private ["s28CustomDebugStringConvertibleP", "Firestore"]
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
@@ -109,7 +104,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "auth"]
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
-- !private ["s28CustomDebugStringConvertibleP", "enableLogging"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
@@ -119,7 +113,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "AppStorage"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
-- !private ["s23CustomStringConvertibleP", "Firestore"]
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "application"]
@@ -137,7 +130,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "auth"]
 - !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
-- !private ["s23CustomStringConvertibleP", "enableLogging"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateInitialViewController"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
@@ -147,7 +139,6 @@ depends-member:
 - !private ["s9EquatableP", "AppStorage"]
 - !private ["s9EquatableP", "Auth"]
 - !private ["s9EquatableP", "FirebaseApp"]
-- !private ["s9EquatableP", "Firestore"]
 - !private ["s9EquatableP", "UIStoryboard"]
 - ["s9EquatableP", ""]
 - ["s9EquatableP", "application"]
@@ -165,7 +156,6 @@ depends-member:
 - !private ["s9EquatableP", "auth"]
 - !private ["s9EquatableP", "configure"]
 - !private ["s9EquatableP", "currentUser"]
-- !private ["s9EquatableP", "enableLogging"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "instantiateInitialViewController"]
 - !private ["s9EquatableP", "rootViewController"]
@@ -174,11 +164,9 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So11FirebaseAppC", "configure"]
-- !private ["So9FirestoreC", "enableLogging"]
 - !private ["s8HashableP", "AppStorage"]
 - !private ["s8HashableP", "Auth"]
 - !private ["s8HashableP", "FirebaseApp"]
-- !private ["s8HashableP", "Firestore"]
 - !private ["s8HashableP", "UIStoryboard"]
 - ["s8HashableP", ""]
 - ["s8HashableP", "application"]
@@ -196,7 +184,6 @@ depends-member:
 - !private ["s8HashableP", "auth"]
 - !private ["s8HashableP", "configure"]
 - !private ["s8HashableP", "currentUser"]
-- !private ["s8HashableP", "enableLogging"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "instantiateInitialViewController"]
 - !private ["s8HashableP", "rootViewController"]
@@ -208,7 +195,6 @@ depends-member:
 - !private ["So8NSObjectC", "Auth"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "FirebaseApp"]
-- !private ["So8NSObjectC", "Firestore"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
 - !private ["So8NSObjectC", "UIStoryboard"]
@@ -228,7 +214,6 @@ depends-member:
 - !private ["So8NSObjectC", "auth"]
 - !private ["So8NSObjectC", "configure"]
 - !private ["So8NSObjectC", "currentUser"]
-- !private ["So8NSObjectC", "enableLogging"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateInitialViewController"]
 - !private ["So8NSObjectC", "rootViewController"]
@@ -236,7 +221,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "AppStorage"]
 - !private ["So16NSObjectProtocolP", "Auth"]
 - !private ["So16NSObjectProtocolP", "FirebaseApp"]
-- !private ["So16NSObjectProtocolP", "Firestore"]
 - !private ["So16NSObjectProtocolP", "UIStoryboard"]
 - ["So16NSObjectProtocolP", ""]
 - ["So16NSObjectProtocolP", "application"]
@@ -254,7 +238,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "auth"]
 - !private ["So16NSObjectProtocolP", "configure"]
 - !private ["So16NSObjectProtocolP", "currentUser"]
-- !private ["So16NSObjectProtocolP", "enableLogging"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "instantiateInitialViewController"]
 - !private ["So16NSObjectProtocolP", "rootViewController"]
@@ -271,7 +254,6 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "AppStorage"]
 - !private ["So21UIApplicationDelegateP", "Auth"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
-- !private ["So21UIApplicationDelegateP", "Firestore"]
 - !private ["So21UIApplicationDelegateP", "UIStoryboard"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
@@ -294,7 +276,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "AppStorage"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
-- !private ["So30UIPasteConfigurationSupportingP", "Firestore"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIStoryboard"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -316,7 +297,6 @@ depends-member:
 - !private ["So11UIResponderC", "Auth"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "FirebaseApp"]
-- !private ["So11UIResponderC", "Firestore"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
 - !private ["So11UIResponderC", "UIStoryboard"]
@@ -340,7 +320,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "AppStorage"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
-- !private ["So30UIResponderStandardEditActionsP", "Firestore"]
 - !private ["So30UIResponderStandardEditActionsP", "UIStoryboard"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -372,7 +351,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AppStorage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Firestore"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
@@ -390,7 +368,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "auth"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "enableLogging"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateInitialViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
@@ -417,7 +394,6 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So11FirebaseAppC"
-- !private "So9FirestoreC"
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -457,6 +433,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -479,6 +456,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
@@ -649,6 +627,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -690,23 +669,24 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "43a84de11c26523087de044a192b5e44"

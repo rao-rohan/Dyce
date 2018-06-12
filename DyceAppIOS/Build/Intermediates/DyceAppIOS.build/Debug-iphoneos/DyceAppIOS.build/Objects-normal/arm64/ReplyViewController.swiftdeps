@@ -59,6 +59,7 @@ depends-top-level:
 - "TernaryPrecedence"
 - !private "TimeInterval"
 - "Timestamp"
+- !private "UIColor"
 - "UIEvent"
 - !private "UIKeyboardFrameEndUserInfoKey"
 - !private "UINib"
@@ -73,7 +74,6 @@ depends-top-level:
 - "UIView"
 - "UIViewController"
 - !private "UnicodeScalarType"
-- !private "print"
 depends-member:
 - !private ["10DyceAppIOS0B7StorageC", "PersonalInfo"]
 - !private ["Sa", "append"]
@@ -140,6 +140,7 @@ depends-member:
 - ["s7CVarArgP", "Reply"]
 - !private ["s7CVarArgP", "SCLAlertView"]
 - !private ["s7CVarArgP", "TimeInterval"]
+- !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["s7CVarArgP", "UINib"]
 - !private ["s7CVarArgP", "UITableViewAutomaticDimension"]
@@ -192,7 +193,6 @@ depends-member:
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
 - !private ["s7CVarArgP", "posterUID"]
-- !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "question"]
 - !private ["s7CVarArgP", "questionHeaderView"]
 - !private ["s7CVarArgP", "questionImageHeaderView"]
@@ -244,6 +244,7 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
+- !private ["s7CVarArgP", "white"]
 - !private ["10DyceAppIOS14CategoryHelperV", "colorChooser"]
 - ["10DyceAppIOS14CategoryHelperV", "init"]
 - !private ["s10CollectionP", "append"]
@@ -273,6 +274,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "Reply"]
 - !private ["s28CustomDebugStringConvertibleP", "SCLAlertView"]
 - !private ["s28CustomDebugStringConvertibleP", "TimeInterval"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["s28CustomDebugStringConvertibleP", "UINib"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewAutomaticDimension"]
@@ -325,7 +327,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "offsetBy"]
 - !private ["s28CustomDebugStringConvertibleP", "posterUID"]
-- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "question"]
 - !private ["s28CustomDebugStringConvertibleP", "questionHeaderView"]
 - !private ["s28CustomDebugStringConvertibleP", "questionImageHeaderView"]
@@ -379,6 +380,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "height"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -412,6 +414,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "Reply"]
 - !private ["s23CustomStringConvertibleP", "SCLAlertView"]
 - !private ["s23CustomStringConvertibleP", "TimeInterval"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["s23CustomStringConvertibleP", "UINib"]
 - !private ["s23CustomStringConvertibleP", "UITableViewAutomaticDimension"]
@@ -464,7 +467,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s23CustomStringConvertibleP", "posterUID"]
-- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "question"]
 - !private ["s23CustomStringConvertibleP", "questionHeaderView"]
 - !private ["s23CustomStringConvertibleP", "questionImageHeaderView"]
@@ -518,6 +520,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
+- !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
@@ -533,6 +536,13 @@ depends-member:
 - !private ["So17DocumentReferenceC", "collection"]
 - !private ["So16DocumentSnapshotC", "subscript"]
 - !private ["Sd", "init"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "backgroundColor"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "dataSource"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "delegate"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "dequeueReusableCell"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "estimatedRowHeight"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "reloadData"]
+- !private ["15ESPullToRefresh20ESExtensionsProviderP", "rowHeight"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "append"]
 - !private ["s9EncodableP", "count"]
@@ -559,6 +569,7 @@ depends-member:
 - ["s9EquatableP", "Reply"]
 - !private ["s9EquatableP", "SCLAlertView"]
 - !private ["s9EquatableP", "TimeInterval"]
+- !private ["s9EquatableP", "UIColor"]
 - !private ["s9EquatableP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["s9EquatableP", "UIKeyboardWillHide"]
 - !private ["s9EquatableP", "UIKeyboardWillShow"]
@@ -614,7 +625,6 @@ depends-member:
 - ["s9EquatableP", "numberOfSectionsInTableView"]
 - !private ["s9EquatableP", "offsetBy"]
 - !private ["s9EquatableP", "posterUID"]
-- !private ["s9EquatableP", "print"]
 - !private ["s9EquatableP", "question"]
 - !private ["s9EquatableP", "questionHeaderView"]
 - !private ["s9EquatableP", "questionImageHeaderView"]
@@ -668,6 +678,7 @@ depends-member:
 - ["s9EquatableP", "viewForZooming"]
 - ["s9EquatableP", "viewForZoomingInScrollView"]
 - !private ["s9EquatableP", "viewWillDisappear"]
+- !private ["s9EquatableP", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
@@ -684,7 +695,7 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["10DyceAppIOS8NameFileV9FirestoreV", "FirestorePosts"]
+- !private ["10DyceAppIOS8NameFileV9FirestoreV", "posts"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "replies"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "reply"]
 - !private ["10DyceAppIOS8NameFileV9FirestoreV", "replyTime"]
@@ -708,6 +719,7 @@ depends-member:
 - ["s8HashableP", "Reply"]
 - !private ["s8HashableP", "SCLAlertView"]
 - !private ["s8HashableP", "TimeInterval"]
+- !private ["s8HashableP", "UIColor"]
 - !private ["s8HashableP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["s8HashableP", "UIKeyboardWillHide"]
 - !private ["s8HashableP", "UIKeyboardWillShow"]
@@ -757,7 +769,6 @@ depends-member:
 - ["s8HashableP", "numberOfSections"]
 - ["s8HashableP", "numberOfSectionsInTableView"]
 - !private ["s8HashableP", "posterUID"]
-- !private ["s8HashableP", "print"]
 - !private ["s8HashableP", "question"]
 - !private ["s8HashableP", "questionHeaderView"]
 - !private ["s8HashableP", "questionImageHeaderView"]
@@ -810,6 +821,7 @@ depends-member:
 - ["s8HashableP", "viewForZooming"]
 - ["s8HashableP", "viewForZoomingInScrollView"]
 - !private ["s8HashableP", "viewWillDisappear"]
+- !private ["s8HashableP", "white"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["Si", "init"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -838,6 +850,7 @@ depends-member:
 - ["So8NSCodingP", "Reply"]
 - !private ["So8NSCodingP", "SCLAlertView"]
 - !private ["So8NSCodingP", "TimeInterval"]
+- !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So8NSCodingP", "UINib"]
 - !private ["So8NSCodingP", "UITableViewAutomaticDimension"]
@@ -875,7 +888,6 @@ depends-member:
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
 - !private ["So8NSCodingP", "posterUID"]
-- !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "question"]
 - !private ["So8NSCodingP", "questionHeaderView"]
 - !private ["So8NSCodingP", "questionImageHeaderView"]
@@ -923,12 +935,14 @@ depends-member:
 - ["So8NSCodingP", "viewForZooming"]
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So8NSCodingP", "viewWillDisappear"]
+- !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "Name"]
 - !private ["So9NSCopyingP", "cgRectValue"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "seconds"]
 - !private ["So9NSCopyingP", "timeIntervalSince1970"]
 - !private ["So9NSCopyingP", "value"]
+- !private ["So9NSCopyingP", "white"]
 - !private ["So6NSDateC", "init"]
 - !private ["So6NSDateC", "timeIntervalSince1970"]
 - !private ["So12NSDictionaryC", "value"]
@@ -945,6 +959,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "Reply"]
 - !private ["So26NSExtensionRequestHandlingP", "SCLAlertView"]
 - !private ["So26NSExtensionRequestHandlingP", "TimeInterval"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So26NSExtensionRequestHandlingP", "UINib"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewAutomaticDimension"]
@@ -966,7 +981,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "moveTextField"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
-- !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "question"]
 - !private ["So26NSExtensionRequestHandlingP", "questionHeaderView"]
 - !private ["So26NSExtensionRequestHandlingP", "questionImageHeaderView"]
@@ -1002,6 +1016,8 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
 - !private ["So17NSFastEnumerationP", "value"]
+- !private ["So21NSItemProviderReadingP", "white"]
+- !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So16NSMutableCopyingP", "value"]
 - !private ["So14NSNotificationC", "Name"]
 - ["So8NSObjectC", "AnyObject"]
@@ -1031,6 +1047,7 @@ depends-member:
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "TimeInterval"]
 - ["So8NSObjectC", "Timestamp"]
+- !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIEvent"]
 - !private ["So8NSObjectC", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So8NSObjectC", "UINib"]
@@ -1080,7 +1097,6 @@ depends-member:
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "posterUID"]
-- !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "question"]
 - ["So8NSObjectC", "questionHeaderView"]
 - ["So8NSObjectC", "questionImageHeaderView"]
@@ -1134,6 +1150,7 @@ depends-member:
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewWillDisappear"]
+- !private ["So8NSObjectC", "white"]
 - !private ["So16NSObjectProtocolP", "AppStorage"]
 - !private ["So16NSObjectProtocolP", "Bundle"]
 - ["So16NSObjectProtocolP", "CategoryHelper"]
@@ -1148,6 +1165,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "Reply"]
 - !private ["So16NSObjectProtocolP", "SCLAlertView"]
 - !private ["So16NSObjectProtocolP", "TimeInterval"]
+- !private ["So16NSObjectProtocolP", "UIColor"]
 - !private ["So16NSObjectProtocolP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So16NSObjectProtocolP", "UINib"]
 - !private ["So16NSObjectProtocolP", "UITableViewAutomaticDimension"]
@@ -1194,7 +1212,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "numberOfSections"]
 - ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
 - !private ["So16NSObjectProtocolP", "posterUID"]
-- !private ["So16NSObjectProtocolP", "print"]
 - !private ["So16NSObjectProtocolP", "question"]
 - !private ["So16NSObjectProtocolP", "questionHeaderView"]
 - !private ["So16NSObjectProtocolP", "questionImageHeaderView"]
@@ -1245,10 +1262,12 @@ depends-member:
 - ["So16NSObjectProtocolP", "viewForZooming"]
 - ["So16NSObjectProtocolP", "viewForZoomingInScrollView"]
 - !private ["So16NSObjectProtocolP", "viewWillDisappear"]
+- !private ["So16NSObjectProtocolP", "white"]
 - !private ["So14NSSecureCodingP", "cgRectValue"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "timeIntervalSince1970"]
 - !private ["So14NSSecureCodingP", "value"]
+- !private ["So14NSSecureCodingP", "white"]
 - !private ["So7NSValueC", "cgRectValue"]
 - !private ["So14NSNotificationC4NameV", "UIKeyboardWillHide"]
 - !private ["So14NSNotificationC4NameV", "UIKeyboardWillShow"]
@@ -1344,6 +1363,7 @@ depends-member:
 - ["10DyceAppIOS19ReplyViewControllerC", "String"]
 - !private ["10DyceAppIOS19ReplyViewControllerC", "TimeInterval"]
 - ["10DyceAppIOS19ReplyViewControllerC", "Timestamp"]
+- !private ["10DyceAppIOS19ReplyViewControllerC", "UIColor"]
 - ["10DyceAppIOS19ReplyViewControllerC", "UIEvent"]
 - !private ["10DyceAppIOS19ReplyViewControllerC", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["10DyceAppIOS19ReplyViewControllerC", "UINib"]
@@ -1369,7 +1389,6 @@ depends-member:
 - ["10DyceAppIOS19ReplyViewControllerC", "moveTextField"]
 - ["10DyceAppIOS19ReplyViewControllerC", "numberOfSections"]
 - ["10DyceAppIOS19ReplyViewControllerC", "numberOfSectionsInTableView"]
-- !private ["10DyceAppIOS19ReplyViewControllerC", "print"]
 - ["10DyceAppIOS19ReplyViewControllerC", "question"]
 - ["10DyceAppIOS19ReplyViewControllerC", "questionHeaderView"]
 - ["10DyceAppIOS19ReplyViewControllerC", "questionImageHeaderView"]
@@ -1495,6 +1514,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "Reply"]
 - !private ["So21UIAppearanceContainerP", "SCLAlertView"]
 - !private ["So21UIAppearanceContainerP", "TimeInterval"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So21UIAppearanceContainerP", "UINib"]
 - !private ["So21UIAppearanceContainerP", "UITableViewAutomaticDimension"]
@@ -1531,7 +1551,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
 - !private ["So21UIAppearanceContainerP", "posterUID"]
-- !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "question"]
 - !private ["So21UIAppearanceContainerP", "questionHeaderView"]
 - !private ["So21UIAppearanceContainerP", "questionImageHeaderView"]
@@ -1577,6 +1596,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
+- !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "AppStorage"]
 - !private ["So18UIContentContainerP", "Bundle"]
 - ["So18UIContentContainerP", "CategoryHelper"]
@@ -1590,6 +1610,7 @@ depends-member:
 - ["So18UIContentContainerP", "Reply"]
 - !private ["So18UIContentContainerP", "SCLAlertView"]
 - !private ["So18UIContentContainerP", "TimeInterval"]
+- !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So18UIContentContainerP", "UINib"]
 - !private ["So18UIContentContainerP", "UITableViewAutomaticDimension"]
@@ -1611,7 +1632,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "moveTextField"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
-- !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "question"]
 - !private ["So18UIContentContainerP", "questionHeaderView"]
 - !private ["So18UIContentContainerP", "questionImageHeaderView"]
@@ -1679,6 +1699,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "timeLabel"]
 - !private ["So17UICoordinateSpaceP", "usernameLabel"]
+- !private ["So23UIDataSourceTranslatingP", "backgroundColor"]
 - !private ["So23UIDataSourceTranslatingP", "dataSource"]
 - !private ["So23UIDataSourceTranslatingP", "delegate"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
@@ -1725,6 +1746,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "Reply"]
 - !private ["So18UIFocusEnvironmentP", "SCLAlertView"]
 - !private ["So18UIFocusEnvironmentP", "TimeInterval"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So18UIFocusEnvironmentP", "UINib"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewAutomaticDimension"]
@@ -1761,7 +1783,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UIFocusEnvironmentP", "posterUID"]
-- !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "question"]
 - !private ["So18UIFocusEnvironmentP", "questionHeaderView"]
 - !private ["So18UIFocusEnvironmentP", "questionImageHeaderView"]
@@ -1857,6 +1878,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "Reply"]
 - !private ["So30UIPasteConfigurationSupportingP", "SCLAlertView"]
 - !private ["So30UIPasteConfigurationSupportingP", "TimeInterval"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINib"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewAutomaticDimension"]
@@ -1893,7 +1915,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "posterUID"]
-- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "question"]
 - !private ["So30UIPasteConfigurationSupportingP", "questionHeaderView"]
 - !private ["So30UIPasteConfigurationSupportingP", "questionImageHeaderView"]
@@ -1965,6 +1986,7 @@ depends-member:
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "TimeInterval"]
 - ["So11UIResponderC", "Timestamp"]
+- !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIEvent"]
 - !private ["So11UIResponderC", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So11UIResponderC", "UINib"]
@@ -2004,7 +2026,6 @@ depends-member:
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - !private ["So11UIResponderC", "posterUID"]
-- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "question"]
 - ["So11UIResponderC", "questionHeaderView"]
 - ["So11UIResponderC", "questionImageHeaderView"]
@@ -2066,6 +2087,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "Reply"]
 - !private ["So30UIResponderStandardEditActionsP", "SCLAlertView"]
 - !private ["So30UIResponderStandardEditActionsP", "TimeInterval"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So30UIResponderStandardEditActionsP", "UINib"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewAutomaticDimension"]
@@ -2102,7 +2124,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "posterUID"]
-- !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "question"]
 - !private ["So30UIResponderStandardEditActionsP", "questionHeaderView"]
 - !private ["So30UIResponderStandardEditActionsP", "questionImageHeaderView"]
@@ -2148,6 +2169,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "viewForZooming"]
 - ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
+- !private ["So12UIScrollViewC", "backgroundColor"]
 - !private ["So12UIScrollViewC", "dataSource"]
 - !private ["So12UIScrollViewC", "delegate"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
@@ -2167,6 +2189,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "Reply"]
 - !private ["So20UIScrollViewDelegateP", "SCLAlertView"]
 - !private ["So20UIScrollViewDelegateP", "TimeInterval"]
+- !private ["So20UIScrollViewDelegateP", "UIColor"]
 - !private ["So20UIScrollViewDelegateP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So20UIScrollViewDelegateP", "UINib"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewAutomaticDimension"]
@@ -2187,7 +2210,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "moveTextField"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["So20UIScrollViewDelegateP", "print"]
 - !private ["So20UIScrollViewDelegateP", "question"]
 - !private ["So20UIScrollViewDelegateP", "questionHeaderView"]
 - !private ["So20UIScrollViewDelegateP", "questionImageHeaderView"]
@@ -2219,6 +2241,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "view"]
 - ["So20UIScrollViewDelegateP", "viewForZooming"]
 - ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
@@ -2238,6 +2261,7 @@ depends-member:
 - ["So16UIStateRestoringP", "Reply"]
 - !private ["So16UIStateRestoringP", "SCLAlertView"]
 - !private ["So16UIStateRestoringP", "TimeInterval"]
+- !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So16UIStateRestoringP", "UINib"]
 - !private ["So16UIStateRestoringP", "UITableViewAutomaticDimension"]
@@ -2259,7 +2283,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "moveTextField"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
-- !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "question"]
 - !private ["So16UIStateRestoringP", "questionHeaderView"]
 - !private ["So16UIStateRestoringP", "questionImageHeaderView"]
@@ -2294,6 +2317,7 @@ depends-member:
 - ["So16UIStateRestoringP", "viewForZooming"]
 - ["So16UIStateRestoringP", "viewForZoomingInScrollView"]
 - !private ["So16UIStateRestoringP", "viewWillDisappear"]
+- !private ["So11UITableViewC", "backgroundColor"]
 - !private ["So11UITableViewC", "dataSource"]
 - !private ["So11UITableViewC", "delegate"]
 - !private ["So11UITableViewC", "dequeueReusableCell"]
@@ -2315,6 +2339,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "Reply"]
 - !private ["So21UITableViewDataSourceP", "SCLAlertView"]
 - !private ["So21UITableViewDataSourceP", "TimeInterval"]
+- !private ["So21UITableViewDataSourceP", "UIColor"]
 - !private ["So21UITableViewDataSourceP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So21UITableViewDataSourceP", "UINib"]
 - !private ["So21UITableViewDataSourceP", "UITableViewAutomaticDimension"]
@@ -2335,7 +2360,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "moveTextField"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
-- !private ["So21UITableViewDataSourceP", "print"]
 - !private ["So21UITableViewDataSourceP", "question"]
 - !private ["So21UITableViewDataSourceP", "questionHeaderView"]
 - !private ["So21UITableViewDataSourceP", "questionImageHeaderView"]
@@ -2380,6 +2404,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "Reply"]
 - !private ["So19UITableViewDelegateP", "SCLAlertView"]
 - !private ["So19UITableViewDelegateP", "TimeInterval"]
+- !private ["So19UITableViewDelegateP", "UIColor"]
 - !private ["So19UITableViewDelegateP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So19UITableViewDelegateP", "UINib"]
 - !private ["So19UITableViewDelegateP", "UITableViewAutomaticDimension"]
@@ -2400,7 +2425,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "moveTextField"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
-- !private ["So19UITableViewDelegateP", "print"]
 - !private ["So19UITableViewDelegateP", "question"]
 - !private ["So19UITableViewDelegateP", "questionHeaderView"]
 - !private ["So19UITableViewDelegateP", "questionImageHeaderView"]
@@ -2462,6 +2486,7 @@ depends-member:
 - ["So19UITextFieldDelegateP", "Reply"]
 - !private ["So19UITextFieldDelegateP", "SCLAlertView"]
 - !private ["So19UITextFieldDelegateP", "TimeInterval"]
+- !private ["So19UITextFieldDelegateP", "UIColor"]
 - !private ["So19UITextFieldDelegateP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So19UITextFieldDelegateP", "UINib"]
 - !private ["So19UITextFieldDelegateP", "UITableViewAutomaticDimension"]
@@ -2482,7 +2507,6 @@ depends-member:
 - !private ["So19UITextFieldDelegateP", "moveTextField"]
 - ["So19UITextFieldDelegateP", "numberOfSections"]
 - ["So19UITextFieldDelegateP", "numberOfSectionsInTableView"]
-- !private ["So19UITextFieldDelegateP", "print"]
 - !private ["So19UITextFieldDelegateP", "question"]
 - !private ["So19UITextFieldDelegateP", "questionHeaderView"]
 - !private ["So19UITextFieldDelegateP", "questionImageHeaderView"]
@@ -2536,6 +2560,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "Reply"]
 - !private ["So18UITraitEnvironmentP", "SCLAlertView"]
 - !private ["So18UITraitEnvironmentP", "TimeInterval"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So18UITraitEnvironmentP", "UINib"]
 - !private ["So18UITraitEnvironmentP", "UITableViewAutomaticDimension"]
@@ -2572,7 +2597,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UITraitEnvironmentP", "posterUID"]
-- !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "question"]
 - !private ["So18UITraitEnvironmentP", "questionHeaderView"]
 - !private ["So18UITraitEnvironmentP", "questionImageHeaderView"]
@@ -2671,6 +2695,7 @@ depends-member:
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "TimeInterval"]
 - ["So16UIViewControllerC", "Timestamp"]
+- !private ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", "UIEvent"]
 - !private ["So16UIViewControllerC", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["So16UIViewControllerC", "UINib"]
@@ -2696,7 +2721,6 @@ depends-member:
 - ["So16UIViewControllerC", "moveTextField"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
-- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "question"]
 - ["So16UIViewControllerC", "questionHeaderView"]
 - ["So16UIViewControllerC", "questionImageHeaderView"]
@@ -2787,6 +2811,7 @@ depends-member:
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "Name"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
@@ -2805,6 +2830,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "Reply"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SCLAlertView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeInterval"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIKeyboardFrameEndUserInfoKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewAutomaticDimension"]
@@ -2851,7 +2877,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "posterUID"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "question"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "questionHeaderView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "questionImageHeaderView"]
@@ -2902,6 +2927,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["s21_ObjectiveCBridgeableP", "UIKeyboardWillHide"]
 - !private ["s21_ObjectiveCBridgeableP", "UIKeyboardWillShow"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -2943,6 +2969,7 @@ depends-nominal:
 - !private "So17DocumentReferenceC"
 - !private "So16DocumentSnapshotC"
 - !private "Sd"
+- !private "15ESPullToRefresh20ESExtensionsProviderP"
 - "s9EncodableP"
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
@@ -2969,6 +2996,8 @@ depends-nominal:
 - !private "So12NSDictionaryC"
 - "So26NSExtensionRequestHandlingP"
 - !private "So17NSFastEnumerationP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - !private "So14NSNotificationC"
 - "So8NSObjectC"
@@ -3008,6 +3037,7 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - !private "So9UIControlC"
@@ -3056,6 +3086,7 @@ depends-nominal:
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -3065,6 +3096,7 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/ESPullToRefresh.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/ChameleonFramework.swiftmodule/arm64.swiftmodule"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/SCLAlertView.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -3087,6 +3119,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/Chameleon_.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/GeoFire/GeoFire.framework/Headers/GeoFire-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet-umbrella.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-umbrella.h"
@@ -3257,6 +3290,7 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonConstants.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/UIAppearance+Swift.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Headers/ESPullToRefresh-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Headers/ChameleonFramework-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Headers/SCLAlertView-Swift.h"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
@@ -3298,23 +3332,24 @@ depends-external:
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseFirestore/Frameworks/FirebaseFirestore.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ESPullToRefresh/ESPullToRefresh.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/ChameleonFramework/ChameleonFramework.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/DZNEmptyDataSet/DZNEmptyDataSet.framework/Modules/module.modulemap"
 - "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Products/Debug-iphoneos/SCLAlertView/SCLAlertView.framework/Modules/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "4b7d97a1ffd8db429deeef0e488980c7"

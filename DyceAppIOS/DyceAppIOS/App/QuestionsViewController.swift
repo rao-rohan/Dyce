@@ -1,3 +1,9 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: QuestionsViewController.swift
+//
+// File Description: This view controller operates with an array of Question objects to display.
+
 import UIKit
 import Foundation
 import CoreLocation
@@ -8,18 +14,18 @@ import GeoFire
 import SVProgressHUD
 import ESPullToRefresh
 
-//this view controller operates with an array of Question objects to display
-
-class QuestionsViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, PushCompletedDelegate{
-
+class QuestionsViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, PushCompletedDelegate , ReplyCompletedDelegate{
+    
+    //these objects manage your location
     var currLocation: CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
     
     var geofireRef : DatabaseReference!
     var geoFire : GeoFire!
     
+    //model (backbone)
     private var questions = [Question]() {didSet{tableView.reloadData()}}
-    
+    private var favoritedQuestions = [String]() {didSet{tableView.reloadData()}}
     private var needsToFetchQuestions = false
     
     var locationQueryHandle: DatabaseHandle = 0
@@ -28,13 +34,9 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         geofireRef = Database.database().reference()
         geoFire = GeoFire(firebaseRef: geofireRef.ref.child(NameFile.RTDB.RTDBPosts))
-        
-        let db = Firestore.firestore()
-        let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
-        db.settings = settings
         
         self.tableView.backgroundColor = UIColor(hexString: "f2f2f2")
         tableView.estimatedRowHeight = 200
@@ -47,25 +49,34 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
             if let _ = self.currLocation{
                 SVProgressHUD.show()
                 self.fetchQuestions()
+                self.getFavorites()
             }else{
                 self.needsToFetchQuestions = true
             }
         }
-        
+
         if (CLLocationManager.locationServicesEnabled()) {
             locationManager.delegate = self as CLLocationManagerDelegate
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         }
+        locationManager.requestWhenInUseAuthorization()
         
         tableView.tableFooterView = UIView(frame: CGRect.zero)
+       
+//
+        tableView.emptyDataSetSource = self
+        tableView.emptyDataSetDelegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //when the screen first appears, start updating location and fetch questions from the database
         locationManager.startUpdatingLocation()
         if let _ = currLocation{
             SVProgressHUD.show()
             fetchQuestions()
+            tableView.reloadData()
+            getFavorites()
         }else{
             needsToFetchQuestions = true
         }
@@ -73,6 +84,8 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     
     @IBAction func unwindToQuestionsViewController(_ segue: UIStoryboardSegue) {
     }
+    
+    //MARK: - Tableview Delegate and Datasource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -82,12 +95,13 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let question = questions[indexPath.row]
         if let imageURL = question.imageURL{
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionImageCell", for: indexPath)
             if let cell = cell as? QuestionImageCell{
                 cell.question = question
-
+                
                 //async image loading so that the text appears first and then the images appear later
                 if question.image == #imageLiteral(resourceName: "GrayRect"){
                     let imageRef = Storage.storage().reference(forURL: imageURL)
@@ -96,7 +110,17 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
                             if let image = UIImage(data: data){
                                 let q = cell.question
                                 cell.question = Question(_creatorUID: q.creatorUID, _creatorUsername: q.creatorUsername, _postID: q.postID, _category: q.category, _time: q.time, _question: q.question, _numReplies: q.numReplies, _imageURL: q.imageURL, _image: image)
+                                self.questions[indexPath.row] = Question(_creatorUID: q.creatorUID, _creatorUsername: q.creatorUsername, _postID: q.postID, _category: q.category, _time: q.time, _question: q.question, _numReplies: q.numReplies, _imageURL: q.imageURL, _image: image)
+                                if self.favoritedQuestions.contains(cell.question.postID){
+                                    cell.isFavorited = true
+                                    cell.favoriteButton.setImage(#imageLiteral(resourceName: "gold star "), for: .normal)
+                                }
+                                else{
+                                    cell.isFavorited = false
+                                    cell.favoriteButton.setImage(#imageLiteral(resourceName: "star blank"), for: .normal)
+                                }
                             }
+                           
                         }
                     })
                 }
@@ -108,11 +132,22 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell", for: indexPath)
             if let cell = cell as? QuestionCell{
                 cell.question = question
+                if favoritedQuestions.contains(cell.question.postID){
+                    cell.isFavorited = true
+                    cell.favoriteButton.setImage(#imageLiteral(resourceName: "gold star "), for: .normal)
+                }
+                else{
+                    cell.isFavorited = false
+                    cell.favoriteButton.setImage(#imageLiteral(resourceName: "star blank"), for: .normal)
+                }
+                
                 return cell
             }
         }
         return UITableViewCell()
     }
+    
+    //MARK: - CompletedPushDelegate
     
     func completedPush() {
         if let _ = currLocation{
@@ -122,12 +157,27 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
             needsToFetchQuestions = true
         }
     }
-    
+    func completedReply() {
+        getFavorites()
+    }
+    func getFavorites(){
+        favoritedQuestions.removeAll()
+        let userFavoritesCollections : CollectionReference = Firestore.firestore().collection(NameFile.Firestore.users).document(AppStorage.PersonalInfo.uid).collection(NameFile.Firestore.userFavoritedPosts)
+        userFavoritesCollections.getDocuments{ (snapshot , error) in
+            if let documents = snapshot?.documents{
+                for document in documents{
+                    self.favoritedQuestions.append(document.documentID)
+                }
+            }
+            
+        }
+        
+    }
     //fetches all the questions from the database
     @objc private func fetchQuestions(){
         questions.removeAll()
         
-        //creates a location query of posts to fetch
+        //creates a location query (by radius) of posts to fetch
         let center = CLLocation(latitude: (currLocation?.latitude)!, longitude: (currLocation?.longitude)!)
         locQuery = geoFire.query(at: center, withRadius: 6)
         locQuery?.observeReady {
@@ -168,6 +218,7 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
         })
     }
     
+    //adds questions to the backbone so that they appear in order
     func appendInOrder(_question : Question){
         _ = self.questions.filter { (pass) -> Bool in
             if pass.postID != _question.postID{
@@ -186,28 +237,6 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
             }
         }
         self.questions.append(_question)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if let identifier = segue.identifier {
-            
-            if identifier == "questionDetail" || identifier == "questionImageDetail" {
-                if let indexPath = self.tableView.indexPathForSelectedRow{
-                    let question = self.questions[indexPath.row]
-                    if let detailVC = segue.destination as? ReplyViewController{
-                        detailVC.question = question
-                    }
-                }
-            }
-            
-            if identifier == "newQuestion"{
-                if let newVC = segue.destination as? NewPostViewController{
-                    newVC.delegate = self
-                }
-            }
-            
-        }
     }
     
     func rotateImage(img: UIImage) -> UIImage{
@@ -230,6 +259,45 @@ class QuestionsViewController: UITableViewController, UIImagePickerControllerDel
         return rot
     }
     
+    //MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let identifier = segue.identifier {
+            
+            if identifier == "questionDetail" {
+                if let indexPath = self.tableView.indexPathForSelectedRow{
+                    let question = self.questions[indexPath.row]
+                    if let detailVC = segue.destination as? ReplyViewController{
+                        detailVC.question = question
+                        let cell = tableView.cellForRow(at: indexPath) as! QuestionCell
+                        detailVC.isFavorite = cell.isFavorited
+                        
+                    }
+                }
+            }
+            if identifier == "questionImageDetail" {
+                if let indexPath = self.tableView.indexPathForSelectedRow{
+                    let question = self.questions[indexPath.row]
+                    if let detailVC = segue.destination as? ReplyViewController{
+                        detailVC.question = question
+                        let cell = tableView.cellForRow(at: indexPath) as! QuestionImageCell
+                        detailVC.isFavorite = cell.isFavorited
+                        
+                    }
+                }
+            }
+            
+            //if the segue is destined for the new question view controller, set its delegate
+            if identifier == "newQuestion"{
+                if let newVC = segue.destination as? NewPostViewController{
+                    newVC.delegate = self
+                }
+            }
+            
+        }
+    }
+    
 }
 
 public extension UIImage {
@@ -245,10 +313,37 @@ public extension UIImage {
         self.init(cgImage: cgImage)
     }
 }
+extension QuestionsViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    //MARK: Empty Data Set
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "There's nothing here!"
+        let changes = [kCTFontAttributeName: UIFont(name: "Avenir Next", size: 24.0)!, kCTForegroundColorAttributeName: UIColor.flatGray]
+
+        return NSAttributedString(string: str, attributes: changes as [NSAttributedStringKey : Any])
+    }
+
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        let str = "Enable location services or be the first poster in your area!"
+        let attrs = [kCTFontAttributeName: UIFont(name: "Avenir Next", size: 18.0)!, kCTForegroundColorAttributeName: UIColor.flatGray]
+        return NSAttributedString(string: str, attributes: attrs as [NSAttributedStringKey : Any])
+    }
+
+    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
+        return UIImage(named: "exclamation_mark_filled")
+    }
+
+    func buttonImage(forEmptyDataSet scrollView: UIScrollView!, for state: UIControlState) -> UIImage! {
+        return UIImage(named: "newquestionbutton")
+    }
+
+    func emptyDataSetDidTapButton(_ scrollView: UIScrollView!) {
+        performSegue(withIdentifier: "newQuestion", sender: self)
+    }
+}
 
 extension QuestionsViewController : CLLocationManagerDelegate {
     
-    //every time the location is updated, this method is called, and the posts are re-fetched
+    //every time the location is updated, re-fetch the questions
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if(locations.count > 0) {
             let location = locations.last
@@ -257,6 +352,7 @@ extension QuestionsViewController : CLLocationManagerDelegate {
                 needsToFetchQuestions = false
                 SVProgressHUD.show()
                 fetchQuestions()
+                getFavorites()
             }
         }
         else {

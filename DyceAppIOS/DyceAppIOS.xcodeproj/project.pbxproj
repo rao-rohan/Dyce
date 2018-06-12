@@ -11,6 +11,12 @@
 		4E2BFFB020A4A9F500AA0DF0 /* CategoryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */; };
 		4E2BFFB420A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */; };
 		4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */; };
+		4E70B59220CD14B70076B326 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E70B59120CD14B70076B326 /* TabViewController.swift */; };
+		4EDCB79A20CE282D000BC7C0 /* SettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCB79320CE282C000BC7C0 /* SettingsTableVC.swift */; };
+		4EDCB79C20CE282D000BC7C0 /* SettingsDetailVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCB79520CE282D000BC7C0 /* SettingsDetailVC3.swift */; };
+		4EDCB79E20CE282D000BC7C0 /* SettingsDetailVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCB79720CE282D000BC7C0 /* SettingsDetailVC1.swift */; };
+		4EDCB79F20CE282D000BC7C0 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCB79820CE282D000BC7C0 /* ProfileVC.swift */; };
+		4EDCB7A120CF4074000BC7C0 /* UserSelectedPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDCB7A020CF4074000BC7C0 /* UserSelectedPostsTableViewController.swift */; };
 		4EE8CFFA20A6C0980091253E /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE8CFF920A6C0980091253E /* ReplyViewController.swift */; };
 		4EE8D00420A6CE450091253E /* QuestionHeaderImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */; };
 		4EE8D00520A6CE450091253E /* QuestionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */; };
@@ -59,6 +65,12 @@
 		4E2BFFAF20A4A9F400AA0DF0 /* CategoryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryHelper.swift; sourceTree = "<group>"; };
 		4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionImageHeaderView.swift; sourceTree = "<group>"; };
 		4E2BFFB320A4BEDC00AA0DF0 /* QuestionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionHeaderView.swift; sourceTree = "<group>"; };
+		4E70B59120CD14B70076B326 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		4EDCB79320CE282C000BC7C0 /* SettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableVC.swift; sourceTree = "<group>"; };
+		4EDCB79520CE282D000BC7C0 /* SettingsDetailVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDetailVC3.swift; sourceTree = "<group>"; };
+		4EDCB79720CE282D000BC7C0 /* SettingsDetailVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDetailVC1.swift; sourceTree = "<group>"; };
+		4EDCB79820CE282D000BC7C0 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4EDCB7A020CF4074000BC7C0 /* UserSelectedPostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectedPostsTableViewController.swift; sourceTree = "<group>"; };
 		4EE8CFF920A6C0980091253E /* ReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
 		4EE8D00220A6CE450091253E /* QuestionHeaderImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderImageView.xib; sourceTree = "<group>"; };
 		4EE8D00320A6CE450091253E /* QuestionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionHeaderView.xib; sourceTree = "<group>"; };
@@ -143,6 +155,18 @@
 				4E2BFFB220A4BEDC00AA0DF0 /* QuestionImageHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4EDCB78B20CDB581000BC7C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4EDCB79820CE282D000BC7C0 /* ProfileVC.swift */,
+				4EDCB7A020CF4074000BC7C0 /* UserSelectedPostsTableViewController.swift */,
+				4EDCB79720CE282D000BC7C0 /* SettingsDetailVC1.swift */,
+				4EDCB79520CE282D000BC7C0 /* SettingsDetailVC3.swift */,
+				4EDCB79320CE282C000BC7C0 /* SettingsTableVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		4EE8CFFC20A6CD590091253E /* Cells */ = {
@@ -238,12 +262,14 @@
 		5822CE2420A0014500093CD0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4EDCB78B20CDB581000BC7C0 /* Profile */,
 				4EE8D00120A6CE0B0091253E /* UI */,
 				4EE8CFFC20A6CD590091253E /* Cells */,
 				4E2BFFB120A4BECB00AA0DF0 /* Views */,
 				4EE8CFF920A6C0980091253E /* ReplyViewController.swift */,
 				5822CE3620A0145500093CD0 /* NewPostViewController.swift */,
 				5822CE2B20A009AB00093CD0 /* QuestionsViewController.swift */,
+				4E70B59120CD14B70076B326 /* TabViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -484,16 +510,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDCB79C20CE282D000BC7C0 /* SettingsDetailVC3.swift in Sources */,
 				5822CE1C209FF41200093CD0 /* IntroVC.swift in Sources */,
 				5822CE2C20A009AB00093CD0 /* QuestionsViewController.swift in Sources */,
 				5822CE21209FF41200093CD0 /* SignUpVC.swift in Sources */,
 				5822CE3020A009B500093CD0 /* QuestionImageCell.swift in Sources */,
 				5822CE2A20A0093C00093CD0 /* NameFile.swift in Sources */,
 				5822CE3720A0145500093CD0 /* NewPostViewController.swift in Sources */,
+				4EDCB79F20CE282D000BC7C0 /* ProfileVC.swift in Sources */,
+				4E70B59220CD14B70076B326 /* TabViewController.swift in Sources */,
 				5822CDE6209FF3F100093CD0 /* AppDelegate.swift in Sources */,
+				4EDCB7A120CF4074000BC7C0 /* UserSelectedPostsTableViewController.swift in Sources */,
 				5822CE3220A009E400093CD0 /* Reply.swift in Sources */,
 				5822CE2E20A009B000093CD0 /* QuestionCell.swift in Sources */,
+				4EDCB79E20CE282D000BC7C0 /* SettingsDetailVC1.swift in Sources */,
 				5822CE1D209FF41200093CD0 /* LoginVC.swift in Sources */,
+				4EDCB79A20CE282D000BC7C0 /* SettingsTableVC.swift in Sources */,
 				4E2BFFB520A4BEDC00AA0DF0 /* QuestionHeaderView.swift in Sources */,
 				5822CE3520A00A3A00093CD0 /* Question.swift in Sources */,
 				4EE8CFFA20A6C0980091253E /* ReplyViewController.swift in Sources */,

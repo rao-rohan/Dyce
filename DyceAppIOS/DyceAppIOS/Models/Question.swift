@@ -1,12 +1,15 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: Question.swift
+//
+// File Description: This functions as a Question object which stores necessary information pertaining to a particular question asked by a certain user.
+
 import Foundation
 import UIKit
 import Firebase
 import CoreLocation
 import SVProgressHUD
 import GeoFire
-
-//this functions as a Question object which stores necessary information pertaining to a particular question
-//asked by a certain user
 
 class Question {
     
@@ -58,12 +61,14 @@ class Question {
     
     func pushToFirestore(completion: Block? = nil){
         let postCollection: CollectionReference = Firestore.firestore().collection(NameFile.Firestore.posts)
+        let userCollection : CollectionReference = Firestore.firestore().collection(NameFile.Firestore.users).document(AppStorage.PersonalInfo.uid).collection(NameFile.Firestore.userPosts)
         let imageStorage: StorageReference = Storage.storage().reference(withPath: NameFile.Firestore.images)
         
         let newDocument = postCollection.document()
         geoFire.setLocation(CLLocation(latitude: location.latitude, longitude: location.longitude), forKey: newDocument.documentID)
         if let image = image{
-            imageStorage.child(newDocument.documentID).putData(UIImagePNGRepresentation(image)!).observe(.success, handler: { (snapshot) in
+            //data compression
+            imageStorage.child(newDocument.documentID).putData(UIImageJPEGRepresentation(image,0.0005)!).observe(.success, handler: { (snapshot) in
                 imageStorage.child(newDocument.documentID).downloadURL(completion: { (url, error) in
                     if error != nil{
                         print(error?.localizedDescription ?? "")
@@ -77,6 +82,7 @@ class Question {
                                 NameFile.Firestore.postQuestion: self.question,
                                 NameFile.Firestore.postImageURL: imageURL
                                 ])
+                            userCollection.document(newDocument.documentID).setData([NameFile.Firestore.userPostID : newDocument.documentID])
                             SVProgressHUD.dismiss()
                             completion?()
                         }
@@ -91,6 +97,7 @@ class Question {
                 NameFile.Firestore.postTime: self.time,
                 NameFile.Firestore.postQuestion: self.question
                 ])
+            userCollection.document(newDocument.documentID).setData([NameFile.Firestore.userPostID : newDocument.documentID])
             SVProgressHUD.dismiss()
             completion?()
         }

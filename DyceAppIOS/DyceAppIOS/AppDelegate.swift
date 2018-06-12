@@ -1,3 +1,9 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: AppDelegate.swift
+//
+// File Description: This delegate class manages the current state of the app (active, terminated, etc.).
+
 import UIKit
 import Firebase
 
@@ -10,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         AppStorage.load()
+        let db = Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
+
         
         //auto login
         var storyboard: UIStoryboard!

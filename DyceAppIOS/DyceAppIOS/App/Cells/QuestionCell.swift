@@ -1,8 +1,12 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: QuestionCell.swift
+//
+// File Description: This cell displays the appearance of a Question object.
+
 import Foundation
 import UIKit
-
-//this cell displays the appearance of a Question object
-
+import Firebase
 class QuestionCell: UITableViewCell {
     
     let colorPicker = CategoryHelper()
@@ -13,8 +17,8 @@ class QuestionCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UIButton!
     @IBOutlet weak var categoryFlag: UIView!
     @IBOutlet weak var categoryLabel: UILabel!
-
-    
+    @IBOutlet weak var favoriteButton: UIButton!
+    var isFavorited = false
     var question: Question = Question() {didSet { reloadData() } }
 
     private func reloadData(){
@@ -51,5 +55,18 @@ class QuestionCell: UITableViewCell {
         usernameLabel.setTitle(question.creatorUsername, for: .normal)
         categoryLabel.text = question.category
         categoryFlag.backgroundColor = colorPicker.colorChooser(question.category)
+    }
+    @IBAction func favoritePressed(_ sender: Any) {
+        let userCollection : CollectionReference = Firestore.firestore().collection(NameFile.Firestore.users).document(AppStorage.PersonalInfo.uid).collection(NameFile.Firestore.userFavoritedPosts)
+        if(!isFavorited){
+            favoriteButton.setImage(#imageLiteral(resourceName: "gold star "), for: .normal)
+            userCollection.document(question.postID).setData([NameFile.Firestore.userFavPostID : question.postID])
+            isFavorited = true
+        }
+        else{
+            favoriteButton.setImage(#imageLiteral(resourceName: "star blank"), for: .normal)
+            userCollection.document(question.postID).delete()
+            isFavorited = false
+        }
     }
 }

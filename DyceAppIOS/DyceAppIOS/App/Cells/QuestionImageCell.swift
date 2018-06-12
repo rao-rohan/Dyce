@@ -1,11 +1,14 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: QuestionImageCell.swift
+//
+// File Description: This cell displays the appearance of a Question object which contains an image.
+
 import Foundation
 import UIKit
-
-//this cell displays the appearance of a Question object which contains an image
-
+import Firebase
 class QuestionImageCell: UITableViewCell {
-     let colorPicker = CategoryHelper()
-    
+    let colorPicker = CategoryHelper()
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var repliesLabel: UILabel!
@@ -13,7 +16,8 @@ class QuestionImageCell: UITableViewCell {
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var categoryFlag: UIView!
     @IBOutlet weak var categoryLabel: UILabel!
-    
+    @IBOutlet weak var favoriteButton: UIButton!
+    var isFavorited = false
     var question: Question = Question() {didSet { reloadData() } }
     
     private func reloadData(){
@@ -52,5 +56,18 @@ class QuestionImageCell: UITableViewCell {
         categoryLabel.text = question.category
         categoryFlag.backgroundColor = colorPicker.colorChooser(question.category)
         
+    }
+    @IBAction func favoritePressed(_ sender: Any) {
+        let userCollection : CollectionReference = Firestore.firestore().collection(NameFile.Firestore.users).document(AppStorage.PersonalInfo.uid).collection(NameFile.Firestore.userFavoritedPosts)
+        if(!isFavorited){
+            favoriteButton.setImage(#imageLiteral(resourceName: "gold star "), for: .normal)
+            userCollection.document(question.postID).setData(["postID" : question.postID])
+            isFavorited = true
+        }
+        else{
+            favoriteButton.setImage(#imageLiteral(resourceName: "star blank"), for: .normal)
+            userCollection.document(question.postID).delete()
+            isFavorited = false
+        }
     }
 }

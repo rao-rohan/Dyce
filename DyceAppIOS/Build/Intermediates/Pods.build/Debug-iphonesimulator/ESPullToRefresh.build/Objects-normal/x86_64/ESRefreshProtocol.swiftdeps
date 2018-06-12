@@ -1,0 +1,212 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ESRefreshViewState"
+- "ESRefreshProtocol"
+- "ESRefreshAnimatorProtocol"
+- "ESRefreshImpactProtocol"
+provides-nominal:
+- "15ESPullToRefresh18ESRefreshViewStateO"
+- "15ESPullToRefresh17ESRefreshProtocolP"
+- "15ESPullToRefresh25ESRefreshAnimatorProtocolP"
+- "15ESPullToRefresh23ESRefreshImpactProtocolP"
+provides-member:
+- ["15ESPullToRefresh18ESRefreshViewStateO", ""]
+- ["15ESPullToRefresh17ESRefreshProtocolP", ""]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", ""]
+- ["15ESPullToRefresh23ESRefreshImpactProtocolP", ""]
+- ["15ESPullToRefresh23ESRefreshImpactProtocolP", "impact"]
+provides-dynamic-lookup:
+depends-top-level:
+- "!="
+- "=="
+- "AnyObject"
+- "CGFloat"
+- "CastingPrecedence"
+- "ESRefreshAnimatorProtocol"
+- "ESRefreshComponent"
+- "ESRefreshImpactProtocol"
+- !private "ESRefreshImpacter"
+- "ESRefreshProtocol"
+- "ESRefreshViewState"
+- "NSClassFromString"
+- "StringLiteralType"
+- "UIEdgeInsets"
+- "UIImpactFeedbackGenerator"
+- "UIView"
+- "Void"
+depends-member:
+- ["s23BidirectionalCollectionP", "init"]
+- ["Sb", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "impactOccurred"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "prepare"]
+- ["s10CollectionP", "init"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "impactOccurred"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "prepare"]
+- ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "impactOccurred"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "prepare"]
+- ["s9DecodableP", "_getBuiltinLogicValue"]
+- ["s9DecodableP", "init"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "CGFloat"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "ESRefreshViewState"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "UIEdgeInsets"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "UIView"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "executeIncremental"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "insets"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "state"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "trigger"]
+- ["15ESPullToRefresh25ESRefreshAnimatorProtocolP", "view"]
+- !private ["15ESPullToRefresh23ESRefreshImpactProtocolP", "ESRefreshImpacter"]
+- ["15ESPullToRefresh23ESRefreshImpactProtocolP", "Void"]
+- ["15ESPullToRefresh23ESRefreshImpactProtocolP", "impact"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "CGFloat"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "ESRefreshComponent"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "ESRefreshViewState"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "refresh"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "refreshAnimationBegin"]
+- ["15ESPullToRefresh17ESRefreshProtocolP", "refreshAnimationEnd"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "__derived_enum_equals"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "autoRefreshing"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "deinit"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "hashValue"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "noMoreData"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "pullToRefresh"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "refreshing"]
+- ["15ESPullToRefresh18ESRefreshViewStateO", "releaseToRefresh"]
+- ["s9EncodableP", "_getBuiltinLogicValue"]
+- ["s9EncodableP", "init"]
+- ["s9EquatableP", ""]
+- ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "impactOccurred"]
+- ["s9EquatableP", "init"]
+- ["s9EquatableP", "light"]
+- ["s9EquatableP", "prepare"]
+- ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", ""]
+- ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "impactOccurred"]
+- ["s8HashableP", "init"]
+- ["s8HashableP", "light"]
+- ["s8HashableP", "prepare"]
+- ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["So8NSObjectC", "impactOccurred"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "prepare"]
+- !private ["So16NSObjectProtocolP", "impactOccurred"]
+- ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", "prepare"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- ["s16RawRepresentableP", "light"]
+- ["s8SequenceP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So19UIFeedbackGeneratorC", "impactOccurred"]
+- ["So19UIFeedbackGeneratorC", "init"]
+- ["So19UIFeedbackGeneratorC", "prepare"]
+- !private ["So25UIImpactFeedbackGeneratorC", "impactOccurred"]
+- ["So25UIImpactFeedbackGeneratorC", "init"]
+- ["So25UIImpactFeedbackGeneratorC", "prepare"]
+- ["SC21UIImpactFeedbackStyleO", "light"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "impactOccurred"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "s23BidirectionalCollectionP"
+- "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "15ESPullToRefresh25ESRefreshAnimatorProtocolP"
+- "15ESPullToRefresh23ESRefreshImpactProtocolP"
+- "15ESPullToRefresh17ESRefreshProtocolP"
+- "15ESPullToRefresh18ESRefreshViewStateO"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- "s8SequenceP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "So19UIFeedbackGeneratorC"
+- "So25UIImpactFeedbackGeneratorC"
+- "SC21UIImpactFeedbackStyleO"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/Target Support Files/ESPullToRefresh/ESPullToRefresh-umbrella.h"
+- "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/ESPullToRefresh.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "436c288f5a238b58d37b9cd577c8e585"

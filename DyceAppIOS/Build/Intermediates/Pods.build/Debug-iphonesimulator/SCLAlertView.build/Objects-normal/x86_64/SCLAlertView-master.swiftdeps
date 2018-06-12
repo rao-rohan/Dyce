@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "73f1381a0a306cb04ec74ccc6ecc49ad"
+build_time: [1527696245, 190736000]
+inputs:
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/SCLAlertView/SCLAlertView/SCLAlertView.swift": [1527262163, 0]
+  "/Users/nikhilsridhar/Desktop/Dyce/DyceAppIOS/Pods/SCLAlertView/SCLAlertView/SCLExtensions.swift": [1527262163, 0]

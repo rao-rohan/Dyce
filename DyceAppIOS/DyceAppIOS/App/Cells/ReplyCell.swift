@@ -1,7 +1,11 @@
+// Names: Nikhil Sridhar and Rohan Rao
+//
+// File Name: ReplyCell.swift
+//
+// File Description: This cell displays the appearance of a Reply object. 
+
 import Foundation
 import UIKit
-
-//this cell displays the appearance of a Reply object
 
 class ReplyCell: UITableViewCell {
     
